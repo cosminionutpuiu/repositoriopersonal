@@ -30,7 +30,7 @@ module IssueRelationsHelperPatch
                 ancestors << issue unless issue.leaf?
             end
         end
-
+        
         def grouped_issue_list(issues, query, &block)
             previous_group, first = false, true
             issue_list(issues) do |issue, level|
@@ -41,8 +41,13 @@ module IssueRelationsHelperPatch
                 else
                     group_name = column_content(query.group_by_column, issue)
                 end
-                group_name ||= "" 
-                group_count = issue_count_by_group[group]
+                group_name ||= ""
+                  
+                if query.result_count_by_group.any? || query.result_count_by_group != ""
+                	group_count =query.result_count_by_group[group]
+                else 
+                	group_count=0               
+                end 
             end
             yield issue, level, group_name, group_count
                 previous_group, first = group, false
