@@ -6,7 +6,7 @@ require 'redmine_favorite_projects'
 Redmine::Plugin.register :redmine_favorite_projects do
   name 'Favorite Projects'
   description 'This is a favorite projects plugin for Redmine'
-  version '1.0.7'
+  version '1.0.7.1'
   url 'https://github.com/alphanodes/redmine_favorite_projects'
   author 'RedmineCRM, AlphaNodes GmbH'
 
