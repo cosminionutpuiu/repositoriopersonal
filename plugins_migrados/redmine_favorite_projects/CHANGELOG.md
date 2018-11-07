@@ -1,5 +1,9 @@
 ## Changelog
 
+ ### 2018-11-07 v1.0.7.1
+ 
+ * Redmine 3.4+ support
+ 
 ### 2016-08-19 v1.0.7
 
 * Redmine 3.3+ support
