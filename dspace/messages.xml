@@ -140,6 +140,7 @@
 
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.author.column_heading">Authors Name</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.subject.column_heading">Subject</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.annio.column_heading">Year</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.coverage.column_heading">Places</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.institution.column_heading">Institutions</message>
 
@@ -164,6 +165,9 @@
 
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.institution">Browsing {0} by institution {1}</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.institution">Browsing {0} by institution</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.annio">List {0} by year {1}</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.annio">List {0} by year</message>
+
 
 
 	<!-- org.dspace.app.xmlui.administrative.WithdrawnItems.java -->
@@ -261,6 +265,7 @@
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_author">Autores</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_contributor">Personas</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_subject">Materias</message>
+	<message key="xmlui.ArtifactBrowser.Navigation.browse_annio">Year</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_dateissued">Fecha</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_dateaccessioned">By Submit Date</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_coverage">Lugares</message>
