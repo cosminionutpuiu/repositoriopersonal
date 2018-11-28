@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<h:html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core">
+	
+	<h:head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+	    <base href="#{request.requestURL.substring(request.requestURL.indexOf('/'), request.requestURL.length() - request.requestURI.length())}#{request.contextPath}/" />
+		<link rel="shortcut icon" href="#{resource['images/layout/favicon.ico']}" type="image/x-icon" />
+	    
+	    <title><h:outputText value="#{msg['layout.title']}"/></title>
+	    
+	    <h:outputStylesheet library="#{layout.resources}" name="css/all.css" />
+	    
+	</h:head>
+	
+	<script type="text/javascript">
+		 
+		PrimeFaces.locales['es'] = {
+                closeText: 'Cerrar',
+                prevText: 'Anterior',
+                nextText: 'Siguiente',
+                monthNames: ['Enero','Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+                monthNamesShort: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun','Jul','Ago','Sep','Oct','Nov','Dic'],
+                dayNames: ['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'],
+                dayNamesShort: ['Dom','Lun', 'Mar', 'Mie', 'Jue', 'Vie', 'Sab'],
+                dayNamesMin: ['D','L','M','M','J','V','S'],
+                weekHeader: 'Semana',
+                firstDay: 1,
+                isRTL: false,
+                showMonthAfterYear: false,
+                yearSuffix: '',
+                timeOnlyTitle: 'Sólo hora',
+                timeText: 'Tiempo',
+                hourText: 'Hora',
+                minuteText: 'Minuto',
+                secondText: 'Segundo',
+                currentText: 'Fecha actual',
+                ampm: false,
+                month: 'Mes',
+                week: 'Semana',
+                day: 'Día',
+                allDayText : 'Todo el día'
+        };
+
+	</script>
+
+<h:body>
+
+		
+	<ui:insert name="body" />
+	
+	<p:growl severity="info" id="growlInfo" showDetail="true"
+		sticky="false" globalOnly="true" autoUpdate="true" life="5000" />
+	<p:growl severity="warn" id="growlWarn" showDetail="true"
+		sticky="false" globalOnly="true" autoUpdate="true" life="5000" />
+	<p:growl severity="error" id="growlError" showDetail="true"
+		sticky="false" globalOnly="true" autoUpdate="true" life="5000" />
+	<p:growl severity="fatal" id="growlFatal" showDetail="true"
+		sticky="false" globalOnly="true" autoUpdate="true" life="5000" />
+
+	<ui:include src="/layouts/parts/cookies-policy.xhtml" />
+	
+	<p:ajaxStatus onstart="PF('statusDialog').show()" onsuccess="PF('statusDialog').hide()" />
+	<p:dialog widgetVar="statusDialog" modal="true" draggable="false" closable="false" resizable="false" showHeader="false">
+			
+		<h:outputLabel styleClass="loading-label" value="Procesando..." />
+		<div class="lds-wrapper">
+			<div class="lds-ripple"><div></div><div></div></div>
+		</div>
+
+	</p:dialog>
+
+</h:body>
+
+</h:html>

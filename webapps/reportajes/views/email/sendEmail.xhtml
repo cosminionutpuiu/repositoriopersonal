@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="/layouts/email_layout.xhtml">
+	
+	<ui:define name="body">
+
+		<h:form id="sendEmailForm">
+
+			<p:outputPanel id="panelFormulario" styleClass="form-horizontal" rendered="#{!sendEmailController.endSendEmail}">
+				
+				<p:panelGrid>
+					<div class="clearfix" />
+					<div class="col-xs-6">
+					    <label class="col-xs-12 row">#{msg['contact.form.name']} *</label>
+					    <p:inputText styleClass="col-xs-12" value="#{sendEmailController.name}" placeholder="#{msg['contact.form.name.placeholder']}"/>
+					    <p:outputLabel styleClass="col-xs-12 col-sm-6" value="#{sendEmailController.errorName}" style="color:red" />
+					</div>    
+					<div class="col-xs-6">
+					    <label class="col-xs-12 row">#{msg['contact.form.email']} *</label>
+					    <p:inputText styleClass="col-xs-12 col-sm-6" value="#{sendEmailController.email}" placeholder="#{msg['contact.form.email.placeholder']}"/>
+					    <p:outputLabel styleClass="col-xs-12 col-sm-6" value="#{sendEmailController.errorEmail}" style="color:red" />
+					</div>    
+					
+					<h:panelGroup layout="block" styleClass="col-xs-6 clear" rendered="#{sendEmailController.contactScreen}">
+					   	<label class="col-xs-12 row">#{msg['contact.form.subject']} *</label>
+					    <p:inputText styleClass="col-xs-12 col-sm-6" value="#{sendEmailController.subject}" placeholder="#{msg['contact.form.subject.placeholder']}"/>
+						<p:outputLabel styleClass="col-xs-12 col-sm-6" value="#{sendEmailController.errorSubject}" style="color:red" />
+					</h:panelGroup>
+					
+					<h:panelGroup layout="block" styleClass="col-xs-12" rendered="#{sendEmailController.contactScreen}">
+					    <label class="col-xs-12 row">#{msg['contact.form.message']} *</label>
+					    <p:inputTextarea styleClass="col-xs-12 col-sm-6" value="#{sendEmailController.message}" placeholder="#{msg['contact.form.message.placeholder']}"/>
+						<p:outputLabel styleClass="col-xs-12 col-sm-6" value="#{sendEmailController.errorMessage}" style="color:red" />
+					</h:panelGroup>
+					
+					<h:panelGroup layout="block" styleClass="col-xs-6 clear" rendered="#{!sendEmailController.contactScreen}">
+					    <label class="col-xs-12 row">#{msg['contact.form.reportage']}</label>
+					    <p:inputText styleClass="col-xs-12 col-sm-6" value="#{sendEmailController.reportage}" placeholder="#{msg['contact.form.reportage.placeholder']}"/>
+						<p:outputLabel styleClass="col-xs-12 col-sm-6" value="#{sendEmailController.errorReportage}" style="color:red" />
+					</h:panelGroup>
+					
+					<h:panelGroup layout="block" styleClass="col-xs-12" rendered="#{!sendEmailController.contactScreen}">
+					   	<label class="col-xs-12 row">#{msg['contact.form.date']}</label>
+					   	<p:calendar styleClass="col-xs-3 row" value="#{sendEmailController.fecha}" locale="es"/>
+						<p:outputLabel styleClass="col-xs-12 col-sm-6" value="#{sendEmailController.errorFecha}" style="color:red" />
+					</h:panelGroup>
+					
+					<h:panelGroup layout="block" styleClass="col-xs-12" rendered="#{!sendEmailController.contactScreen}">
+					    <label class="col-xs-12 row">#{msg['contact.form.information']} *</label>
+					   	<p:inputTextarea styleClass="col-xs-12 col-sm-6" value="#{sendEmailController.information}" placeholder="#{msg['contact.form.information.placeholder']}"/>
+						<p:outputLabel styleClass="col-xs-12 col-sm-6" value="#{sendEmailController.errorInformation}" style="color:red" />
+					</h:panelGroup>
+					
+				</p:panelGrid>
+				
+				<div class="col-xs-12">
+					<p:commandButton id="saveButton"
+						title="Enviar" style="margin-top: 10px"
+						styleClass="btn btn-default"
+						value="Enviar" action="#{sendEmailController.sendEmail}"
+						update="sendEmailForm">
+					</p:commandButton>
+				</div>
+				
+			</p:outputPanel>
+			
+			<p:outputPanel styleClass="form-horizontal" rendered="#{sendEmailController.endSendEmail}">
+				
+				<h2 class="page-header">#{sendEmailController.endTitleMessage}</h2>
+				<div class="clear"></div>
+				<div class="container" id="main-container">
+					<h2><h:outputText value="#{sendEmailController.sendEmailMessage}" /></h2>
+					<div class="error-text">
+						<p:outputLabel styleClass="error-p" rendered="#{sendEmailController.errorSendEmail}">Ha ocurrido un error realizando el envío de la información. Por favor, consulte con un administrador del sistema para solucionar el problema.</p:outputLabel>
+						<p:commandLink action="#{sendEmailController.initSendEmail()}" styleClass="back-home" value="#{msg['contact.form.back']}" update="sendEmailForm"/>
+					</div>
+				</div>
+				
+			</p:outputPanel>
+				
+		</h:form>
+
+	</ui:define>
+</ui:composition>

@@ -1,0 +1,38 @@
+<div id="header" xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+	<ui:include src="/layouts/parts/head.xhtml" />
+
+	<div id="cabecera">
+		<div class="container">
+			<div id="logo">
+				<h1>
+					<a title="Portada de la Web oficial de la Junta de Andalucía" href="http://www.juntadeandalucia.es/index.html" accesskey="0" class="logotipo">
+					<img src="http://www.juntadeandalucia.es/themes/images/logo_bg_movil.png" alt=""/><span class="h1-junta">Junta de Andalucía</span></a>
+					<a class="sublogo" href="#{sessionScope.urlDspace}"><img alt="untranslated" src="#{resource['images/layout/logo.png']}"/></a>
+				</h1>
+				<div class="clearlogo"></div>				
+			</div>
+			<div class="herramienta">
+				<div id="ubicacion">
+					<img src="http://www.juntadeandalucia.es/themes/images/cabecera_ubicacion.gif" alt="Portal de la Junta de Andalucía" height="40" width="275"/>
+				</div>
+			</div>
+			<div class="buscador">
+                <form action="http://www.juntadeandalucia.es/buscar.html" method="get" class="floatright" target="_self">
+                    <fieldset>
+                        <legend style="display:none">Buscador general</legend>
+                        <label for="busquedaCabecera" class="l_oculto">Buscar</label>
+                        <input id="busquedaCabecera" name="busquedageneral" type="text" class="input_text defaultTextActive" title="Buscar" style="position:relative; z-index:99999;" placeholder="Buscar"/>
+                        <input alt="Buscar" title="Buscar" type="submit" value="Buscar" class="input_submit" name="buscargeneral" />
+                        <p>p. ej. <a title="ofertas de empleo" href="http://www.juntadeandalucia.es/buscar.html?busquedageneral=ofertas+de+empleo&amp;buscar=Buscar">ofertas de empleo</a>, <a title="ayudas" href="http://www.juntadeandalucia.es/buscar.html?busquedageneral=ayudas&amp;buscar=Buscar">ayudas</a>, <a title="escolarización" href="http://www.juntadeandalucia.es/buscar.html?busquedageneral=escolarización&amp;buscar=Buscar">escolarización</a>...</p>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="clear"></div>
+    	</div>
+	</div>	
+	
+</div>

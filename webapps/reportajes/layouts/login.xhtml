@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<h:html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+
+<ui:include src="/layouts/parts/header.xhtml" />
+
+<h:body>
+
+		
+	<ui:insert name="body" />
+	
+	<p:growl severity="info" id="growlInfo" showDetail="true"
+		sticky="false" globalOnly="true" autoUpdate="true" life="5000" />
+	<p:growl severity="warn" id="growlWarn" showDetail="true"
+		sticky="false" globalOnly="true" autoUpdate="true" life="5000" />
+	<p:growl severity="error" id="growlError" showDetail="true"
+		sticky="false" globalOnly="true" autoUpdate="true" life="5000" />
+	<p:growl severity="fatal" id="growlFatal" showDetail="true"
+		sticky="false" globalOnly="true" autoUpdate="true" life="5000" />
+
+	<ui:include src="/layouts/parts/cookies-policy.xhtml" />
+	
+	<p:ajaxStatus onstart="PF('statusDialog').show()" oncomplete="PF('statusDialog').hide()" />
+	<p:dialog widgetVar="statusDialog" modal="true" draggable="false" closable="false" resizable="false" showHeader="false">
+			
+			<h:outputLabel styleClass="loading-label" value="Procesando..." />
+			
+			<div class="lds-wrapper">
+				<div class="lds-ripple"><div></div><div></div></div>
+			</div>
+			
+<!--     	<p:graphicImage name="images/ajax-load.gif" /> -->
+
+	</p:dialog>
+
+</h:body>
+
+<ui:include src="/layouts/parts/footer-large.xhtml" />
+
+</h:html>

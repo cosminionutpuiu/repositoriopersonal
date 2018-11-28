@@ -1,0 +1,15 @@
+<groups xmlns="http://www.isdc.ro/wro">
+     <group name="all">        
+        <css>webjar:bootstrap-jsf.css</css>
+        <css>webjar:bootstrap-theme-jsf.css</css>
+        <css>webjar:font-awesome-jsf.css</css>
+        <js>webjar:bootstrap.js</js>
+        
+        <css>/resources/css/guadaltel-font.css</css>
+        <css>/resources/css/style.css</css>	
+        <css>/resources/css/theme.css</css>
+        <css>/resources/css/color.css</css>
+        <js>/resources/js/cookieconsent.js</js>
+        <js>/resources/js/util.js</js>
+    </group>
+</groups>

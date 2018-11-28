@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="/layouts/login.xhtml">
+	
+	<ui:define name="body">
+		<div id="navegacion">
+			<ul id="menu"><li><label>Error</label></li></ul>
+		</div>	
+		<div class="clear"></div>
+		
+		<div class="container" id="main-container">
+			<h2 class="page-header"><h:outputText value="#{sessionScope.errorMessage}" /></h2>
+			<div class="error-text">
+				<p class="error-p">Ha ocurrido un error inicializando el módulo de reportajes. Por favor, consulte con un administrador del sistema para solucionar el problema.</p>
+				<p class="back-home"><a href="#{sessionScope.urlDspace}">Ir a página principal</a></p>
+			</div>
+		</div>
+						
+	</ui:define>
+</ui:composition>
