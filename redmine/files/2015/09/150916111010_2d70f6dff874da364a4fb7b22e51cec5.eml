@@ -1,0 +1,1411 @@
+X-Mozilla-Status: 0003
+X-Mozilla-Status2: 00000000
+Return-path: <daniel.sanchez.fernandez@juntadeandalucia.es>
+Envelope-to: joseluis.salas@juntadeandalucia.es
+Delivery-date: Wed, 16 Sep 2015 10:58:35 +0200
+Received: from [10.240.225.253] (helo=mail.juntadeandalucia.es)
+	by ccobuz18 with esmtp (Exim 4.71)
+	(envelope-from <daniel.sanchez.fernandez@juntadeandalucia.es>)
+	id 1Zc8Xz-00015W-8f; Wed, 16 Sep 2015 10:58:35 +0200
+Received: from [10.238.104.93] (helo=SDTPC235)
+	by mail.juntadeandalucia.es with esmtpsa (TLSv1:AES256-SHA:256)
+	(Exim 4.71)
+	(envelope-from <daniel.sanchez.fernandez@juntadeandalucia.es>)
+	id 1Zc8Xy-0005uy-Ho; Wed, 16 Sep 2015 10:58:35 +0200
+From: =?UTF-8?Q?Daniel_S=C3=A1nchez?= <daniel.sanchez.fernandez@juntadeandalucia.es>
+To: "'Jose Luis Salas'" <joseluis.salas@juntadeandalucia.es>
+Cc: =?UTF-8?Q?'Laura_Mart=C3=ADnez_Atienza'?= <laura.martinez.atienza@juntadeandalucia.es>
+Date: Wed, 16 Sep 2015 10:58:34 +0200
+Message-ID: <053e01d0f05d$de4e1bb0$9aea5310$@sanchez.fernandez@juntadeandalucia.es>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_053F_01D0F06E.A1D6EBB0"
+X-Mailer: Microsoft Office Outlook 12.0
+Thread-Index: AQHQ77n4YP/u1PMEoUGpkSAWnqRW154+1VawgAAGv+A=
+Content-Language: es
+X-KLMS-Rule-ID: 1
+X-KLMS-Message-Action: clean
+X-KLMS-AntiSpam-Status: not scanned, disabled by settings
+X-KLMS-AntiPhishing: not scanned, disabled by settings
+X-KLMS-AntiVirus: Kaspersky Security 8.0 for Linux Mail Server, version 8.0.1.721, bases: 2015/09/15 23:28:00 #6496605
+X-KLMS-AntiVirus-Status: Clean, skipped
+X-Spam-Score: 1.0 (+)
+X-Spam-Status: No, score=1.0 required=4.1 tests=ALL_TRUSTED,HTML_MESSAGE,MSGID_MULTIPLE_AT autolearn=no
+ X-Spam-Report: 
+ * -0.2 ALL_TRUSTED Passed through trusted hosts only via SMTP
+ *  1.2 MSGID_MULTIPLE_AT Message-ID contains multiple '@' characters
+ *  0.0 HTML_MESSAGE BODY: HTML included in message
+Subject:  RV: [GI-NAOS-SUITE - [DF] Defecto #5643] [INC] Tratamiento de CI borrados
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_053F_01D0F06E.A1D6EBB0
+Content-Type: text/plain;
+	charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hola Jose Luis, esta es la estimaci=C3=B3n en horas de desarrollo, sobre =
+la soluci=C3=B3n al punto 2 indicado en el tique.
+=20
+Saludos
+Daniel S=C3=A1nchez
+=20
+De: Espada Cardenas, Enrique [mailto:enrique.espada@atos.net]=20
+Enviado el: mi=C3=A9rcoles, 16 de septiembre de 2015 10:35
+Para: Daniel Sanchez Fernandez
+Asunto: RE: [GI-NAOS-SUITE - [DF] Defecto #5643] [INC] Tratamiento de CI =
+borrados
+=20
+Tratamiento en Saiku  Reporting si el CI esta dado de baja o est=C3=A1 =
+Activo  mediante la identificaci=C3=B3n del campo BORRADO_SN el cual  =
+indica ( =E2=80=98S=E2=80=99 -> CI dado de baja o =E2=80=98N=E2=80=99 Ci =
+en Activo )
+=20
+=20
+
+Descripci=C3=B3n
+Tarea
+Valoraci=C3=B3n UTS
+=20
+
+Modificar estructura Tabla  NAOS_DWD_CMDB_CI
+Adicionar el campo BORRADO_SN en la tabla NAOS_DWD_CMDB_CI
+1
+=20
+
+Modificacion  ETL=E2=80=99s (NAOS_TRANS_CARGA_D_CMDB_CI. y =
+NAOS_TRANS_CARGA_INI_D_CMDB_CI.)
+Modificar las ETL inicial e incremental para el tratamiento del nuevo =
+campo. ( Si fh_dropdate es nulo BORRADO_SN =3D =E2=80=98N=E2=80=99, pero =
+si se encuentra informado entonces BORRADO_SN =3D =E2=80=98S=E2=80=99 )
+3
+=20
+
+Actualizar las ETL=C2=B4s
+(NAOS_TRANS_CARGA_INI_H_CMDB_CI. y NAOS_TRANS_CARGA_H_CMDB_CI )
+Estas 2 ETL habr=C3=A1 que actualizarlas pues la tabla NAOS_DWD_CMDB_CI
+2
+=20
+
+Realizar pruebas Unitarias ETL=E2=80=99s
+Realizar pruebas de carga inicial e incremental  ETL
+3
+=20
+
+Realizar pruebas Integradas  ETL=E2=80=99s
+Realizar pruebas de carga inicial e incremental  ETL
+3
+=20
+
+Modificar Modelo Metadata
+Incorporar el Mapeo del campo BORRADO_SN
+2
+=20
+
+Realizar pruebas Reporting=20
+Pruebas
+1
+=20
+
+Gesti=C3=B3n y Documentaci=C3=B3n
+=20
+2
+=20
+
+=20
+TOTAL UTS
+17
+=20
+=20
+=20
+=20
+From: TEO [ <mailto:teo.tic@juntadeandalucia.es> =
+mailto:teo.tic@juntadeandalucia.es]=20
+Sent: Tuesday, September 15, 2015 3:25 PM
+Subject: [GI-NAOS-SUITE - [DF] Defecto #5643] [INC] Tratamiento de CI =
+borrados
+=20
+La petici=C3=B3n #5643 ha sido actualizada por Daniel S=C3=A1nchez =
+Fern=C3=A1ndez.=20
+*	Asignado a cambiado Daniel S=C3=A1nchez Fern=C3=A1ndez por Enrique =
+Espada C=C3=A1rdenas Espada
+Enrique, =C2=BFpuede hacer una estimaci=C3=B3n de coste en horas?. Se =
+trata de a=C3=B1adir una condici=C3=B3n en el modelo de datos de =
+Reporting del tipo BORRADO_SN, para indicar si un CI est=C3=A1 borrado o =
+no en funci=C3=B3n de la fh_dropdate del CI.
+  _____ =20
+
+
+[DF] Defecto #5643: [INC] Tratamiento de CI borrados =
+<http://teo.i-administracion.junta-andalucia.es/issues/5643#change-23781>=
+=20
+
+*	Autor: Laura Mart=C3=ADnez Atienza
+*	Estado: En curso
+*	Prioridad: Urgente
+*	Asignado a: Enrique Espada C=C3=A1rdenas Espada
+*	Categor=C3=ADa:=20
+*	Versi=C3=B3n prevista:=20
+*	Solicitante real:=20
+Ayer vimos Daniel y yo que NAOS no cambia de forma autom=C3=A1tica el =
+ESTADO de un CI cuando se realiza un borrado a trav=C3=A9s de la =
+interfaz.
+Es decir, el ciclo de vida de los CI a trav=C3=A9s del campo "estado" =
+parece que debe hacerse manualmente por parte del administrador.
+Si esto es cierto pueden existir CI con estado REGISTRADO o ACTIVO que =
+hayan sido "borrados" (borrado l=C3=B3gico).
+Esto no se hab=C3=ADa tenido en cuenta en la soluci=C3=B3n y por tanto =
+estos CI "borrados" pod=C3=ADan estar mostr=C3=A1ndose en las =
+anal=C3=ADticas de Pentaho junto a los CI realmente no borrados.
+=C2=BFPod=C3=A9is decirnos si ya se ha resuelto y c=C3=B3mo?
+  _____ =20
+
+Recibes esta notificaci=C3=B3n porque est=C3=A1s suscrito a ella o =
+est=C3=A1s involucrado en el asunto al que se refiere.
+Para cambiar las preferencias de notificaci=C3=B3n utiliza: =
+http://teo.i-administracion.junta-andalucia.es/my/account
+No conteste a este correo.
+This e-mail and the documents attached are confidential and intended =
+solely for the addressee; it may also be privileged. If you receive this =
+e-mail in error, please notify the sender immediately and destroy it.=20
+As its integrity cannot be secured on the Internet, the Atos group =
+liability cannot be triggered for the message content. Although the =
+sender endeavors to maintain a computer virus-free network, the sender =
+does not warrant that this transmission is virus-free and will not be =
+liable for any damages resulting from any virus transmitted.=20
+
+Este mensaje y los ficheros adjuntos pueden contener informaci=C3=B3n =
+confidencial destinada solamente a la(s) persona(s) mencionadas =
+anteriormente y pueden estar protegidos por secreto profesional.=20
+Si usted recibe este correo electr=C3=B3nico por error, gracias por =
+informar inmediatamente al remitente y destruir el mensaje.=20
+Al no estar asegurada la integridad de este mensaje sobre la red, Atos =
+no se hace responsable por su contenido. Su contenido no constituye =
+ning=C3=BAn compromiso para el grupo Atos, salvo ratificaci=C3=B3n =
+escrita por ambas partes.=20
+Aunque se esfuerza al m=C3=A1ximo por mantener su red libre de virus, el =
+emisor no puede garantizar nada al respecto y no ser=C3=A1 responsable =
+de cualesquiera da=C3=B1os que puedan resultar de una transmisi=C3=B3n =
+de virus.=20
+
+------=_NextPart_000_053F_01D0F06E.A1D6EBB0
+Content-Type: text/html;
+	charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" =
+xmlns:o=3D"urn:schemas-microsoft-com:office:office" =
+xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" =
+xmlns=3D"http://www.w3.org/TR/REC-html40"><head><meta =
+http-equiv=3DContent-Type content=3D"text/html; charset=3Dutf-8"><meta =
+name=3DProgId content=3DWord.Document><meta name=3DGenerator =
+content=3D"Microsoft Word 12"><meta name=3DOriginator =
+content=3D"Microsoft Word 12"><link rel=3DFile-List =
+href=3D"cid:filelist.xml@01D0F06E.A121F390"><link rel=3DEdit-Time-Data =
+href=3D"cid:editdata.mso"><!--[if !mso]><style>v\:* =
+{behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+shape {behavior:url(#default#VML);}
+</style><![endif]--><!--[if gte mso 9]><xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG/>
+<o:TargetScreenSize>1024x768</o:TargetScreenSize>
+</o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<w:WordDocument>
+<w:SpellingState>Clean</w:SpellingState>
+<w:TrackMoves/>
+<w:TrackFormatting/>
+<w:HyphenationZone>21</w:HyphenationZone>
+<w:EnvelopeVis/>
+<w:ValidateAgainstSchemas/>
+<w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+<w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+<w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+<w:DoNotPromoteQF/>
+<w:LidThemeOther>ES</w:LidThemeOther>
+<w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+<w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+<w:Compatibility>
+<w:DoNotExpandShiftReturn/>
+<w:BreakWrappedTables/>
+<w:SplitPgBreakAndParaMark/>
+<w:DontVertAlignCellWithSp/>
+<w:DontBreakConstrainedForcedTables/>
+<w:DontVertAlignInTxbx/>
+<w:Word11KerningPairs/>
+<w:CachedColBalance/>
+</w:Compatibility>
+<w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+<m:mathPr>
+<m:mathFont m:val=3D"Cambria Math"/>
+<m:brkBin m:val=3D"before"/>
+<m:brkBinSub m:val=3D"&#45;-"/>
+<m:smallFrac m:val=3D"off"/>
+<m:dispDef/>
+<m:lMargin m:val=3D"0"/>
+<m:rMargin m:val=3D"0"/>
+<m:defJc m:val=3D"centerGroup"/>
+<m:wrapIndent m:val=3D"1440"/>
+<m:intLim m:val=3D"subSup"/>
+<m:naryLim m:val=3D"undOvr"/>
+</m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<w:LatentStyles DefLockedState=3D"false" DefUnhideWhenUsed=3D"true" =
+DefSemiHidden=3D"true" DefQFormat=3D"false" DefPriority=3D"99" =
+LatentStyleCount=3D"267">
+<w:LsdException Locked=3D"false" Priority=3D"0" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Normal"/>
+<w:LsdException Locked=3D"false" Priority=3D"9" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"heading 1"/>
+<w:LsdException Locked=3D"false" Priority=3D"9" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"heading 2"/>
+<w:LsdException Locked=3D"false" Priority=3D"9" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"heading 3"/>
+<w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" =
+Name=3D"heading 4"/>
+<w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" =
+Name=3D"heading 5"/>
+<w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" =
+Name=3D"heading 6"/>
+<w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" =
+Name=3D"heading 7"/>
+<w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" =
+Name=3D"heading 8"/>
+<w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" =
+Name=3D"heading 9"/>
+<w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 1"/>
+<w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 2"/>
+<w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 3"/>
+<w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 4"/>
+<w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 5"/>
+<w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 6"/>
+<w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 7"/>
+<w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 8"/>
+<w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 9"/>
+<w:LsdException Locked=3D"false" Priority=3D"35" QFormat=3D"true" =
+Name=3D"caption"/>
+<w:LsdException Locked=3D"false" Priority=3D"10" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Title"/>
+<w:LsdException Locked=3D"false" Priority=3D"1" Name=3D"Default =
+Paragraph Font"/>
+<w:LsdException Locked=3D"false" Priority=3D"11" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Subtitle"/>
+<w:LsdException Locked=3D"false" Priority=3D"22" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Strong"/>
+<w:LsdException Locked=3D"false" Priority=3D"20" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Emphasis"/>
+<w:LsdException Locked=3D"false" Priority=3D"59" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Table Grid"/>
+<w:LsdException Locked=3D"false" UnhideWhenUsed=3D"false" =
+Name=3D"Placeholder Text"/>
+<w:LsdException Locked=3D"false" Priority=3D"1" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"No Spacing"/>
+<w:LsdException Locked=3D"false" Priority=3D"60" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Light Shading"/>
+<w:LsdException Locked=3D"false" Priority=3D"61" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Light List"/>
+<w:LsdException Locked=3D"false" Priority=3D"62" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Light Grid"/>
+<w:LsdException Locked=3D"false" Priority=3D"63" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium Shading 1"/>
+<w:LsdException Locked=3D"false" Priority=3D"64" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium Shading 2"/>
+<w:LsdException Locked=3D"false" Priority=3D"65" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium List 1"/>
+<w:LsdException Locked=3D"false" Priority=3D"66" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium List 2"/>
+<w:LsdException Locked=3D"false" Priority=3D"67" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium Grid 1"/>
+<w:LsdException Locked=3D"false" Priority=3D"68" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium Grid 2"/>
+<w:LsdException Locked=3D"false" Priority=3D"69" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium Grid 3"/>
+<w:LsdException Locked=3D"false" Priority=3D"70" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Dark List"/>
+<w:LsdException Locked=3D"false" Priority=3D"71" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Colorful Shading"/>
+<w:LsdException Locked=3D"false" Priority=3D"72" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Colorful List"/>
+<w:LsdException Locked=3D"false" Priority=3D"73" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Colorful Grid"/>
+<w:LsdException Locked=3D"false" Priority=3D"60" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Light Shading Accent 1"/>
+<w:LsdException Locked=3D"false" Priority=3D"61" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Light List Accent 1"/>
+<w:LsdException Locked=3D"false" Priority=3D"62" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Light Grid Accent 1"/>
+<w:LsdException Locked=3D"false" Priority=3D"63" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium Shading 1 Accent 1"/>
+<w:LsdException Locked=3D"false" Priority=3D"64" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium Shading 2 Accent 1"/>
+<w:LsdException Locked=3D"false" Priority=3D"65" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium List 1 Accent 1"/>
+<w:LsdException Locked=3D"false" UnhideWhenUsed=3D"false" =
+Name=3D"Revision"/>
+<w:LsdException Locked=3D"false" Priority=3D"34" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"List Paragraph"/>
+<w:LsdException Locked=3D"false" Priority=3D"29" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Quote"/>
+<w:LsdException Locked=3D"false" Priority=3D"30" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Intense Quote"/>
+<w:LsdException Locked=3D"false" Priority=3D"66" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium List 2 Accent 1"/>
+<w:LsdException Locked=3D"false" Priority=3D"67" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium Grid 1 Accent 1"/>
+<w:LsdException Locked=3D"false" Priority=3D"68" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium Grid 2 Accent 1"/>
+<w:LsdException Locked=3D"false" Priority=3D"69" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium Grid 3 Accent 1"/>
+<w:LsdException Locked=3D"false" Priority=3D"70" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Dark List Accent 1"/>
+<w:LsdException Locked=3D"false" Priority=3D"71" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Colorful Shading Accent 1"/>
+<w:LsdException Locked=3D"false" Priority=3D"72" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Colorful List Accent 1"/>
+<w:LsdException Locked=3D"false" Priority=3D"73" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Colorful Grid Accent 1"/>
+<w:LsdException Locked=3D"false" Priority=3D"60" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Light Shading Accent 2"/>
+<w:LsdException Locked=3D"false" Priority=3D"61" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Light List Accent 2"/>
+<w:LsdException Locked=3D"false" Priority=3D"62" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Light Grid Accent 2"/>
+<w:LsdException Locked=3D"false" Priority=3D"63" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium Shading 1 Accent 2"/>
+<w:LsdException Locked=3D"false" Priority=3D"64" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium Shading 2 Accent 2"/>
+<w:LsdException Locked=3D"false" Priority=3D"65" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium List 1 Accent 2"/>
+<w:LsdException Locked=3D"false" Priority=3D"66" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium List 2 Accent 2"/>
+<w:LsdException Locked=3D"false" Priority=3D"67" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium Grid 1 Accent 2"/>
+<w:LsdException Locked=3D"false" Priority=3D"68" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium Grid 2 Accent 2"/>
+<w:LsdException Locked=3D"false" Priority=3D"69" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium Grid 3 Accent 2"/>
+<w:LsdException Locked=3D"false" Priority=3D"70" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Dark List Accent 2"/>
+<w:LsdException Locked=3D"false" Priority=3D"71" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Colorful Shading Accent 2"/>
+<w:LsdException Locked=3D"false" Priority=3D"72" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Colorful List Accent 2"/>
+<w:LsdException Locked=3D"false" Priority=3D"73" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Colorful Grid Accent 2"/>
+<w:LsdException Locked=3D"false" Priority=3D"60" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Light Shading Accent 3"/>
+<w:LsdException Locked=3D"false" Priority=3D"61" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Light List Accent 3"/>
+<w:LsdException Locked=3D"false" Priority=3D"62" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Light Grid Accent 3"/>
+<w:LsdException Locked=3D"false" Priority=3D"63" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium Shading 1 Accent 3"/>
+<w:LsdException Locked=3D"false" Priority=3D"64" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium Shading 2 Accent 3"/>
+<w:LsdException Locked=3D"false" Priority=3D"65" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium List 1 Accent 3"/>
+<w:LsdException Locked=3D"false" Priority=3D"66" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium List 2 Accent 3"/>
+<w:LsdException Locked=3D"false" Priority=3D"67" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium Grid 1 Accent 3"/>
+<w:LsdException Locked=3D"false" Priority=3D"68" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium Grid 2 Accent 3"/>
+<w:LsdException Locked=3D"false" Priority=3D"69" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium Grid 3 Accent 3"/>
+<w:LsdException Locked=3D"false" Priority=3D"70" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Dark List Accent 3"/>
+<w:LsdException Locked=3D"false" Priority=3D"71" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Colorful Shading Accent 3"/>
+<w:LsdException Locked=3D"false" Priority=3D"72" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Colorful List Accent 3"/>
+<w:LsdException Locked=3D"false" Priority=3D"73" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Colorful Grid Accent 3"/>
+<w:LsdException Locked=3D"false" Priority=3D"60" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Light Shading Accent 4"/>
+<w:LsdException Locked=3D"false" Priority=3D"61" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Light List Accent 4"/>
+<w:LsdException Locked=3D"false" Priority=3D"62" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Light Grid Accent 4"/>
+<w:LsdException Locked=3D"false" Priority=3D"63" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium Shading 1 Accent 4"/>
+<w:LsdException Locked=3D"false" Priority=3D"64" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium Shading 2 Accent 4"/>
+<w:LsdException Locked=3D"false" Priority=3D"65" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium List 1 Accent 4"/>
+<w:LsdException Locked=3D"false" Priority=3D"66" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium List 2 Accent 4"/>
+<w:LsdException Locked=3D"false" Priority=3D"67" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium Grid 1 Accent 4"/>
+<w:LsdException Locked=3D"false" Priority=3D"68" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium Grid 2 Accent 4"/>
+<w:LsdException Locked=3D"false" Priority=3D"69" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium Grid 3 Accent 4"/>
+<w:LsdException Locked=3D"false" Priority=3D"70" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Dark List Accent 4"/>
+<w:LsdException Locked=3D"false" Priority=3D"71" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Colorful Shading Accent 4"/>
+<w:LsdException Locked=3D"false" Priority=3D"72" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Colorful List Accent 4"/>
+<w:LsdException Locked=3D"false" Priority=3D"73" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Colorful Grid Accent 4"/>
+<w:LsdException Locked=3D"false" Priority=3D"60" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Light Shading Accent 5"/>
+<w:LsdException Locked=3D"false" Priority=3D"61" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Light List Accent 5"/>
+<w:LsdException Locked=3D"false" Priority=3D"62" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Light Grid Accent 5"/>
+<w:LsdException Locked=3D"false" Priority=3D"63" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium Shading 1 Accent 5"/>
+<w:LsdException Locked=3D"false" Priority=3D"64" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium Shading 2 Accent 5"/>
+<w:LsdException Locked=3D"false" Priority=3D"65" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium List 1 Accent 5"/>
+<w:LsdException Locked=3D"false" Priority=3D"66" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium List 2 Accent 5"/>
+<w:LsdException Locked=3D"false" Priority=3D"67" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium Grid 1 Accent 5"/>
+<w:LsdException Locked=3D"false" Priority=3D"68" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium Grid 2 Accent 5"/>
+<w:LsdException Locked=3D"false" Priority=3D"69" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium Grid 3 Accent 5"/>
+<w:LsdException Locked=3D"false" Priority=3D"70" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Dark List Accent 5"/>
+<w:LsdException Locked=3D"false" Priority=3D"71" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Colorful Shading Accent 5"/>
+<w:LsdException Locked=3D"false" Priority=3D"72" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Colorful List Accent 5"/>
+<w:LsdException Locked=3D"false" Priority=3D"73" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Colorful Grid Accent 5"/>
+<w:LsdException Locked=3D"false" Priority=3D"60" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Light Shading Accent 6"/>
+<w:LsdException Locked=3D"false" Priority=3D"61" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Light List Accent 6"/>
+<w:LsdException Locked=3D"false" Priority=3D"62" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Light Grid Accent 6"/>
+<w:LsdException Locked=3D"false" Priority=3D"63" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium Shading 1 Accent 6"/>
+<w:LsdException Locked=3D"false" Priority=3D"64" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium Shading 2 Accent 6"/>
+<w:LsdException Locked=3D"false" Priority=3D"65" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium List 1 Accent 6"/>
+<w:LsdException Locked=3D"false" Priority=3D"66" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium List 2 Accent 6"/>
+<w:LsdException Locked=3D"false" Priority=3D"67" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium Grid 1 Accent 6"/>
+<w:LsdException Locked=3D"false" Priority=3D"68" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium Grid 2 Accent 6"/>
+<w:LsdException Locked=3D"false" Priority=3D"69" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Medium Grid 3 Accent 6"/>
+<w:LsdException Locked=3D"false" Priority=3D"70" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Dark List Accent 6"/>
+<w:LsdException Locked=3D"false" Priority=3D"71" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Colorful Shading Accent 6"/>
+<w:LsdException Locked=3D"false" Priority=3D"72" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Colorful List Accent 6"/>
+<w:LsdException Locked=3D"false" Priority=3D"73" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" Name=3D"Colorful Grid Accent 6"/>
+<w:LsdException Locked=3D"false" Priority=3D"19" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Subtle Emphasis"/>
+<w:LsdException Locked=3D"false" Priority=3D"21" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Intense Emphasis"/>
+<w:LsdException Locked=3D"false" Priority=3D"31" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Subtle Reference"/>
+<w:LsdException Locked=3D"false" Priority=3D"32" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Intense Reference"/>
+<w:LsdException Locked=3D"false" Priority=3D"33" SemiHidden=3D"false" =
+UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Book Title"/>
+<w:LsdException Locked=3D"false" Priority=3D"37" Name=3D"Bibliography"/>
+<w:LsdException Locked=3D"false" Priority=3D"39" QFormat=3D"true" =
+Name=3D"TOC Heading"/>
+</w:LatentStyles>
+</xml><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1107305727 0 0 415 0;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1073743103 0 0 415 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1073786111 1 0 415 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-520081665 -1073717157 41 0 66047 0;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1593833729 1073750107 16 0 415 0;}
+@font-face
+	{font-family:"Trebuchet MS";
+	panose-1:2 11 6 3 2 2 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:Calibri;}
+h1
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"T=C3=ADtulo 1 Car";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:14.5pt;
+	font-family:"Trebuchet MS","sans-serif";
+	mso-fareast-font-family:Calibri;
+	font-weight:bold;}
+h2
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"T=C3=ADtulo 2 Car";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:13.0pt;
+	font-family:"Trebuchet MS","sans-serif";
+	mso-fareast-font-family:Calibri;
+	font-weight:bold;}
+h3
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"T=C3=ADtulo 3 Car";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:13.0pt;
+	font-family:"Trebuchet MS","sans-serif";
+	mso-fareast-font-family:Calibri;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#2A5685;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:#2A5685;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:Calibri;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Texto de globo Car";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-fareast-font-family:Calibri;}
+span.Ttulo1Car
+	{mso-style-name:"T=C3=ADtulo 1 Car";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"T=C3=ADtulo 1";
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-hansi-font-family:Cambria;
+	color:#365F91;
+	font-weight:bold;}
+span.Ttulo2Car
+	{mso-style-name:"T=C3=ADtulo 2 Car";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"T=C3=ADtulo 2";
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-hansi-font-family:Cambria;
+	color:#4F81BD;
+	font-weight:bold;}
+span.Ttulo3Car
+	{mso-style-name:"T=C3=ADtulo 3 Car";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"T=C3=ADtulo 3";
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-hansi-font-family:Cambria;
+	color:#4F81BD;
+	font-weight:bold;}
+span.footer
+	{mso-style-name:footer;
+	mso-style-unhide:no;
+	font-style:italic;}
+span.EstiloCorreo22
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:#1F497D;}
+span.EstiloCorreo24
+	{mso-style-type:personal-reply;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-ansi-font-size:11.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:"Times New Roman";
+	color:#1F497D;}
+span.TextodegloboCar
+	{mso-style-name:"Texto de globo Car";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Texto de globo";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-ascii-font-family:Tahoma;
+	mso-fareast-font-family:Calibri;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;
+	mso-header-margin:36.0pt;
+	mso-footer-margin:36.0pt;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+/* List Definitions */
+@list l0
+	{mso-list-id:1359741101;
+	mso-list-template-ids:827650116;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:=EF=82=B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:=EF=82=A7;
+	mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:=EF=82=A7;
+	mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:=EF=82=A7;
+	mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:=EF=82=A7;
+	mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:=EF=82=A7;
+	mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:=EF=82=A7;
+	mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:=EF=82=A7;
+	mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l1
+	{mso-list-id:1378554733;
+	mso-list-template-ids:-10819566;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:=EF=82=B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l2
+	{mso-list-id:1640846289;
+	mso-list-template-ids:-1723425710;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:=EF=82=B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l2:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l2:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:=EF=82=A7;
+	mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l2:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:=EF=82=A7;
+	mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l2:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:=EF=82=A7;
+	mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l2:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:=EF=82=A7;
+	mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l2:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:=EF=82=A7;
+	mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l2:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:=EF=82=A7;
+	mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l2:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:=EF=82=A7;
+	mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l3
+	{mso-list-id:1749618869;
+	mso-list-template-ids:1165920118;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:=EF=82=B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+--></style><!--[if gte mso 10]><style>/* Style Definitions */
+table.MsoNormalTable
+	{mso-style-name:"Tabla normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+</style><![endif]--><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]--></head><body lang=3DES =
+link=3D"#2A5685" vlink=3D"#2A5685" style=3D'tab-interval:35.4pt'><div =
+class=3DWordSection1><p class=3DMsoNormal><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";mso-bidi-fon=
+t-family:"Times New Roman";color:#1F497D'>Hola Jose Luis, esta es la =
+estimaci=C3=B3n en horas de desarrollo, sobre la soluci=C3=B3n al punto =
+2 indicado en el tique.<o:p></o:p></span></p><p class=3DMsoNormal><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";mso-bidi-fon=
+t-family:"Times New =
+Roman";color:#1F497D'><o:p>&nbsp;</o:p></span></p><div><p =
+class=3DMsoNormal><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";mso-fareast-=
+font-family:"Times New Roman";mso-bidi-font-family:"Times New =
+Roman";color:#1F497D;mso-no-proof:yes'>Saludos<o:p></o:p></span></p><p =
+class=3DMsoNormal><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";mso-fareast-=
+font-family:"Times New Roman";mso-bidi-font-family:"Times New =
+Roman";color:#1F497D;mso-no-proof:yes'>Daniel =
+S=C3=A1nchez<o:p></o:p></span></p></div><p class=3DMsoNormal><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";mso-bidi-fon=
+t-family:"Times New =
+Roman";color:#1F497D'><o:p>&nbsp;</o:p></span></p><div><div =
+style=3D'border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0cm =
+0cm 0cm'><p class=3DMsoNormal><b><span =
+style=3D'font-size:10.0pt;font-family:"Tahoma","sans-serif";mso-fareast-f=
+ont-family:"Times New Roman"'>De:</span></b><span =
+style=3D'font-size:10.0pt;font-family:"Tahoma","sans-serif";mso-fareast-f=
+ont-family:"Times New Roman"'> Espada Cardenas, Enrique =
+[mailto:enrique.espada@atos.net] <br><b>Enviado el:</b> mi=C3=A9rcoles, =
+16 de septiembre de 2015 10:35<br><b>Para:</b> Daniel Sanchez =
+Fernandez<br><b>Asunto:</b> RE: [GI-NAOS-SUITE - [DF] Defecto #5643] =
+[INC] Tratamiento de CI borrados<o:p></o:p></span></p></div></div><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p><p class=3DMsoNormal><span =
+lang=3DES-TRAD style=3D'mso-ansi-language:ES-TRAD'>Tratamiento en Saiku =
+&nbsp;Reporting si el CI esta dado de baja o est=C3=A1 Activo =
+&nbsp;mediante la identificaci=C3=B3n del campo BORRADO_SN el cual&nbsp; =
+indica ( =E2=80=98S=E2=80=99 -&gt; CI dado de baja o =E2=80=98N=E2=80=99 =
+Ci en Activo )<o:p></o:p></span></p><p class=3DMsoNormal><span =
+lang=3DES-TRAD =
+style=3D'mso-ansi-language:ES-TRAD'><o:p>&nbsp;</o:p></span></p><p =
+class=3DMsoNormal><span lang=3DES-TRAD =
+style=3D'mso-ansi-language:ES-TRAD'><o:p>&nbsp;</o:p></span></p><table =
+class=3DMsoNormalTable border=3D0 cellspacing=3D0 cellpadding=3D0 =
+style=3D'border-collapse:collapse;mso-yfti-tbllook:1184;mso-padding-alt:0=
+cm 0cm 0cm 0cm'><tr =
+style=3D'mso-yfti-irow:0;mso-yfti-firstrow:yes;height:25.25pt'><td =
+width=3D279 valign=3Dtop style=3D'width:209.5pt;border:solid #4F81BD =
+1.0pt;border-bottom:solid #4F81BD 2.25pt;padding:0cm 5.4pt 0cm =
+5.4pt;height:25.25pt'><p class=3DMsoNormal><b><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif";color:red;backgro=
+und:yellow;mso-highlight:yellow;mso-fareast-language:EN-US'>Descripci=C3=B3=
+n<o:p></o:p></span></b></p></td><td width=3D324 valign=3Dtop =
+style=3D'width:243.15pt;border-top:solid #4F81BD =
+1.0pt;border-left:none;border-bottom:solid #4F81BD =
+2.25pt;border-right:solid #4F81BD 1.0pt;padding:0cm 5.4pt 0cm =
+5.4pt;height:25.25pt'><p class=3DMsoNormal><b><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif";color:red;backgro=
+und:yellow;mso-highlight:yellow;mso-fareast-language:EN-US'>Tarea<o:p></o=
+:p></span></b></p></td><td width=3D143 valign=3Dtop =
+style=3D'width:107.0pt;border-top:solid #4F81BD =
+1.0pt;border-left:none;border-bottom:solid #4F81BD =
+2.25pt;border-right:solid #4F81BD 1.0pt;padding:0cm 5.4pt 0cm =
+5.4pt;height:25.25pt'><p class=3DMsoNormal><b><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif";color:red;backgro=
+und:yellow;mso-highlight:yellow;mso-fareast-language:EN-US'>Valoraci=C3=B3=
+n UTS</span></b><b><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif";color:red;mso-far=
+east-language:EN-US'><o:p></o:p></span></b></p></td><td width=3D179 =
+valign=3Dtop style=3D'width:133.95pt;border-top:solid #4F81BD =
+1.0pt;border-left:none;border-bottom:solid #4F81BD =
+2.25pt;border-right:solid #4F81BD 1.0pt;padding:0cm 5.4pt 0cm =
+5.4pt;height:25.25pt'><p class=3DMsoNormal><b><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif";mso-fareast-langu=
+age:EN-US'><o:p>&nbsp;</o:p></span></b></p></td></tr><tr =
+style=3D'mso-yfti-irow:1;height:23.5pt'><td width=3D279 valign=3Dtop =
+style=3D'width:209.5pt;border:solid #4F81BD =
+1.0pt;border-top:none;background:#D3DFEE;padding:0cm 5.4pt 0cm =
+5.4pt;height:23.5pt'><p class=3DMsoNormal><b><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif";mso-fareast-langu=
+age:EN-US'>Modificar estructura Tabla =
+&nbsp;NAOS_DWD_CMDB_CI<o:p></o:p></span></b></p></td><td width=3D324 =
+valign=3Dtop =
+style=3D'width:243.15pt;border-top:none;border-left:none;border-bottom:so=
+lid #4F81BD 1.0pt;border-right:solid #4F81BD =
+1.0pt;background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:23.5pt'><p =
+class=3DMsoNormal><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";mso-fareast-=
+language:EN-US'>Adicionar el campo BORRADO_SN en la tabla =
+NAOS_DWD_CMDB_CI<o:p></o:p></span></p></td><td width=3D143 valign=3Dtop =
+style=3D'width:107.0pt;border-top:none;border-left:none;border-bottom:sol=
+id #4F81BD 1.0pt;border-right:solid #4F81BD =
+1.0pt;background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:23.5pt'><p =
+class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";mso-fareast-=
+language:EN-US'>1<o:p></o:p></span></p></td><td width=3D179 valign=3Dtop =
+style=3D'width:133.95pt;border-top:none;border-left:none;border-bottom:so=
+lid #4F81BD 1.0pt;border-right:solid #4F81BD =
+1.0pt;background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:23.5pt'><p =
+class=3DMsoNormal><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";mso-fareast-=
+language:EN-US'><o:p>&nbsp;</o:p></span></p></td></tr><tr =
+style=3D'mso-yfti-irow:2'><td width=3D279 valign=3Dtop =
+style=3D'width:209.5pt;border:solid #4F81BD =
+1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt'><p =
+class=3DMsoNormal><b><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif";mso-fareast-langu=
+age:EN-US'>Modificacion&nbsp; ETL=E2=80=99s (NAOS_TRANS_CARGA_D_CMDB_CI. =
+y NAOS_TRANS_CARGA_INI_D_CMDB_CI.)<o:p></o:p></span></b></p></td><td =
+width=3D324 valign=3Dtop =
+style=3D'width:243.15pt;border-top:none;border-left:none;border-bottom:so=
+lid #4F81BD 1.0pt;border-right:solid #4F81BD 1.0pt;padding:0cm 5.4pt 0cm =
+5.4pt'><p class=3DMsoNormal><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";mso-fareast-=
+language:EN-US'>Modificar las ETL inicial e incremental para el =
+tratamiento del nuevo campo. ( Si fh_dropdate es nulo BORRADO_SN =3D =
+=E2=80=98N=E2=80=99, pero si se encuentra informado entonces BORRADO_SN =
+=3D =E2=80=98S=E2=80=99 )<o:p></o:p></span></p></td><td width=3D143 =
+valign=3Dtop =
+style=3D'width:107.0pt;border-top:none;border-left:none;border-bottom:sol=
+id #4F81BD 1.0pt;border-right:solid #4F81BD 1.0pt;padding:0cm 5.4pt 0cm =
+5.4pt'><p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";mso-fareast-=
+language:EN-US'>3<o:p></o:p></span></p></td><td width=3D179 valign=3Dtop =
+style=3D'width:133.95pt;border-top:none;border-left:none;border-bottom:so=
+lid #4F81BD 1.0pt;border-right:solid #4F81BD 1.0pt;padding:0cm 5.4pt 0cm =
+5.4pt'><p class=3DMsoNormal><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";mso-fareast-=
+language:EN-US'><o:p>&nbsp;</o:p></span></p></td></tr><tr =
+style=3D'mso-yfti-irow:3'><td width=3D279 valign=3Dtop =
+style=3D'width:209.5pt;border:solid #4F81BD =
+1.0pt;border-top:none;background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt'><p =
+class=3DMsoNormal><b><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif";mso-fareast-langu=
+age:EN-US'>Actualizar las ETL=C2=B4s<o:p></o:p></span></b></p><p =
+class=3DMsoNormal><b><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif";mso-fareast-langu=
+age:EN-US'>(NAOS_TRANS_CARGA_INI_H_CMDB_CI. y NAOS_TRANS_CARGA_H_CMDB_CI =
+)<o:p></o:p></span></b></p></td><td width=3D324 valign=3Dtop =
+style=3D'width:243.15pt;border-top:none;border-left:none;border-bottom:so=
+lid #4F81BD 1.0pt;border-right:solid #4F81BD =
+1.0pt;background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt'><p =
+class=3DMsoNormal><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";mso-fareast-=
+language:EN-US'>Estas 2 ETL habr=C3=A1 que actualizarlas pues la tabla =
+NAOS_DWD_CMDB_CI<o:p></o:p></span></p></td><td width=3D143 valign=3Dtop =
+style=3D'width:107.0pt;border-top:none;border-left:none;border-bottom:sol=
+id #4F81BD 1.0pt;border-right:solid #4F81BD =
+1.0pt;background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt'><p =
+class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";mso-fareast-=
+language:EN-US'>2<o:p></o:p></span></p></td><td width=3D179 valign=3Dtop =
+style=3D'width:133.95pt;border-top:none;border-left:none;border-bottom:so=
+lid #4F81BD 1.0pt;border-right:solid #4F81BD =
+1.0pt;background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt'><p =
+class=3DMsoNormal><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";mso-fareast-=
+language:EN-US'><o:p>&nbsp;</o:p></span></p></td></tr><tr =
+style=3D'mso-yfti-irow:4'><td width=3D279 valign=3Dtop =
+style=3D'width:209.5pt;border:solid #4F81BD =
+1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt'><p =
+class=3DMsoNormal><b><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif";mso-fareast-langu=
+age:EN-US'>Realizar pruebas Unitarias =
+ETL=E2=80=99s<o:p></o:p></span></b></p></td><td width=3D324 valign=3Dtop =
+style=3D'width:243.15pt;border-top:none;border-left:none;border-bottom:so=
+lid #4F81BD 1.0pt;border-right:solid #4F81BD 1.0pt;padding:0cm 5.4pt 0cm =
+5.4pt'><p class=3DMsoNormal><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";mso-fareast-=
+language:EN-US'>Realizar pruebas de carga inicial e incremental =
+&nbsp;ETL<o:p></o:p></span></p></td><td width=3D143 valign=3Dtop =
+style=3D'width:107.0pt;border-top:none;border-left:none;border-bottom:sol=
+id #4F81BD 1.0pt;border-right:solid #4F81BD 1.0pt;padding:0cm 5.4pt 0cm =
+5.4pt'><p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";mso-fareast-=
+language:EN-US'>3<o:p></o:p></span></p></td><td width=3D179 valign=3Dtop =
+style=3D'width:133.95pt;border-top:none;border-left:none;border-bottom:so=
+lid #4F81BD 1.0pt;border-right:solid #4F81BD 1.0pt;padding:0cm 5.4pt 0cm =
+5.4pt'><p class=3DMsoNormal><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";mso-fareast-=
+language:EN-US'><o:p>&nbsp;</o:p></span></p></td></tr><tr =
+style=3D'mso-yfti-irow:5'><td width=3D279 valign=3Dtop =
+style=3D'width:209.5pt;border:solid #4F81BD =
+1.0pt;border-top:none;background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt'><p =
+class=3DMsoNormal><b><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif";mso-fareast-langu=
+age:EN-US'>Realizar pruebas Integradas =
+&nbsp;ETL=E2=80=99s<o:p></o:p></span></b></p></td><td width=3D324 =
+valign=3Dtop =
+style=3D'width:243.15pt;border-top:none;border-left:none;border-bottom:so=
+lid #4F81BD 1.0pt;border-right:solid #4F81BD =
+1.0pt;background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt'><p =
+class=3DMsoNormal><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";mso-fareast-=
+language:EN-US'>Realizar pruebas de carga inicial e incremental =
+&nbsp;ETL<o:p></o:p></span></p></td><td width=3D143 valign=3Dtop =
+style=3D'width:107.0pt;border-top:none;border-left:none;border-bottom:sol=
+id #4F81BD 1.0pt;border-right:solid #4F81BD =
+1.0pt;background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt'><p =
+class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";mso-fareast-=
+language:EN-US'>3<o:p></o:p></span></p></td><td width=3D179 valign=3Dtop =
+style=3D'width:133.95pt;border-top:none;border-left:none;border-bottom:so=
+lid #4F81BD 1.0pt;border-right:solid #4F81BD =
+1.0pt;background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt'><p =
+class=3DMsoNormal><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";mso-fareast-=
+language:EN-US'><o:p>&nbsp;</o:p></span></p></td></tr><tr =
+style=3D'mso-yfti-irow:6;height:20.55pt'><td width=3D279 valign=3Dtop =
+style=3D'width:209.5pt;border:solid #4F81BD =
+1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:20.55pt'><p =
+class=3DMsoNormal><b><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif";mso-fareast-langu=
+age:EN-US'>Modificar Modelo Metadata<o:p></o:p></span></b></p></td><td =
+width=3D324 valign=3Dtop =
+style=3D'width:243.15pt;border-top:none;border-left:none;border-bottom:so=
+lid #4F81BD 1.0pt;border-right:solid #4F81BD 1.0pt;padding:0cm 5.4pt 0cm =
+5.4pt;height:20.55pt'><p class=3DMsoNormal><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";mso-fareast-=
+language:EN-US'>Incorporar el Mapeo del campo =
+BORRADO_SN<o:p></o:p></span></p></td><td width=3D143 valign=3Dtop =
+style=3D'width:107.0pt;border-top:none;border-left:none;border-bottom:sol=
+id #4F81BD 1.0pt;border-right:solid #4F81BD 1.0pt;padding:0cm 5.4pt 0cm =
+5.4pt;height:20.55pt'><p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";mso-fareast-=
+language:EN-US'>2<o:p></o:p></span></p></td><td width=3D179 valign=3Dtop =
+style=3D'width:133.95pt;border-top:none;border-left:none;border-bottom:so=
+lid #4F81BD 1.0pt;border-right:solid #4F81BD 1.0pt;padding:0cm 5.4pt 0cm =
+5.4pt;height:20.55pt'><p class=3DMsoNormal><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";mso-fareast-=
+language:EN-US'><o:p>&nbsp;</o:p></span></p></td></tr><tr =
+style=3D'mso-yfti-irow:7;height:25.85pt'><td width=3D279 valign=3Dtop =
+style=3D'width:209.5pt;border:solid #4F81BD =
+1.0pt;border-top:none;background:#D3DFEE;padding:0cm 5.4pt 0cm =
+5.4pt;height:25.85pt'><p class=3DMsoNormal><b><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif";mso-fareast-langu=
+age:EN-US'>Realizar pruebas Reporting <o:p></o:p></span></b></p></td><td =
+width=3D324 valign=3Dtop =
+style=3D'width:243.15pt;border-top:none;border-left:none;border-bottom:so=
+lid #4F81BD 1.0pt;border-right:solid #4F81BD =
+1.0pt;background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:25.85pt'><p =
+class=3DMsoNormal><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";mso-fareast-=
+language:EN-US'>Pruebas<o:p></o:p></span></p></td><td width=3D143 =
+valign=3Dtop =
+style=3D'width:107.0pt;border-top:none;border-left:none;border-bottom:sol=
+id #4F81BD 1.0pt;border-right:solid #4F81BD =
+1.0pt;background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:25.85pt'><p =
+class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";mso-fareast-=
+language:EN-US'>1<o:p></o:p></span></p></td><td width=3D179 valign=3Dtop =
+style=3D'width:133.95pt;border-top:none;border-left:none;border-bottom:so=
+lid #4F81BD 1.0pt;border-right:solid #4F81BD =
+1.0pt;background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:25.85pt'><p =
+class=3DMsoNormal><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";mso-fareast-=
+language:EN-US'><o:p>&nbsp;</o:p></span></p></td></tr><tr =
+style=3D'mso-yfti-irow:8;height:26.25pt'><td width=3D279 valign=3Dtop =
+style=3D'width:209.5pt;border:solid #4F81BD =
+1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:26.25pt'><p =
+class=3DMsoNormal><b><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif";mso-fareast-langu=
+age:EN-US'>Gesti=C3=B3n y =
+Documentaci=C3=B3n<o:p></o:p></span></b></p></td><td width=3D324 =
+valign=3Dtop =
+style=3D'width:243.15pt;border-top:none;border-left:none;border-bottom:so=
+lid #4F81BD 1.0pt;border-right:solid #4F81BD 1.0pt;padding:0cm 5.4pt 0cm =
+5.4pt;height:26.25pt'><p class=3DMsoNormal><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";mso-fareast-=
+language:EN-US'><o:p>&nbsp;</o:p></span></p></td><td width=3D143 =
+valign=3Dtop =
+style=3D'width:107.0pt;border-top:none;border-left:none;border-bottom:sol=
+id #4F81BD 1.0pt;border-right:solid #4F81BD 1.0pt;padding:0cm 5.4pt 0cm =
+5.4pt;height:26.25pt'><p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";mso-fareast-=
+language:EN-US'>2<o:p></o:p></span></p></td><td width=3D179 valign=3Dtop =
+style=3D'width:133.95pt;border-top:none;border-left:none;border-bottom:so=
+lid #4F81BD 1.0pt;border-right:solid #4F81BD 1.0pt;padding:0cm 5.4pt 0cm =
+5.4pt;height:26.25pt'><p class=3DMsoNormal><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";mso-fareast-=
+language:EN-US'><o:p>&nbsp;</o:p></span></p></td></tr><tr =
+style=3D'mso-yfti-irow:9;mso-yfti-lastrow:yes;height:30.95pt'><td =
+width=3D279 valign=3Dtop style=3D'width:209.5pt;border:solid #4F81BD =
+1.0pt;border-top:none;background:#D3DFEE;padding:0cm 5.4pt 0cm =
+5.4pt;height:30.95pt'><p class=3DMsoNormal><b><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif";mso-fareast-langu=
+age:EN-US'><o:p>&nbsp;</o:p></span></b></p></td><td width=3D324 =
+valign=3Dtop =
+style=3D'width:243.15pt;border-top:none;border-left:none;border-bottom:so=
+lid #4F81BD 1.0pt;border-right:solid #4F81BD =
+1.0pt;background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:30.95pt'><p =
+class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><b><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";mso-fareast-=
+language:EN-US'>TOTAL UTS<o:p></o:p></span></b></p></td><td width=3D143 =
+valign=3Dtop =
+style=3D'width:107.0pt;border-top:none;border-left:none;border-bottom:sol=
+id #4F81BD 1.0pt;border-right:solid #4F81BD =
+1.0pt;background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:30.95pt'><p =
+class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><b><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";mso-fareast-=
+language:EN-US'>17<o:p></o:p></span></b></p></td><td width=3D179 =
+valign=3Dtop =
+style=3D'width:133.95pt;border-top:none;border-left:none;border-bottom:so=
+lid #4F81BD 1.0pt;border-right:solid #4F81BD =
+1.0pt;background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:30.95pt'><p =
+class=3DMsoNormal><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";mso-fareast-=
+language:EN-US'><o:p>&nbsp;</o:p></span></p></td></tr></table><p =
+class=3DMsoNormal><span lang=3DES-TRAD =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";mso-ansi-lan=
+guage:ES-TRAD'><o:p>&nbsp;</o:p></span></p><p class=3DMsoNormal><span =
+lang=3DES-TRAD =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";color:#1F497=
+D;mso-ansi-language:ES-TRAD'><o:p>&nbsp;</o:p></span></p><p =
+class=3DMsoNormal><span lang=3DES-TRAD =
+style=3D'mso-ansi-language:ES-TRAD'><o:p>&nbsp;</o:p></span></p><div><div=
+ style=3D'border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0cm =
+0cm 0cm'><p class=3DMsoNormal style=3D'mso-outline-level:1'><b><span =
+lang=3DEN-US =
+style=3D'font-size:10.0pt;font-family:"Tahoma","sans-serif";mso-ansi-lang=
+uage:EN-US'>From:</span></b><span lang=3DEN-US =
+style=3D'font-size:10.0pt;font-family:"Tahoma","sans-serif";mso-ansi-lang=
+uage:EN-US'> TEO [</span><span =
+style=3D'font-size:10.0pt;font-family:"Tahoma","sans-serif"'><a =
+href=3D"mailto:teo.tic@juntadeandalucia.es"><span lang=3DEN-US =
+style=3D'mso-ansi-language:EN-US'>mailto:teo.tic@juntadeandalucia.es</spa=
+n></a></span><span lang=3DEN-US =
+style=3D'font-size:10.0pt;font-family:"Tahoma","sans-serif";mso-ansi-lang=
+uage:EN-US'>] <br><b>Sent:</b> Tuesday, September 15, 2015 3:25 =
+PM<br><b>Subject:</b> [GI-NAOS-SUITE - [DF] <span =
+class=3DSpellE>Defecto</span> #5643] [INC] <span =
+class=3DSpellE>Tratamiento</span> de CI <span =
+class=3DSpellE>borrados</span><o:p></o:p></span></p></div></div><p =
+class=3DMsoNormal><span lang=3DEN-US =
+style=3D'mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p><p =
+class=3DMsoNormal><span lang=3DES-TRAD =
+style=3D'font-size:9.5pt;font-family:"Verdana","sans-serif";color:#484848=
+;mso-ansi-language:ES-TRAD'>La petici=C3=B3n #5643 ha sido actualizada =
+por Daniel S=C3=A1nchez Fern=C3=A1ndez. <o:p></o:p></span></p><ul =
+type=3Ddisc><li class=3DMsoNormal =
+style=3D'color:#484848;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto=
+;mso-list:l2 level1 lfo3;tab-stops:list 36.0pt'><strong><span =
+lang=3DES-TRAD =
+style=3D'font-size:9.5pt;font-family:"Verdana","sans-serif";mso-fareast-f=
+ont-family:"Times New Roman";mso-ansi-language:ES-TRAD'>Asignado =
+a</span></strong><span lang=3DES-TRAD =
+style=3D'font-size:9.5pt;font-family:"Verdana","sans-serif";mso-fareast-f=
+ont-family:"Times New Roman";mso-ansi-language:ES-TRAD'> cambiado =
+<i>Daniel S=C3=A1nchez Fern=C3=A1ndez</i> por <i>Enrique Espada =
+C=C3=A1rdenas Espada</i><o:p></o:p></span></li></ul><p><span =
+lang=3DES-TRAD =
+style=3D'font-size:9.5pt;font-family:"Verdana","sans-serif";color:#484848=
+;mso-ansi-language:ES-TRAD'>Enrique, =C2=BFpuede hacer una =
+estimaci=C3=B3n de coste en horas?. Se trata de a=C3=B1adir una =
+condici=C3=B3n en el modelo de datos de Reporting del tipo BORRADO_SN, =
+para indicar si un CI est=C3=A1 borrado o no en funci=C3=B3n de la =
+fh_dropdate del CI.<o:p></o:p></span></p><div class=3DMsoNormal =
+align=3Dcenter style=3D'text-align:center'><span lang=3DES-TRAD =
+style=3D'font-size:9.5pt;font-family:"Verdana","sans-serif";mso-fareast-f=
+ont-family:"Times New =
+Roman";color:#484848;mso-ansi-language:ES-TRAD'><hr size=3D1 =
+width=3D"100%" align=3Dcenter></span></div><h1><span lang=3DES-TRAD =
+style=3D'font-size:11.5pt;mso-fareast-font-family:"Times New =
+Roman";color:#484848;mso-ansi-language:ES-TRAD'><a =
+href=3D"http://teo.i-administracion.junta-andalucia.es/issues/5643#change=
+-23781">[DF] Defecto #5643: [INC] Tratamiento de CI =
+borrados</a><o:p></o:p></span></h1><ul type=3Ddisc><li class=3DMsoNormal =
+style=3D'color:#484848;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto=
+;mso-list:l0 level1 lfo6;tab-stops:list 36.0pt'><span lang=3DES-TRAD =
+style=3D'font-size:9.5pt;font-family:"Verdana","sans-serif";mso-fareast-f=
+ont-family:"Times New Roman";mso-ansi-language:ES-TRAD'>Autor: Laura =
+Mart=C3=ADnez Atienza<o:p></o:p></span></li><li class=3DMsoNormal =
+style=3D'color:#484848;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto=
+;mso-list:l0 level1 lfo6;tab-stops:list 36.0pt'><span lang=3DES-TRAD =
+style=3D'font-size:9.5pt;font-family:"Verdana","sans-serif";mso-fareast-f=
+ont-family:"Times New Roman";mso-ansi-language:ES-TRAD'>Estado: En =
+curso<o:p></o:p></span></li><li class=3DMsoNormal =
+style=3D'color:#484848;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto=
+;mso-list:l0 level1 lfo6;tab-stops:list 36.0pt'><span lang=3DES-TRAD =
+style=3D'font-size:9.5pt;font-family:"Verdana","sans-serif";mso-fareast-f=
+ont-family:"Times New Roman";mso-ansi-language:ES-TRAD'>Prioridad: =
+Urgente<o:p></o:p></span></li><li class=3DMsoNormal =
+style=3D'color:#484848;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto=
+;mso-list:l0 level1 lfo6;tab-stops:list 36.0pt'><span lang=3DES-TRAD =
+style=3D'font-size:9.5pt;font-family:"Verdana","sans-serif";mso-fareast-f=
+ont-family:"Times New Roman";mso-ansi-language:ES-TRAD'>Asignado a: =
+Enrique Espada C=C3=A1rdenas Espada<o:p></o:p></span></li><li =
+class=3DMsoNormal =
+style=3D'color:#484848;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto=
+;mso-list:l0 level1 lfo6;tab-stops:list 36.0pt'><span lang=3DES-TRAD =
+style=3D'font-size:9.5pt;font-family:"Verdana","sans-serif";mso-fareast-f=
+ont-family:"Times New Roman";mso-ansi-language:ES-TRAD'>Categor=C3=ADa: =
+<o:p></o:p></span></li><li class=3DMsoNormal =
+style=3D'color:#484848;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto=
+;mso-list:l0 level1 lfo6;tab-stops:list 36.0pt'><span lang=3DES-TRAD =
+style=3D'font-size:9.5pt;font-family:"Verdana","sans-serif";mso-fareast-f=
+ont-family:"Times New Roman";mso-ansi-language:ES-TRAD'>Versi=C3=B3n =
+prevista: <o:p></o:p></span></li><li class=3DMsoNormal =
+style=3D'color:#484848;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto=
+;mso-list:l0 level1 lfo6;tab-stops:list 36.0pt'><span lang=3DES-TRAD =
+style=3D'font-size:9.5pt;font-family:"Verdana","sans-serif";mso-fareast-f=
+ont-family:"Times New Roman";mso-ansi-language:ES-TRAD'>Solicitante =
+real: <o:p></o:p></span></li></ul><p><span lang=3DES-TRAD =
+style=3D'font-size:9.5pt;font-family:"Verdana","sans-serif";color:#484848=
+;mso-ansi-language:ES-TRAD'>Ayer vimos Daniel y yo que NAOS no cambia de =
+forma autom=C3=A1tica el ESTADO de un CI cuando se realiza un borrado a =
+trav=C3=A9s de la interfaz.<br>Es decir, el ciclo de vida de los CI a =
+trav=C3=A9s del campo &quot;estado&quot; parece que debe hacerse =
+manualmente por parte del administrador.<o:p></o:p></span></p><p><span =
+lang=3DES-TRAD =
+style=3D'font-size:9.5pt;font-family:"Verdana","sans-serif";color:#484848=
+;mso-ansi-language:ES-TRAD'>Si esto es cierto pueden existir CI con =
+estado REGISTRADO o ACTIVO que hayan sido &quot;borrados&quot; (borrado =
+l=C3=B3gico).<o:p></o:p></span></p><p><span lang=3DES-TRAD =
+style=3D'font-size:9.5pt;font-family:"Verdana","sans-serif";color:#484848=
+;mso-ansi-language:ES-TRAD'>Esto no se hab=C3=ADa tenido en cuenta en la =
+soluci=C3=B3n y por tanto estos CI &quot;borrados&quot; pod=C3=ADan =
+estar mostr=C3=A1ndose en las anal=C3=ADticas de Pentaho junto a los CI =
+realmente no borrados.<o:p></o:p></span></p><p><span lang=3DES-TRAD =
+style=3D'font-size:9.5pt;font-family:"Verdana","sans-serif";color:#484848=
+;mso-ansi-language:ES-TRAD'>=C2=BFPod=C3=A9is decirnos si ya se ha =
+resuelto y c=C3=B3mo?<o:p></o:p></span></p><div class=3DMsoNormal =
+align=3Dcenter style=3D'text-align:center'><span lang=3DES-TRAD =
+style=3D'font-size:9.5pt;font-family:"Verdana","sans-serif";mso-fareast-f=
+ont-family:"Times New =
+Roman";color:#484848;mso-ansi-language:ES-TRAD'><hr size=3D1 =
+width=3D"100%" align=3Dcenter></span></div><p><i><span lang=3DES-TRAD =
+style=3D'font-size:7.5pt;font-family:"Verdana","sans-serif";color:#484848=
+;mso-ansi-language:ES-TRAD'>Recibes esta notificaci=C3=B3n porque =
+est=C3=A1s suscrito a ella o est=C3=A1s involucrado en el asunto al que =
+se refiere.<br>Para cambiar las preferencias de notificaci=C3=B3n =
+utiliza: <a =
+href=3D"http://teo.i-administracion.junta-andalucia.es/my/account">http:/=
+/teo.i-administracion.junta-andalucia.es/my/account</a><o:p></o:p></span>=
+</i></p><p><i><span lang=3DES-TRAD =
+style=3D'font-size:7.5pt;font-family:"Verdana","sans-serif";color:#484848=
+;mso-ansi-language:ES-TRAD'>No conteste a este =
+correo.<o:p></o:p></span></i></p><p class=3DMsoNormal><span =
+lang=3DES-TRAD style=3D'mso-fareast-font-family:"Times New =
+Roman";mso-ansi-language:ES-TRAD'>This e-mail and the documents attached =
+are confidential and intended solely for the addressee; it may also be =
+privileged. If you receive this e-mail in error, please notify the =
+sender immediately and destroy it. <br>As its integrity cannot be =
+secured on the Internet, the Atos group liability cannot be triggered =
+for the message content. Although the sender endeavors to maintain a =
+computer virus-free network, the sender does not warrant that this =
+transmission is virus-free and will not be liable for any damages =
+resulting from any virus transmitted. <br><br>Este mensaje y los =
+ficheros adjuntos pueden contener informaci=C3=B3n confidencial =
+destinada solamente a la(s) persona(s) mencionadas anteriormente y =
+pueden estar protegidos por secreto profesional. <br>Si usted recibe =
+este correo electr=C3=B3nico por error, gracias por informar =
+inmediatamente al remitente y destruir el mensaje. <br>Al no estar =
+asegurada la integridad de este mensaje sobre la red, Atos no se hace =
+responsable por su contenido. Su contenido no constituye ning=C3=BAn =
+compromiso para el grupo Atos, salvo ratificaci=C3=B3n escrita por ambas =
+partes. <br>Aunque se esfuerza al m=C3=A1ximo por mantener su red libre =
+de virus, el emisor no puede garantizar nada al respecto y no ser=C3=A1 =
+responsable de cualesquiera da=C3=B1os que puedan resultar de una =
+transmisi=C3=B3n de virus. <o:p></o:p></span></p></div></body></html>
+------=_NextPart_000_053F_01D0F06E.A1D6EBB0--
+
+

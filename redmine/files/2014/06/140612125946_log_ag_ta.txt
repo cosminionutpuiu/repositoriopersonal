@@ -1,0 +1,551 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Agatav2 - Trabajo Colaborativo - log_ag_ta.txt - Gestión de Defectos</title>
+<meta name="description" content="Redmine" />
+<meta name="keywords" content="issue,bug,tracker" />
+<meta name="csrf-param" content="authenticity_token"/>
+<meta name="csrf-token" content="yHV7a2O2JxNUOw/LBtl3Hd+P+TiQFOWRtrJHIAzrPpQ="/>
+<link rel='shortcut icon' href='/redmine/favicon.ico?1310384844' />
+<link href="/redmine/stylesheets/application.css?1310384844" media="all" rel="stylesheet" type="text/css" />
+
+<script src="/redmine/javascripts/prototype.js?1310384844" type="text/javascript"></script>
+<script src="/redmine/javascripts/effects.js?1310384844" type="text/javascript"></script>
+<script src="/redmine/javascripts/dragdrop.js?1310384844" type="text/javascript"></script>
+<script src="/redmine/javascripts/controls.js?1310384844" type="text/javascript"></script>
+<script src="/redmine/javascripts/application.js?1310384844" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+Event.observe(window, 'load', function(){ new WarnLeavingUnsaved('Esta página contiene texto no guardado y si la abandona sus cambios se perderán'); });
+//]]>
+</script>
+
+<!--[if IE 6]>
+    <style type="text/css">
+      * html body{ width: expression( document.documentElement.clientWidth < 900 ? '900px' : '100%' ); }
+      body {behavior: url(/redmine/stylesheets/csshover.htc?1310384844);}
+    </style>
+<![endif]-->
+
+<!-- page specific tags -->
+    <link href="/redmine/stylesheets/scm.css?1310384844" media="screen" rel="stylesheet" type="text/css" /></head>
+<body class="controller-attachments action-show">
+<div id="wrapper">
+<div id="wrapper2">
+<div id="top-menu">
+    <div id="account">
+        <ul><li><a href="/redmine/my/account" class="my-account">Mi cuenta</a></li>
+<li><a href="/redmine/logout" class="logout">Desconexión</a></li></ul>    </div>
+    <div id="loggedas">Conectado como <a href="/redmine/users/547">veronica.lara.exposito.ext</a></div>
+    <ul><li><a href="/redmine/" class="home">Inicio</a></li>
+<li><a href="/redmine/my/page" class="my-page">Mi página</a></li>
+<li><a href="/redmine/projects" class="projects">Proyectos</a></li>
+<li><a href="http://www.redmine.org/guide" class="help">Ayuda</a></li></ul></div>
+      
+<div id="header">
+    
+    <div id="quick-search">
+        <form action="/redmine/search/index/agatav2" method="get">
+        
+        <a href="/redmine/search/index/agatav2" accesskey="4">Búsqueda</a>:
+        <input accesskey="f" class="small" id="q" name="q" size="20" type="text" />
+        </form>
+        <select onchange="if (this.value != '') { window.location = this.value; }"><option value=''>Ir al proyecto...</option><option value="" disabled="disabled">---</option><option value="/redmine/projects/cpi-scdsh-agata?jump=attachments">AGATAv2</option><option value="/redmine/projects/sgi-ssoweb?jump=attachments">SSOWeb</option><option value="/redmine/projects/pci?jump=attachments">INTEROPERABILIDAD</option><option value="/redmine/projects/platinaprov?jump=attachments">&nbsp;&nbsp;&#187; Platina-Proveedor</option><option selected="selected" value="/redmine/projects/agatav2?jump=attachments">Agatav2 - Trabajo Colaborativo</option></select>
+    </div>
+    
+    
+    <h1>Agatav2 - Trabajo Colaborativo</h1>
+    
+    
+    <div id="main-menu">
+        <ul><li><a href="/redmine/projects/agatav2" class="overview">Vistazo</a></li>
+<li><a href="/redmine/projects/agatav2/activity" class="activity">Actividad</a></li>
+<li><a href="/redmine/projects/agatav2/roadmap" class="roadmap">Planificación</a></li>
+<li><a href="/redmine/projects/agatav2/issues" class="issues">Peticiones</a></li>
+<li><a href="/redmine/projects/agatav2/issues/new" accesskey="7" class="new-issue">Nueva petición</a></li>
+<li><a href="/redmine/projects/agatav2/issues/gantt" class="gantt">Gantt</a></li>
+<li><a href="/redmine/projects/agatav2/issues/calendar" class="calendar">Calendario</a></li>
+<li><a href="/redmine/projects/agatav2/wiki" class="wiki">Wiki</a></li>
+<li><a href="/redmine/projects/agatav2/files" class="files">Archivos</a></li>
+<li><a href="/redmine/projects/agatav2/repository" class="repository">Repositorio</a></li>
+<li><a href="/redmine/projects/agatav2/settings" class="settings">Configuración</a></li></ul>
+    </div>
+    
+</div>
+
+<div class="nosidebar" id="main">
+    <div id="sidebar">        
+        
+        
+    </div>
+    
+    <div id="content">
+				
+        <h2>log_ag_ta.txt</h2>
+
+<div class="attachments">
+<p>
+   <span class="author">Francisco Giles, 2014-03-20 11:43</span></p>
+<p><a href="/redmine/attachments/download/10970/log_ag_ta.txt">Descargar</a>   <span class="size">(19,1 KB)</span></p>
+
+</div>
+&nbsp;
+<div class="autoscroll">
+<table class="filecontent syntaxhl">
+<tbody>
+
+
+<tr><th class="line-num" id="L1"><a href="#L1">1</a></th><td class="line-code"><pre>20/03/2014-11:35:06 INFO  [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.neg.SADConfigService.getMaxFailedAttempts
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L2"><a href="#L2">2</a></th><td class="line-code"><pre>20/03/2014-11:35:06 INFO  [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.neg.SADConfigService.getMaxFailedAttempts
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L3"><a href="#L3">3</a></th><td class="line-code"><pre>20/03/2014-11:35:06 INFO  [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.neg.SADConfigService.getMaxFailedAttempts
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L4"><a href="#L4">4</a></th><td class="line-code"><pre>20/03/2014-11:35:06 INFO  [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.neg.SADConfigService.getMaxFailedAttempts
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L5"><a href="#L5">5</a></th><td class="line-code"><pre>20/03/2014-11:35:06 INFO  [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.neg.SADConfigService.getMaxPeriodFailedAttempts
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L6"><a href="#L6">6</a></th><td class="line-code"><pre>20/03/2014-11:35:06 INFO  [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.neg.SADConfigService.getMaxPeriodFailedAttempts
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L7"><a href="#L7">7</a></th><td class="line-code"><pre>20/03/2014-11:35:06 INFO  [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.neg.SADConfigService.getMaxPeriodFailedAttempts
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L8"><a href="#L8">8</a></th><td class="line-code"><pre>20/03/2014-11:35:06 INFO  [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.neg.SADConfigService.getMaxPeriodFailedAttempts
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L9"><a href="#L9">9</a></th><td class="line-code"><pre>20/03/2014-11:35:06 INFO  [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.neg.SADConfigService.getFailedAttemptsWait
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L10"><a href="#L10">10</a></th><td class="line-code"><pre>20/03/2014-11:35:06 INFO  [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.neg.SADConfigService.getFailedAttemptsWait
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L11"><a href="#L11">11</a></th><td class="line-code"><pre>20/03/2014-11:35:06 INFO  [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.neg.SADConfigService.getFailedAttemptsWait
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L12"><a href="#L12">12</a></th><td class="line-code"><pre>20/03/2014-11:35:06 INFO  [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.neg.SADConfigService.getFailedAttemptsWait
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L13"><a href="#L13">13</a></th><td class="line-code"><pre>20/03/2014-11:35:06 INFO  [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.neg.security.AccesoFallidoService.getFailedAccess with params: MANOLO.cci.chap, WEB_ADMIN
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L14"><a href="#L14">14</a></th><td class="line-code"><pre>20/03/2014-11:35:06 INFO  [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.neg.security.AccesoFallidoService.getFailedAccess with params: MANOLO.cci.chap, WEB_ADMIN
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L15"><a href="#L15">15</a></th><td class="line-code"><pre>20/03/2014-11:35:06 DEBUG [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.per.GenericDao.find with params:  with params: uidUsuario_EQ_MANOLO.cci.chap, interfaz_EQ_WEB_ADMIN
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L16"><a href="#L16">16</a></th><td class="line-code"><pre>20/03/2014-11:35:06 DEBUG [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.per.GenericDao.find with params:  with params: uidUsuario_EQ_MANOLO.cci.chap, interfaz_EQ_WEB_ADMIN
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L17"><a href="#L17">17</a></th><td class="line-code"><pre>20/03/2014-11:35:06 DEBUG [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.per.GenericDao.find
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L18"><a href="#L18">18</a></th><td class="line-code"><pre>20/03/2014-11:35:06 DEBUG [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.per.GenericDao.find
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L19"><a href="#L19">19</a></th><td class="line-code"><pre>20/03/2014-11:35:06 INFO  [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.neg.security.AccesoFallidoService.getFailedAccess
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L20"><a href="#L20">20</a></th><td class="line-code"><pre>20/03/2014-11:35:06 INFO  [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.neg.security.AccesoFallidoService.getFailedAccess
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L21"><a href="#L21">21</a></th><td class="line-code"><pre>20/03/2014-11:35:06 ERROR [thenticationProvider] - Authentication error: org.springframework.security.userdetails.UsernameNotFoundException: User MANOLO.cci.chap not found in directory.
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L22"><a href="#L22">22</a></th><td class="line-code"><pre>20/03/2014-11:35:06 WARN  [ation.LoggerListener] - Authentication event AuthenticationFailureBadCredentialsEvent: MANOLO.cci.chap; details: org.springframework.security.ui.WebAuthenticationDetails@7798: RemoteIpAddress: 10.118.82.1; SessionId: 69A77DA3EAF026E4B5AB029B37A5814E; exception: Bad credentials
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L23"><a href="#L23">23</a></th><td class="line-code"><pre>20/03/2014-11:35:15 INFO  [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.neg.SADConfigService.getMaxFailedAttempts
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L24"><a href="#L24">24</a></th><td class="line-code"><pre>20/03/2014-11:35:15 INFO  [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.neg.SADConfigService.getMaxFailedAttempts
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L25"><a href="#L25">25</a></th><td class="line-code"><pre>20/03/2014-11:35:15 INFO  [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.neg.SADConfigService.getMaxFailedAttempts
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L26"><a href="#L26">26</a></th><td class="line-code"><pre>20/03/2014-11:35:15 INFO  [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.neg.SADConfigService.getMaxFailedAttempts
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L27"><a href="#L27">27</a></th><td class="line-code"><pre>20/03/2014-11:35:15 INFO  [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.neg.SADConfigService.getMaxPeriodFailedAttempts
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L28"><a href="#L28">28</a></th><td class="line-code"><pre>20/03/2014-11:35:15 INFO  [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.neg.SADConfigService.getMaxPeriodFailedAttempts
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L29"><a href="#L29">29</a></th><td class="line-code"><pre>20/03/2014-11:35:15 INFO  [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.neg.SADConfigService.getMaxPeriodFailedAttempts
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L30"><a href="#L30">30</a></th><td class="line-code"><pre>20/03/2014-11:35:15 INFO  [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.neg.SADConfigService.getMaxPeriodFailedAttempts
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L31"><a href="#L31">31</a></th><td class="line-code"><pre>20/03/2014-11:35:15 INFO  [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.neg.SADConfigService.getFailedAttemptsWait
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L32"><a href="#L32">32</a></th><td class="line-code"><pre>20/03/2014-11:35:15 INFO  [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.neg.SADConfigService.getFailedAttemptsWait
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L33"><a href="#L33">33</a></th><td class="line-code"><pre>20/03/2014-11:35:15 INFO  [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.neg.SADConfigService.getFailedAttemptsWait
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L34"><a href="#L34">34</a></th><td class="line-code"><pre>20/03/2014-11:35:15 INFO  [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.neg.SADConfigService.getFailedAttemptsWait
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L35"><a href="#L35">35</a></th><td class="line-code"><pre>20/03/2014-11:35:15 INFO  [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.neg.security.AccesoFallidoService.getFailedAccess with params: prueba08.cci.chap, WEB_ADMIN
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L36"><a href="#L36">36</a></th><td class="line-code"><pre>20/03/2014-11:35:15 INFO  [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.neg.security.AccesoFallidoService.getFailedAccess with params: prueba08.cci.chap, WEB_ADMIN
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L37"><a href="#L37">37</a></th><td class="line-code"><pre>20/03/2014-11:35:15 DEBUG [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.per.GenericDao.find with params:  with params: uidUsuario_EQ_prueba08.cci.chap, interfaz_EQ_WEB_ADMIN
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L38"><a href="#L38">38</a></th><td class="line-code"><pre>20/03/2014-11:35:15 DEBUG [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.per.GenericDao.find with params:  with params: uidUsuario_EQ_prueba08.cci.chap, interfaz_EQ_WEB_ADMIN
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L39"><a href="#L39">39</a></th><td class="line-code"><pre>20/03/2014-11:35:15 DEBUG [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.per.GenericDao.find
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L40"><a href="#L40">40</a></th><td class="line-code"><pre>20/03/2014-11:35:15 DEBUG [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.per.GenericDao.find
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L41"><a href="#L41">41</a></th><td class="line-code"><pre>20/03/2014-11:35:15 INFO  [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.neg.security.AccesoFallidoService.getFailedAccess
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L42"><a href="#L42">42</a></th><td class="line-code"><pre>20/03/2014-11:35:15 INFO  [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.neg.security.AccesoFallidoService.getFailedAccess
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L43"><a href="#L43">43</a></th><td class="line-code"><pre>20/03/2014-11:35:15 INFO  [il.logging.LogAspect] - Invoked method: org.springframework.security.ldap.LdapAuthoritiesPopulator.getGrantedAuthorities with params: org.springframework.ldap.core.DirContextAdapter: dn=uid=prueba08.cci.chap,o=chap,o=empleados {o=chap, givenName=Prueba08 Cci Chap, sn=N/A, userPassword=[B@f721ef, gidNumber=600, uidNumber=200257894, displayName=Prueba08 Cci Chap, mail=prueba08.cci.chap@juntadeandalucia.es, JAnombreApellidos=N=Prueba08 Cci Chap;, passFechaCambio=20130425, objectClass[0]=top, objectClass[1]=inetOrgPerson, objectClass[2]=person, objectClass[3]=inetLocalMailRecipient, objectClass[4]=posixAccount, objectClass[5]=empleado, uid=prueba08.cci.chap, cn=Prueba08 Cci Chap, homeDirectory=/buzones/vol33/84/6c/cf/65/200257894/, employeeNumber=200257894, passCaducado=0, mailQuota=262144000}, prueba08.cci.chap
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L44"><a href="#L44">44</a></th><td class="line-code"><pre>20/03/2014-11:35:15 INFO  [il.logging.LogAspect] - Invoked method: org.springframework.security.ldap.LdapAuthoritiesPopulator.getGrantedAuthorities with params: org.springframework.ldap.core.DirContextAdapter: dn=uid=prueba08.cci.chap,o=chap,o=empleados {o=chap, givenName=Prueba08 Cci Chap, sn=N/A, userPassword=[B@f721ef, gidNumber=600, uidNumber=200257894, displayName=Prueba08 Cci Chap, mail=prueba08.cci.chap@juntadeandalucia.es, JAnombreApellidos=N=Prueba08 Cci Chap;, passFechaCambio=20130425, objectClass[0]=top, objectClass[1]=inetOrgPerson, objectClass[2]=person, objectClass[3]=inetLocalMailRecipient, objectClass[4]=posixAccount, objectClass[5]=empleado, uid=prueba08.cci.chap, cn=Prueba08 Cci Chap, homeDirectory=/buzones/vol33/84/6c/cf/65/200257894/, employeeNumber=200257894, passCaducado=0, mailQuota=262144000}, prueba08.cci.chap
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L45"><a href="#L45">45</a></th><td class="line-code"><pre>20/03/2014-11:35:15 INFO  [il.logging.LogAspect] - Executed method: org.springframework.security.ldap.LdapAuthoritiesPopulator.getGrantedAuthorities
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L46"><a href="#L46">46</a></th><td class="line-code"><pre>20/03/2014-11:35:15 INFO  [il.logging.LogAspect] - Executed method: org.springframework.security.ldap.LdapAuthoritiesPopulator.getGrantedAuthorities
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L47"><a href="#L47">47</a></th><td class="line-code"><pre>20/03/2014-11:35:15 INFO  [il.logging.LogAspect] - Invoked method: org.springframework.security.userdetails.ldap.UserDetailsContextMapper.mapUserFromContext with params: org.springframework.ldap.core.DirContextAdapter: dn=uid=prueba08.cci.chap,o=chap,o=empleados {o=chap, givenName=Prueba08 Cci Chap, sn=N/A, userPassword=[B@f721ef, gidNumber=600, uidNumber=200257894, displayName=Prueba08 Cci Chap, mail=prueba08.cci.chap@juntadeandalucia.es, JAnombreApellidos=N=Prueba08 Cci Chap;, passFechaCambio=20130425, objectClass[0]=top, objectClass[1]=inetOrgPerson, objectClass[2]=person, objectClass[3]=inetLocalMailRecipient, objectClass[4]=posixAccount, objectClass[5]=empleado, uid=prueba08.cci.chap, cn=Prueba08 Cci Chap, homeDirectory=/buzones/vol33/84/6c/cf/65/200257894/, employeeNumber=200257894, passCaducado=0, mailQuota=262144000}, prueba08.cci.chap,  with params: ROLE_ANONYMOUS_ADMIN
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L48"><a href="#L48">48</a></th><td class="line-code"><pre>20/03/2014-11:35:15 INFO  [il.logging.LogAspect] - Invoked method: org.springframework.security.userdetails.ldap.UserDetailsContextMapper.mapUserFromContext with params: org.springframework.ldap.core.DirContextAdapter: dn=uid=prueba08.cci.chap,o=chap,o=empleados {o=chap, givenName=Prueba08 Cci Chap, sn=N/A, userPassword=[B@f721ef, gidNumber=600, uidNumber=200257894, displayName=Prueba08 Cci Chap, mail=prueba08.cci.chap@juntadeandalucia.es, JAnombreApellidos=N=Prueba08 Cci Chap;, passFechaCambio=20130425, objectClass[0]=top, objectClass[1]=inetOrgPerson, objectClass[2]=person, objectClass[3]=inetLocalMailRecipient, objectClass[4]=posixAccount, objectClass[5]=empleado, uid=prueba08.cci.chap, cn=Prueba08 Cci Chap, homeDirectory=/buzones/vol33/84/6c/cf/65/200257894/, employeeNumber=200257894, passCaducado=0, mailQuota=262144000}, prueba08.cci.chap,  with params: ROLE_ANONYMOUS_ADMIN
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L49"><a href="#L49">49</a></th><td class="line-code"><pre>20/03/2014-11:35:15 DEBUG [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.per.GenericDao.findUnique with params:  with params: uid_LIKE_prueba08.cci.chap
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L50"><a href="#L50">50</a></th><td class="line-code"><pre>20/03/2014-11:35:15 DEBUG [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.per.GenericDao.findUnique with params:  with params: uid_LIKE_prueba08.cci.chap
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L51"><a href="#L51">51</a></th><td class="line-code"><pre>20/03/2014-11:35:15 DEBUG [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.per.GenericDao.findUnique
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L52"><a href="#L52">52</a></th><td class="line-code"><pre>20/03/2014-11:35:15 DEBUG [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.per.GenericDao.findUnique
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L53"><a href="#L53">53</a></th><td class="line-code"><pre>20/03/2014-11:35:15 INFO  [il.logging.LogAspect] - Executed method: org.springframework.security.userdetails.ldap.UserDetailsContextMapper.mapUserFromContext
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L54"><a href="#L54">54</a></th><td class="line-code"><pre>20/03/2014-11:35:15 INFO  [il.logging.LogAspect] - Executed method: org.springframework.security.userdetails.ldap.UserDetailsContextMapper.mapUserFromContext
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L55"><a href="#L55">55</a></th><td class="line-code"><pre>20/03/2014-11:35:15 DEBUG [inUsuarioServiceImpl] - Invoked AdminUsuarioService.findByUID. Params: prueba08.cci.chap
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L56"><a href="#L56">56</a></th><td class="line-code"><pre>20/03/2014-11:35:15 DEBUG [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.per.GenericDao.find with params:  with params: uid_LIKE_prueba08.cci.chap
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L57"><a href="#L57">57</a></th><td class="line-code"><pre>20/03/2014-11:35:15 DEBUG [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.per.GenericDao.find with params:  with params: uid_LIKE_prueba08.cci.chap
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L58"><a href="#L58">58</a></th><td class="line-code"><pre>20/03/2014-11:35:15 DEBUG [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.per.GenericDao.find
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L59"><a href="#L59">59</a></th><td class="line-code"><pre>20/03/2014-11:35:15 DEBUG [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.per.GenericDao.find
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L60"><a href="#L60">60</a></th><td class="line-code"><pre>20/03/2014-11:35:15 DEBUG [inUsuarioServiceImpl] - Invoked AdminUsuarioService.retrieveUsuarioInfo. Params: prueba08.cci.chap
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L61"><a href="#L61">61</a></th><td class="line-code"><pre>20/03/2014-11:35:15 INFO  [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.neg.ldap.DirectoryService.findByUid with params: prueba08.cci.chap
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L62"><a href="#L62">62</a></th><td class="line-code"><pre>20/03/2014-11:35:15 INFO  [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.neg.ldap.DirectoryService.findByUid with params: prueba08.cci.chap
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L63"><a href="#L63">63</a></th><td class="line-code"><pre>20/03/2014-11:35:15 INFO  [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.neg.ldap.DirectoryService.findByUid
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L64"><a href="#L64">64</a></th><td class="line-code"><pre>20/03/2014-11:35:15 INFO  [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.neg.ldap.DirectoryService.findByUid
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L65"><a href="#L65">65</a></th><td class="line-code"><pre>20/03/2014-11:35:15 INFO  [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.neg.ldap.DirectoryService.findByUid with params: prueba08.cci.chap
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L66"><a href="#L66">66</a></th><td class="line-code"><pre>20/03/2014-11:35:15 INFO  [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.neg.ldap.DirectoryService.findByUid with params: prueba08.cci.chap
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L67"><a href="#L67">67</a></th><td class="line-code"><pre>20/03/2014-11:35:15 INFO  [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.neg.ldap.DirectoryService.findByUid
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L68"><a href="#L68">68</a></th><td class="line-code"><pre>20/03/2014-11:35:15 INFO  [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.neg.ldap.DirectoryService.findByUid
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L69"><a href="#L69">69</a></th><td class="line-code"><pre>20/03/2014-11:35:15 INFO  [inUsuarioServiceImpl] - Executed AdminUsuarioService.retrieveUsuarioInfo. Found es.juntadeandalucia.cice.agata.sad.neg.admin.dto.UsuarioInfo@161e772.
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L70"><a href="#L70">70</a></th><td class="line-code"><pre>20/03/2014-11:35:15 INFO  [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.neg.ReadService.findAll
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L71"><a href="#L71">71</a></th><td class="line-code"><pre>20/03/2014-11:35:15 INFO  [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.neg.ReadService.findAll
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L72"><a href="#L72">72</a></th><td class="line-code"><pre>20/03/2014-11:35:15 DEBUG [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.per.GenericDao.findAll
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L73"><a href="#L73">73</a></th><td class="line-code"><pre>20/03/2014-11:35:15 DEBUG [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.per.GenericDao.findAll
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L74"><a href="#L74">74</a></th><td class="line-code"><pre>20/03/2014-11:35:15 DEBUG [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.per.GenericDao.findAll
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L75"><a href="#L75">75</a></th><td class="line-code"><pre>20/03/2014-11:35:15 DEBUG [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.per.GenericDao.findAll
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L76"><a href="#L76">76</a></th><td class="line-code"><pre>20/03/2014-11:35:15 INFO  [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.neg.ReadService.findAll
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L77"><a href="#L77">77</a></th><td class="line-code"><pre>20/03/2014-11:35:15 INFO  [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.neg.ReadService.findAll
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L78"><a href="#L78">78</a></th><td class="line-code"><pre>20/03/2014-11:35:15 INFO  [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.neg.ReadService.findUnique with params:  with params: uid_LIKE_prueba08.cci.chap
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L79"><a href="#L79">79</a></th><td class="line-code"><pre>20/03/2014-11:35:15 INFO  [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.neg.ReadService.findUnique with params:  with params: uid_LIKE_prueba08.cci.chap
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L80"><a href="#L80">80</a></th><td class="line-code"><pre>20/03/2014-11:35:15 DEBUG [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.per.GenericDao.findUnique with params:  with params: uid_LIKE_prueba08.cci.chap
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L81"><a href="#L81">81</a></th><td class="line-code"><pre>20/03/2014-11:35:15 DEBUG [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.per.GenericDao.findUnique with params:  with params: uid_LIKE_prueba08.cci.chap
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L82"><a href="#L82">82</a></th><td class="line-code"><pre>20/03/2014-11:35:15 DEBUG [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.per.GenericDao.findUnique
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L83"><a href="#L83">83</a></th><td class="line-code"><pre>20/03/2014-11:35:15 DEBUG [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.per.GenericDao.findUnique
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L84"><a href="#L84">84</a></th><td class="line-code"><pre>20/03/2014-11:35:15 INFO  [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.neg.ReadService.findUnique
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L85"><a href="#L85">85</a></th><td class="line-code"><pre>20/03/2014-11:35:15 INFO  [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.neg.ReadService.findUnique
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L86"><a href="#L86">86</a></th><td class="line-code"><pre>20/03/2014-11:35:24 INFO  [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.neg.SADConfigService.getMaxFailedAttempts
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L87"><a href="#L87">87</a></th><td class="line-code"><pre>20/03/2014-11:35:24 INFO  [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.neg.SADConfigService.getMaxFailedAttempts
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L88"><a href="#L88">88</a></th><td class="line-code"><pre>20/03/2014-11:35:24 INFO  [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.neg.SADConfigService.getMaxFailedAttempts
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L89"><a href="#L89">89</a></th><td class="line-code"><pre>20/03/2014-11:35:24 INFO  [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.neg.SADConfigService.getMaxFailedAttempts
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L90"><a href="#L90">90</a></th><td class="line-code"><pre>20/03/2014-11:35:24 INFO  [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.neg.SADConfigService.getMaxPeriodFailedAttempts
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L91"><a href="#L91">91</a></th><td class="line-code"><pre>20/03/2014-11:35:24 INFO  [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.neg.SADConfigService.getMaxPeriodFailedAttempts
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L92"><a href="#L92">92</a></th><td class="line-code"><pre>20/03/2014-11:35:24 INFO  [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.neg.SADConfigService.getMaxPeriodFailedAttempts
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L93"><a href="#L93">93</a></th><td class="line-code"><pre>20/03/2014-11:35:24 INFO  [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.neg.SADConfigService.getMaxPeriodFailedAttempts
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L94"><a href="#L94">94</a></th><td class="line-code"><pre>20/03/2014-11:35:24 INFO  [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.neg.SADConfigService.getFailedAttemptsWait
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L95"><a href="#L95">95</a></th><td class="line-code"><pre>20/03/2014-11:35:24 INFO  [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.neg.SADConfigService.getFailedAttemptsWait
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L96"><a href="#L96">96</a></th><td class="line-code"><pre>20/03/2014-11:35:24 INFO  [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.neg.SADConfigService.getFailedAttemptsWait
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L97"><a href="#L97">97</a></th><td class="line-code"><pre>20/03/2014-11:35:24 INFO  [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.neg.SADConfigService.getFailedAttemptsWait
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L98"><a href="#L98">98</a></th><td class="line-code"><pre>20/03/2014-11:35:24 INFO  [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.neg.security.AccesoFallidoService.getFailedAccess with params: prueba, WEB_ADMIN
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L99"><a href="#L99">99</a></th><td class="line-code"><pre>20/03/2014-11:35:24 INFO  [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.neg.security.AccesoFallidoService.getFailedAccess with params: prueba, WEB_ADMIN
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L100"><a href="#L100">100</a></th><td class="line-code"><pre>20/03/2014-11:35:24 DEBUG [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.per.GenericDao.find with params:  with params: uidUsuario_EQ_prueba, interfaz_EQ_WEB_ADMIN
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L101"><a href="#L101">101</a></th><td class="line-code"><pre>20/03/2014-11:35:24 DEBUG [il.logging.LogAspect] - Invoked method: es.juntadeandalucia.cice.agata.sad.per.GenericDao.find with params:  with params: uidUsuario_EQ_prueba, interfaz_EQ_WEB_ADMIN
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L102"><a href="#L102">102</a></th><td class="line-code"><pre>20/03/2014-11:35:24 DEBUG [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.per.GenericDao.find
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L103"><a href="#L103">103</a></th><td class="line-code"><pre>20/03/2014-11:35:24 DEBUG [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.per.GenericDao.find
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L104"><a href="#L104">104</a></th><td class="line-code"><pre>20/03/2014-11:35:24 INFO  [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.neg.security.AccesoFallidoService.getFailedAccess
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L105"><a href="#L105">105</a></th><td class="line-code"><pre>20/03/2014-11:35:24 INFO  [il.logging.LogAspect] - Executed method: es.juntadeandalucia.cice.agata.sad.neg.security.AccesoFallidoService.getFailedAccess
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L106"><a href="#L106">106</a></th><td class="line-code"><pre>20/03/2014-11:35:24 ERROR [thenticationProvider] - Authentication error: org.springframework.security.userdetails.UsernameNotFoundException: User prueba not found in directory.
+</pre></td></tr>
+
+
+<tr><th class="line-num" id="L107"><a href="#L107">107</a></th><td class="line-code"><pre>20/03/2014-11:35:24 WARN  [ation.LoggerListener] - Authentication event AuthenticationFailureBadCredentialsEvent: prueba; details: org.springframework.security.ui.WebAuthenticationDetails@0: RemoteIpAddress: 10.229.40.8; SessionId: 466FE46399D08B39C595ADD80CFCAE4A; exception: Bad credentials
+</pre></td></tr>
+
+
+</tbody>
+</table>
+</div>
+
+
+
+
+
+        
+				<div style="clear:both;"></div>
+    </div>
+</div>
+
+<div id="ajax-indicator" style="display:none;"><span>Cargando...</span></div>
+	
+<div id="footer">
+  <div class="bgl"><div class="bgr">
+    Powered by BitNami <a href="http://bitnami.org/stack/redmine">Redmine</a> &copy; 2006-2011 Jean-Philippe Lang
+  </div></div>
+</div>
+</div>
+</div>
+
+</body>
+</html>

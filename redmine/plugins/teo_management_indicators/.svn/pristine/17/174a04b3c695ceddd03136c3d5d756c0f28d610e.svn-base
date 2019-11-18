@@ -1,0 +1,415 @@
+# Se importan las clases de utilidad
+require 'charts/printers/desvios'
+
+module Charts
+  class GraficaDesvios
+    # Método que calcula los datos para cargar la segunda gráfica
+    def self.calculaGraficaDesvios(whereProject, tracker_fields, settings, chart_view, esSis)
+      Rails.logger.info('Dentro de calculaGraficaImportesDesvios.')
+      montarGraficaImportesDesvios(whereProject, tracker_fields, settings, chart_view, esSis)
+      montarGraficaPlazosDesvios(whereProject, tracker_fields, settings, chart_view, esSis)
+    end
+
+    def self.montarGraficaImportesDesvios(whereProject, tracker_fields, settings, chart_view, esSis)
+      Rails.logger.info('Dentro de montarGraficaImportesDesvios.')
+      mapaG4 = Hash.new
+      issuesOts = nil
+      tipopeticiong4n1 = ""
+      estadoPeticiong4n1 = ""
+      issueCustomField = ""
+      listaFieldsLinks = Hash.new
+      campoAgruparPorg4 = nil
+
+      if !settings.tipospeticiong4n1.nil? && settings.tipospeticiong4n1.any?
+        tipopeticiong4n1 = settings.tipospeticiong4n1[0]
+      end
+
+      if !settings.estadosg4n1.nil? && settings.estadosg4n1.any?
+        estadoPeticiong4n1 = settings.estadosg4n1
+      end
+
+      if !settings.campo4n1.nil? && settings.campo4n1.any?
+        issueCustomField = settings.campo4n1[0]
+        #issueCustomField = IssueCustomField.where('name like \'%Importe%\' and is_computed = true')[0]
+      end
+
+      if !settings.agruparporg4.nil?
+        campoAgruparPorg4 = IssueCustomField.where({id: (settings.agruparporg4).sub("core__", '').sub("custom__", '')})
+        if campoAgruparPorg4 != nil && !campoAgruparPorg4.empty? && campoAgruparPorg4[0] != nil && campoAgruparPorg4[0].field_format != nil && campoAgruparPorg4[0].field_format.to_s != nil && campoAgruparPorg4[0].field_format.to_s != '' && campoAgruparPorg4[0].field_format.to_s != 'project'
+          campoAgruparPorg4 = nil
+        else
+          campoAgruparPorg4 = campoAgruparPorg4[0]
+          $ID_CONST_CUSTFIELD = campoAgruparPorg4.id
+        end
+      end
+
+      if esSis
+        issuesOts = Issue.where({tracker: tipopeticiong4n1.id, project: whereProject, status: estadoPeticiong4n1})
+      else
+        listaIdsIssues = CustomValue.where('value in (' + whereProject.ids.join(",")+')')
+        if listaIdsIssues != nil && !listaIdsIssues.empty?
+          issuesOts = Array.new
+          listaIdsIssues.each do |issueL|
+            issueGood = Issue.where({id: issueL.customized_id, tracker: tipopeticiong4n1.id, status: estadoPeticiong4n1})[0]
+            if issueGood != nil
+              issuesOts.push(issueGood)
+            end
+          end        
+        end
+      end
+
+      if issuesOts != nil && !issuesOts.empty? 
+        posicion1_name = 'Desvio <= -50%'
+        posicion2_name = '-50% < Desvio <= -10%'
+        posicion3_name = '-10% < Desvio <= 0%'
+        posicion4_name = '0% < Desvio <= 10%'
+        posicion5_name = '10% < Desvio <= 50%'        
+        posicion6_name = 'Desvio > 50%'
+
+        #Poner todo en 0, ahora mismo tiene valores porque es una prueba
+        mapaG4[posicion1_name] = 0
+        mapaG4[posicion2_name] = 0
+        mapaG4[posicion3_name] = 0
+        mapaG4[posicion4_name] = 0
+        mapaG4[posicion5_name] = 0
+        mapaG4[posicion6_name] = 0
+
+        #El significado del guion bajo es porque cada uno forma con el siguiente
+        #la posicion del mapa de arriba
+        posicion0_1 = -50
+        posicion1_2 = -10
+        posicion2_3 = 0
+        posicion3_4 = 10
+        posicion4_5 = 50
+
+        issuesOts.each do |ot|
+          issue_fields = obtenerValorDesvioOT(ot, issueCustomField, true)
+          calculo = issue_fields.campo_calc_importe
+
+          if !calculo.nil?    
+            key = posicion1_name
+            if calculo > posicion0_1 && calculo <= posicion1_2
+              key = posicion2_name
+            elsif calculo > posicion1_2 && calculo <= posicion2_3
+              key = posicion3_name
+            elsif calculo > posicion2_3 && calculo <= posicion3_4
+              key = posicion4_name
+            elsif calculo > posicion3_4 && calculo <= posicion4_5
+              key = posicion5_name
+            elsif calculo > posicion4_5
+              key = posicion6_name
+            end
+
+            if !mapaG4[key].nil?
+              mapaG4[key] = 1 + mapaG4[key]
+            else 
+              mapaG4[key] = 1
+            end
+
+            fields_links = IndicatorsUtils::FieldsLinks.new
+            if esSis
+              fields_links.set_proy_ident($CONST_ID_PROJ)
+            else
+              fields_links.set_proy_ident(I18n.t("proy_sis_info").downcase)              
+            end
+            fields_links.set_estado(estadoPeticiong4n1.join("%7C"))
+            fields_links.set_tipo(tipopeticiong4n1.id.to_s)
+            idContrato = ot.custom_field_value(campoAgruparPorg4.id)
+            idCampo = issueCustomField.id.to_s
+
+            if idContrato != nil
+              fields_links.set_contrato(idContrato)
+            else
+              fields_links.set_contrato('')
+            end
+
+            if idCampo != nil
+              fields_links.set_id_cf_desvio(idCampo)
+            else
+              fields_links.set_id_cf_desvio('')
+            end
+
+            case key
+            when posicion1_name
+              fields_links.set_desvio(posicion0_1.to_s)
+            when posicion2_name
+              fields_links.set_desvio(posicion0_1.to_s+'%7C'+posicion1_2.to_s)
+            when posicion3_name
+              fields_links.set_desvio(posicion1_2.to_s+'%7C'+posicion2_3.to_s)
+            when posicion4_name
+              fields_links.set_desvio(posicion2_3.to_s+'%7C'+posicion3_4.to_s)
+            when posicion5_name
+              fields_links.set_desvio(posicion3_4.to_s+'%7C'+posicion4_5.to_s)
+            when posicion6_name
+              fields_links.set_desvio(posicion4_5.to_s)
+            end
+
+            if listaFieldsLinks[key] == nil
+              #posicion 0
+              cadena = fields_links.proy_ident + $SPLIT_CHAR
+              #posicion 1
+              cadena = cadena + fields_links.estado + $SPLIT_CHAR
+              #posicion 2
+              cadena = cadena + fields_links.tipo + $SPLIT_CHAR
+              #posicion 3
+              cadena = cadena + fields_links.id_cf_desvio + $SPLIT_CHAR
+              #posicion 4
+              cadena = cadena + fields_links.desvio + $SPLIT_CHAR
+              #posicion 5
+              cadena = cadena + fields_links.contrato 
+              listaFieldsLinks[key] = cadena
+            else 
+              listaFieldsLinks[key] = listaFieldsLinks[key] +'%7C'+ fields_links.contrato
+            end
+          end          
+        end
+      else 
+        Rails.logger.info('montarGraficaImportesDesvios no se ha encontrado nada')
+      end
+      chart_view.set_fieldsLinksg4(listaFieldsLinks)
+      chart_view.set_mapaG4(mapaG4)
+      linkActivado = settings.actLinkg2 != nil && settings.actLinkg2 == "true"
+      Printers::Desvios.pintarImportesDesvios(chart_view, linkActivado)
+    end
+
+    def self.montarGraficaPlazosDesvios(whereProject, tracker_fields, settings, chart_view, esSis)
+      Rails.logger.info('Dentro de montarGraficaPlazosDesvios.')
+      mapaG5 = Hash.new
+      mapaG5_resumen = Hash.new
+      issuesOts = nil
+      tipopeticiong5n1 = ""
+      estadoPeticiong5n1 = ""
+      issueCustomField = ""
+      listaFieldsLinks = Hash.new
+      campoAgruparPorg5 = nil
+
+      if !settings.tipospeticiong5n1.nil? && settings.tipospeticiong5n1.any?
+        tipopeticiong5n1 = settings.tipospeticiong5n1[0]
+      end
+
+      if !settings.estadosg5n1.nil? && settings.estadosg5n1.any?
+        estadoPeticiong5n1 = settings.estadosg5n1
+      end
+
+      if !settings.campo5n1.nil? && settings.campo5n1.any?
+        issueCustomField = settings.campo5n1[0]
+      end
+
+      if !settings.agruparporg5.nil?
+        campoAgruparPorg5 = IssueCustomField.where({id: (settings.agruparporg5).sub("core__", '').sub("custom__", '')})
+
+        if campoAgruparPorg5 != nil && !campoAgruparPorg5.empty? && campoAgruparPorg5[0] != nil && campoAgruparPorg5[0].field_format != nil && campoAgruparPorg5[0].field_format.to_s != nil && campoAgruparPorg5[0].field_format.to_s != '' && campoAgruparPorg5[0].field_format.to_s != 'project'
+          campoAgruparPorg5 = nil
+        else 
+          campoAgruparPorg5 = campoAgruparPorg5[0]
+          $ID_CONST_CUSTFIELD = campoAgruparPorg5.id
+        end
+      end
+
+      if esSis
+        issuesOts = Issue.where({tracker: tipopeticiong5n1.id, project: whereProject, status: estadoPeticiong5n1})
+      else
+        listaIdsIssues = CustomValue.where('value in (' + whereProject.ids.join(",")+')')
+        if listaIdsIssues != nil && !listaIdsIssues.empty?
+          issuesOts = Array.new
+          listaIdsIssues.each do |issueL|
+            issueGood = Issue.where({id: issueL.customized_id, tracker: tipopeticiong5n1.id, status: estadoPeticiong5n1})[0]
+            if issueGood != nil
+              issuesOts.push(issueGood)
+            end
+          end        
+        end
+      end
+
+      if issuesOts != nil && !issuesOts.empty? 
+        posicion1_name = 'Inferior a -40%'
+        posicion2_name = 'Entre -40% y -5%'
+        posicion3_name = 'Entre -5% y 0%'
+        posicion4_name = 'Entre 0% y +5%'
+        posicion5_name = 'Entre 5% y +40%'        
+        posicion6_name = 'Mayor de +40%'
+
+        #Poner todo en 0, ahora mismo tiene valores porque es una prueba
+        mapaG5[posicion1_name] = 0
+        mapaG5[posicion2_name] = 0
+        mapaG5[posicion3_name] = 0
+        mapaG5[posicion4_name] = 0
+        mapaG5[posicion5_name] = 0
+        mapaG5[posicion6_name] = 0
+
+        #El significado del guion bajo es porque cada uno forma con el siguiente
+        #la posicion del mapa de arriba
+        posicion0_1 = -40
+        posicion1_2 = -5
+        posicion2_3 = 0
+        posicion3_4 = 5
+        posicion4_5 = 40
+
+        #Tabla resumen de desvio de plazos
+        mediaArray = Array.new
+        media = 0
+        minimo = 0
+        maximo = 0
+
+        distanciaArrayTipica = Array.new
+        distanciaTotal = 0
+        tipica = 0
+
+        guardarUnaVez = true
+
+        issuesOts.each do |ot|
+          issue_fields = obtenerValorDesvioOT(ot, issueCustomField, false)
+          calculo = issue_fields.campo_calc_plazo
+
+          if !calculo.nil?
+            if guardarUnaVez
+              minimo = calculo
+              maximo = calculo
+              guardarUnaVez = false
+            end
+            
+            mediaArray.push(calculo)
+
+            if calculo < minimo
+              minimo = calculo
+            end
+            if calculo > maximo
+              maximo = calculo
+            end 
+
+            key = posicion1_name
+            if calculo > posicion0_1 && calculo <= posicion1_2
+              key = posicion2_name
+            elsif calculo > posicion1_2 && calculo <= posicion2_3
+              key = posicion3_name
+            elsif calculo > posicion2_3 && calculo <= posicion3_4
+              key = posicion4_name
+            elsif calculo > posicion3_4 && calculo <= posicion4_5
+              key = posicion5_name
+            elsif calculo > posicion4_5
+              key = posicion6_name
+            end
+            if !mapaG5[key].nil?
+              mapaG5[key] = 1 + mapaG5[key]
+            else 
+              mapaG5[key] = 1
+            end
+
+            fields_links = IndicatorsUtils::FieldsLinks.new
+            if esSis
+              fields_links.set_proy_ident($CONST_ID_PROJ)
+            else
+              fields_links.set_proy_ident(I18n.t("proy_sis_info").downcase)              
+            end            
+            fields_links.set_estado(estadoPeticiong5n1.join("%7C"))
+            fields_links.set_tipo(tipopeticiong5n1.id.to_s)
+            idContrato = ot.custom_field_value(campoAgruparPorg5.id)
+            idCampo = issueCustomField.id.to_s
+
+            if idContrato != nil
+              fields_links.set_contrato(idContrato)
+            else
+              fields_links.set_contrato('')
+            end
+
+            if idCampo != nil
+              fields_links.set_id_cf_desvio(idCampo)
+            else
+              fields_links.set_id_cf_desvio('')
+            end
+            
+            case key
+            when posicion1_name
+              fields_links.set_desvio(posicion0_1.to_s)
+            when posicion2_name
+              fields_links.set_desvio(posicion0_1.to_s+'%7C'+posicion1_2.to_s)
+            when posicion3_name
+              fields_links.set_desvio(posicion1_2.to_s+'%7C'+posicion2_3.to_s)
+            when posicion4_name
+              fields_links.set_desvio(posicion2_3.to_s+'%7C'+posicion3_4.to_s)
+            when posicion5_name
+              fields_links.set_desvio(posicion3_4.to_s+'%7C'+posicion4_5.to_s)
+            when posicion6_name
+              fields_links.set_desvio(posicion4_5.to_s)
+            end
+
+            if listaFieldsLinks[key] == nil
+              #posicion 0
+              cadena = fields_links.proy_ident + $SPLIT_CHAR
+              #posicion 1
+              cadena = cadena + fields_links.estado + $SPLIT_CHAR
+              #posicion 2
+              cadena = cadena + fields_links.tipo + $SPLIT_CHAR              
+              #posicion 3
+              cadena = cadena + fields_links.id_cf_desvio + $SPLIT_CHAR
+              #posicion 4
+              cadena = cadena + fields_links.desvio + $SPLIT_CHAR
+              #posicion 5
+              cadena = cadena + fields_links.contrato 
+              listaFieldsLinks[key] = cadena
+            else 
+              listaFieldsLinks[key] = listaFieldsLinks[key] +'%7C'+ fields_links.contrato
+            end
+          end          
+        end
+
+        #Sacar la MEDIA y la DESVIACION TIPICA
+        if !mediaArray.nil? && !mediaArray.empty?
+          #Calculamos la media primeramente sumando los valores entre el total de valores
+          mediaArray.each do |valor|
+            media = valor + media
+          end
+          media = media / mediaArray.size
+
+          #Calculamos la distancia de cada valor restando la media y calculando su cuadrado 
+          #y el resultado lo guardamos en un array para usar luego otro calculo
+          mediaArray.each do |valor|
+            distancia = (valor - media)**2
+            distanciaArrayTipica.push(distancia)
+          end
+
+          #Calculamos la suma de los valores de distancia entre el total de valores que tenemos
+          distanciaArrayTipica.each do |valor|
+            distanciaTotal = valor + distanciaTotal
+          end
+          distanciaTotal = distanciaTotal / mediaArray.size
+
+          #Calculamos la raiz cuadrada de la distancia total y el resultado es la desviacion
+          tipica = distanciaTotal**0.5
+
+          mapaG5_resumen['Media']= media
+          mapaG5_resumen['Minima']= minimo
+          mapaG5_resumen['Maxima']= maximo
+          mapaG5_resumen['Tipica (σ)']= tipica
+        end
+      else 
+        Rails.logger.info('montarGraficaPlazosDesvios no se ha encontrado nada')
+      end
+      chart_view.set_fieldsLinksg5(listaFieldsLinks)
+      chart_view.set_mapaG5(mapaG5)
+      chart_view.set_mapaG5_resumen(mapaG5_resumen)
+      linkActivado = settings.actLinkg2 != nil && settings.actLinkg2 == "true"
+      Printers::Desvios.pintarPlazosDesvios(chart_view, linkActivado)
+    end
+
+    # Método que obtiene de la OT dada el valor de los campos de importe y fecha
+    def self.obtenerValorDesvioOT(ot, issueCustomField, esImp)
+      Rails.logger.debug('Dentro de obtenerValorDesvioOT.')
+      campoCalculado = nil
+      csValue = nil
+      csValue = CustomValue.where('custom_field_id = ' + issueCustomField.id.to_s + ' and customized_id = ' + ot.id.to_s)[0]
+
+      if !csValue.nil?
+        campoCalculado = csValue.value.to_i
+      end
+      
+      issue_fields = IndicatorsUtils::IssueFields.new
+      if esImp
+        issue_fields.set_campo_calc_importe(campoCalculado)   
+      else
+        issue_fields.set_campo_calc_plazo(campoCalculado)
+      end
+      return issue_fields
+    end
+  end
+end

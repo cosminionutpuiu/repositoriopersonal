@@ -1,0 +1,16 @@
+SELECT añoDeAnualidad,    c_uni_org_envia,    d_objeto,    SUM(importeAño),COUNT(*) numeroExpedientes,
+    row_number() OVER (ORDER BY añoDeAnualidad) id
+  FROM
+    ( SELECT DISTINCT t_num_exp,      d_objeto,      c_uni_org_envia,
+      CASE (l_plurianual)     WHEN 'S'    THEN TO_CHAR(ic_inf_año.n_anio)        ELSE año      END añoDeAnualidad,
+      CASE (l_plurianual)     WHEN 'S'    THEN n_importe_anualidad        ELSE n_importe      END importeAño
+    FROM ic_inf_año
+    WHERE t_num_exp NOT IN
+      ( SELECT DISTINCT t_num_exp
+      FROM ic_inf_año
+      WHERE c_nombre_fase = 'SOLICITUD ANULADA'
+      OR c_nombre_fase    = 'PTE. ANULACIÓN'
+      )    )
+      where añoDeAnualidad is not null
+  GROUP BY c_uni_org_envia,    añoDeAnualidad,    d_objeto
+  ORDER BY c_uni_org_envia,    añoDeAnualidad,    d_objeto DESC;

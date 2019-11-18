@@ -1,0 +1,468 @@
+30/06/2014-17:30:49 INFO  [ontext.ContextLoader] - Root WebApplicationContext: initialization started
+30/06/2014-17:30:49 INFO  [ebApplicationContext] - Refreshing org.springframework.web.context.support.XmlWebApplicationContext@1a102ef: display name [Root WebApplicationContext]; startup date [Mon Jun 30 17:30:49 CEST 2014]; root of context hierarchy
+30/06/2014-17:30:49 INFO  [BeanDefinitionReader] - Loading XML bean definitions from file [/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp54416sad-web-admin-exp.war/WEB-INF/classes/context/sad-context-batch.xml]
+30/06/2014-17:30:49 INFO  [BeanDefinitionReader] - Loading XML bean definitions from file [/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp54416sad-web-admin-exp.war/WEB-INF/classes/context/sad-context-mvc.xml]
+30/06/2014-17:30:50 INFO  [BeanDefinitionReader] - Loading XML bean definitions from file [/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp54416sad-web-admin-exp.war/WEB-INF/classes/context/sad-context-properties.xml]
+30/06/2014-17:30:50 INFO  [BeanDefinitionReader] - Loading XML bean definitions from file [/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp54416sad-web-admin-exp.war/WEB-INF/classes/context/sad-context-adminDatasource.xml]
+30/06/2014-17:30:50 INFO  [BeanDefinitionReader] - Loading XML bean definitions from file [/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp54416sad-web-admin-exp.war/WEB-INF/classes/context/sad-context-security.xml]
+30/06/2014-17:30:50 INFO  [BeanDefinitionReader] - Loading XML bean definitions from URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp54416sad-web-admin-exp.war/WEB-INF/lib/sad-comm-external-subs-client-2.10.1.jar!/context/sad-context-external-sub-client.xml]
+30/06/2014-17:30:50 INFO  [BeanDefinitionReader] - Loading XML bean definitions from URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp54416sad-web-admin-exp.war/WEB-INF/lib/sad-guia-client-2.10.1.jar!/context/sad-context-guia-client.xml]
+30/06/2014-17:30:50 INFO  [BeanDefinitionReader] - Loading XML bean definitions from URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp54416sad-web-admin-exp.war/WEB-INF/lib/sad-neg-2.10.1.jar!/context/sad-context-csa-client.xml]
+30/06/2014-17:30:50 INFO  [BeanDefinitionReader] - Loading XML bean definitions from URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp54416sad-web-admin-exp.war/WEB-INF/lib/sad-neg-2.10.1.jar!/context/sad-context-service.xml]
+30/06/2014-17:30:51 INFO  [tListableBeanFactory] - Overriding bean definition for bean 'guiaWSClient': replacing [Generic bean: class [es.juntadeandalucia.cice.agata.sad.integration.guia.GUIAWSClient]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp54416sad-web-admin-exp.war/WEB-INF/lib/sad-guia-client-2.10.1.jar!/context/sad-context-guia-client.xml]] with [Generic bean: class [es.juntadeandalucia.cice.agata.sad.integration.guia.GUIAWSClient]; scope=singleton; abstract=false; lazyInit=false; autowireMode=1; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp54416sad-web-admin-exp.war/WEB-INF/lib/sad-neg-2.10.1.jar!/context/sad-context-service.xml]]
+30/06/2014-17:30:51 INFO  [BeanDefinitionReader] - Loading XML bean definitions from URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp54416sad-web-admin-exp.war/WEB-INF/lib/sad-neg-admin-2.10.1.jar!/context/sad-context-service-admin.xml]
+30/06/2014-17:30:51 INFO  [tListableBeanFactory] - Overriding bean definition for bean 'txManager': replacing [Generic bean: class [org.springframework.orm.hibernate3.HibernateTransactionManager]; scope=singleton; abstract=false; lazyInit=false; autowireMode=1; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp54416sad-web-admin-exp.war/WEB-INF/lib/sad-neg-2.10.1.jar!/context/sad-context-service.xml]] with [Generic bean: class [org.springframework.orm.hibernate3.HibernateTransactionManager]; scope=singleton; abstract=false; lazyInit=false; autowireMode=1; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp54416sad-web-admin-exp.war/WEB-INF/lib/sad-neg-admin-2.10.1.jar!/context/sad-context-service-admin.xml]]
+30/06/2014-17:30:51 INFO  [tListableBeanFactory] - Overriding bean definition for bean 'perfilService': replacing [Generic bean: class [es.juntadeandalucia.cice.agata.sad.neg.impl.GenericServiceImpl]; scope=singleton; abstract=false; lazyInit=false; autowireMode=1; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp54416sad-web-admin-exp.war/WEB-INF/lib/sad-neg-2.10.1.jar!/context/sad-context-service.xml]] with [Generic bean: class [es.juntadeandalucia.cice.agata.sad.neg.impl.GenericServiceImpl]; scope=singleton; abstract=false; lazyInit=false; autowireMode=1; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp54416sad-web-admin-exp.war/WEB-INF/lib/sad-neg-admin-2.10.1.jar!/context/sad-context-service-admin.xml]]
+30/06/2014-17:30:51 INFO  [BeanDefinitionReader] - Loading XML bean definitions from URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp54416sad-web-admin-exp.war/WEB-INF/lib/sad-neg-admin-2.10.1.jar!/context/sad-context-ws-client.xml]
+30/06/2014-17:30:51 INFO  [BeanDefinitionReader] - Loading XML bean definitions from URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp54416sad-web-admin-exp.war/WEB-INF/lib/sad-neg-2.10.1.jar!/context/sad-context-csa-client.xml]
+30/06/2014-17:30:51 INFO  [tListableBeanFactory] - Overriding bean definition for bean 'csaUserWSClient': replacing [Generic bean: class [es.juntadeandalucia.cice.agata.sad.integration.csa.CSAAdminUserWSClient]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp54416sad-web-admin-exp.war/WEB-INF/lib/sad-neg-2.10.1.jar!/context/sad-context-csa-client.xml]] with [Generic bean: class [es.juntadeandalucia.cice.agata.sad.integration.csa.CSAAdminUserWSClient]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp54416sad-web-admin-exp.war/WEB-INF/lib/sad-neg-2.10.1.jar!/context/sad-context-csa-client.xml]]
+30/06/2014-17:30:51 INFO  [BeanDefinitionReader] - Loading XML bean definitions from URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp54416sad-web-admin-exp.war/WEB-INF/lib/sad-notification-2.10.1.jar!/context/sad-context-notification.xml]
+30/06/2014-17:30:51 INFO  [tListableBeanFactory] - Overriding bean definition for bean 'logAspect': replacing [Generic bean: class [es.juntadeandalucia.cice.agata.sad.util.logging.LogAspect]; scope=singleton; abstract=false; lazyInit=false; autowireMode=1; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp54416sad-web-admin-exp.war/WEB-INF/lib/sad-neg-2.10.1.jar!/context/sad-context-service.xml]] with [Generic bean: class [es.juntadeandalucia.cice.agata.sad.util.logging.LogAspect]; scope=singleton; abstract=false; lazyInit=false; autowireMode=1; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp54416sad-web-admin-exp.war/WEB-INF/lib/sad-notification-2.10.1.jar!/context/sad-context-notification.xml]]
+30/06/2014-17:30:51 INFO  [BeanDefinitionReader] - Loading XML bean definitions from URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp54416sad-web-admin-exp.war/WEB-INF/lib/sad-per-2.10.1.jar!/context/sad-context-dao.xml]
+30/06/2014-17:30:51 INFO  [BeanDefinitionReader] - Loading XML bean definitions from URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp54416sad-web-admin-exp.war/WEB-INF/lib/sad-per-2.10.1.jar!/context/sad-context-datasource.xml]
+30/06/2014-17:30:51 INFO  [BeanDefinitionReader] - Loading XML bean definitions from URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp54416sad-web-admin-exp.war/WEB-INF/lib/sad-security-2.10.1.jar!/context/sad-context-security.xml]
+30/06/2014-17:30:51 INFO  [BeanDefinitionReader] - Loading XML bean definitions from URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp54416sad-web-admin-exp.war/WEB-INF/lib/sad-security-2.10.1.jar!/context/sad-context-authorization.xml]
+30/06/2014-17:30:51 INFO  [ebApplicationContext] - Bean factory for application context [org.springframework.web.context.support.XmlWebApplicationContext@1a102ef]: org.springframework.beans.factory.support.DefaultListableBeanFactory@129bc5b
+30/06/2014-17:30:52 INFO  [laceHolderConfigurer] - Loading properties file from file [/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp54411sad-comm-exp.war/WEB-INF/classes/sad-comm.properties]
+30/06/2014-17:30:52 INFO  [laceHolderConfigurer] - Loading properties file from file [/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp54415sad-dav-exp.war/WEB-INF/classes/sad-dav.properties]
+30/06/2014-17:30:52 INFO  [laceHolderConfigurer] - Loading properties file from file [/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp54416sad-web-admin-exp.war/WEB-INF/classes/sad-web-admin.properties]
+30/06/2014-17:30:52 INFO  [ebApplicationContext] - Bean '(inner bean)' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+30/06/2014-17:30:52 INFO  [ebApplicationContext] - Bean '_delegatingMethodDefinitionSource' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+30/06/2014-17:30:52 INFO  [ebApplicationContext] - Bean '_methodDefinitionSourceAdvisor' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+30/06/2014-17:30:52 INFO  [ebApplicationContext] - Bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+30/06/2014-17:30:52 INFO  [ebApplicationContext] - Bean 'org.springframework.transaction.config.internalTransactionAdvisor' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+30/06/2014-17:30:53 INFO  [tListableBeanFactory] - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@129bc5b: defining beans [backupTrigger,userDeletionTrigger,statsAdquisitionTrigger,reminderTrigger,org.springframework.scheduling.quartz.SchedulerFactoryBean#0,statsAdquisitionJobDetail,backupJobDetail,userDeletionJobDetail,reminderJobDetail,syncDeviceController,groupController,adminNotificationController,syncPrincipalController,statisticController,timezoneController,holidayController,entidadController,sadController,usuarioController,profileController,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,es.juntadeandalucia.cice.agata.sad.util.jndi.SadPropertyPlaceHolderConfigurer#0,adminSessionFactory,_authenticationManager,_filterChainProxy,_httpSessionContextIntegrationFilter,_filterChainProxyPostProcessor,_filterChainList,_securityContextHolderAwareRequestFilter,_accessManager,_portMapper,_exceptionTranslationFilter,_filterSecurityInterceptor,_sessionFixationProtectionFilter,_logoutFilter,_formLoginFilter,_formLoginEntryPoint,_entryPointInjectionBeanPostProcessor,_userServiceInjectionPostProcessor,checkAccessAspect,sadAuthoritiesPopulator,csrfFilter,externalSubsWSClient,guiaWSClient,csaUserWSClient,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txManager,sadConfigService,usuarioService,entidadGUIAService,informacionIntervinienteService,agendaService,directoryService,directoryOrganizationService,binService,recordatorioService,recursoService,grupoService,zonaHorariaService,preferenciaService,permisoFBService,accionesInvitacionesService,subscripcionInternaService,subscripcionExternaService,preferenciasSADService,citaService,calendarioService,libretaService,registroService,contactoService,categoriaService,rolService,perfilService,estadoService,syncErrorService,historicoSLSService,registroSincronizacionService,lineaRegistroSincronizacionService,aclService,csaUserQueryService,elementoPIMService,tareaService,contenedorPIMService,hibIntervinienteService,emailIntervinienteService,sadGUIAGroupService,dispositivoBloqueadoService,bloqueoSLSService,bloqueoMDSService,permGestionInvitacionesService,permGestionCategoriasService,accesoFallidoService,accesoUsuarioService,historicoAccesosService,historicoPIMService,historicoSyncErrorService,propuestaService,sondeoService,votoService,comentarioService,logAspect,funambolDeviceService,funambolUserService,funambolPrincipalService,adminUsuarioService,clasificacionService,adminGroupService,adminContenedorPIMService,csaUserService,entidadService,historicoUsuariosService,consumoCuotaUsuariosService,wsClient,mailConfiguration,emailService,emailSender,notificationService,velocityEngine,usuarioDao,grupoDao,clasificacionDao,informacionIntervinienteDao,entidadGUIADao,agendaDao,zonaHorariaDao,preferenciaDao,permisoFBDao,subscripcionInternaDao,subscripcionExternaDao,preferenciasSADDao,recordatorioDao,citaDao,tareaDao,calendarioDao,categoriaDao,contactoDao,libretaDao,registroDao,recursoDao,rolDao,perfilDao,estadoDao,syncErrorDao,historicoSLSDao,registroSincronizacionDao,lineaRegistroSincronizacionDao,hibIntervinienteDao,emailIntervinienteDao,DirectoryUserEntryContextMapper,DirectoryOrganizationEntryContextMapper,ldapDao,organizationLdapDao,contenedorPIMDao,elementoPIMDao,aceDao,aclDao,dispositivoBloqueadoDao,bloqueoSLSDao,bloqueoMDSDao,entidadDao,permGestionInvitacionesDao,permGestionCategoriasDao,accesoFallidoDao,historicoUsuariosDao,accesoUsuarioDao,consumoCuotaUsuariosDao,historicoAccesosDao,historicoPIMDao,historicoSyncErrorDao,accionesInvitacionesDao,propuestaDao,sondeoDao,comentarioDao,votoDao,c3P0NativeJdbcExtractor,oracleLobHandler,dataSource,sessionFactory,dirContextValidator,contextSource,contextSourceTarget,ldapTemplate,ldapContextSource,userDetailsContextMapper,targetUserDetailsService,ldapAuthProvider,userDetailsService,loggerListener,roleVoter,businessAccessDecisionManager,_delegatingMethodDefinitionSource,_methodSecurityInterceptor,_methodSecurityInterceptorPostProcessor,_methodDefinitionSourceAdvisor]; root of factory hierarchy
+30/06/2014-17:30:53 INFO  [.mchange.v2.log.MLog] - MLog clients using log4j logging.
+30/06/2014-17:30:53 INFO  [v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+30/06/2014-17:30:53 WARN  [anagementCoordinator] - A C3P0Registry mbean is already registered. This probably means that an application using c3p0 was undeployed, but not all PooledDataSources were closed prior to undeployment. This may lead to resource leaks over time. Please take care to close all PooledDataSources.
+30/06/2014-17:30:54 INFO  [.annotations.Version] - Hibernate Annotations 3.3.1.GA
+30/06/2014-17:30:54 INFO  [nate.cfg.Environment] - Hibernate 3.2.6
+30/06/2014-17:30:54 INFO  [nate.cfg.Environment] - hibernate.properties not found
+30/06/2014-17:30:54 INFO  [nate.cfg.Environment] - Bytecode provider name : javassist
+30/06/2014-17:30:54 INFO  [nate.cfg.Environment] - using JDK 1.4 java.sql.Timestamp handling
+30/06/2014-17:30:54 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.acl.Ace
+30/06/2014-17:30:54 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.acl.Ace on table ACL_ENTRY
+30/06/2014-17:30:54 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.acl.Acl
+30/06/2014-17:30:54 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.acl.Acl on table ACL
+30/06/2014-17:30:54 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Perfil
+30/06/2014-17:30:54 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.Perfil on table PERFIL
+30/06/2014-17:30:54 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Rol
+30/06/2014-17:30:54 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.Rol on table ROL
+30/06/2014-17:30:54 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Propietario
+30/06/2014-17:30:54 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.Propietario on table PROPIETARIO
+30/06/2014-17:30:54 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.EntidadGUIA
+30/06/2014-17:30:54 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.EntidadGUIA on table ENTIDAD_GUIA
+30/06/2014-17:30:54 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Agenda
+30/06/2014-17:30:54 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.Agenda on table AGENDA
+30/06/2014-17:30:54 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Usuario
+30/06/2014-17:30:54 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.Usuario on table USUARIO
+30/06/2014-17:30:54 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Grupo
+30/06/2014-17:30:54 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.Grupo on table GRUPO
+30/06/2014-17:30:54 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.ZonaHoraria
+30/06/2014-17:30:54 INFO  [cfg.AnnotationBinder] - Binding type definition: timezone
+30/06/2014-17:30:54 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.ZonaHoraria on table ZONA_HORARIA
+30/06/2014-17:30:54 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Preferencia
+30/06/2014-17:30:54 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.Preferencia on table PREFERENCIA
+30/06/2014-17:30:54 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.PreferenciasSAD
+30/06/2014-17:30:54 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.PreferenciasSAD on table PREFERENCIAS_SAD
+30/06/2014-17:30:54 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Subscripcion
+30/06/2014-17:30:54 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.Subscripcion on table SUBSCRIPCION
+30/06/2014-17:30:54 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.SubscripcionInterna
+30/06/2014-17:30:54 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.SubscripcionInterna on table SUBSCRIPCION_INTERNA
+30/06/2014-17:30:54 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.SubscripcionExterna
+30/06/2014-17:30:54 INFO  [cfg.AnnotationBinder] - Binding type definition: cypher
+30/06/2014-17:30:54 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.SubscripcionExterna on table SUBSCRIPCION_EXTERNA
+30/06/2014-17:30:54 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.ContenedorPIM
+30/06/2014-17:30:54 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.ContenedorPIM on table CONTENEDOR
+30/06/2014-17:30:54 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.ElementoPIM
+30/06/2014-17:30:54 INFO  [cfg.AnnotationBinder] - Binding type definition: long_timestamp
+30/06/2014-17:30:54 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.ElementoPIM on table ELEMENTO_PIM
+30/06/2014-17:30:54 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Categoria
+30/06/2014-17:30:54 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.Categoria on table CATEGORIA
+30/06/2014-17:30:54 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Calendario
+30/06/2014-17:30:54 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Inbox
+30/06/2014-17:30:54 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Outbox
+30/06/2014-17:30:54 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.ElementoICal
+30/06/2014-17:30:54 INFO  [cfg.AnnotationBinder] - Binding type definition: long_timestamp
+30/06/2014-17:30:54 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.ElementoICal on table ELEMENTO_ICAL
+30/06/2014-17:30:54 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Cita
+30/06/2014-17:30:54 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.Cita on table CITA
+30/06/2014-17:30:54 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Contacto
+30/06/2014-17:30:54 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.Contacto on table CONTACTO
+30/06/2014-17:30:54 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.PermisoFB
+30/06/2014-17:30:54 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.PermisoFB on table PERMISO_FB
+30/06/2014-17:30:54 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Libreta
+30/06/2014-17:30:54 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Recordatorio
+30/06/2014-17:30:54 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.Recordatorio on table RECORDATORIO
+30/06/2014-17:30:55 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Recurso
+30/06/2014-17:30:55 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.Recurso on table RECURSO
+30/06/2014-17:30:55 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Registro
+30/06/2014-17:30:55 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Tarea
+30/06/2014-17:30:55 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.Tarea on table TAREA
+30/06/2014-17:30:55 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Estado
+30/06/2014-17:30:55 INFO  [cfg.AnnotationBinder] - Binding type definition: long_timestamp
+30/06/2014-17:30:55 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.Estado on table ESTADO
+30/06/2014-17:30:55 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.InformacionInterviniente
+30/06/2014-17:30:55 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.InformacionInterviniente on table INFO_INTERV
+30/06/2014-17:30:55 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.EmailInterviniente
+30/06/2014-17:30:55 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.EmailInterviniente on table EMAIL_INTERV
+30/06/2014-17:30:55 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.HibInterviniente
+30/06/2014-17:30:55 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.HibInterviniente on table HIB_INTERV
+30/06/2014-17:30:55 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.SyncError
+30/06/2014-17:30:55 INFO  [cfg.AnnotationBinder] - Binding type definition: long_timestamp
+30/06/2014-17:30:55 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.SyncError on table SYNC_ERROR
+30/06/2014-17:30:55 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.HistoricoSLS
+30/06/2014-17:30:55 INFO  [cfg.AnnotationBinder] - Binding type definition: long_timestamp
+30/06/2014-17:30:55 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.HistoricoSLS on table HISTORICOS_SLS
+30/06/2014-17:30:55 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.DispositivoBloqueado
+30/06/2014-17:30:55 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.DispositivoBloqueado on table DISPOSITIVO_BLOQUEADO
+30/06/2014-17:30:55 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.BloqueoSLS
+30/06/2014-17:30:55 INFO  [cfg.AnnotationBinder] - Binding type definition: long_timestamp
+30/06/2014-17:30:55 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.BloqueoSLS on table BLOQUEO_SLS
+30/06/2014-17:30:55 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.BloqueoMDS
+30/06/2014-17:30:55 INFO  [cfg.AnnotationBinder] - Binding type definition: long_timestamp
+30/06/2014-17:30:55 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.BloqueoMDS on table BLOQUEO_MDS
+30/06/2014-17:30:55 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.view.ElementoContenedorCategoria
+30/06/2014-17:30:55 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.view.ElementoContenedorCategoria on table ELEMENTO_CONTENEDOR_CATEGORIA
+30/06/2014-17:30:55 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Clasificacion
+30/06/2014-17:30:55 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.Clasificacion on table CLASIFICACION
+30/06/2014-17:30:55 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.LobWrapper
+30/06/2014-17:30:55 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.LobWrapper on table LOB_WRAPPER
+30/06/2014-17:30:55 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Entidad
+30/06/2014-17:30:55 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.Entidad on table ENTIDAD
+30/06/2014-17:30:55 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.RegistroSincronizacion
+30/06/2014-17:30:55 INFO  [cfg.AnnotationBinder] - Binding type definition: long_timestamp
+30/06/2014-17:30:55 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.RegistroSincronizacion on table REGISTRO_SINCRO
+30/06/2014-17:30:55 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.LineaRegistroSincronizacion
+30/06/2014-17:30:55 INFO  [cfg.AnnotationBinder] - Binding type definition: long_timestamp
+30/06/2014-17:30:55 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.LineaRegistroSincronizacion on table LIN_REGISTRO_SINCRO
+30/06/2014-17:30:55 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.PermGestionInvitaciones
+30/06/2014-17:30:55 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.PermGestionInvitaciones on table PERM_GESTION_INVITACIONES
+30/06/2014-17:30:55 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.HistoricoUsuariosPresentes
+30/06/2014-17:30:55 INFO  [cfg.AnnotationBinder] - Binding type definition: long_timestamp
+30/06/2014-17:30:55 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.HistoricoUsuariosPresentes on table HISTORICO_USUARIOS_PRESENTES
+30/06/2014-17:30:55 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.stats.AccesoUsuario
+30/06/2014-17:30:55 INFO  [cfg.AnnotationBinder] - Binding type definition: long_timestamp
+30/06/2014-17:30:55 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.stats.AccesoUsuario on table ACCESO_USUARIO
+30/06/2014-17:30:55 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.stats.HistoricoAccesos
+30/06/2014-17:30:55 INFO  [cfg.AnnotationBinder] - Binding type definition: long_timestamp
+30/06/2014-17:30:55 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.stats.HistoricoAccesos on table HISTORICO_ACCESOS
+30/06/2014-17:30:55 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.stats.ConsumoCuotaUsuarios
+30/06/2014-17:30:55 INFO  [cfg.AnnotationBinder] - Binding type definition: long_timestamp
+30/06/2014-17:30:55 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.stats.ConsumoCuotaUsuarios on table CONSUMO_CUOTA_USUARIOS
+30/06/2014-17:30:55 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.stats.HistoricoPIM
+30/06/2014-17:30:55 INFO  [cfg.AnnotationBinder] - Binding type definition: long_timestamp
+30/06/2014-17:30:55 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.stats.HistoricoPIM on table HISTORICO_PIM
+30/06/2014-17:30:55 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.AccionesInvitaciones
+30/06/2014-17:30:55 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.AccionesInvitaciones on table ACCIONES_INVITACIONES
+30/06/2014-17:30:55 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Sondeo
+30/06/2014-17:30:55 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.Sondeo on table SONDEO
+30/06/2014-17:30:55 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Propuesta
+30/06/2014-17:30:55 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.Propuesta on table PROPUESTA
+30/06/2014-17:30:55 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Voto
+30/06/2014-17:30:55 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.Voto on table VOTO
+30/06/2014-17:30:55 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Comentario
+30/06/2014-17:30:55 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.Comentario on table COMENTARIO
+30/06/2014-17:30:56 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.ConjuntoSondeos
+30/06/2014-17:30:56 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.SondeoInterviniente
+30/06/2014-17:30:56 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.SondeoInterviniente on table SONDEO_INTERVINIENTE
+30/06/2014-17:30:56 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.security.AccesoFallido
+30/06/2014-17:30:56 INFO  [cfg.AnnotationBinder] - Binding type definition: long_timestamp
+30/06/2014-17:30:56 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.security.AccesoFallido on table ACCESO_FALLIDO
+30/06/2014-17:30:56 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.ElementoICal.sobreescrituras -> ELEMENTO_ICAL
+30/06/2014-17:30:56 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.ElementoICal.intervinientes -> INFO_INTERV
+30/06/2014-17:30:56 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Categoria.subscripciones -> SUBSCRIPCION_INTERNA
+30/06/2014-17:30:56 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.ContenedorPIM.subscripciones -> SUBSCRIPCION_INTERNA
+30/06/2014-17:30:56 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Preferencia.subscripciones -> SUBSCRIPCION
+30/06/2014-17:30:56 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.acl.Acl.aces -> ACL_ENTRY
+30/06/2014-17:30:56 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Propietario.permInvitacionesGestor -> PERM_GESTION_INVITACIONES
+30/06/2014-17:30:56 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Propietario.permInvitacionesPropietario -> PERM_GESTION_INVITACIONES
+30/06/2014-17:30:56 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.EntidadGUIA.aces -> ACL_ENTRY
+30/06/2014-17:30:56 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Agenda.contenedores -> CONTENEDOR
+30/06/2014-17:30:56 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Usuario.permisosBenefactor -> PERMISO_FB
+30/06/2014-17:30:56 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Usuario.permisosBeneficiario -> PERMISO_FB
+30/06/2014-17:30:56 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Grupo.usuarios -> USUARIO
+30/06/2014-17:30:56 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.ContenedorPIM.categorias -> CATEGORIA
+30/06/2014-17:30:56 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.ContenedorPIM.elementos -> ELEMENTO_PIM
+30/06/2014-17:30:56 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.ContenedorPIM.registrosSincronizacion -> REGISTRO_SINCRO
+30/06/2014-17:30:56 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.ElementoPIM.estados -> ESTADO
+30/06/2014-17:30:56 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.ElementoPIM.historicosSLS -> HISTORICOS_SLS
+30/06/2014-17:30:56 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.ElementoPIM.syncErrors -> SYNC_ERROR
+30/06/2014-17:30:56 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Calendario.preferencias -> PREFERENCIA
+30/06/2014-17:30:56 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.ElementoICal.recordatorios -> RECORDATORIO
+30/06/2014-17:30:56 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Clasificacion.usuarios -> USUARIO
+30/06/2014-17:30:56 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Entidad.usuarios -> USUARIO
+30/06/2014-17:30:56 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Sondeo.comentarios -> COMENTARIO
+30/06/2014-17:30:56 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Sondeo.intervinientes -> SONDEO_INTERVINIENTE
+30/06/2014-17:30:56 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Sondeo.propuestas -> PROPUESTA
+30/06/2014-17:30:56 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Propuesta.votos -> VOTO
+30/06/2014-17:30:56 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.SondeoInterviniente.comentarios -> COMENTARIO
+30/06/2014-17:30:56 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.SondeoInterviniente.votos -> VOTO
+30/06/2014-17:30:56 INFO  [te.validator.Version] - Hibernate Validator 3.0.0.GA
+30/06/2014-17:30:56 INFO  [onSessionFactoryBean] - Building new Hibernate SessionFactory
+30/06/2014-17:30:56 INFO  [ctionProviderFactory] - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+30/06/2014-17:30:56 INFO  [PoolBackedDataSource] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 30000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kflt921tvbooso9xq53|1c4fe21, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kflt921tvbooso9xq53|1c4fe21, idleConnectionTestPeriod -> 100, initialPoolSize -> 5, jdbcUrl -> jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=10.240.202.30)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=DESICOP)))), maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 300, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 35, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 6, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> SELECT 1 FROM DUAL, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+30/06/2014-17:30:57 INFO  [.cfg.SettingsFactory] - RDBMS: Oracle, version: Oracle Database 10g Enterprise Edition Release 10.2.0.4.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+30/06/2014-17:30:57 INFO  [.cfg.SettingsFactory] - JDBC driver: Oracle JDBC driver, version: 10.2.0.4.0
+30/06/2014-17:30:57 INFO  [nate.dialect.Dialect] - Using dialect: org.hibernate.dialect.Oracle10gDialect
+30/06/2014-17:30:57 INFO  [actionFactoryFactory] - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+30/06/2014-17:30:57 INFO  [ManagerLookupFactory] - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+30/06/2014-17:30:57 INFO  [.cfg.SettingsFactory] - Automatic flush during beforeCompletion(): disabled
+30/06/2014-17:30:57 INFO  [.cfg.SettingsFactory] - Automatic session close at end of transaction: disabled
+30/06/2014-17:30:57 INFO  [.cfg.SettingsFactory] - Scrollable result sets: enabled
+30/06/2014-17:30:57 INFO  [.cfg.SettingsFactory] - JDBC3 getGeneratedKeys(): disabled
+30/06/2014-17:30:57 INFO  [.cfg.SettingsFactory] - Connection release mode: auto
+30/06/2014-17:30:57 INFO  [.cfg.SettingsFactory] - Maximum outer join fetch depth: 1
+30/06/2014-17:30:57 INFO  [.cfg.SettingsFactory] - Default batch fetch size: 1
+30/06/2014-17:30:57 INFO  [.cfg.SettingsFactory] - Generate SQL with comments: disabled
+30/06/2014-17:30:57 INFO  [.cfg.SettingsFactory] - Order SQL updates by primary key: enabled
+30/06/2014-17:30:57 INFO  [.cfg.SettingsFactory] - Order SQL inserts for batching: disabled
+30/06/2014-17:30:57 INFO  [.cfg.SettingsFactory] - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+30/06/2014-17:30:57 INFO  [eryTranslatorFactory] - Using ASTQueryTranslatorFactory
+30/06/2014-17:30:57 INFO  [.cfg.SettingsFactory] - Query language substitutions: {}
+30/06/2014-17:30:57 INFO  [.cfg.SettingsFactory] - JPA-QL strict compliance: disabled
+30/06/2014-17:30:57 INFO  [.cfg.SettingsFactory] - Second-level cache: enabled
+30/06/2014-17:30:57 INFO  [.cfg.SettingsFactory] - Query cache: disabled
+30/06/2014-17:30:57 INFO  [.cfg.SettingsFactory] - Cache provider: org.hibernate.cache.NoCacheProvider
+30/06/2014-17:30:57 INFO  [.cfg.SettingsFactory] - Optimize cache for minimal puts: disabled
+30/06/2014-17:30:57 INFO  [.cfg.SettingsFactory] - Structured second-level cache entries: disabled
+30/06/2014-17:30:57 INFO  [.cfg.SettingsFactory] - Statistics: disabled
+30/06/2014-17:30:57 INFO  [.cfg.SettingsFactory] - Deleted entity synthetic identifier rollback: disabled
+30/06/2014-17:30:57 INFO  [.cfg.SettingsFactory] - Default entity-mode: pojo
+30/06/2014-17:30:57 INFO  [.cfg.SettingsFactory] - Named query checking : enabled
+30/06/2014-17:30:57 INFO  [l.SessionFactoryImpl] - building session factory
+30/06/2014-17:30:59 INFO  [FactoryObjectFactory] - Not binding factory to JNDI, no JNDI name configured
+30/06/2014-17:31:00 INFO  [chedulerSignalerImpl] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+30/06/2014-17:31:00 INFO  [core.QuartzScheduler] - Quartz Scheduler v.1.6.5 created.
+30/06/2014-17:31:00 INFO  [tz.simpl.RAMJobStore] - RAMJobStore initialized.
+30/06/2014-17:31:00 INFO  [.StdSchedulerFactory] - Quartz scheduler 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' initialized from an externally provided properties instance.
+30/06/2014-17:31:00 INFO  [.StdSchedulerFactory] - Quartz scheduler version: 1.6.5
+30/06/2014-17:31:00 INFO  [core.QuartzScheduler] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@c0e9db
+30/06/2014-17:31:00 INFO  [SchedulerFactoryBean] - Starting Quartz Scheduler now
+30/06/2014-17:31:00 INFO  [core.QuartzScheduler] - Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED started.
+30/06/2014-17:31:01 INFO  [tSecurityInterceptor] - Validated configuration attributes
+30/06/2014-17:31:01 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.acl.Ace
+30/06/2014-17:31:01 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.acl.Ace on table ACL_ENTRY
+30/06/2014-17:31:01 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.acl.Acl
+30/06/2014-17:31:01 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.acl.Acl on table ACL
+30/06/2014-17:31:01 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Perfil
+30/06/2014-17:31:01 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.Perfil on table PERFIL
+30/06/2014-17:31:01 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Rol
+30/06/2014-17:31:01 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.Rol on table ROL
+30/06/2014-17:31:01 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Propietario
+30/06/2014-17:31:01 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.Propietario on table PROPIETARIO
+30/06/2014-17:31:01 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.EntidadGUIA
+30/06/2014-17:31:01 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.EntidadGUIA on table ENTIDAD_GUIA
+30/06/2014-17:31:01 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Agenda
+30/06/2014-17:31:01 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.Agenda on table AGENDA
+30/06/2014-17:31:01 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Usuario
+30/06/2014-17:31:01 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.Usuario on table USUARIO
+30/06/2014-17:31:01 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Grupo
+30/06/2014-17:31:01 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.Grupo on table GRUPO
+30/06/2014-17:31:01 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.ZonaHoraria
+30/06/2014-17:31:01 INFO  [cfg.AnnotationBinder] - Binding type definition: timezone
+30/06/2014-17:31:01 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.ZonaHoraria on table ZONA_HORARIA
+30/06/2014-17:31:01 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Preferencia
+30/06/2014-17:31:01 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.Preferencia on table PREFERENCIA
+30/06/2014-17:31:01 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.PreferenciasSAD
+30/06/2014-17:31:01 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.PreferenciasSAD on table PREFERENCIAS_SAD
+30/06/2014-17:31:01 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Subscripcion
+30/06/2014-17:31:01 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.Subscripcion on table SUBSCRIPCION
+30/06/2014-17:31:01 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.SubscripcionInterna
+30/06/2014-17:31:01 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.SubscripcionInterna on table SUBSCRIPCION_INTERNA
+30/06/2014-17:31:01 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.SubscripcionExterna
+30/06/2014-17:31:01 INFO  [cfg.AnnotationBinder] - Binding type definition: cypher
+30/06/2014-17:31:01 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.SubscripcionExterna on table SUBSCRIPCION_EXTERNA
+30/06/2014-17:31:01 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.ContenedorPIM
+30/06/2014-17:31:01 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.ContenedorPIM on table CONTENEDOR
+30/06/2014-17:31:01 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.ElementoPIM
+30/06/2014-17:31:01 INFO  [cfg.AnnotationBinder] - Binding type definition: long_timestamp
+30/06/2014-17:31:01 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.ElementoPIM on table ELEMENTO_PIM
+30/06/2014-17:31:01 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Categoria
+30/06/2014-17:31:01 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.Categoria on table CATEGORIA
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Calendario
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Inbox
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Outbox
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.ElementoICal
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding type definition: long_timestamp
+30/06/2014-17:31:02 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.ElementoICal on table ELEMENTO_ICAL
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Cita
+30/06/2014-17:31:02 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.Cita on table CITA
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Contacto
+30/06/2014-17:31:02 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.Contacto on table CONTACTO
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.PermisoFB
+30/06/2014-17:31:02 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.PermisoFB on table PERMISO_FB
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Libreta
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Recordatorio
+30/06/2014-17:31:02 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.Recordatorio on table RECORDATORIO
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Recurso
+30/06/2014-17:31:02 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.Recurso on table RECURSO
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Registro
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Tarea
+30/06/2014-17:31:02 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.Tarea on table TAREA
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Estado
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding type definition: long_timestamp
+30/06/2014-17:31:02 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.Estado on table ESTADO
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.InformacionInterviniente
+30/06/2014-17:31:02 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.InformacionInterviniente on table INFO_INTERV
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.EmailInterviniente
+30/06/2014-17:31:02 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.EmailInterviniente on table EMAIL_INTERV
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.HibInterviniente
+30/06/2014-17:31:02 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.HibInterviniente on table HIB_INTERV
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.SyncError
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding type definition: long_timestamp
+30/06/2014-17:31:02 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.SyncError on table SYNC_ERROR
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.HistoricoSLS
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding type definition: long_timestamp
+30/06/2014-17:31:02 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.HistoricoSLS on table HISTORICOS_SLS
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.DispositivoBloqueado
+30/06/2014-17:31:02 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.DispositivoBloqueado on table DISPOSITIVO_BLOQUEADO
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.BloqueoSLS
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding type definition: long_timestamp
+30/06/2014-17:31:02 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.BloqueoSLS on table BLOQUEO_SLS
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.BloqueoMDS
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding type definition: long_timestamp
+30/06/2014-17:31:02 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.BloqueoMDS on table BLOQUEO_MDS
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.view.ElementoContenedorCategoria
+30/06/2014-17:31:02 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.view.ElementoContenedorCategoria on table ELEMENTO_CONTENEDOR_CATEGORIA
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Clasificacion
+30/06/2014-17:31:02 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.Clasificacion on table CLASIFICACION
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.LobWrapper
+30/06/2014-17:31:02 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.LobWrapper on table LOB_WRAPPER
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Entidad
+30/06/2014-17:31:02 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.Entidad on table ENTIDAD
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.RegistroSincronizacion
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding type definition: long_timestamp
+30/06/2014-17:31:02 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.RegistroSincronizacion on table REGISTRO_SINCRO
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.LineaRegistroSincronizacion
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding type definition: long_timestamp
+30/06/2014-17:31:02 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.LineaRegistroSincronizacion on table LIN_REGISTRO_SINCRO
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.PermGestionInvitaciones
+30/06/2014-17:31:02 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.PermGestionInvitaciones on table PERM_GESTION_INVITACIONES
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.HistoricoUsuariosPresentes
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding type definition: long_timestamp
+30/06/2014-17:31:02 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.HistoricoUsuariosPresentes on table HISTORICO_USUARIOS_PRESENTES
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.stats.AccesoUsuario
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding type definition: long_timestamp
+30/06/2014-17:31:02 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.stats.AccesoUsuario on table ACCESO_USUARIO
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.stats.ConsumoCuotaUsuarios
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding type definition: long_timestamp
+30/06/2014-17:31:02 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.stats.ConsumoCuotaUsuarios on table CONSUMO_CUOTA_USUARIOS
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.stats.HistoricoAccesos
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding type definition: long_timestamp
+30/06/2014-17:31:02 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.stats.HistoricoAccesos on table HISTORICO_ACCESOS
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.stats.HistoricoPIM
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding type definition: long_timestamp
+30/06/2014-17:31:02 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.stats.HistoricoPIM on table HISTORICO_PIM
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.stats.HistoricoSyncError
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding type definition: long_timestamp
+30/06/2014-17:31:02 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.stats.HistoricoSyncError on table HISTORICO_SYNC_ERROR
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.AccionesInvitaciones
+30/06/2014-17:31:02 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.AccionesInvitaciones on table ACCIONES_INVITACIONES
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Sondeo
+30/06/2014-17:31:02 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.Sondeo on table SONDEO
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Propuesta
+30/06/2014-17:31:02 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.Propuesta on table PROPUESTA
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Voto
+30/06/2014-17:31:02 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.Voto on table VOTO
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Comentario
+30/06/2014-17:31:02 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.Comentario on table COMENTARIO
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.ConjuntoSondeos
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.SondeoInterviniente
+30/06/2014-17:31:02 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.SondeoInterviniente on table SONDEO_INTERVINIENTE
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.PermGestionCategorias
+30/06/2014-17:31:02 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.PermGestionCategorias on table PERM_GESTION_CATEGORIAS
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.security.AccesoFallido
+30/06/2014-17:31:02 INFO  [cfg.AnnotationBinder] - Binding type definition: long_timestamp
+30/06/2014-17:31:02 INFO  [tations.EntityBinder] - Bind entity es.juntadeandalucia.cice.agata.sad.domain.security.AccesoFallido on table ACCESO_FALLIDO
+30/06/2014-17:31:02 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.ElementoICal.sobreescrituras -> ELEMENTO_ICAL
+30/06/2014-17:31:02 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.ElementoICal.intervinientes -> INFO_INTERV
+30/06/2014-17:31:02 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Categoria.subscripciones -> SUBSCRIPCION_INTERNA
+30/06/2014-17:31:02 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.ContenedorPIM.subscripciones -> SUBSCRIPCION_INTERNA
+30/06/2014-17:31:02 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Preferencia.subscripciones -> SUBSCRIPCION
+30/06/2014-17:31:02 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.acl.Acl.aces -> ACL_ENTRY
+30/06/2014-17:31:02 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Propietario.permInvitacionesGestor -> PERM_GESTION_INVITACIONES
+30/06/2014-17:31:02 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Propietario.permInvitacionesPropietario -> PERM_GESTION_INVITACIONES
+30/06/2014-17:31:02 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.EntidadGUIA.aces -> ACL_ENTRY
+30/06/2014-17:31:02 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Agenda.contenedores -> CONTENEDOR
+30/06/2014-17:31:02 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Usuario.permisosBenefactor -> PERMISO_FB
+30/06/2014-17:31:02 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Usuario.permisosBeneficiario -> PERMISO_FB
+30/06/2014-17:31:02 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Grupo.usuarios -> USUARIO
+30/06/2014-17:31:02 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.ContenedorPIM.categorias -> CATEGORIA
+30/06/2014-17:31:02 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.ContenedorPIM.elementos -> ELEMENTO_PIM
+30/06/2014-17:31:02 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.ContenedorPIM.registrosSincronizacion -> REGISTRO_SINCRO
+30/06/2014-17:31:02 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.ElementoPIM.estados -> ESTADO
+30/06/2014-17:31:02 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.ElementoPIM.historicosSLS -> HISTORICOS_SLS
+30/06/2014-17:31:02 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.ElementoPIM.syncErrors -> SYNC_ERROR
+30/06/2014-17:31:02 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Calendario.preferencias -> PREFERENCIA
+30/06/2014-17:31:02 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.ElementoICal.recordatorios -> RECORDATORIO
+30/06/2014-17:31:02 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Clasificacion.usuarios -> USUARIO
+30/06/2014-17:31:02 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Entidad.usuarios -> USUARIO
+30/06/2014-17:31:02 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Sondeo.comentarios -> COMENTARIO
+30/06/2014-17:31:02 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Sondeo.intervinientes -> SONDEO_INTERVINIENTE
+30/06/2014-17:31:02 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Sondeo.propuestas -> PROPUESTA
+30/06/2014-17:31:02 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Propuesta.votos -> VOTO
+30/06/2014-17:31:02 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.SondeoInterviniente.comentarios -> COMENTARIO
+30/06/2014-17:31:02 INFO  [ons.CollectionBinder] - Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.SondeoInterviniente.votos -> VOTO
+30/06/2014-17:31:02 INFO  [onSessionFactoryBean] - Building new Hibernate SessionFactory
+30/06/2014-17:31:02 INFO  [ctionProviderFactory] - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+30/06/2014-17:31:02 INFO  [.cfg.SettingsFactory] - RDBMS: Oracle, version: Oracle Database 10g Enterprise Edition Release 10.2.0.4.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+30/06/2014-17:31:02 INFO  [.cfg.SettingsFactory] - JDBC driver: Oracle JDBC driver, version: 10.2.0.4.0
+30/06/2014-17:31:02 INFO  [nate.dialect.Dialect] - Using dialect: org.hibernate.dialect.Oracle10gDialect
+30/06/2014-17:31:02 INFO  [actionFactoryFactory] - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+30/06/2014-17:31:02 INFO  [ManagerLookupFactory] - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+30/06/2014-17:31:02 INFO  [.cfg.SettingsFactory] - Automatic flush during beforeCompletion(): disabled
+30/06/2014-17:31:02 INFO  [.cfg.SettingsFactory] - Automatic session close at end of transaction: disabled
+30/06/2014-17:31:02 INFO  [.cfg.SettingsFactory] - Scrollable result sets: enabled
+30/06/2014-17:31:02 INFO  [.cfg.SettingsFactory] - JDBC3 getGeneratedKeys(): disabled
+30/06/2014-17:31:02 INFO  [.cfg.SettingsFactory] - Connection release mode: auto
+30/06/2014-17:31:02 INFO  [.cfg.SettingsFactory] - Maximum outer join fetch depth: 1
+30/06/2014-17:31:02 INFO  [.cfg.SettingsFactory] - Default batch fetch size: 1
+30/06/2014-17:31:02 INFO  [.cfg.SettingsFactory] - Generate SQL with comments: disabled
+30/06/2014-17:31:02 INFO  [.cfg.SettingsFactory] - Order SQL updates by primary key: enabled
+30/06/2014-17:31:02 INFO  [.cfg.SettingsFactory] - Order SQL inserts for batching: disabled
+30/06/2014-17:31:02 INFO  [.cfg.SettingsFactory] - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+30/06/2014-17:31:02 INFO  [eryTranslatorFactory] - Using ASTQueryTranslatorFactory
+30/06/2014-17:31:02 INFO  [.cfg.SettingsFactory] - Query language substitutions: {}
+30/06/2014-17:31:02 INFO  [.cfg.SettingsFactory] - JPA-QL strict compliance: disabled
+30/06/2014-17:31:02 INFO  [.cfg.SettingsFactory] - Second-level cache: enabled
+30/06/2014-17:31:02 INFO  [.cfg.SettingsFactory] - Query cache: disabled
+30/06/2014-17:31:02 INFO  [.cfg.SettingsFactory] - Cache provider: org.hibernate.cache.NoCacheProvider
+30/06/2014-17:31:02 INFO  [.cfg.SettingsFactory] - Optimize cache for minimal puts: disabled
+30/06/2014-17:31:02 INFO  [.cfg.SettingsFactory] - Structured second-level cache entries: disabled
+30/06/2014-17:31:02 INFO  [.cfg.SettingsFactory] - Statistics: disabled
+30/06/2014-17:31:02 INFO  [.cfg.SettingsFactory] - Deleted entity synthetic identifier rollback: disabled
+30/06/2014-17:31:02 INFO  [.cfg.SettingsFactory] - Default entity-mode: pojo
+30/06/2014-17:31:02 INFO  [.cfg.SettingsFactory] - Named query checking : enabled
+30/06/2014-17:31:02 INFO  [l.SessionFactoryImpl] - building session factory
+30/06/2014-17:31:04 INFO  [FactoryObjectFactory] - Not binding factory to JNDI, no JNDI name configured
+30/06/2014-17:31:05 WARN  [SADConfigServiceImpl] - Error at initialization of properties in init. Using JNDI/default properties.
+30/06/2014-17:31:06 INFO  [y.app.VelocityEngine] - LogSystem has been deprecated. Please use a LogChute implementation.
+30/06/2014-17:31:09 INFO  [ionBeanPostProcessor] - Selecting AuthenticationEntryPoint for use in ExceptionTranslationFilter
+30/06/2014-17:31:09 INFO  [ionBeanPostProcessor] - Using main configured AuthenticationEntryPoint.
+30/06/2014-17:31:09 INFO  [ionBeanPostProcessor] - Using bean 'org.springframework.security.ui.webapp.AuthenticationProcessingFilterEntryPoint@1b8fdf2' as the entry point.
+30/06/2014-17:31:09 INFO  [tSecurityInterceptor] - Validated configuration attributes
+30/06/2014-17:31:10 INFO  [inProxyPostProcessor] - Checking sorted filter chain: [org.springframework.security.context.HttpSessionContextIntegrationFilter[ order=200; ], org.springframework.security.ui.logout.LogoutFilter[ order=300; ], org.springframework.security.ui.webapp.AuthenticationProcessingFilter[ order=700; ], OrderedFilterDecorator[ delegate=es.juntadeandalucia.cice.agata.sad.security.filter.CsrfTokenFilter@7b7bee; order=701], org.springframework.security.wrapper.SecurityContextHolderAwareRequestFilter[ order=1100; ], org.springframework.security.ui.ExceptionTranslationFilter[ order=1400; ], org.springframework.security.ui.SessionFixationProtectionFilter[ order=1600; ], org.springframework.security.intercept.web.FilterSecurityInterceptor@10580fa]
+30/06/2014-17:31:10 INFO  [inProxyPostProcessor] - Filter chain...
+30/06/2014-17:31:10 INFO  [inProxyPostProcessor] - [0] - org.springframework.security.context.HttpSessionContextIntegrationFilter[ order=200; ]
+30/06/2014-17:31:10 INFO  [inProxyPostProcessor] - [1] - org.springframework.security.ui.logout.LogoutFilter[ order=300; ]
+30/06/2014-17:31:10 INFO  [inProxyPostProcessor] - [2] - org.springframework.security.ui.webapp.AuthenticationProcessingFilter[ order=700; ]
+30/06/2014-17:31:10 INFO  [inProxyPostProcessor] - [3] - es.juntadeandalucia.cice.agata.sad.security.filter.CsrfTokenFilter@7b7bee
+30/06/2014-17:31:10 INFO  [inProxyPostProcessor] - [4] - org.springframework.security.wrapper.SecurityContextHolderAwareRequestFilter[ order=1100; ]
+30/06/2014-17:31:10 INFO  [inProxyPostProcessor] - [5] - org.springframework.security.ui.ExceptionTranslationFilter[ order=1400; ]
+30/06/2014-17:31:10 INFO  [inProxyPostProcessor] - [6] - org.springframework.security.ui.SessionFixationProtectionFilter[ order=1600; ]
+30/06/2014-17:31:10 INFO  [inProxyPostProcessor] - [7] - org.springframework.security.intercept.web.FilterSecurityInterceptor@10580fa
+30/06/2014-17:31:10 INFO  [inProxyPostProcessor] - Checking whether login URL '/login.jsp' is accessible with your configuration
+30/06/2014-17:31:10 INFO  [inProxyPostProcessor] - FilterChainProxy: FilterChainProxy[ UrlMatcher = org.springframework.security.util.AntUrlPathMatcher[requiresLowerCase='true']; Filter Chains: {/login.jsp*=[], /public/css/**=[], /public/images/**=[], /**=[org.springframework.security.context.HttpSessionContextIntegrationFilter[ order=200; ], org.springframework.security.ui.logout.LogoutFilter[ order=300; ], org.springframework.security.ui.webapp.AuthenticationProcessingFilter[ order=700; ], es.juntadeandalucia.cice.agata.sad.security.filter.CsrfTokenFilter@7b7bee, org.springframework.security.wrapper.SecurityContextHolderAwareRequestFilter[ order=1100; ], org.springframework.security.ui.ExceptionTranslationFilter[ order=1400; ], org.springframework.security.ui.SessionFixationProtectionFilter[ order=1600; ], org.springframework.security.intercept.web.FilterSecurityInterceptor@10580fa]}]
+30/06/2014-17:31:10 INFO  [ecurityContextSource] -  URL 'ldap://ldap23.juntadeandalucia.es:389/o=juntadeandalucia,c=es', root DN is 'o=juntadeandalucia,c=es'
+30/06/2014-17:31:10 INFO  [ontext.ContextLoader] - Root WebApplicationContext: initialization completed in 20924 ms
+30/06/2014-17:31:10 INFO  [et.DispatcherServlet] - FrameworkServlet 'sad-web-admin': initialization started
+30/06/2014-17:31:10 INFO  [ebApplicationContext] - Refreshing org.springframework.web.context.support.XmlWebApplicationContext@147bc1e: display name [WebApplicationContext for namespace 'sad-web-admin-servlet']; startup date [Mon Jun 30 17:31:10 CEST 2014]; parent: org.springframework.web.context.support.XmlWebApplicationContext@1a102ef
+30/06/2014-17:31:10 INFO  [BeanDefinitionReader] - Loading XML bean definitions from ServletContext resource [/WEB-INF/sad-web-admin-servlet.xml]
+30/06/2014-17:31:10 WARN  [ogConfigurerListener] - New log directory: /opt/jboss/server/default/log
+30/06/2014-17:31:10 WARN  [ogConfigurerListener] - Old log directory: 
+30/06/2014-17:31:11 INFO  [ebApplicationContext] - Bean factory for application context [org.springframework.web.context.support.XmlWebApplicationContext@147bc1e]: org.springframework.beans.factory.support.DefaultListableBeanFactory@b66600
+30/06/2014-17:31:11 INFO  [tListableBeanFactory] - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@b66600: defining beans [exceptionResolver,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,syncDeviceController,groupController,adminNotificationController,syncPrincipalController,statisticController,timezoneController,holidayController,entidadController,sadController,usuarioController,profileController,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,jspViewResolver,messageSource,jsonView]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@129bc5b
+30/06/2014-17:31:11 INFO  [et.DispatcherServlet] - FrameworkServlet 'sad-web-admin': initialization completed in 679 ms

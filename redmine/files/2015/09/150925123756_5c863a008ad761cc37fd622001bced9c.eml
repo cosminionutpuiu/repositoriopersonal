@@ -1,0 +1,431 @@
+Return-path: <franciscoj.manzano@juntadeandalucia.es>
+Envelope-to: juanc.rubio.pineda@juntadeandalucia.es
+Delivery-date: Thu, 24 Sep 2015 14:40:23 +0200
+Received: from [10.240.225.254] (helo=mail.juntadeandalucia.es)
+	by ccobuz19 with esmtp (Exim 4.71)
+	(envelope-from <franciscoj.manzano@juntadeandalucia.es>)
+	id 1Zf5oz-00073p-Gd
+	for juanc.rubio.pineda@juntadeandalucia.es; Thu, 24 Sep 2015 14:40:23 +0200
+Received: from [10.228.144.141] (helo=W7JMANZANO)
+	by mail.juntadeandalucia.es with esmtpa (Exim 4.71)
+	(envelope-from <franciscoj.manzano@juntadeandalucia.es>)
+	id 1Zf5oz-00079w-6N
+	for juanc.rubio.pineda@juntadeandalucia.es; Thu, 24 Sep 2015 14:40:21 +0200
+From: "Javier Manzano" <franciscoj.manzano@juntadeandalucia.es>
+To: "Juan Carlos Rubio Pineda" <juanc.rubio.pineda@juntadeandalucia.es>
+Date: Thu, 24 Sep 2015 14:40:21 +0200
+Message-ID: <0d5501d0f6c6$2d472860$87d57920$@juntadeandalucia.es>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0D56_01D0F6D6.F0D29070"
+X-Mailer: Microsoft Outlook 14.0
+Thread-Index: AdD2xLETl5wmtMoxTgeLashEpglugQ==
+Content-Language: es
+X-KLMS-Rule-ID: 1
+X-KLMS-Message-Action: clean
+X-KLMS-AntiSpam-Status: not scanned, disabled by settings
+X-KLMS-AntiPhishing: not scanned, disabled by settings
+X-KLMS-AntiVirus: Kaspersky Security 8.0 for Linux Mail Server, version 8.0.1.721, bases: 2015/09/24 03:06:00 #6546183
+X-KLMS-AntiVirus-Status: Clean, skipped
+X-Spam-Score: -1.2 (-)
+X-Spam-Status: No, score=-1.2 required=4.1 tests=ALL_TRUSTED,BAYES_00,HTML_MESSAGE autolearn=ham
+ X-Spam-Report: 
+ * -0.2 ALL_TRUSTED Passed through trusted hosts only via SMTP
+ * -1.0 BAYES_00 BODY: Bayesian spam probability is 0 to 1%
+ *      [score: 0.0000]
+ *  0.0 HTML_MESSAGE BODY: HTML included in message
+Subject:  =?iso-8859-1?Q?Migraci=F3n_de_ciertas_cuentas_de_CPRE_a_CPAL?=
+
+This is a multipart message in MIME format.
+
+------=_NextPart_000_0D56_01D0F6D6.F0D29070
+Content-Type: text/plain;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+=20
+
+Juan Carlos, las cuentas gen=E9ricas del tipo CPRE ya est=E1n en CPAL, =
+seg=FAn
+acordamos, y sin problemas.
+
+=20
+
+Ya s=E9 que est=E1is gestionando lo necesario respecto a las cuentas =
+SIRHUS,
+para ver si la semana que viene es posible migrarlas con un buen =
+control,
+respecto al impacto relativo a la VPN,
+
+=20
+
+Pero vemos que nos faltan dos temas que realizar, por si pudieran =
+hacerlo y
+de forma r=E1pida para nosotros:
+
+=20
+
+-          Generaci=F3n de las listas CPAL, equivalentes a las CPRE que
+tenemos, y con el debido cambio de donde pone en una cuenta =93x.cpre=94 =
+que sea
+=93x.cpal=94.
+
+=20
+
+-          Pasar del dominio CPRE al CPAL las cuentas de tipo =
+=93gen=E9ricas=94
+pero que no llevan sufijo (va seguidamente la lista actual). Ahora mismo
+est=E1n bajo CPRE.
+
+=20
+
+La lista de las cuentas que indicaba son (actualmente bajo CPRE, y pasar =
+a
+CPAL):
+
+=20
+
+ <mailto:comunicacion.sgpresidencia@juntadeandalucia.es>
+comunicacion.sgpresidencia@juntadeandalucia.es
+
+ <mailto:gabinete.presidenta@juntadeandalucia.es>
+gabinete.presidenta@juntadeandalucia.es
+
+ <mailto:gabineteprensa@juntadeandalucia.es>
+gabineteprensa@juntadeandalucia.es
+
+ <mailto:manuel.m.andana@juntadeandalucia.es>
+manuel.m.andana@juntadeandalucia.es
+
+ <mailto:moisa@juntadeandalucia.es> moisa@juntadeandalucia.es
+
+ <mailto:pactoporandalucia@juntadeandalucia.es>
+pactoporandalucia@juntadeandalucia.es
+
+ <mailto:portavoz@juntadeandalucia.es> portavoz@juntadeandalucia.es
+
+ <mailto:presidenta@juntadeandalucia.es> presidenta@juntadeandalucia.es
+
+ <mailto:presidente@juntadeandalucia.es> presidente@juntadeandalucia.es
+
+ <mailto:presidente.grinan@juntadeandalucia.es>
+presidente.grinan@juntadeandalucia.es
+
+ <mailto:redaccion.portal@juntadeandalucia.es>
+redaccion.portal@juntadeandalucia.es
+
+ <mailto:redessociales@juntadeandalucia.es>
+redessociales@juntadeandalucia.es
+
+ <mailto:redessociales.portavoz@juntadeandalucia.es>
+redessociales.portavoz@juntadeandalucia.es
+
+ <mailto:santelmo@juntadeandalucia.es> santelmo@juntadeandalucia.es
+
+ <mailto:santelmoabierto@juntadeandalucia.es>
+santelmoabierto@juntadeandalucia.es
+
+ <mailto:sdp@juntadeandalucia.es> sdp@juntadeandalucia.es
+
+ <mailto:secportavoz@juntadeandalucia.es> =
+secportavoz@juntadeandalucia.es
+
+ <mailto:sgpresidencia@juntadeandalucia.es>
+sgpresidencia@juntadeandalucia.es
+
+ <mailto:transparencia@juntadeandalucia.es>
+transparencia@juntadeandalucia.es
+
+ <mailto:vicepresidencia.primera@juntadeandalucia.es>
+vicepresidencia.primera@juntadeandalucia.es
+
+ <mailto:vicepresidente@juntadeandalucia.es>
+vicepresidente@juntadeandalucia.es
+
+ <mailto:visitasantelmo@juntadeandalucia.es>
+visitasantelmo@juntadeandalucia.es
+
+=20
+
+=20
+
+Si quieres que pongamos un ticket a CAU tic, sin problemas, pero al =
+tratarse
+de temas un poco m=E1s especiales, pues lo he enviado en este correo.
+
+=20
+
+Muchas gracias.
+
+=20
+
+Un saludo.
+
+=20
+
+
+------=_NextPart_000_0D56_01D0F6D6.F0D29070
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" =
+xmlns:o=3D"urn:schemas-microsoft-com:office:office" =
+xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" =
+xmlns=3D"http://www.w3.org/TR/REC-html40"><head><meta =
+http-equiv=3DContent-Type content=3D"text/html; =
+charset=3Diso-8859-1"><meta name=3DGenerator content=3D"Microsoft Word =
+14 (filtered medium)"><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-fareast-language:EN-US;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{mso-style-priority:99;
+	mso-style-link:"Texto sin formato Car";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-fareast-language:EN-US;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-fareast-language:EN-US;}
+span.EstiloCorreo17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+span.TextosinformatoCar
+	{mso-style-name:"Texto sin formato Car";
+	mso-style-priority:99;
+	mso-style-link:"Texto sin formato";
+	font-family:"Calibri","sans-serif";}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri","sans-serif";
+	mso-fareast-language:EN-US;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:70.85pt 3.0cm 70.85pt 3.0cm;}
+div.WordSection1
+	{page:WordSection1;}
+/* List Definitions */
+@list l0
+	{mso-list-id:1333068985;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1699293826 -428337368 201981955 201981957 =
+201981953 201981955 201981957 201981953 201981955 201981957;}
+@list l0:level1
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:-;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-fareast-font-family:Calibri;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]--></head><body lang=3DES link=3Dblue =
+vlink=3Dpurple><div class=3DWordSection1><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p><p class=3DMsoNormal>Juan Carlos, =
+las cuentas gen=E9ricas del tipo CPRE ya est=E1n en CPAL, seg=FAn =
+acordamos, y sin problemas.<o:p></o:p></p><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p><p class=3DMsoNormal>Ya s=E9 que =
+est=E1is gestionando lo necesario respecto a las cuentas SIRHUS, para =
+ver si la semana que viene es posible migrarlas con un buen control, =
+respecto al impacto relativo a la VPN,<o:p></o:p></p><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p><p class=3DMsoNormal>Pero vemos =
+que nos faltan dos temas que realizar, por si pudieran hacerlo y de =
+forma r=E1pida para nosotros:<o:p></o:p></p><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p><p class=3DMsoListParagraph =
+style=3D'text-indent:-18.0pt;mso-list:l0 level1 lfo1'><![if =
+!supportLists]><span style=3D'mso-list:Ignore'>-<span =
+style=3D'font:7.0pt "Times New =
+Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+</span></span><![endif]><u>Generaci=F3n de las listas CPAL, equivalentes =
+a las CPRE</u> que tenemos, y con el debido cambio de donde pone en una =
+cuenta &#8220;x.cpre&#8221; que sea =
+&#8220;x.cpal&#8221;.<o:p></o:p></p><p =
+class=3DMsoListParagraph><o:p>&nbsp;</o:p></p><p =
+class=3DMsoListParagraph style=3D'text-indent:-18.0pt;mso-list:l0 level1 =
+lfo1'><![if !supportLists]><span style=3D'mso-list:Ignore'>-<span =
+style=3D'font:7.0pt "Times New =
+Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+</span></span><![endif]><u>Pasar del dominio CPRE al CPAL las cuentas de =
+tipo &#8220;gen=E9ricas&#8221;</u> pero que no llevan sufijo (va =
+seguidamente la lista actual). Ahora mismo est=E1n bajo =
+CPRE.<o:p></o:p></p><p class=3DMsoNormal><o:p>&nbsp;</o:p></p><p =
+class=3DMsoNormal>La lista de las cuentas que indicaba son (actualmente =
+bajo CPRE, y pasar a CPAL):<o:p></o:p></p><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p><p class=3DMsoPlainText><a =
+href=3D"mailto:comunicacion.sgpresidencia@juntadeandalucia.es"><span =
+style=3D'color:windowtext;text-decoration:none'>comunicacion.sgpresidenci=
+a@juntadeandalucia.es</span></a><o:p></o:p></p><p =
+class=3DMsoPlainText><a =
+href=3D"mailto:gabinete.presidenta@juntadeandalucia.es"><span =
+style=3D'color:windowtext;text-decoration:none'>gabinete.presidenta@junta=
+deandalucia.es</span></a><o:p></o:p></p><p class=3DMsoPlainText><a =
+href=3D"mailto:gabineteprensa@juntadeandalucia.es"><span =
+style=3D'color:windowtext;text-decoration:none'>gabineteprensa@juntadeand=
+alucia.es</span></a><o:p></o:p></p><p class=3DMsoPlainText><a =
+href=3D"mailto:manuel.m.andana@juntadeandalucia.es"><span =
+style=3D'color:windowtext;text-decoration:none'>manuel.m.andana@juntadean=
+dalucia.es</span></a><o:p></o:p></p><p class=3DMsoPlainText><a =
+href=3D"mailto:moisa@juntadeandalucia.es"><span =
+style=3D'color:windowtext;text-decoration:none'>moisa@juntadeandalucia.es=
+</span></a><o:p></o:p></p><p class=3DMsoPlainText><a =
+href=3D"mailto:pactoporandalucia@juntadeandalucia.es"><span =
+style=3D'color:windowtext;text-decoration:none'>pactoporandalucia@juntade=
+andalucia.es</span></a><o:p></o:p></p><p class=3DMsoPlainText><a =
+href=3D"mailto:portavoz@juntadeandalucia.es"><span =
+style=3D'color:windowtext;text-decoration:none'>portavoz@juntadeandalucia=
+.es</span></a><o:p></o:p></p><p class=3DMsoPlainText><a =
+href=3D"mailto:presidenta@juntadeandalucia.es"><span =
+style=3D'color:windowtext;text-decoration:none'>presidenta@juntadeandaluc=
+ia.es</span></a><o:p></o:p></p><p class=3DMsoPlainText><a =
+href=3D"mailto:presidente@juntadeandalucia.es"><span =
+style=3D'color:windowtext;text-decoration:none'>presidente@juntadeandaluc=
+ia.es</span></a><o:p></o:p></p><p class=3DMsoPlainText><a =
+href=3D"mailto:presidente.grinan@juntadeandalucia.es"><span =
+style=3D'color:windowtext;text-decoration:none'>presidente.grinan@juntade=
+andalucia.es</span></a><o:p></o:p></p><p class=3DMsoPlainText><a =
+href=3D"mailto:redaccion.portal@juntadeandalucia.es"><span =
+style=3D'color:windowtext;text-decoration:none'>redaccion.portal@juntadea=
+ndalucia.es</span></a><o:p></o:p></p><p class=3DMsoPlainText><a =
+href=3D"mailto:redessociales@juntadeandalucia.es"><span =
+style=3D'color:windowtext;text-decoration:none'>redessociales@juntadeanda=
+lucia.es</span></a><o:p></o:p></p><p class=3DMsoPlainText><a =
+href=3D"mailto:redessociales.portavoz@juntadeandalucia.es"><span =
+style=3D'color:windowtext;text-decoration:none'>redessociales.portavoz@ju=
+ntadeandalucia.es</span></a><o:p></o:p></p><p class=3DMsoPlainText><a =
+href=3D"mailto:santelmo@juntadeandalucia.es"><span =
+style=3D'color:windowtext;text-decoration:none'>santelmo@juntadeandalucia=
+.es</span></a><o:p></o:p></p><p class=3DMsoPlainText><a =
+href=3D"mailto:santelmoabierto@juntadeandalucia.es"><span =
+style=3D'color:windowtext;text-decoration:none'>santelmoabierto@juntadean=
+dalucia.es</span></a><o:p></o:p></p><p class=3DMsoPlainText><a =
+href=3D"mailto:sdp@juntadeandalucia.es"><span =
+style=3D'color:windowtext;text-decoration:none'>sdp@juntadeandalucia.es</=
+span></a><o:p></o:p></p><p class=3DMsoPlainText><a =
+href=3D"mailto:secportavoz@juntadeandalucia.es"><span =
+style=3D'color:windowtext;text-decoration:none'>secportavoz@juntadeandalu=
+cia.es</span></a><o:p></o:p></p><p class=3DMsoPlainText><a =
+href=3D"mailto:sgpresidencia@juntadeandalucia.es"><span =
+style=3D'color:windowtext;text-decoration:none'>sgpresidencia@juntadeanda=
+lucia.es</span></a><o:p></o:p></p><p class=3DMsoPlainText><a =
+href=3D"mailto:transparencia@juntadeandalucia.es"><span =
+style=3D'color:windowtext;text-decoration:none'>transparencia@juntadeanda=
+lucia.es</span></a><o:p></o:p></p><p class=3DMsoPlainText><a =
+href=3D"mailto:vicepresidencia.primera@juntadeandalucia.es"><span =
+style=3D'color:windowtext;text-decoration:none'>vicepresidencia.primera@j=
+untadeandalucia.es</span></a><o:p></o:p></p><p class=3DMsoPlainText><a =
+href=3D"mailto:vicepresidente@juntadeandalucia.es"><span =
+style=3D'color:windowtext;text-decoration:none'>vicepresidente@juntadeand=
+alucia.es</span></a><o:p></o:p></p><p class=3DMsoPlainText><a =
+href=3D"mailto:visitasantelmo@juntadeandalucia.es"><span =
+style=3D'color:windowtext;text-decoration:none'>visitasantelmo@juntadeand=
+alucia.es</span></a><o:p></o:p></p><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p><p class=3DMsoNormal>Si quieres =
+que pongamos un ticket a CAU tic, sin problemas, pero al tratarse de =
+temas un poco m=E1s especiales, pues lo he enviado en este =
+correo.<o:p></o:p></p><p class=3DMsoNormal><o:p>&nbsp;</o:p></p><p =
+class=3DMsoNormal>Muchas gracias.<o:p></o:p></p><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p><p class=3DMsoNormal>Un =
+saludo.<o:p></o:p></p><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p></div></body></html>
+------=_NextPart_000_0D56_01D0F6D6.F0D29070--
+

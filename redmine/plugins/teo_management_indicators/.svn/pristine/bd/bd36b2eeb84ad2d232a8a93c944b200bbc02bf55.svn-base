@@ -1,0 +1,310 @@
+# English strings go here for Rails i18n
+en:
+  # my_label: "My label"
+  permission_view_indicadores: View indicators
+
+  main_title_management_indicators: Economic Indicators
+
+  lbl_no_information: No information was found to calculate the indicators in this container.
+
+  title_g1: Execution of "in process" actions chart
+  title_g1b: Time passed
+  first_level_g1n1: First level
+  issue_type_g1n1: Issue type
+  issue_type_g1n1_info: Tipo de petición que se usará como referencia para el primer nivel de búsqueda
+  issue_status_g1n1: Status
+  issue_status_g1n1_info: Estado o estados que se usarán para filtrar las peticiones del primer nivel de búsqueda
+  start_date_g1n1: Initial date
+  start_date_g1n1_info: Campo de fecha que se usará como punto de partida del periodo de tiempo que abarcan las peticiones
+  due_date_g1n1: End date
+  due_date_g1n1_info: Campo de fecha que se usará como punto final del periodo de tiempo que abarcan las peticiones
+  cost_g1n1: Cost
+  cost_g1n1_info: Campo de importe que se tomará como referencia en las peticiones de primer nivel
+
+  second_level_g1n2: Second level
+  issue_type_g1n2: Issue type
+  issue_type_g1n2_info: Tipo de petición que se usará como referencia para el segundo nivel de búsqueda
+  issue_status_inprocess_g1n2: Status "In process"
+  issue_status_inprocess_g1n2_info: Estado que se usará para identificar que una petición está en progreso
+  issue_status_g1n2: Status
+  issue_status_g1n2_info: Estado o estados que se usarán para filtrar las peticiones del segundo nivel de búsqueda
+  cost1_g1n2: Cost 1
+  cost1_g1n2_info: Campo de importe que se tomará como referencia en las peticiones de segundo nivel
+  cost2_g1n2: Cost 2
+  cost2_g1n2_info: Campo de importe que se tomará como referencia en las peticiones de segundo nivel, en caso que el anterior campo no esté relleno en la petición
+  percentage_g1n2: Percentage
+  percentage_g1n2_info: Campo de porcentaje que se usará para conocer la parte completada de las peticiones en progreso
+
+  title_g1_issues: Execution of actions chart
+  issue_level_g1: Chart display in issues
+  issue_type_g1n1_issues: Issue type
+  issue_type_g1n1_issues_info: Type of request in which the graph will be displayed
+  issue_mensaje: 100% corresponds  
+
+  title_g2: Executed costs per year chart
+  general_level_g2: General settings
+  group_by_g2: Group by
+  group_by_g2_info: Project type field that will be used to group the amounts
+  active_legend_g2: Activate legend
+  active_link: Activate link
+
+  first_level_g2n1: First level
+  issue_type_g2n1: Issue type
+  issue_type_g2n1_info: Type of request that will be used as a reference for the first level of search
+  issue_status_g2n1: Status
+  issue_status_g2n1_info: State or states that will be used to filter requests for the first level of search
+
+  second_level_g2n2: Second level
+  issue_type_g2n2: Issue type
+  issue_type_g2n2_info: Type of request that will be used as a reference for the second level of search
+  issue_status_g2n2: Status
+  issue_status_g2n2_info: State or states that will be used to filter the requests of the second level of search
+  cost1_g2n2: Cost 1
+  cost1_g2n2_info: Amount field that will be taken as reference in second level requests
+  cost2_g2n2: Cost 2
+  cost2_g2n2_info: Amount field that will be taken as reference in second level requests, in case the previous field is not filled in the request
+  due_date_g2n2: Date
+  due_date_g2n2_info: Date field that will be used as a reference to group requests
+
+  title_g3: Graph of contract sectors
+  first_level_g3n1: First level
+  issue_type_g3n1: Issue type
+  issue_type_g3n1_info: Type of request that will be used as a reference for the first level of search
+  issue_status_g3n1: Status
+  issue_status_g3n1_info: State or states that will be used to filter requests for the first level of search
+
+  second_level_g3n2: Second level
+  issue_type_g3n2: Issue type
+  issue_type_g3n2_info: Type of request that will be used as a reference for the second level of search
+  cost1_g3n2: Cost 1
+  cost1_g3n2_info: Amount field that will be taken as reference in second level requests
+  cost2_g3n2: Cost 2
+  cost2_g3n2_info: Amount field that will be taken as reference in second level requests, in case the previous field is not filled in the request
+  group_by_g3: Group by
+  group_by_g3_info: Project type field that will be used to group the amounts
+
+  # Grafica de desvios
+  title_g4: Graph of Detour imports OTs
+  issue_type_g4: Issue type
+  issue_type_g4_info: Type of request that will be used as a reference for the search level
+  issue_status_g4: Status
+  issue_status_g4_info: State or states that will be used to filter search requests
+  limit_g4_title: Definition of limits in histograms of deviation of amounts in OTs
+
+  title_g5: Graph of Detour deadlines OTs
+  issue_type_g5: Issue type
+  issue_type_g5_info: Type of request that will be used as a reference for the search level
+  issue_status_g5: Status
+  issue_status_g5_info: State or states that will be used to filter search requests
+  limit_g5_title: Definition of limits in histograms of deviation of deadlines in OTs
+
+  field_desvio_name: Detour (%)
+  field_desvio_name_info: Diversion field that will be taken as reference in the requests
+  field_desvio_total: Total
+  field_desvio_resumen: Summary
+  field_desvio_resumen_desvios: Summary detours (%)
+  field_legend_info_g4_5: Numbers OTs
+  limit_g_1: Limit 1
+  limit_g_2: Limit 2
+  limit_g_3: Limit 3
+  limit_g_4: Limit 4
+  limit_g_5: Limit 5
+
+  active_actu: Update
+  active_actu_info: Esta opción permite visualizar un link en las gráficas de indicadores para actualizar todas las peticiones del tipo indicado en las graficas de desvíos
+
+  #Errores de validaciones de graficas
+  error_limitsg4_1_2: To validate the limit 1 with the 2 of the graph deviations amounts, both must be filled
+  error_limitsg4_2_3: To validate the limit 2 with the 3 of the graph deviations amounts, both must be filled
+  error_limitsg4_3_4: To validate the limit 3 with the 4 of the graph deviations amounts, both must be filled
+  error_limitsg4_4_5: To validate the limit 4 with the 5 of the graph deviations amounts, both must be filled
+  error_limitsg5_1_2: To validate the limit 1 with the 2 of the graph deviations amounts, both must be filled
+  error_limitsg5_2_3: To validate the limit 2 with the 3 of the graph deviations amounts, both must be filled
+  error_limitsg5_3_4: To validate the limit 3 with the 4 of the graph deviations amounts, both must be filled
+  error_limitsg5_4_5: To validate the limit 4 with the 5 of the graph deviations amounts, both must be filled
+
+  error_limitsg4_1: Limit 1 must be less than the limit 2.
+  error_limitsg4_2: Limit 2 must be less than the limit 3.
+  error_limitsg4_3: Limit 3 must be less than the limit 4.
+  error_limitsg4_4: Limit 4 must be less than the limit 5.
+  error_limitsg5_1: Limit 1 must be less than the limit 2.
+  error_limitsg5_2: Limit 2 must be less than the limit 3.
+  error_limitsg5_3: Limit 3 must be less than the limit 4.
+  error_limitsg5_4: Limit 4 must be less than the limit 5.
+
+  field_name: Name
+  field_description: Description
+  field_summary: Summary
+  field_is_required: Required
+  field_firstname: First name
+  field_lastname: Last name
+  field_mail: Email
+  field_address: Email
+  field_filename: File
+  field_filesize: Size
+  field_downloads: Downloads
+  field_author: Author
+  field_created_on: Created
+  field_closed_on: Closed
+  field_updated_on: Updated
+  field_closed_on: Closed
+  field_field_format: Format
+  field_is_for_all: For all projects
+  field_possible_values: Possible values
+  field_regexp: Regular expression
+  field_min_length: Minimum length
+  field_max_length: Maximum length
+  field_value: Value
+  field_category: Category
+  field_title: Title
+  field_project: Project
+  field_issue: Issue
+  field_status: Status
+  field_notes: Notes
+  field_is_closed: Issue closed
+  field_is_default: Default value
+  field_tracker: Tracker
+  field_subject: Subject
+  field_due_date: Due date
+  field_assigned_to: Assignee
+  field_priority: Priority
+  field_fixed_version: Target version
+  field_user: User
+  field_principal: Principal
+  field_role: Role
+  field_homepage: Homepage
+  field_is_public: Public
+  field_parent: Subproject of
+  field_is_in_roadmap: Issues displayed in roadmap
+  field_login: Login
+  field_mail_notification: Email notifications
+  field_admin: Administrator
+  field_last_login_on: Last connection
+  field_language: Language
+  field_effective_date: Date
+  field_password: Password
+  field_new_password: New password
+  field_password_confirmation: Confirmation
+  field_version: Version
+  field_type: Type
+  field_host: Host
+  field_port: Port
+  field_account: Account
+  field_base_dn: Base DN
+  field_attr_login: Login attribute
+  field_attr_firstname: Firstname attribute
+  field_attr_lastname: Lastname attribute
+  field_attr_mail: Email attribute
+  field_onthefly: On-the-fly user creation
+  field_start_date: Start date
+  field_done_ratio: "% Done"
+  field_auth_source: Authentication mode
+  field_hide_mail: Hide my email address
+  field_comments: Comment
+  field_url: URL
+  field_start_page: Start page
+  field_subproject: Subproject
+  field_hours: Hours
+  field_activity: Activity
+  field_spent_on: Date
+  field_identifier: Identifier
+  field_is_filter: Used as a filter
+  field_issue_to: Related issue
+  field_delay: Delay
+  field_assignable: Issues can be assigned to this role
+  field_redirect_existing_links: Redirect existing links
+  field_estimated_hours: Estimated time
+  field_column_names: Columns
+  field_time_entries: Log time
+  field_time_zone: Time zone
+  field_searchable: Searchable
+  field_default_value: Default value
+  field_comments_sorting: Display comments
+  field_parent_title: Parent page
+  field_editable: Editable
+  field_watcher: Watcher
+  field_identity_url: OpenID URL
+  field_content: Content
+  field_group_by: Group results by
+  field_sharing: Sharing
+  field_parent_issue: Parent task
+  field_member_of_group: "Assignee's group"
+  field_assigned_to_role: "Assignee's role"
+  field_text: Text field
+  field_visible: Visible
+  field_warn_on_leaving_unsaved: "Warn me when leaving a page with unsaved text"
+  field_issues_visibility: Issues visibility
+  field_is_private: Private
+  field_commit_logs_encoding: Commit messages encoding
+  field_scm_path_encoding: Path encoding
+  field_path_to_repository: Path to repository
+  field_root_directory: Root directory
+  field_cvsroot: CVSROOT
+  field_cvs_module: Module
+  field_repository_is_default: Main repository
+  field_multiple: Multiple values
+  field_auth_source_ldap_filter: LDAP filter
+  field_core_fields: Standard fields
+  field_timeout: "Timeout (in seconds)"
+  field_board_parent: Parent forum
+  field_private_notes: Private notes
+  field_inherit_members: Inherit members
+  field_generate_password: Generate password
+  field_must_change_passwd: Must change password at next logon
+  field_default_status: Default status
+  field_users_visibility: Users visibility
+  field_time_entries_visibility: Time logs visibility
+  field_total_estimated_hours: Total estimated time
+  field_estimated_cost: Estimated cost
+  field_cost: Cost
+  field_accumulate: Accumulate
+  field_budget: Budget
+  field_executed_cost: Executed cost
+  field_executed_tipo: Kind
+  field_legend_info_1: Calculated by OT end date
+  field_legend_info_ac: Calculated by AC father end date of OT
+  field_year: Year
+  field_days: Days
+  field_time_passed: Time passed
+  field_period: Period
+  field_today: Today
+  field_Difundir: Spread
+  field_Escalar: Scale
+  field_Fecha objetivo: Goal date
+  field_Justificación desvío: Divert cause
+  field_Solicitante real: Real applicant
+  field_Tiempo estimado inicial: Initial estimated time
+  field_Versión detección: Detection version
+  field_Presupuesto: Budget
+  field_Contrato: Contract
+  field_Actuacion: Performance
+
+  # Estados
+  field_Nuevo: New
+  field_Nueva: New
+  field_En curso: In process
+  field_Resuelto: Solved
+  field_Resuelta: Solved
+  field_Petición resuelta: Issue Solved
+  field_Comentarios: Comments
+  field_Cerrado: Closed
+  field_Cerrada: Closed
+  field_Rechazado: Rejected
+  field_Rechazada: Rejected
+  field_Facturado: Turned over
+  field_Facturada: Turned over
+  field_Importe final: Final cost
+  field_Importe estimado: Estimated cost
+  field_Seleccionar: Select...
+  field_Disponible: Available
+  field_available: Available
+  field_passed: Passed
+  field_completed: Completed
+  field_Propuesto: Proposed
+  field_En espera: On standby
+  field_Cancelado: Cancelled
+  field_no_date: No date
+
+  # Proyectos nombres
+  proy_contrato: Contracts
+  proy_sis_info: Information-systems

@@ -1,0 +1,44 @@
+                <!-- Ruta del fichero truststore que contiene la clave pública del certificado https de la máquina del STS -->
+                <jndi:binding name="sad/sts.httpsTruststore">
+                    <jndi:value type="java.lang.String">/etc/sad/truststore.jks</jndi:value>
+                </jndi:binding>
+
+                <!-- Contraseña del fichero truststore que contiene la clave pública del certificado https de la máquina del STS -->
+                <jndi:binding name="sad/sts.httpsTruststorePassword">
+                    <jndi:value type="java.lang.String">otraclave</jndi:value>
+                </jndi:binding>
+
+                <!-- Nombre con el que está registrada la aplicación en el STS -->
+                <jndi:binding name="sad/sts.stsClientUsername">
+                    <jndi:value type="java.lang.String">sad</jndi:value>
+                </jndi:binding>
+
+                <!-- Contraseña para acceder al STS -->
+                <jndi:binding name="sad/sts.stsClientPassword">
+                    <jndi:value type="java.lang.String">sadsad</jndi:value>
+                </jndi:binding>
+
+                <!-- Url donde está publicado el servicio web del STS -->
+                <jndi:binding name="sad/sts.stsClientEndpoint">
+                    <jndi:value type="java.lang.String">https://de12.sevilla.sgi.es:8082/sts-web/STSManagerService</jndi:value>
+                </jndi:binding>
+
+                <!-- Ruta del fichero truststore que contiene la clave pública del certificado que el STS usa para firmar. Útil para verficiar en local -->
+                <jndi:binding name="sad/sts.stsTruststore">
+                    <jndi:value type="java.lang.String">/etc/sad/truststore.jks</jndi:value>
+                </jndi:binding>
+
+                  <!-- Contraseña del fichero truststore que contiene la clave pública del certificado que el STS usa para firmar -->
+                <jndi:binding name="sad/sts.stsTruststorePassword">
+                    <jndi:value type="java.lang.String">otraclave</jndi:value>
+                </jndi:binding>
+
+                <!-- Alias del certificado del STS en el fichero truststore -->
+                <jndi:binding name="sad/sts.stsTruststoreAlias">
+                    <jndi:value type="java.lang.String">sts</jndi:value>
+                </jndi:binding>
+                
+                <!-- Valida el token remota o localmente -->
+                <jndi:binding name="sad/sts.remoteValidation">
+                    <jndi:value type="java.lang.Boolean">false</jndi:value>
+                </jndi:binding>

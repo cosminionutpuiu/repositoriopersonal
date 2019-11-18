@@ -1,0 +1,52 @@
+SELECT * FROM Gasto_Anual_Objeto_Uo g
+
+
+
+
+/******************************************************************************************/
+
+
+
+
+
+
+
+CREATE OR REPLACE FORCE VIEW "METAINFOCOR"."GASTO_ANUAL_OBJETO_UO" ("ANIODEANUALIDAD", "C_UNI_ORG_ENVIA", "D_OBJETO", "GASTOANUAL", "ID")
+AS
+  SELECT añoDeAnualidad,    c_uni_org_envia,    d_objeto,    SUM(importeAño),
+    row_number() OVER (ORDER BY añoDeAnualidad) id
+  FROM
+    ( SELECT DISTINCT t_num_exp,      d_objeto,      c_uni_org_envia,
+      CASE (l_plurianual)     WHEN 'S'    THEN TO_CHAR(ic_inf_año.n_anio)        ELSE año      END añoDeAnualidad,
+      CASE (l_plurianual)     WHEN 'S'    THEN n_importe_anualidad        ELSE n_importe      END importeAño
+    FROM ic_inf_año
+    WHERE t_num_exp NOT IN
+      ( SELECT DISTINCT t_num_exp
+      FROM ic_inf_año
+      WHERE c_nombre_fase = 'SOLICITUD ANULADA'
+      OR c_nombre_fase    = 'PTE. ANULACIÓN'
+      )    )
+ where añoDeAnualidad is not null
+  GROUP BY c_uni_org_envia,    añoDeAnualidad,    d_objeto
+  ORDER BY c_uni_org_envia,    añoDeAnualidad,    d_objeto DESC;
+
+
+
+/******************************************************************************************/
+
+
+
+
+
+
+CREATE OR REPLACE FORCE VIEW "METAINFOCOR"."IC_INF_AÑO" ("X_ICINF", "SOL_X_SOLICITUD", "TRW_X_EXPE", "T_NUM_EXP", "AÑO", "ORGANISMO", "T_TITULO", "C_UNI_ORG_ENVIA", "GUO_C_USUARIO", "FASE_X_FASE", "C_NOMBRE_FASE", "F_CREACION", "EXEF_X_EXEF", "D_OBJETO", "D_FORMA_ADJ", "T_REF_ORIGEN", "C_REF_JUPITER", "T_DESCRIPCION", "C_EPD", "N_IMPORTE", "N_ANIO", "N_IMPORTE_ANUALIDAD", "USU_ASIGNADO", "T_NOMBRE", "T_APELLIDO1", "T_APELLIDO2", "F_ALTA_USU_ASIG", "F_ENTRADA_FASE", "F_SALIDA_FASE", "N_DIAS_EN_FASE", "T_PREGUNTA", "T_RESPUESTA", "L_PLURIANUAL", "L_ALTA_EN_CRIJA", "C_RESOLUCION")
+AS
+  SELECT DISTINCT X_ICINF,    SOL_X_SOLICITUD,    TRW_X_EXPE,    T_NUM_EXP,
+    SUBSTR(T_NUM_EXP,8,4) AÑO,    SUBSTR(T_NUM_EXP,13,LENGTH(T_NUM_EXP)-16) ORGANISMO,
+    T_TITULO,    C_UNI_ORG_ENVIA,    GUO_C_USUARIO,    FASE_X_FASE,    C_NOMBRE_FASE,
+    F_CREACION,    EXEF_X_EXEF,    D_OBJETO,    D_FORMA_ADJ,    T_REF_ORIGEN,    C_REF_JUPITER,
+    T_DESCRIPCION,    C_EPD,    N_IMPORTE,    N_ANIO,    N_IMPORTE_ANUALIDAD,    USU_ASIGNADO,
+    T_NOMBRE,    T_APELLIDO1,    T_APELLIDO2,    F_ALTA_USU_ASIG,    F_ENTRADA_FASE,
+    F_SALIDA_FASE,    N_DIAS_EN_FASE,    T_PREGUNTA,    T_RESPUESTA,    L_PLURIANUAL,
+    L_ALTA_EN_CRIJA,    C_RESOLUCION
+  FROM ic_inf;

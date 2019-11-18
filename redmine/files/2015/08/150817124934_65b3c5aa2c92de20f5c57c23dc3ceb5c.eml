@@ -1,0 +1,1353 @@
+X-Account-Key: account1
+X-UIDL: 00003ff4513842f9
+X-Mozilla-Status: 0011
+X-Mozilla-Status2: 00000000
+X-Mozilla-Keys:                                                                                 
+Return-path: <mmjimenez@indra.es>
+Envelope-to: juanf.villegas@juntadeandalucia.es
+Delivery-date: Mon, 17 Aug 2015 12:35:19 +0200
+Received: from [10.240.225.253] (helo=mail.juntadeandalucia.es)
+	by ccobuz19 with esmtp (Exim 4.71)
+	(envelope-from <mmjimenez@indra.es>)
+	id 1ZRHjC-0001nf-Ub; Mon, 17 Aug 2015 12:35:18 +0200
+Received: from mail01.indra.es ([94.126.240.21] helo=mailhost1.indra.es)
+	by mail.juntadeandalucia.es with esmtps (TLSv1:AES128-SHA:128)
+	(Exim 4.71)
+	(envelope-from <mmjimenez@indra.es>)
+	id 1ZRHjA-0000gs-BZ; Mon, 17 Aug 2015 12:33:18 +0200
+Received: from MADARRHUB04.indra.es (172.22.204.69) by MADARREDGE01.indra.es
+ (172.22.231.66) with Microsoft SMTP Server (TLS) id 8.3.406.0; Mon, 17 Aug
+ 2015 12:32:43 +0200
+Received: from MADARRMAILBOX01.indra.es ([169.254.1.92]) by
+ MADARRHUB04.indra.es ([172.22.204.69]) with mapi; Mon, 17 Aug 2015 12:33:14
+ +0200
+From: =?iso-8859-1?Q?Jim=E9nez_Yusta=2C_Mar=EDa_Del_Mar?= <mmjimenez@indra.es>
+To: =?iso-8859-1?Q?Juan_Ferm=EDn_Villegas_Rubio?=
+	<juanf.villegas@juntadeandalucia.es>
+CC: =?iso-8859-1?Q?Javier_Jes=FAs_Garc=EDa_de_Bringas?=
+	<javierj.garcia@juntadeandalucia.es>, Julio Ubeda
+	<julio.ubeda@juntadeandalucia.es>, =?iso-8859-1?Q?Rafael_Sep=FAlveda?=
+	<rafael.sepulveda@juntadeandalucia.es>,
+	"desarrollo.ceis.chap@juntadeandalucia.es"
+	<desarrollo.ceis.chap@juntadeandalucia.es>
+Date: Mon, 17 Aug 2015 12:35:52 +0200
+Thread-Topic: =?iso-8859-1?Q?[desarrollo.ceis.chap]_Consulta_sobre_nuevo_formulario_de_?=
+ =?iso-8859-1?Q?incidencias_CEIS_y_sobre_asignaci=F3n_autom=E1tica_a_grupo?=
+ =?iso-8859-1?Q?_seg=FAn_categor=EDa_seleccionada.?=
+Thread-Index: AdDY1kxkVDirvuIESj6nhnJpSMmFuAAAI7XA
+Message-ID: <A9162E604233B146B0146C1321848185096E9ECCC4@MADARRMAILBOX01.indra.es>
+References: <55CB0CF3.7070308@juntadeandalucia.es>
+ <A9162E604233B146B0146C1321848185096D994F5E@MADARRMAILBOX01.indra.es>
+ <55CB179C.5090800@juntadeandalucia.es>
+ <A9162E604233B146B0146C1321848185096D994FB4@MADARRMAILBOX01.indra.es>
+ <55CB1C34.5010902@juntadeandalucia.es>
+ <55D1B092.5000509@juntadeandalucia.es>
+ <A9162E604233B146B0146C1321848185096E9ECC9D@MADARRMAILBOX01.indra.es>
+ <55D1B548.4090506@juntadeandalucia.es>
+In-Reply-To: <55D1B548.4090506@juntadeandalucia.es>
+Accept-Language: es-ES
+Content-Language: es-ES
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator:
+acceptlanguage: es-ES
+Content-Type: multipart/related;
+	boundary="_010_A9162E604233B146B0146C1321848185096E9ECCC4MADARRMAILBOX_";
+	type="multipart/alternative"
+MIME-Version: 1.0
+X-KLMS-Rule-ID: 1
+X-KLMS-Message-Action: clean
+X-KLMS-AntiSpam-Status: not scanned, disabled by settings
+X-KLMS-AntiPhishing: not scanned, disabled by settings
+X-KLMS-AntiVirus: Kaspersky Security 8.0 for Linux Mail Server, version 8.0.1.719, bases: 2015/08/17 00:31:00 #6180589
+X-KLMS-AntiVirus-Status: Clean, skipped
+Subject:  =?iso-8859-1?Q?RE:_[desarrollo.ceis.chap]_Consulta_sobre_nuevo_formulario?=
+ =?iso-8859-1?Q?_de_incidencias_CEIS_y_sobre_asignaci=F3n_autom=E1tica_a_g?=
+ =?iso-8859-1?Q?rupo_seg=FAn_categor=EDa_seleccionada.?=
+
+--_010_A9162E604233B146B0146C1321848185096E9ECCC4MADARRMAILBOX_
+Content-Type: multipart/alternative;
+	boundary="_000_A9162E604233B146B0146C1321848185096E9ECCC4MADARRMAILBOX_"
+
+--_000_A9162E604233B146B0146C1321848185096E9ECCC4MADARRMAILBOX_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Por el momento no. Seguimos haciendo pruebas intentado localizar d=F3nde es=
+t=E1 el problema.
+
+Saludos.
+
+De: Juan Ferm=EDn Villegas Rubio [mailto:juanf.villegas@juntadeandalucia.es=
+]
+Enviado el: lunes, 17 de agosto de 2015 12:20
+Para: "Jim=E9nez Yusta, Mar=EDa Del Mar"
+CC: Javier Jes=FAs Garc=EDa de Bringas; Julio Ubeda; Rafael Sep=FAlveda; de=
+sarrollo.ceis.chap@juntadeandalucia.es
+Asunto: Re: [desarrollo.ceis.chap] Consulta sobre nuevo formulario de incid=
+encias CEIS y sobre asignaci=F3n autom=E1tica a grupo seg=FAn categor=EDa s=
+eleccionada.
+
+De acuerdo, =BFten=E9is alguna previsi=F3n?
+
+Un saludo.
+
+El 17/08/2015 12:18, Jim=E9nez Yusta, Mar=EDa Del Mar escribi=F3:
+Hola:
+
+S=ED, eso lo tenemos controlado.
+
+Estamos haciendo pruebas para intentar solucionar el segundo problema que n=
+os comunicaste sobre fallos en el formato, signos de interrogaci=F3n (?????=
+) en lugar de los saltos de l=EDnea.
+
+Pens=E1bamos enviar la correcci=F3n de las dos cosas cuando lo tengamos sol=
+ucionado =BFte parece bien?.
+
+Saludos.
+
+Mar.
+
+De: Juan Ferm=EDn Villegas Rubio [mailto:juanf.villegas@juntadeandalucia.es=
+]
+Enviado el: lunes, 17 de agosto de 2015 12:00
+Para: Jim=E9nez Yusta, Mar=EDa Del Mar
+CC: Javier Jes=FAs Garc=EDa de Bringas; Julio Ubeda; Rafael Sep=FAlveda; de=
+sarrollo.ceis.chap@juntadeandalucia.es<mailto:desarrollo.ceis.chap@juntadea=
+ndalucia.es>
+Asunto: Re: [desarrollo.ceis.chap] Consulta sobre nuevo formulario de incid=
+encias CEIS y sobre asignaci=F3n autom=E1tica a grupo seg=FAn categor=EDa s=
+eleccionada.
+
+Hola Mar:
+
+Sobre el tema del nuevo formulario y la funci=F3n de "modificaci=F3n de una=
+ incidencia" ( incorporaci=F3n de comentariosy adjuntos), =BFhab=E9is podid=
+o mirar algo
+
+Un saludo.
+
+
+
+El 12/08/2015 12:13, Juan Ferm=EDn Villegas Rubio escribi=F3:
+Ok, esperamos novedades sobre el primer punto.
+
+Sobre el segundo. A mi el apartado de Grupos resolutores me aparece en blan=
+co. Antes no era as=ED. Ha debido cambiar algo en las vistas o los permisos=
+. Adjunto pantalla.
+
+Un saludo.
+
+
+El 12/08/2015 12:09, Jim=E9nez Yusta, Mar=EDa Del Mar escribi=F3:
+Buenas:
+Sigo mirando el primer punto y sobre lo segundo, te adjunto captura de pant=
+alla donde se ven los grupos resolutores que tiene la categor=EDa indicada.=
+ Actualmente el grupo "Centro de Gesti=F3n de Portales y Aplicaciones Web" =
+est=E1 como resolutor pero sin asignaci=F3n autom=E1tica que ser=EDa marcan=
+do el check de la primera columna.
+Saludos.
+Mar Jim=E9nez.
+
+De: Juan Ferm=EDn Villegas Rubio [mailto:juanf.villegas@juntadeandalucia.es=
+]
+Enviado el: mi=E9rcoles, 12 de agosto de 2015 11:54
+Para: Jim=E9nez Yusta, Mar=EDa Del Mar
+CC: Javier Jes=FAs Garc=EDa de Bringas; Julio Ubeda; Rafael Sep=FAlveda; de=
+sarrollo.ceis.chap@juntadeandalucia.es<mailto:desarrollo.ceis.chap@juntadea=
+ndalucia.es>
+Asunto: Re: [desarrollo.ceis.chap] Consulta sobre nuevo formulario de incid=
+encias CEIS y sobre asignaci=F3n autom=E1tica a grupo seg=FAn categor=EDa s=
+eleccionada.
+
+Sobre el primer punto, parece que Nicol=E1s lo tendr=EDa as=ED a modo de "m=
+onitorizaci=F3n" de esa funci=F3n. Eso indicar=EDa que el tema no estar=EDa=
+ del todo terminado. Lo que veo raro es que a la cuenta "desarrollo.ceis.ch=
+ap" le llega el correo desde "ceis.chap"
+
+Sobre el segundo tema, por ejemplo alguna categorizaci=F3n como: - Petici=
+=F3n    Portal Web    Extranet    No aplica, que es susceptible de que la a=
+signemos autom=E1ticamente al grupo "Centro de Gesti=F3n de Portales y Apli=
+caciones Web". Pero en general no veo ninguna asignaci=F3n de grupos a cate=
+gor=EDas, antes creo recordar que si las hab=EDa (aunque no fuera para asig=
+nar autom=E1ticamentef)
+
+Un saludo
+
+
+
+El 12/08/2015 11:39, Jim=E9nez Yusta, Mar=EDa Del Mar escribi=F3:
+Buenos d=EDas:
+
+Respecto al primer punto, ya supongo lo que ha pasado y es que el correo se=
+ ha enviado pero a desarrollo.ceis.chap@juntadeandalucia.es<mailto:desarrol=
+lo.ceis.chap@juntadeandalucia.es> (lo habr=E1 configurado as=ED Nicol=E1s p=
+ara las pruebas) por lo que no ha llegado al entorno de Producci=F3n. Si se=
+ hubiera enviado a la cuenta ceis.chap@ se hubiera asociado la id de prueba=
+ (1-118497961) como indicaba Nicol=E1s.
+
+Respecto al segundo, =BFpuedes decirme la categorizaci=F3n que no tiene gru=
+po resolutor? Si quieres lo hacemos nosotros si me dices el grupo que debe =
+tener la asignaci=F3n autom=E1tica. Para realizar modificaciones en la Admi=
+nistraci=F3n CEIS > Categor=EDas hay que tener permisos de Administraci=F3n=
+, por defecto, solo est=E1 en modo consulta.
+
+Saludos.
+
+Mar Jim=E9nez Yusta
+Consultor Senior
+Administraciones P=FAblicas
+
+Calle Aviaci=F3n, 14.
+Edificio Morera y Vallejo II. Bajo
+41007. Sevilla
+Espa=F1a
+
+T +34 954 66 05 11
+F +34 954 66 15 65
+mmjimenez@indra.es<mailto:mmjimenez@indra.es>
+indracompany.com<http://www.indracompany.com/>
+
+
+
+
+[cid:image001.gif@01D0D8E8.135C1B00]<http://www.youtube.com/user/theindraco=
+mpany?feature=3Dchclk>[cid:image002.gif@01D0D8E8.135C1B00]<http://www.faceb=
+ook.com/indracompany>[cid:image003.gif@01D0D8E8.135C1B00]<https://twitter.c=
+om/indracompany>[cid:image004.gif@01D0D8E8.135C1B00]<http://www.linkedin.co=
+m/company/indra>[cid:image005.gif@01D0D8E8.135C1B00]<https://plus.google.co=
+m/107135201985474086995/posts>[cid:image006.gif@01D0D8E8.135C1B00]<http://w=
+ww.indracompany.com/es/blogneo>
+
+[cid:image007.png@01D0D8E8.135C1B00]<http://indra20aniversario.com/>
+
+
+
+De: Juan Ferm=EDn Villegas Rubio [mailto:juanf.villegas@juntadeandalucia.es=
+]
+Enviado el: mi=E9rcoles, 12 de agosto de 2015 11:08
+Para: desarrollo.ceis.chap@juntadeandalucia.es<mailto:desarrollo.ceis.chap@=
+juntadeandalucia.es>
+CC: Javier Jes=FAs Garc=EDa de Bringas; Julio Ubeda; Rafael Sep=FAlveda
+Asunto: [desarrollo.ceis.chap] Consulta sobre nuevo formulario de incidenci=
+as CEIS y sobre asignaci=F3n autom=E1tica a grupo seg=FAn categor=EDa selec=
+cionada.
+
+Buenos d=EDas:
+
+Creo que Nicol=E1s est=E1 de vacaciones, os comento un par de dudas que se =
+nos han planteado a ver si nos las pod=E9is aclarar:
+
+
+a) Lo =FAltimo que sab=EDamos por Nicol=E1s sobre la posibilidad de modific=
+ar una solicitud por el solicitante, a=F1adiendo alg=FAn comentario o alg=
+=FAn archivo adjunto era:
+Por otra parte, la posibilidad de consultar el estado de una solicitud est=
+=E1 disponible pero la de a=F1adir documentaci=F3n y/o notas sobre una soli=
+citud abierta implica desarrollar servicios web en Siebel y ahora mismo est=
+amos al 100% con tareas relativas a la aplicaci=F3n de autoservicio de cita=
+s previas  (os adjunto la planificaci=F3n de estas tareas).
+Hemos pensado una soluci=F3n alternativa a estos WebServices y es enviar la=
+s notas y/o adjuntos por correo a Siebel, de esta forma, autom=E1ticamente =
+se incluir=EDan a las notificaciones recibidas con la nota y/o adjunto/s qu=
+e indique el solicitante. El desarrollo ser=EDa de unas 12 - 16 horas y no =
+tendr=EDamos que desarrollar nada por el momento en Siebel =BFOs parece bie=
+n que incluyamos esta tarea en planificaci=F3n y m=E1s adelante, cuando ten=
+gamos los servicios web, realizar las modificaciones que toquen en la aplic=
+aci=F3n de formularios?
+Yo no he podido confirmar si esta soluci=F3n alternativa se llev=F3 a cabo =
+finalmente. He hecho una prueba y no veo que a la id de prueba (1-118497961=
+) se haya a=F1adido comentario o adjunto de forma autom=E1tica a "notificac=
+iones recibidas". =BFPodemos confirmar si esto deber=EDa estar funcionando?
+
+
+
+b) Sobre la posibilidad de configurar, desde la vista de administraci=F3n d=
+e la categorizaci=F3n en Siebel, la asignaci=F3n autom=E1tica a grupo resol=
+utor. =BFEsto no estaba disponible?. No veo la forma de hacerlo, no aparece=
+n grupos resolutores asociados a la categorizaci=F3n y el bot=F3n "Nuevo" e=
+st=E1 inhabilitado (=BFes un tema de permisos?)
+
+Un saludo
+
+
+
+
+
+
+
+
+
+--
+
+
+
+Juan Ferm=EDn Villegas Rubio
+
+Servicio de Planificaci=F3n Estrat=E9gica
+
+Direcci=F3n General de Pol=EDtica Digital
+
+Consejer=EDa de Hacienda y Administraci=F3n P=FAblica
+
+C/ Juan Antonio de Vizarr=F3n, s/n ( 41092 - SEVILLA )
+
+Interior:364251 Exterior:955064251
+
+________________________________
+Este correo electr=F3nico y, en su caso, cualquier fichero anexo al mismo, =
+contiene informaci=F3n de car=E1cter confidencial exclusivamente dirigida a=
+ su destinatario o destinatarios. Si no es vd. el destinatario indicado, qu=
+eda notificado que la lectura, utilizaci=F3n, divulgaci=F3n y/o copia sin a=
+utorizaci=F3n est=E1 prohibida en virtud de la legislaci=F3n vigente. En el=
+ caso de haber recibido este correo electr=F3nico por error, se ruega notif=
+icar inmediatamente esta circunstancia mediante reenv=EDo a la direcci=F3n =
+electr=F3nica del remitente.
+Evite imprimir este mensaje si no es estrictamente necesario.
+
+This email and any file attached to it (when applicable) contain(s) confide=
+ntial information that is exclusively addressed to its recipient(s). If you=
+ are not the indicated recipient, you are informed that reading, using, dis=
+seminating and/or copying it without authorisation is forbidden in accordan=
+ce with the legislation in effect. If you have received this email by mista=
+ke, please immediately notify the sender of the situation by resending it t=
+o their email address.
+Avoid printing this message if it is not absolutely necessary.
+
+
+
+
+
+--
+
+
+
+Juan Ferm=EDn Villegas Rubio
+
+Servicio de Planificaci=F3n Estrat=E9gica
+
+Direcci=F3n General de Pol=EDtica Digital
+
+Consejer=EDa de Hacienda y Administraci=F3n P=FAblica
+
+C/ Juan Antonio de Vizarr=F3n, s/n ( 41092 - SEVILLA )
+
+Interior:364251 Exterior:955064251
+
+________________________________
+Este correo electr=F3nico y, en su caso, cualquier fichero anexo al mismo, =
+contiene informaci=F3n de car=E1cter confidencial exclusivamente dirigida a=
+ su destinatario o destinatarios. Si no es vd. el destinatario indicado, qu=
+eda notificado que la lectura, utilizaci=F3n, divulgaci=F3n y/o copia sin a=
+utorizaci=F3n est=E1 prohibida en virtud de la legislaci=F3n vigente. En el=
+ caso de haber recibido este correo electr=F3nico por error, se ruega notif=
+icar inmediatamente esta circunstancia mediante reenv=EDo a la direcci=F3n =
+electr=F3nica del remitente.
+Evite imprimir este mensaje si no es estrictamente necesario.
+
+This email and any file attached to it (when applicable) contain(s) confide=
+ntial information that is exclusively addressed to its recipient(s). If you=
+ are not the indicated recipient, you are informed that reading, using, dis=
+seminating and/or copying it without authorisation is forbidden in accordan=
+ce with the legislation in effect. If you have received this email by mista=
+ke, please immediately notify the sender of the situation by resending it t=
+o their email address.
+Avoid printing this message if it is not absolutely necessary.
+
+
+
+
+--
+
+
+
+Juan Ferm=EDn Villegas Rubio
+
+Servicio de Planificaci=F3n Estrat=E9gica
+
+Direcci=F3n General de Pol=EDtica Digital
+
+Consejer=EDa de Hacienda y Administraci=F3n P=FAblica
+
+C/ Juan Antonio de Vizarr=F3n, s/n ( 41092 - SEVILLA )
+
+Interior:364251 Exterior:955064251
+
+
+
+
+--
+
+
+
+Juan Ferm=EDn Villegas Rubio
+
+Servicio de Planificaci=F3n Estrat=E9gica
+
+Direcci=F3n General de Pol=EDtica Digital
+
+Consejer=EDa de Hacienda y Administraci=F3n P=FAblica
+
+C/ Juan Antonio de Vizarr=F3n, s/n ( 41092 - SEVILLA )
+
+Interior:364251 Exterior:955064251
+
+________________________________
+Este correo electr=F3nico y, en su caso, cualquier fichero anexo al mismo, =
+contiene informaci=F3n de car=E1cter confidencial exclusivamente dirigida a=
+ su destinatario o destinatarios. Si no es vd. el destinatario indicado, qu=
+eda notificado que la lectura, utilizaci=F3n, divulgaci=F3n y/o copia sin a=
+utorizaci=F3n est=E1 prohibida en virtud de la legislaci=F3n vigente. En el=
+ caso de haber recibido este correo electr=F3nico por error, se ruega notif=
+icar inmediatamente esta circunstancia mediante reenv=EDo a la direcci=F3n =
+electr=F3nica del remitente.
+Evite imprimir este mensaje si no es estrictamente necesario.
+
+This email and any file attached to it (when applicable) contain(s) confide=
+ntial information that is exclusively addressed to its recipient(s). If you=
+ are not the indicated recipient, you are informed that reading, using, dis=
+seminating and/or copying it without authorisation is forbidden in accordan=
+ce with the legislation in effect. If you have received this email by mista=
+ke, please immediately notify the sender of the situation by resending it t=
+o their email address.
+Avoid printing this message if it is not absolutely necessary.
+
+
+
+--
+
+
+
+Juan Ferm=EDn Villegas Rubio
+
+Servicio de Planificaci=F3n Estrat=E9gica
+
+Direcci=F3n General de Pol=EDtica Digital
+
+Consejer=EDa de Hacienda y Administraci=F3n P=FAblica
+
+C/ Juan Antonio de Vizarr=F3n, s/n ( 41092 - SEVILLA )
+
+Interior:364251 Exterior:955064251
+
+________________________________
+Este correo electr=F3nico y, en su caso, cualquier fichero anexo al mismo, =
+contiene informaci=F3n de car=E1cter confidencial exclusivamente dirigida a=
+ su destinatario o destinatarios. Si no es vd. el destinatario indicado, qu=
+eda notificado que la lectura, utilizaci=F3n, divulgaci=F3n y/o copia sin a=
+utorizaci=F3n est=E1 prohibida en virtud de la legislaci=F3n vigente. En el=
+ caso de haber recibido este correo electr=F3nico por error, se ruega notif=
+icar inmediatamente esta circunstancia mediante reenv=EDo a la direcci=F3n =
+electr=F3nica del remitente.
+Evite imprimir este mensaje si no es estrictamente necesario.
+
+This email and any file attached to it (when applicable) contain(s) confide=
+ntial information that is exclusively addressed to its recipient(s). If you=
+ are not the indicated recipient, you are informed that reading, using, dis=
+seminating and/or copying it without authorisation is forbidden in accordan=
+ce with the legislation in effect. If you have received this email by mista=
+ke, please immediately notify the sender of the situation by resending it t=
+o their email address.
+Avoid printing this message if it is not absolutely necessary.
+
+--_000_A9162E604233B146B0146C1321848185096E9ECCC4MADARRMAILBOX_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<meta name=3D"Generator" content=3D"Microsoft Word 12 (filtered medium)">
+<!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+pre
+	{mso-style-priority:99;
+	mso-style-link:"HTML con formato previo Car";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	color:black;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-priority:99;
+	mso-style-link:"Texto de globo Car";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	color:black;}
+span.HTMLconformatoprevioCar
+	{mso-style-name:"HTML con formato previo Car";
+	mso-style-priority:99;
+	mso-style-link:"HTML con formato previo";
+	font-family:Consolas;
+	color:black;}
+span.TextodegloboCar
+	{mso-style-name:"Texto de globo Car";
+	mso-style-priority:99;
+	mso-style-link:"Texto de globo";
+	font-family:"Tahoma","sans-serif";
+	color:black;}
+span.EstiloCorreo21
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EstiloCorreo22
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EstiloCorreo23
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EstiloCorreo24
+	{mso-style-type:personal-reply;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:70.85pt 3.0cm 70.85pt 3.0cm;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body bgcolor=3D"white" lang=3D"ES" link=3D"blue" vlink=3D"purple">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D">Por el momento no. Seguim=
+os haciendo pruebas intentado localizar d=F3nde est=E1 el problema.
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D"><o:p>&nbsp;</o:p></span><=
+/p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D">Saludos.<o:p></o:p></span=
+></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D"><o:p>&nbsp;</o:p></span><=
+/p>
+<div>
+<div style=3D"border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0cm =
+0cm 0cm">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;;color:windowtext">De:</span></b><span =
+style=3D"font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&q=
+uot;;color:windowtext"> Juan Ferm=EDn Villegas Rubio [mailto:juanf.villegas=
+@juntadeandalucia.es]
+<br>
+<b>Enviado el:</b> lunes, 17 de agosto de 2015 12:20<br>
+<b>Para:</b> &quot;Jim=E9nez Yusta, Mar=EDa Del Mar&quot;<br>
+<b>CC:</b> Javier Jes=FAs Garc=EDa de Bringas; Julio Ubeda; Rafael Sep=FAlv=
+eda; desarrollo.ceis.chap@juntadeandalucia.es<br>
+<b>Asunto:</b> Re: [desarrollo.ceis.chap] Consulta sobre nuevo formulario d=
+e incidencias CEIS y sobre asignaci=F3n autom=E1tica a grupo seg=FAn catego=
+r=EDa seleccionada.<o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:12.0pt">De acuerdo, =BFten=E9=
+is alguna previsi=F3n?<br>
+<br>
+Un saludo.<br>
+<br>
+<o:p></o:p></p>
+<div>
+<p class=3D"MsoNormal">El 17/08/2015 12:18, Jim=E9nez Yusta, Mar=EDa Del Ma=
+r escribi=F3:<o:p></o:p></p>
+</div>
+<blockquote style=3D"margin-top:5.0pt;margin-bottom:5.0pt">
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D">Hola:</span><o:p></o:p></=
+p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D">&nbsp;</span><o:p></o:p><=
+/p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D">S=ED, eso lo tenemos cont=
+rolado.
+</span><o:p></o:p></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D">&nbsp;</span><o:p></o:p><=
+/p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D">Estamos haciendo pruebas =
+para intentar solucionar el segundo problema que nos comunicaste sobre fall=
+os en el formato, signos de interrogaci=F3n (?????) en lugar
+ de los saltos de l=EDnea. </span><o:p></o:p></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D">&nbsp;</span><o:p></o:p><=
+/p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D">Pens=E1bamos enviar la co=
+rrecci=F3n de las dos cosas cuando lo tengamos solucionado =BFte parece bie=
+n?.</span><o:p></o:p></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D">&nbsp;</span><o:p></o:p><=
+/p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D">Saludos.</span><o:p></o:p=
+></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D">&nbsp;</span><o:p></o:p><=
+/p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D">Mar.</span><o:p></o:p></p=
+>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D">&nbsp;</span><o:p></o:p><=
+/p>
+<div>
+<div style=3D"border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0cm =
+0cm 0cm">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;;color:windowtext">De:</span></b><span =
+style=3D"font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&q=
+uot;;color:windowtext"> Juan Ferm=EDn Villegas Rubio [<a href=3D"mailto:jua=
+nf.villegas@juntadeandalucia.es">mailto:juanf.villegas@juntadeandalucia.es<=
+/a>]
+<br>
+<b>Enviado el:</b> lunes, 17 de agosto de 2015 12:00<br>
+<b>Para:</b> Jim=E9nez Yusta, Mar=EDa Del Mar<br>
+<b>CC:</b> Javier Jes=FAs Garc=EDa de Bringas; Julio Ubeda; Rafael Sep=FAlv=
+eda; <a href=3D"mailto:desarrollo.ceis.chap@juntadeandalucia.es">
+desarrollo.ceis.chap@juntadeandalucia.es</a><br>
+<b>Asunto:</b> Re: [desarrollo.ceis.chap] Consulta sobre nuevo formulario d=
+e incidencias CEIS y sobre asignaci=F3n autom=E1tica a grupo seg=FAn catego=
+r=EDa seleccionada.</span><o:p></o:p></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D">&nbsp;</span><o:p></o:p><=
+/p>
+</div>
+</div>
+<p class=3D"MsoNormal" style=3D"margin-bottom:12.0pt">Hola Mar:<br>
+<br>
+Sobre el tema del nuevo formulario y la funci=F3n de &quot;modificaci=F3n d=
+e una incidencia&quot; ( incorporaci=F3n de comentariosy adjuntos), =BFhab=
+=E9is podido mirar algo<br>
+<br>
+Un saludo.<br>
+<br>
+<br>
+<br>
+<o:p></o:p></p>
+<div>
+<p class=3D"MsoNormal">El 12/08/2015 12:13, Juan Ferm=EDn Villegas Rubio es=
+cribi=F3:<o:p></o:p></p>
+</div>
+<blockquote style=3D"margin-top:5.0pt;margin-bottom:5.0pt">
+<p class=3D"MsoNormal" style=3D"margin-bottom:12.0pt">Ok, esperamos novedad=
+es sobre el primer punto.<br>
+<br>
+Sobre el segundo. A mi el apartado de Grupos resolutores me aparece en blan=
+co. Antes no era as=ED. Ha debido cambiar algo en las vistas o los permisos=
+. Adjunto pantalla.<br>
+<br>
+Un saludo.<br>
+<br>
+<br>
+<o:p></o:p></p>
+<div>
+<p class=3D"MsoNormal">El 12/08/2015 12:09, Jim=E9nez Yusta, Mar=EDa Del Ma=
+r escribi=F3:<o:p></o:p></p>
+</div>
+<blockquote style=3D"margin-top:5.0pt;margin-bottom:5.0pt">
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D">Buenas:</span><o:p></o:p>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D">Sigo mirando el primer pu=
+nto y sobre lo segundo, te adjunto captura de pantalla donde se ven los gru=
+pos resolutores que tiene la categor=EDa indicada. Actualmente
+ el grupo &#8220;Centro de Gesti=F3n de Portales y Aplicaciones Web&#8221; =
+est=E1 como resolutor pero sin asignaci=F3n autom=E1tica que ser=EDa marcan=
+do el check de la primera columna.</span><o:p></o:p></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D">Saludos.</span><o:p></o:p=
+></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D">Mar Jim=E9nez.</span><o:p=
+></o:p></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D">&nbsp;</span><o:p></o:p><=
+/p>
+<div>
+<div style=3D"border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0cm =
+0cm 0cm">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;;color:windowtext">De:</span></b><span =
+style=3D"font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&q=
+uot;;color:windowtext"> Juan Ferm=EDn Villegas Rubio [<a href=3D"mailto:jua=
+nf.villegas@juntadeandalucia.es">mailto:juanf.villegas@juntadeandalucia.es<=
+/a>]
+<br>
+<b>Enviado el:</b> mi=E9rcoles, 12 de agosto de 2015 11:54<br>
+<b>Para:</b> Jim=E9nez Yusta, Mar=EDa Del Mar<br>
+<b>CC:</b> Javier Jes=FAs Garc=EDa de Bringas; Julio Ubeda; Rafael Sep=FAlv=
+eda; <a href=3D"mailto:desarrollo.ceis.chap@juntadeandalucia.es">
+desarrollo.ceis.chap@juntadeandalucia.es</a><br>
+<b>Asunto:</b> Re: [desarrollo.ceis.chap] Consulta sobre nuevo formulario d=
+e incidencias CEIS y sobre asignaci=F3n autom=E1tica a grupo seg=FAn catego=
+r=EDa seleccionada.</span><o:p></o:p></p>
+</div>
+</div>
+<p class=3D"MsoNormal">&nbsp;<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:12.0pt">Sobre el primer punto=
+, parece que Nicol=E1s lo tendr=EDa as=ED a modo de &quot;monitorizaci=F3n&=
+quot; de esa funci=F3n. Eso indicar=EDa que el tema no estar=EDa del todo t=
+erminado. Lo que veo raro es que a la cuenta &quot;desarrollo.ceis.chap&quo=
+t;
+ le llega el correo desde &quot;ceis.chap&quot;<br>
+<br>
+Sobre el segundo tema, por ejemplo alguna categorizaci=F3n como: - Petici=
+=F3n&nbsp;&nbsp;&nbsp; Portal Web&nbsp;&nbsp;&nbsp; Extranet&nbsp;&nbsp;&nb=
+sp; No aplica, que es susceptible de que la asignemos autom=E1ticamente al =
+grupo &quot;Centro de Gesti=F3n de Portales y Aplicaciones Web&quot;. Pero =
+en general no veo ninguna
+ asignaci=F3n de grupos a categor=EDas, antes creo recordar que si las hab=
+=EDa (aunque no fuera para asignar autom=E1ticamentef)<br>
+<br>
+Un saludo<br>
+<br>
+<br>
+<br>
+<o:p></o:p></p>
+<div>
+<p class=3D"MsoNormal">El 12/08/2015 11:39, Jim=E9nez Yusta, Mar=EDa Del Ma=
+r escribi=F3:<o:p></o:p></p>
+</div>
+<blockquote style=3D"margin-top:5.0pt;margin-bottom:5.0pt">
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D">Buenos d=EDas:</span><o:p=
+></o:p></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D">&nbsp;</span><o:p></o:p><=
+/p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D">Respecto al primer punto,=
+ ya supongo lo que ha pasado y es que el correo se ha enviado pero a
+<a href=3D"mailto:desarrollo.ceis.chap@juntadeandalucia.es">desarrollo.ceis=
+.chap@juntadeandalucia.es</a> (lo habr=E1 configurado as=ED Nicol=E1s para =
+las pruebas) por lo que no ha llegado al entorno de Producci=F3n. Si se hub=
+iera enviado a la cuenta ceis.chap@ se hubiera
+ asociado la id de prueba (1-118497961) como indicaba Nicol=E1s.</span><o:p=
+></o:p></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D">&nbsp;</span><o:p></o:p><=
+/p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D">Respecto al segundo, =BFp=
+uedes decirme la categorizaci=F3n que no tiene grupo resolutor? Si quieres =
+lo hacemos nosotros si me dices el grupo que debe tener la asignaci=F3n
+ autom=E1tica. Para realizar modificaciones en la Administraci=F3n CEIS &gt=
+; Categor=EDas hay que tener permisos de Administraci=F3n, por defecto, sol=
+o est=E1 en modo consulta.</span><o:p></o:p></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D">&nbsp;</span><o:p></o:p><=
+/p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D">Saludos.</span><o:p></o:p=
+></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D">&nbsp;</span><o:p></o:p><=
+/p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:12.0pt"><b><span style=3D"fon=
+t-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Mar Jim=
+=E9nez Yusta</span></b><span style=3D"color:#1F497D"><br>
+</span><span style=3D"font-size:7.5pt;font-family:&quot;Arial&quot;,&quot;s=
+ans-serif&quot;;color:#999999">Consultor Senior</span><span style=3D"color:=
+#1F497D"><br>
+</span><span style=3D"font-size:7.5pt;font-family:&quot;Arial&quot;,&quot;s=
+ans-serif&quot;">Administraciones P=FAblicas</span><span style=3D"color:#1F=
+497D"><br>
+</span><span style=3D"font-size:7.5pt;font-family:&quot;Arial&quot;,&quot;s=
+ans-serif&quot;"><br>
+Calle Aviaci=F3n, 14. <br>
+Edificio Morera y Vallejo II. Bajo<br>
+41007. Sevilla<br>
+Espa=F1a<br>
+<br>
+T &#43;34 954 66 05 11<br>
+</span><span lang=3D"EN-US" style=3D"font-size:7.5pt;font-family:&quot;Aria=
+l&quot;,&quot;sans-serif&quot;">F &#43;34 954 66 15 65<br>
+<a href=3D"mailto:mmjimenez@indra.es">mmjimenez@indra.es</a></span><span st=
+yle=3D"font-size:7.5pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;=
+"><br>
+<a href=3D"http://www.indracompany.com/">indracompany.com</a><br>
+<br>
+<br>
+<br>
+<br>
+</span><o:p></o:p></p>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0">
+<tbody>
+<tr>
+<td width=3D"369" style=3D"width:276.75pt;padding:0cm 0cm 0cm 0cm">
+<p class=3D"MsoNormal"><a href=3D"http://www.youtube.com/user/theindracompa=
+ny?feature=3Dchclk" target=3D"_blank"><span style=3D"text-decoration:none">=
+<img border=3D"0" width=3D"24" height=3D"30" id=3D"Imagen_x0020_1" src=3D"c=
+id:image001.gif@01D0D8E8.135C1B00" alt=3D"http://www.indracompany.com/media=
+/firmas/20-youtube.gif"></span></a><a href=3D"http://www.facebook.com/indra=
+company" target=3D"_blank"><span style=3D"text-decoration:none"><img border=
+=3D"0" width=3D"30" height=3D"30" id=3D"Imagen_x0020_2" src=3D"cid:image002=
+.gif@01D0D8E8.135C1B00" alt=3D"http://www.indracompany.com/media/firmas/20-=
+facebook.gif"></span></a><a href=3D"https://twitter.com/indracompany" targe=
+t=3D"_blank"><span style=3D"text-decoration:none"><img border=3D"0" width=
+=3D"30" height=3D"30" id=3D"Imagen_x0020_3" src=3D"cid:image003.gif@01D0D8E=
+8.135C1B00" alt=3D"http://www.indracompany.com/media/firmas/20-twitter.gif"=
+></span></a><a href=3D"http://www.linkedin.com/company/indra" target=3D"_bl=
+ank"><span style=3D"text-decoration:none"><img border=3D"0" width=3D"30" he=
+ight=3D"30" id=3D"Imagen_x0020_4" src=3D"cid:image004.gif@01D0D8E8.135C1B00=
+" alt=3D"http://www.indracompany.com/media/firmas/20-in.gif"></span></a><a =
+href=3D"https://plus.google.com/107135201985474086995/posts" target=3D"_bla=
+nk"><span style=3D"text-decoration:none"><img border=3D"0" width=3D"30" hei=
+ght=3D"30" id=3D"Imagen_x0020_5" src=3D"cid:image005.gif@01D0D8E8.135C1B00"=
+ alt=3D"http://www.indracompany.com/media/firmas/20-google.gif"></span></a>=
+<a href=3D"http://www.indracompany.com/es/blogneo" target=3D"_blank"><span =
+style=3D"text-decoration:none"><img border=3D"0" width=3D"30" height=3D"30"=
+ id=3D"Imagen_x0020_6" src=3D"cid:image006.gif@01D0D8E8.135C1B00" alt=3D"ht=
+tp://www.indracompany.com/media/firmas/20-neo.gif"></span></a><o:p></o:p></=
+p>
+</td>
+</tr>
+<tr style=3D"height:60.75pt">
+<td width=3D"369" style=3D"width:276.75pt;padding:0cm 0cm 0cm 0cm;height:60=
+.75pt">
+<p class=3D"MsoNormal"><a href=3D"http://indra20aniversario.com/" target=3D=
+"_blank"><span style=3D"text-decoration:none"><img border=3D"0" width=3D"36=
+9" height=3D"81" id=3D"Imagen_x0020_7" src=3D"cid:image007.png@01D0D8E8.135=
+C1B00" alt=3D"Indra 20 aniversario - Innovaci=F3n
+                              Compartida"></span></a><o:p></o:p></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D">&nbsp;</span><o:p></o:p><=
+/p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D">&nbsp;</span><o:p></o:p><=
+/p>
+<div>
+<div style=3D"border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0cm =
+0cm 0cm">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;;color:windowtext">De:</span></b><span =
+style=3D"font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&q=
+uot;;color:windowtext"> Juan Ferm=EDn Villegas Rubio [<a href=3D"mailto:jua=
+nf.villegas@juntadeandalucia.es">mailto:juanf.villegas@juntadeandalucia.es<=
+/a>]
+<br>
+<b>Enviado el:</b> mi=E9rcoles, 12 de agosto de 2015 11:08<br>
+<b>Para:</b> <a href=3D"mailto:desarrollo.ceis.chap@juntadeandalucia.es">de=
+sarrollo.ceis.chap@juntadeandalucia.es</a><br>
+<b>CC:</b> Javier Jes=FAs Garc=EDa de Bringas; Julio Ubeda; Rafael Sep=FAlv=
+eda<br>
+<b>Asunto:</b> [desarrollo.ceis.chap] Consulta sobre nuevo formulario de in=
+cidencias CEIS y sobre asignaci=F3n autom=E1tica a grupo seg=FAn categor=ED=
+a seleccionada.</span><o:p></o:p></p>
+</div>
+</div>
+<p class=3D"MsoNormal">&nbsp;<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:12.0pt">Buenos d=EDas:<br>
+<br>
+Creo que Nicol=E1s est=E1 de vacaciones, os comento un par de dudas que se =
+nos han planteado a ver si nos las pod=E9is aclarar:<br>
+<br>
+<br>
+a) Lo =FAltimo que sab=EDamos por Nicol=E1s sobre la posibilidad de modific=
+ar una solicitud por el solicitante, a=F1adiendo alg=FAn comentario o alg=
+=FAn archivo adjunto era:<o:p></o:p></p>
+<blockquote style=3D"margin-top:5.0pt;margin-bottom:5.0pt">
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:auto;mso-margin-bottom-a=
+lt:auto"><i><span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;=
+,&quot;sans-serif&quot;;color:#1F497D">Por otra parte, la posibilidad de co=
+nsultar el estado de una solicitud est=E1 disponible pero la
+ de a=F1adir documentaci=F3n y/o notas sobre una solicitud abierta implica =
+desarrollar servicios web en Siebel y ahora mismo estamos al 100% con tarea=
+s relativas a la aplicaci=F3n de autoservicio de citas previas &nbsp;(os ad=
+junto la planificaci=F3n de estas tareas).
+</span></i><o:p></o:p></p>
+<p class=3D"MsoNormal"><i><span style=3D"font-size:11.0pt;font-family:&quot=
+;Calibri&quot;,&quot;sans-serif&quot;;color:#1F497D">Hemos pensado una solu=
+ci=F3n alternativa a estos WebServices y es enviar las notas y/o adjuntos p=
+or correo a Siebel, de esta forma, autom=E1ticamente se incluir=EDan
+ a las notificaciones recibidas con la nota y/o adjunto/s que indique el so=
+licitante. El desarrollo ser=EDa de unas 12 &#8211; 16 horas y no tendr=EDa=
+mos que desarrollar nada por el momento en Siebel =BFOs parece bien que inc=
+luyamos esta tarea en planificaci=F3n y m=E1s adelante,
+ cuando tengamos los servicios web, realizar las modificaciones que toquen =
+en la aplicaci=F3n de formularios?</span></i><o:p></o:p></p>
+</blockquote>
+<blockquote style=3D"margin-top:5.0pt;margin-bottom:5.0pt">
+<p class=3D"MsoNormal">Yo no he podido confirmar si esta soluci=F3n alterna=
+tiva se llev=F3 a cabo finalmente. He hecho una prueba y no veo que a la id=
+ de prueba (1-118497961) se haya a=F1adido comentario o adjunto de forma au=
+tom=E1tica a &quot;notificaciones recibidas&quot;. =BFPodemos
+ confirmar si esto deber=EDa estar funcionando?<o:p></o:p></p>
+</blockquote>
+<p class=3D"MsoNormal"><br>
+<br>
+<br>
+b) Sobre la posibilidad de configurar, desde la vista de administraci=F3n d=
+e la categorizaci=F3n en Siebel, la asignaci=F3n autom=E1tica a grupo resol=
+utor. =BFEsto no estaba disponible?. No veo la forma de hacerlo, no aparece=
+n grupos resolutores asociados a la categorizaci=F3n
+ y el bot=F3n &quot;Nuevo&quot; est=E1 inhabilitado (=BFes un tema de permi=
+sos?)<br>
+<br>
+Un saludo<br>
+<br>
+<br>
+<br>
+<br>
+<o:p></o:p></p>
+<pre>&nbsp;<o:p></o:p></pre>
+<pre>&nbsp;<o:p></o:p></pre>
+<pre>-- <o:p></o:p></pre>
+<pre>&nbsp;<o:p></o:p></pre>
+<pre>Juan Ferm=EDn Villegas Rubio<o:p></o:p></pre>
+<pre>Servicio de Planificaci=F3n Estrat=E9gica<o:p></o:p></pre>
+<pre>Direcci=F3n General de Pol=EDtica Digital<o:p></o:p></pre>
+<pre>Consejer=EDa de Hacienda y Administraci=F3n P=FAblica<o:p></o:p></pre>
+<pre>C/ Juan Antonio de Vizarr=F3n, s/n ( 41092 - SEVILLA )<o:p></o:p></pre=
+>
+<pre>Interior:364251 Exterior:955064251<o:p></o:p></pre>
+<p class=3D"MsoNormal">&nbsp;<o:p></o:p></p>
+<div class=3D"MsoNormal" align=3D"center" style=3D"text-align:center">
+<hr size=3D"2" width=3D"100%" align=3D"center">
+</div>
+<p class=3D"MsoNormal"><span style=3D"font-size:7.5pt;font-family:&quot;Ari=
+al&quot;,&quot;sans-serif&quot;;color:gray">Este correo electr=F3nico y, en=
+ su caso, cualquier fichero anexo al mismo, contiene informaci=F3n de car=
+=E1cter confidencial exclusivamente dirigida a su destinatario o
+ destinatarios. Si no es vd. el destinatario indicado, queda notificado que=
+ la lectura, utilizaci=F3n, divulgaci=F3n y/o copia sin autorizaci=F3n est=
+=E1 prohibida en virtud de la legislaci=F3n vigente. En el caso de haber re=
+cibido este correo electr=F3nico por error, se
+ ruega notificar inmediatamente esta circunstancia mediante reenv=EDo a la =
+direcci=F3n electr=F3nica del remitente.<br>
+Evite imprimir este mensaje si no es estrictamente necesario.<br>
+<br>
+This email and any file attached to it (when applicable) contain(s) confide=
+ntial information that is exclusively addressed to its recipient(s). If you=
+ are not the indicated recipient, you are informed that reading, using, dis=
+seminating and/or copying it without
+ authorisation is forbidden in accordance with the legislation in effect. I=
+f you have received this email by mistake, please immediately notify the se=
+nder of the situation by resending it to their email address.<br>
+Avoid printing this message if it is not absolutely necessary.</span><o:p><=
+/o:p></p>
+</blockquote>
+<p class=3D"MsoNormal"><br>
+<br>
+<br>
+<br>
+<o:p></o:p></p>
+<pre>-- <o:p></o:p></pre>
+<pre>&nbsp;<o:p></o:p></pre>
+<pre>Juan Ferm=EDn Villegas Rubio<o:p></o:p></pre>
+<pre>Servicio de Planificaci=F3n Estrat=E9gica<o:p></o:p></pre>
+<pre>Direcci=F3n General de Pol=EDtica Digital<o:p></o:p></pre>
+<pre>Consejer=EDa de Hacienda y Administraci=F3n P=FAblica<o:p></o:p></pre>
+<pre>C/ Juan Antonio de Vizarr=F3n, s/n ( 41092 - SEVILLA )<o:p></o:p></pre=
+>
+<pre>Interior:364251 Exterior:955064251<o:p></o:p></pre>
+<p class=3D"MsoNormal">&nbsp;<o:p></o:p></p>
+<div class=3D"MsoNormal" align=3D"center" style=3D"text-align:center">
+<hr size=3D"2" width=3D"100%" align=3D"center">
+</div>
+<p class=3D"MsoNormal"><span style=3D"font-size:7.5pt;font-family:&quot;Ari=
+al&quot;,&quot;sans-serif&quot;;color:gray">Este correo electr=F3nico y, en=
+ su caso, cualquier fichero anexo al mismo, contiene informaci=F3n de car=
+=E1cter confidencial exclusivamente dirigida a su destinatario o
+ destinatarios. Si no es vd. el destinatario indicado, queda notificado que=
+ la lectura, utilizaci=F3n, divulgaci=F3n y/o copia sin autorizaci=F3n est=
+=E1 prohibida en virtud de la legislaci=F3n vigente. En el caso de haber re=
+cibido este correo electr=F3nico por error, se
+ ruega notificar inmediatamente esta circunstancia mediante reenv=EDo a la =
+direcci=F3n electr=F3nica del remitente.<br>
+Evite imprimir este mensaje si no es estrictamente necesario.<br>
+<br>
+This email and any file attached to it (when applicable) contain(s) confide=
+ntial information that is exclusively addressed to its recipient(s). If you=
+ are not the indicated recipient, you are informed that reading, using, dis=
+seminating and/or copying it without
+ authorisation is forbidden in accordance with the legislation in effect. I=
+f you have received this email by mistake, please immediately notify the se=
+nder of the situation by resending it to their email address.<br>
+Avoid printing this message if it is not absolutely necessary.</span><o:p><=
+/o:p></p>
+</blockquote>
+<p class=3D"MsoNormal"><br>
+<br>
+<br>
+<o:p></o:p></p>
+<pre>-- <o:p></o:p></pre>
+<pre>&nbsp;<o:p></o:p></pre>
+<pre>Juan Ferm=EDn Villegas Rubio<o:p></o:p></pre>
+<pre>Servicio de Planificaci=F3n Estrat=E9gica<o:p></o:p></pre>
+<pre>Direcci=F3n General de Pol=EDtica Digital<o:p></o:p></pre>
+<pre>Consejer=EDa de Hacienda y Administraci=F3n P=FAblica<o:p></o:p></pre>
+<pre>C/ Juan Antonio de Vizarr=F3n, s/n ( 41092 - SEVILLA )<o:p></o:p></pre=
+>
+<pre>Interior:364251 Exterior:955064251<o:p></o:p></pre>
+</blockquote>
+<p class=3D"MsoNormal"><br>
+<br>
+<br>
+<o:p></o:p></p>
+<pre>-- <o:p></o:p></pre>
+<pre>&nbsp;<o:p></o:p></pre>
+<pre>Juan Ferm=EDn Villegas Rubio<o:p></o:p></pre>
+<pre>Servicio de Planificaci=F3n Estrat=E9gica<o:p></o:p></pre>
+<pre>Direcci=F3n General de Pol=EDtica Digital<o:p></o:p></pre>
+<pre>Consejer=EDa de Hacienda y Administraci=F3n P=FAblica<o:p></o:p></pre>
+<pre>C/ Juan Antonio de Vizarr=F3n, s/n ( 41092 - SEVILLA )<o:p></o:p></pre=
+>
+<pre>Interior:364251 Exterior:955064251<o:p></o:p></pre>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div class=3D"MsoNormal" align=3D"center" style=3D"text-align:center">
+<hr size=3D"2" width=3D"100%" align=3D"center">
+</div>
+<p class=3D"MsoNormal"><span style=3D"font-size:7.5pt;font-family:&quot;Ari=
+al&quot;,&quot;sans-serif&quot;;color:gray">Este correo electr=F3nico y, en=
+ su caso, cualquier fichero anexo al mismo, contiene informaci=F3n de car=
+=E1cter confidencial exclusivamente dirigida a su destinatario o
+ destinatarios. Si no es vd. el destinatario indicado, queda notificado que=
+ la lectura, utilizaci=F3n, divulgaci=F3n y/o copia sin autorizaci=F3n est=
+=E1 prohibida en virtud de la legislaci=F3n vigente. En el caso de haber re=
+cibido este correo electr=F3nico por error, se
+ ruega notificar inmediatamente esta circunstancia mediante reenv=EDo a la =
+direcci=F3n electr=F3nica del remitente.<br>
+Evite imprimir este mensaje si no es estrictamente necesario.<br>
+<br>
+This email and any file attached to it (when applicable) contain(s) confide=
+ntial information that is exclusively addressed to its recipient(s). If you=
+ are not the indicated recipient, you are informed that reading, using, dis=
+seminating and/or copying it without
+ authorisation is forbidden in accordance with the legislation in effect. I=
+f you have received this email by mistake, please immediately notify the se=
+nder of the situation by resending it to their email address.<br>
+Avoid printing this message if it is not absolutely necessary.</span><o:p><=
+/o:p></p>
+</blockquote>
+<p class=3D"MsoNormal"><br>
+<br>
+<o:p></o:p></p>
+<pre>-- <o:p></o:p></pre>
+<pre><o:p>&nbsp;</o:p></pre>
+<pre>Juan Ferm=EDn Villegas Rubio<o:p></o:p></pre>
+<pre>Servicio de Planificaci=F3n Estrat=E9gica<o:p></o:p></pre>
+<pre>Direcci=F3n General de Pol=EDtica Digital<o:p></o:p></pre>
+<pre>Consejer=EDa de Hacienda y Administraci=F3n P=FAblica<o:p></o:p></pre>
+<pre>C/ Juan Antonio de Vizarr=F3n, s/n ( 41092 - SEVILLA )<o:p></o:p></pre=
+>
+<pre>Interior:364251 Exterior:955064251<o:p></o:p></pre>
+</div>
+<br>
+<hr>
+<font face=3D"Arial" color=3D"Gray" size=3D"1">Este correo electr=F3nico y,=
+ en su caso, cualquier fichero anexo al mismo, contiene informaci=F3n de ca=
+r=E1cter confidencial exclusivamente dirigida a su destinatario o destinata=
+rios. Si no es vd. el destinatario indicado,
+ queda notificado que la lectura, utilizaci=F3n, divulgaci=F3n y/o copia si=
+n autorizaci=F3n est=E1 prohibida en virtud de la legislaci=F3n vigente. En=
+ el caso de haber recibido este correo electr=F3nico por error, se ruega no=
+tificar inmediatamente esta circunstancia mediante
+ reenv=EDo a la direcci=F3n electr=F3nica del remitente.<br>
+Evite imprimir este mensaje si no es estrictamente necesario.<br>
+<br>
+This email and any file attached to it (when applicable) contain(s) confide=
+ntial information that is exclusively addressed to its recipient(s). If you=
+ are not the indicated recipient, you are informed that reading, using, dis=
+seminating and/or copying it without
+ authorisation is forbidden in accordance with the legislation in effect. I=
+f you have received this email by mistake, please immediately notify the se=
+nder of the situation by resending it to their email address.<br>
+Avoid printing this message if it is not absolutely necessary.<br>
+</font>
+</body>
+</html>
+
+--_000_A9162E604233B146B0146C1321848185096E9ECCC4MADARRMAILBOX_--
+
+--_010_A9162E604233B146B0146C1321848185096E9ECCC4MADARRMAILBOX_
+Content-Type: image/gif; name="image001.gif"
+Content-Description: image001.gif
+Content-Disposition: inline; filename="image001.gif"; size=435;
+	creation-date="Mon, 17 Aug 2015 10:33:12 GMT";
+	modification-date="Mon, 17 Aug 2015 10:33:12 GMT"
+Content-ID: <image001.gif@01D0D8E8.135C1B00>
+Content-Transfer-Encoding: base64
+
+R0lGODlhGAAeANUAAKysrPHx8cnJyZ6enru7u/v7+/j4+KioqL29vbCwsOzs7Ovr66enp8LCwtzc
+3Lm5udDQ0L+/v+bm5re3t5SUlMbGxu3t7djY2J2dnc7OzrS0tPb29vz8/MPDw5WVlczMzOnp6ZKS
+krOzs9XV1a2traCgoPf396qqquHh4dPT06urq5iYmP39/e7u7uXl5d7e3vT09KSkpJGRkf///wAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwAAAAAGAAeAAAG2MCZcEgsGo/IpHLJ
+bDqf0KMsapwKIQQWBWqdwVaOh1cImxmS3VmM8erETrCYi4AmCkJqAyYgpyPTLjFqBQNxc3VDgYOF
+fYhCig8AJQUeAH5SQiYBIA4BCxAuASMSKAEBmDMqFxcQMq4iJK6yL1VCDB8cBLICDbKutEVWAzEw
+Mi4MGQILLRQpAQnARMLEMgUALwIVFgcGCA7RQ9PF1tgNCgAzARngQuLV17zncRHsM+4GEtgWMxgb
+ChX1rEwAgODAgwQTNGgomCDCgQW1qEiTOJGixYsYMyYJAgA7
+
+--_010_A9162E604233B146B0146C1321848185096E9ECCC4MADARRMAILBOX_
+Content-Type: image/gif; name="image002.gif"
+Content-Description: image002.gif
+Content-Disposition: inline; filename="image002.gif"; size=120;
+	creation-date="Mon, 17 Aug 2015 10:33:12 GMT";
+	modification-date="Mon, 17 Aug 2015 10:33:12 GMT"
+Content-ID: <image002.gif@01D0D8E8.135C1B00>
+Content-Transfer-Encoding: base64
+
+R0lGODlhHgAeAKIAAPDw8MjIyLu7u5ubm6ysrJCQkP///wAAACwAAAAAHgAeAAADRWi63P4wykmr
+vThrWLbsHheKFTCAX1msFCoRBVC5ETtTwSoEbbvaKZ+FxiGSJkDkzPhgNpLB0VPqcHqsG6xGS+16
+v2BIAgA7
+
+--_010_A9162E604233B146B0146C1321848185096E9ECCC4MADARRMAILBOX_
+Content-Type: image/gif; name="image003.gif"
+Content-Description: image003.gif
+Content-Disposition: inline; filename="image003.gif"; size=229;
+	creation-date="Mon, 17 Aug 2015 10:33:13 GMT";
+	modification-date="Mon, 17 Aug 2015 10:33:13 GMT"
+Content-ID: <image003.gif@01D0D8E8.135C1B00>
+Content-Transfer-Encoding: base64
+
+R0lGODlhHgAeAMQAALCwsLi4uKqqqs7OzsLCwpSUlJaWlt/f3+Dg4LS0tNPT066urv7+/qmpqd7e
+3vn5+f39/dXV1aGhoenp6cDAwPLy8ry8vJGRkZKSkqenp8zMzOLi4q2trZCQkP///wAAACwAAAAA
+HgAeAAAFaqAnjmRpnmiqrmzrvnAso92s1jad6+pBBAwXLiXoYF5DFKBT0EQUk1XytOxYOwHpannJ
+CBoDrWppeAi3HQPkrFowK+xUwioBcMK3FeJqFYhVGxYBFAQOfzskU4geioiNO485kYuUlZaXKyEA
+Ow==
+
+--_010_A9162E604233B146B0146C1321848185096E9ECCC4MADARRMAILBOX_
+Content-Type: image/gif; name="image004.gif"
+Content-Description: image004.gif
+Content-Disposition: inline; filename="image004.gif"; size=168;
+	creation-date="Mon, 17 Aug 2015 10:33:13 GMT";
+	modification-date="Mon, 17 Aug 2015 10:33:13 GMT"
+Content-ID: <image004.gif@01D0D8E8.135C1B00>
+Content-Transfer-Encoding: base64
+
+R0lGODlhHgAeALMAAOvr6/Ly8p+fn729vdzc3MTExJaWlqenp+Li4q2trcvLy5CQkP///wAAAAAA
+AAAAACwAAAAAHgAeAAAEXZDJSau9OOvNu/9gKGLLqJUmmaqrhWpK8L2YsiTzFiRIrhGJAnAgMCgy
+tIstYVsIFgvZJWlZ2gaMwwLAylgXx8S2W7vZwuPp5ovmqlsVaku+oqfsJvxID+/7/4AZEQA7
+
+--_010_A9162E604233B146B0146C1321848185096E9ECCC4MADARRMAILBOX_
+Content-Type: image/gif; name="image005.gif"
+Content-Description: image005.gif
+Content-Disposition: inline; filename="image005.gif"; size=395;
+	creation-date="Mon, 17 Aug 2015 10:33:13 GMT";
+	modification-date="Mon, 17 Aug 2015 10:33:13 GMT"
+Content-ID: <image005.gif@01D0D8E8.135C1B00>
+Content-Transfer-Encoding: base64
+
+R0lGODlhHgAeANUAAOrq6paWlqenp5mZmbKyspKSkq2trfPz8/Hx8fLy8sTExKGhodfX1/39/ba2
+tsjIyOzs7Obm5snJycHBwaioqLe3t9nZ2Zubm+7u7szMzLS0tLu7u9LS0s3Nzfj4+P7+/qysrOXl
+5ampqZ6entzc3Pb29uvr67Ozs6urq/T09Pf398LCwpycnKOjo9TU1JOTk93d3cbGxqKiotHR0ZCQ
+kP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwAAAAAHgAeAAAGsMCacEgsGo/IpHLJ
+bDqf0KgUSZsqq1ZqVlv8KAS0MK0gGQJkDS6xIgiRArQWhAgYHNTDk0nICDPodnhCFR5DcCA1CgYG
+AgUUDkdYRAQIQwY0IjUwExMaARsPkUYEZUJgMYAJgjUEARE1LjQolWaBokUWCxdhDiVFCBQpq0IR
+YR1RkkZwNBxQyUIzIwUXL2GhTs81KxkYKhALYapN2UUNLDQW2Fu360TkW+/t8vP09UxBADs=
+
+--_010_A9162E604233B146B0146C1321848185096E9ECCC4MADARRMAILBOX_
+Content-Type: image/gif; name="image006.gif"
+Content-Description: image006.gif
+Content-Disposition: inline; filename="image006.gif"; size=278;
+	creation-date="Mon, 17 Aug 2015 10:33:13 GMT";
+	modification-date="Mon, 17 Aug 2015 10:33:13 GMT"
+Content-ID: <image006.gif@01D0D8E8.135C1B00>
+Content-Transfer-Encoding: base64
+
+R0lGODlhHgAeAMQAAP///6KioqGhobu7u6ioqK+vr+np6e7u7szMzNLS0uPj4+np6bq6utjY2LCw
+sNDQ0Pn5+d7e3u3t7bW1tcDAwOvr6/j4+NnZ2fT09O3t7fX19fHx8aenpwAAAAAAAAAAACH5BAAA
+AAAALAAAAAAeAB4AAAWTICCOZGmeaKqubOu+cCyjwqzWNp3r6VIEQGBhcUs9gkjgI4U7JZ8Xnknz
+THKkJQwQMAgQEQTiAUvKJALcAZfQOAwi5NHiQByoE8Oz+tQsVfZ2AEARCgEIcSIbAQ1rEAAIE45M
+KBlAAwQBBJeZAwWIIlVIFJ8ADqEBDhakIgoMQQwKK30qYy2zOyK3uLq4vb6/wDIhADs=
+
+--_010_A9162E604233B146B0146C1321848185096E9ECCC4MADARRMAILBOX_
+Content-Type: image/png; name="image007.png"
+Content-Description: image007.png
+Content-Disposition: inline; filename="image007.png"; size=7608;
+	creation-date="Mon, 17 Aug 2015 10:33:13 GMT";
+	modification-date="Mon, 17 Aug 2015 10:33:13 GMT"
+Content-ID: <image007.png@01D0D8E8.135C1B00>
+Content-Transfer-Encoding: base64
+
+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
+DodzLv97ACvHSal2PxLWAAAAAElFTkSuQmCC
+
+--_010_A9162E604233B146B0146C1321848185096E9ECCC4MADARRMAILBOX_--
+

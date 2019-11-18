@@ -1,0 +1,140 @@
+        <profile>
+            <id>script-despliegue</id>
+            <activation>
+                <property>
+                    <name>env</name>
+                    <value>XXX_SAD_UID_XXX</value> <!-- Cambiar este parámetro por el uid asignado al SAD de dicho organismos: sad_xxxxx_des -->
+                </property>
+
+            </activation>
+            <properties>
+                <sad.uid>XXX_SAD_UID_XXX</sad.uid> <!-- Cambiar este parámetro por el uid asignado al SAD de dicho organismos: sad_xxxxx_des -->
+                <!-- Contextos en los que se desplegará la aplicación -->
+                <sad.context.sad-web>XXX_CONTEXTO_WEB_XXX</sad.context.sad-web>
+                <sad.context.sad-web-admin>XXX_CONTEXTO_WEB_ADMIN_XXX</sad.context.sad-web-admin>
+                <sad.context.sad-dav>XXX_CONTEXTO_DAV_XXX</sad.context.sad-dav>
+                <sad.context.sad-comm>XXX_CONTEXTO_COMM_XXX/sad.context.sad-comm>
+
+                <sad.hibernate.connection.driver>oracle.jdbc.OracleDriver</sad.hibernate.connection.driver>
+                <sad.hibernate.connection.url>XXX_CONN_STRING_BBDD_XXX</sad.hibernate.connection.url>
+                <sad.hibernate.connection.username>XXX_SAD_BBDD_USERNAME_XXX</sad.hibernate.connection.username> <!-- En este parámetro debe ponerse el usuario de conexión a la BBDD del organismo o dejarlo en blanco para que editen los properties posteriormente -->
+
+                <sad.hibernate.connection.password>XXX_SAD_BBDD_PASSWORD_XXX</sad.hibernate.connection.password> <!-- En este parámetro debe ponerse el password de conexión a la BBDD del organismo o dejarlo en blanco para que editen los properties posteriormente -->
+                <sad.hibernate.connection.dialect>
+                    org.hibernate.dialect.Oracle10gDialect
+                </sad.hibernate.connection.dialect>
+                <sad.hibernate.search.default.directory_provider>
+                    org.hibernate.search.store.RAMDirectoryProvider
+                </sad.hibernate.search.default.directory_provider>
+                <sad.hibernate.search.default.indexBase></sad.hibernate.search.default.indexBase>
+
+                <sad.hibernate.hbm2ddl.auto></sad.hibernate.hbm2ddl.auto>
+                <sad.hibernate.max_fetch_depth>1</sad.hibernate.max_fetch_depth>
+                <sad.c3p0.initialPoolSize>5</sad.c3p0.initialPoolSize>
+                <sad.c3p0.maxPoolSize>35</sad.c3p0.maxPoolSize>
+                <sad.c3p0.numHelperThreads>6</sad.c3p0.numHelperThreads>
+                <sad.c3p0.maxIdleTime>300</sad.c3p0.maxIdleTime>
+
+                <sad.c3p0.checkoutTimeout>30000</sad.c3p0.checkoutTimeout>
+                <sad.c3p0.idleConnectionTestPeriod>100</sad.c3p0.idleConnectionTestPeriod>
+                <sad.c3p0.preferredTestQuery>SELECT 1 FROM DUAL</sad.c3p0.preferredTestQuery>
+
+                <sad.max.failed.attempts>30</sad.max.failed.attempts>
+                <sad.max.period.failed.attempts>30</sad.max.period.failed.attempts>
+                <sad.failed.attempts.wait>30</sad.failed.attempts.wait>
+
+                <ldap.url>XXX_LDAP_CONN_STRING_XXX</ldap.url> <!-- Dejar este servidor LDAP o poner el que especifique el organismo -->
+                <ldap.baseDn>XXX_LDAP_BASEDN_XXX</ldap.baseDn> <!-- Dejar este parámetro o poner el que especifique el organismo -->
+
+                <ldap.bindDn>XXX_LDAP_BINDDN_XXX</ldap.bindDn> <!-- No es necesaria autenticación para consultar el LDAP -->
+                <ldap.bindPw>XXX_LDAP_BINDPW_XXX</ldap.bindPw> <!-- No es necesaria autenticación para consultar el LDAP -->
+                <ldap.search.userDn>XXX_LDAP_USERDN_XXX</ldap.search.userDn> <!-- Dejar este servidor LDAP o poner el que especifique el organismo -->
+                <ldap.time.limit>0</ldap.time.limit>
+                <ldap.size.limit>30</ldap.size.limit>
+                <!-- El tamaño de página debe ser menor que el size limit -->
+
+                <ldap.page.size>10</ldap.page.size>
+                <!-- Datos del pool de conexiones -->
+                <ldap.pool.maxWait>10000</ldap.pool.maxWait>
+                <ldap.pool.timeBetweenEvictionRunsMillis>9000</ldap.pool.timeBetweenEvictionRunsMillis>
+                <ldap.pool.minEvictableIdleTimeMillis>90000</ldap.pool.minEvictableIdleTimeMillis>
+                <ldap.pool.maxActive>25</ldap.pool.maxActive>
+
+
+                <funambol.ws.admin.url>XXX_FUNAMBOL_WS_ADMIN_XXX</funambol.ws.admin.url>
+                <funambol.admin.user>XXX_FUNAMBOL_ADMIN_USER_XXX</funambol.admin.user> <!-- Puede cambiar si el organismo modifica el usuario admnistrador de funambol -->
+                <funambol.admin.password>XXX_FUNAMBOL_ADMIN_PWD_XXX</funambol.admin.password> <!-- Puede cambiar si el organismo modifica el usuario admnistrador de funambol -->
+                <funambol.autoCreatePrincipals>true</funambol.autoCreatePrincipals>
+                <funambol.db.url>XXX_FUNAMBOL_CONN_STRING_BBDD_XXX</funambol.db.url>
+                <funambol.db.user>XXX_FUNAMBOL_BBDD_USERNAME_XXX</funambol.db.user>
+                <funambol.db.pass>XXX_FUNAMBOL_BBDD_PWD_XXX</funambol.db.pass>
+                <funambol.db.driver>oracle.jdbc.OracleDriver</funambol.db.driver>
+
+                
+                <sad.comm.subscription.client.ws.url>XXX_SAD_COMM_SUBSCRIPTION_WS_XXX</sad.comm.subscription.client.ws.url>
+                <sad.comm.client.proxy></sad.comm.client.proxy>
+                <sad.comm.client.proxy.port></sad.comm.client.proxy.port>
+                <sad.comm.client.proxy.user></sad.comm.client.proxy.user>
+                <sad.comm.client.proxy.pass></sad.comm.client.proxy.pass>
+                
+                <sad.test.user></sad.test.user> <!-- Usuario existente en el SAD -->
+                <sad.test.user.password></sad.test.user.password>
+                <sad.test.subscription.user></sad.test.subscription.user> <!-- usuario existente en SAD sobre el que se darán permisos -->
+                <sad.test.host></sad.test.host> <!-- ip o url del SAD -->
+                <sad.test.port></sad.test.port> <!-- puerto por el que se encuentra accesible la interfaz DAV -->
+
+                <!-- Email del remitente de los mensajes de notificación -->
+                <sad.notification.sender>XXXX_MAIL_SENDER_XXX</sad.notification.sender>
+                <!-- El organismo debe especificar un mail -->
+                <sad.support.email>XXX_SUPPORT_EMAIL_XXX</sad.support.email>
+
+                <!-- Habilitación/deshabilitación de grupos -->
+                <sad.groups.enabled>false</sad.groups.enabled>
+                
+                <!-- Habilita la funcionalidad de SAC -->
+                <sad.sac.enabled>XXX_SAC_ENABLED_XXX</sad.sac.enabled>
+
+                <!-- Directorio donde se almacenan los logs -->
+                <sad.log.directory>XXX_LOG_DIRECTORY_XXX</sad.log.directory>
+
+                <sad.backup.directory>XXX_BACKUP_DIRECTORY_XXX</sad.backup.directory> <!-- El organismo debe especificar el directorio en el que se van a dejar las copias de seguridad -->
+                <sad.backup.config.directory>XXX_BACKUP_CONFIG_DIRECTORY_XXX</sad.backup.config.directory> <!-- El organismo debe especificar el directorio en el que se establecerÃ¡n parÃ¡metros de configuraciÃ³n para el proceso de backup -->
+                <sad.backup.executionHour>XXX_BACKUP_EXECUTION_HOUR_XXX</sad.backup.executionHour> <!-- Hora a la que se realizarÃ¡n los backups correspondientes a cada 24 -->
+                <sad.backup.interval>XXX_BACKUP_EXECUTION_INTERVAL_XXX</sad.backup.interval>
+                <sad.backup.rotation>XXX_BACKUP_EXECUTION_ROTATION_XXX</sad.backup.rotation>
+
+                <smtp.host>XXX_SMTP_HOST_XXX</smtp.host> <!-- Utilizar este servidor de correo o que el organismo especifique uno -->
+
+                <smtp.port>XXX_SMTP_PORT_XXX</smtp.port> <!-- Puede cambiar si el organismos especifica servidor de correo -->
+                <smtp.user>XXX_SMTP_USER_XXX</smtp.user> <!-- Puede cambiar si el organismos especifica servidor de correo -->
+                <smtp.password>XXX_SMTP_PWD_XXX</smtp.password> <!-- Puede cambiar si el organismos especifica servidor de correo -->
+
+                <csa.base.url>XXX_CSA_URL_XXX</csa.base.url>
+                <csa.ws.admin.user.url>XXX_CSA_ADMIN_WS_XXX</csa.ws.admin.user.url>
+
+                <csa.ws.admin.user.username>XXX_CSA_ADMIN_USERNAME_XXX</csa.ws.admin.user.username>
+                <csa.ws.admin.user.password>XXX_CSA_ADMIN_PWD_XXX</csa.ws.admin.user.password>
+                <csa.ws.admin.user.proxy>XXX_CSA_ADMIN_PROXY_URL_XXX</csa.ws.admin.user.proxy>
+                <csa.ws.admin.user.proxyPort>XXX_CSA_ADMIN_PROXY_PORT_XXX</csa.ws.admin.user.proxyPort>
+                <csa.ws.admin.user.proxyUser>XXX_CSA_ADMIN_PROXY_USER_XXX</csa.ws.admin.user.proxyUser>
+                <csa.ws.admin.user.proxyPass>XXX_CSA_ADMIN_PROXY_PASS_XXX</csa.ws.admin.user.proxyPass>
+
+                <guia.ws.url>XXX_GUIA_WS_XXX</guia.ws.url>
+
+                <guia.ws.username>XXX_GUIA_WS_USERNAME_XXX</guia.ws.username>
+                <guia.ws.password>XXX_GUIA_WS_PASSWORD_XXX</guia.ws.password>
+                <guia.ws.proxy>XXX_GUIA_WS_PROXY_XXX</guia.ws.proxy>
+                <guia.ws.proxyPort>XXX_GUIA_WS_PROXY_PORT_XXX</guia.ws.proxyPort>
+                <guia.ws.proxyUser>XXX_GUIA_WS_PROXY_USER_XXX</guia.ws.proxyUser> 
+                <guia.ws.proxyPass>XXX_GUIA_WS_PROXY_PASS_XXX</guia.ws.proxyPass> 
+                <guia.ws.repoLocation>XXX_GUIA_WS_REPOLOCATION_XXX</guia.ws.repoLocation>
+                
+                <sad.comm.max.results>200</sad.comm.max.results>
+                
+
+                <sad.support.help.url>XXX_SAD_HELP_URL_XXX</sad.support.help.url>
+                <sad.gui.url>XXX_SAD_GUI_URL_XXX</sad.gui.url> <!-- Url de acceso a la interfaz gráfica del SAD. -->
+                <sad.poll.url>XXX_SAD_POLL_URL_XXX</sad.poll.url>
+            </properties>
+
+        </profile>

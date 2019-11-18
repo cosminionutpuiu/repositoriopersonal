@@ -1,0 +1,300 @@
+firstname;lastname;email; attribute_1 <Rol>; attribute_2 <Organismo>
+María de la Peña;Mate Aranda;mariap.mate@juntadeandalucia.es;REP;CALRI
+Ángel;Casaseca;angel.casaseca@juntadeandalucia.es;DIN;CALRI
+José María;Peche Carracedo ;josem.peche.ext@juntadeandalucia.es;TEC;CALRI
+Jesús;Calderón Galán;manuelj.calderon.ext@juntadeandalucia.es;TEC;CALRI
+Antonio;Godoy Rodríguez;antoniom.godoy.ext@juntadeandalucia.es;TEC;CALRI
+David;Sánchez de Alcázar Cruz;david.sanchez.alcazarcruz.ext@juntadeandalucia.es;TEC;CALRI
+Raúl;Casado Piqueras ;raul.casado.ext@juntadeandalucia.es ;TEC;CALRI
+Manuel;Galán Moreno;manuel.galan.moreno.ext@juntadeandalucia.es;TEC;CALRI
+Juan Luis;Ceada;juanl.ceada@juntadeandalucia.es;REP;CAPDER
+Carmen ;Garrido Granado;mariac.garrido.granado@juntadeandalucia.es;DIN;CAPDER
+Sergio;Díaz Ruiz;sergio.diaz@juntadeandalucia.es;TEC;CAPDER
+Rosario;Núñez Pérez;mariar.nunez.perez@juntadeandalucia.es;TEC;CAPDER
+Antonio;Moreno Vicente;antonio.moreno@sopragroup.com;TEC;CAPDER
+Lourdes;Pérez Gómez;lourdes.perez.ext@juntadeandalucia.es;TEC;CAPDER
+Agustín;Mula González;agustin.m.gonzalez.ext@juntadeandalucia.es;TEC;CAPDER
+Jose Andrés;Tinoco;josea.tinoco@juntadeandalucia.es;TEC;CAPDER
+Manuel;Pérez Ron;manuel.perez.ron.ext@juntadeandalucia.es;TEC;CAPDER
+Antonio;Gutiérrez Almansa;antonio.gutierrez.a.ext@juntadeandalucia.es;TEC;CAPDER
+Javier;López López ;javier.lopez.lopez.ext@juntadeandalucia.es;TEC;CAPDER
+Javier;López Fernández ;javier.lopez.fe.ext@juntadeandalucia.es;TEC;CAPDER
+Emilio;Martínez Force;emilio.martinez.force@juntadeandalucia.es;REP;CECD-CUL
+Rafael;García Ropero;rafael.garcia.r@juntadeandalucia.es;DIN;CECD-CUL
+José Carlos;Ramírez Pérez;josec.ramirez@juntadeandalucia.es;TEC;CECD-CUL
+José Antonio;Granados Reifs;jantonio.granados.ext@juntadeandalucia.es;TEC;CECD-CUL
+José Ramón;López Rojas;joseramon.lopez.ext@juntadeandalucia.es;TEC;CECD-CUL
+Julio;Zabala Silva;julio.zabala@juntadeandalucia.es;REP;CECD-EDU
+Nicolás;Vázquez Velasco ;nicolas.vazquez@juntadeandalucia.es;DIN;CECD-EDU
+Juan Manuel;Marín Sánchez;juanm.marin.ext@juntadeandalucia.es;TEC;CECD-EDU
+Leopoldo;Coronel;leopoldo.coronel.ext@juntadeandalucia.es;TEC;CECD-EDU
+Javier;Palacios;javier.palacios.ext@juntadeandalucia.es;TEC;CECD-EDU
+César;García Agudo;cesar.garcia.agudo.ext@juntadeandalucia.es;TEC;CECD-EDU
+Javier;Duque Pintor;franciscoj.duque@juntadeandalucia.es;TEC;CECD-EDU
+Jose Luis;Heredia Amaya ;josel.heredia.ext@juntadeandalucia.es;TEC;CECD-EDU
+Rafael;Mancebo ;rafaelj.mancebo@juntadeandalucia.es;TEC;CECD-EDU
+Juan ;Gasch Illescas;juan.gasch@juntadeandalucia.es;REP;CEICE
+Pablo;Roldán Ruiz;pablo.roldan.ruiz@juntadeandalucia.es;TEC;CEICE
+German;Tendero López;german.tendero.ext@juntadeandalucia.es;TEC;CEICE
+Maria Antonia;Avila Arellano;mariaa.avila.ext@juntadeandalucia.es;TEC;CEICE
+José Javier;Domínguez Reina;josej.dominguez@juntadeandalucia.es;TEC;CEICE
+David;Reyes López ;david.reyes@juntadeandalucia.es;TEC;CEICE
+Francisco;Fernández Ramos;juanf.fernandez.ramos@juntadeandalucia.es;REP;CFV
+Víctor;Osuna Carmona;victor.osuna@juntadeandalucia.es;DIN;CFV
+Javier;Ruiz de Infante González ;javier.ruizinfante@juntadeandalucia.es;DIN;CFV
+Antonio;Morales Ramírez;antonio.morales.ramirez.ext@juntadeandalucia.es;TEC;CFV
+Diego Hernán;Torre Celada;diego.torre.ext@juntadeandalucia.es;TEC;CFV
+Jorge;Palma Enamorado;jorge.palma@juntadeandalucia.es;TEC;CFV
+María José;Luna Moreno ;mariaj.luna.ext@juntadeandalucia.es;TEC;CFV
+Juan;Álvarez Abrio;juan.alvarez.abrio@juntadeandalucia.es;REP;CHAP
+Francisco José;Domenech Colomer;francisco.domenech@juntadeandalucia.es;DIN;CHAP
+José María;Folía Baena;jose.folia@juntadeandalucia.es;DIN;CHAP
+Juan Carlos;Peña Jaramillo;jcarlos.pena.ext@juntadeandalucia.es;TEC;CHAP
+Rafael ;del Águila de la Puente;rafael.aguila.ext@juntadeandalucia.es;TEC;CHAP
+Juan Jesús;Pérez Gómez;juanj.perez.ext@juntadeandalucia.es;TEC;CHAP
+Pilar;Real Sancho;pilar.real.ext@juntadeandalucia.es;TEC;CHAP
+David Luis;Moya Garrido;davidl.moya.ext@juntadeandalucia.es;TEC;CHAP
+Luis;Sánchez Vallejo;luis.sanchez.ext@juntadeandalucia.es;TEC;CHAP
+Carlos Alberto;Rodríguez Sánchez;calberto.rodriguez.ext@juntadeandalucia.es;TEC;CHAP
+Marcelo;Reina Aguilar;marcelo.reina@juntadeandalucia.es;DIN;CHAP
+Antonio;Blanco Morales;antonio.blanco@juntadeandalucia.es;DIN;CHAP
+Sonia María;Torres Llanera;sonia.torres@juntadeandalucia.es;TEC;CHAP
+Jorge ;Pardeiro Sánchez;jorge.pardeiro.sanchez@es.pwc.com;TEC;CHAP
+Raquel;Reinoso Lobato;raquel.reinoso@juntadeandalucia.es;REP;CISPS
+Mercedes;Castro Terrero;mmercedes.castro@juntadeandalucia.es;REP;CISPS
+Guillermo;Holgado Manzanares;guillermo.holgado@juntadeandalucia.es;DIN;CISPS
+David;Prado González;david.prado.ext@juntadeandalucia.es;TEC;CISPS
+Carlos Manuel;Casado García;carlos.casado.ext@juntadeandalucia.es;TEC;CISPS
+Alexis;Vizcaino Postigo;alexis.vizcaino.ext@juntadeandalucia.es;TEC;CISPS
+María Belen;Infante Gómez;belen.infante.ext@juntadeandalucia.es;TEC;CISPS
+Antonio;Heredia Campos;antonio.heredia.campos.ext@juntadeandalucia.es;TEC;CISPS
+Carlos;Simón Ferrer;carlos.simon@juntadeandalucia.es;REP;CJI-SGJ
+Carmen;León Bertrand;mariac.leon.bertrand@juntadeandalucia.es;DIN;CJI-SGJ
+Jorge David;Navarro Marín;david.navarro@juntadeandalucia.es;DIN;CJI-SGJ
+Patricio;Mora López;patricio.mora@juntadeandalucia.es;TEC;CJI-SGJ
+Jose Manuel;Carmona Cortes;josemanuel.carmona.ext@juntadeandalucia.es;TEC;CJI-SGJ
+Antonio José;García Sánchez ;antonioj.garcia.sanchez.ext@juntadeandalucia.es;TEC;CJI-SGJ
+María Luisa; de la Vega Royo;mluisa.vega@juntadeandalucia.es;REP;CJI-SGT
+María del Carmen;Sequera Vilches;mariac.sequera.ext@juntadeandalucia.es;TEC;CJI-SGT
+Antonio;Montoro Pavón;antonio.montoro.ext@juntadeandalucia.es;TEC;CJI-SGT
+Alexei;Hornero ;alexei.hornero.ext@juntadeandalucia.es;TEC;CJI-SGT
+Jesús Ramón;Fernández Rico ;jesusr.fernandez.rico@juntadeandalucia.es;TEC;CJI-SGT
+Carlos;Dura Velo ;carlos.dura.ext@juntadeandalucia.es;TEC;CJI-SGT
+José Antonio;Bautista Rosúa;josea.bautista.ext@juntadeandalucia.es;TEC;CJI-SGT
+Miguel Ángel;Martínez Álvarez;mangel.martinez.alvarez.ext@juntadeandalucia.es;TEC;CJI-SGT
+Felipe;López;felipe.lopez.ext@juntadeandalucia.es;TEC;CJI-SGT
+Rafael;Ayerbe Bernal;rafael.ayerbe@juntadeandalucia.es;REP;CMAOT
+Nicolás;Martínez Fernández;nicolas.martinez@juntadeandalucia.es;DIN;CMAOT
+Eduardo;Fedriani Montero;eduardo.fedriani@juntadeandalucia.es;DIN;CMAOT
+Miguel Ángel;Hinojosa Romero;miguelangel.hinojosa@juntadeandalucia.es;TEC;CMAOT
+María Reyes;Frutos Arjona;mariar.frutos@juntadeandalucia.es;TEC;CMAOT
+Ana;Alonso Piñón;anai.alonso.ext@juntadeandalucia.es;TEC;CMAOT
+Francisco;Martínez Vega;francisco.martinez.vega.ext@juntadeandalucia.es;TEC;CMAOT
+Antonio;Tovar Castellanos;antonio.tovar@juntadeandalucia.es;TEC;CMAOT
+Antonio;Márquez Arbizu ;antonio.marquez.arbizu@juntadeandalucia.es;REP;CPRE
+Francisco Javier;Manzano Moñino;franciscoj.manzano@juntadeandalucia.es;REP;CPRE
+Francisco;Flores Naharro;francisco.flores@juntadeandalucia.es;DIN;CPRE
+Rosario;Santiago Moreno;rosario.santiago.ext@juntadeandalucia.es;TEC;CPRE
+Hans;Dekker Dekker;hans.dekker.ext@juntadeandalucia.es;TEC;CPRE
+Juan Antonio;Solís Lojo;juan.solis.ext@juntadeandalucia.es;TEC;CPRE
+Ángel María;Barroso Chico;angel.barroso@juntadeandalucia.es;TEC;CPRE
+Nuria;Soult Rubio;nuria.soult@juntadeandalucia.es;TEC;CPRE
+Luis Mª;Ruiz Soto;luism.ruiz@juntadeandalucia.es;TEC;CPRE
+Antonio;Dorado Pino;antonio.dorado@juntadeandalucia.es;TEC;CPRE
+Manuel Jesús;Álvarez Márquez;manuelj.alvarez@juntadeandalucia.es;REP;CTC
+Alberto José;Díaz Caballero;albertoj.diaz@juntadeandalucia.es;TEC;CTC
+Francisco Javier;García Pedrosa;franciscoj.garcia.pedrosa.ext@juntadeandalucia.es;TEC;CTC
+Jesús;Romero Muñoz ;jesus.romero.munoz@juntadeandalucia.es;TEC;CTC
+Martín;Ayastuy López;martin.ayastuy@juntadeandalucia.es;REP;SAE
+Miguel;Ballesteros Cáliz;miguel.ballesteros@juntadeandalucia.es;DIN;SAE
+José Carlos;Pavón;josec.pavon.ext@juntadeandalucia.es;TEC;SAE
+Francisco;Pardillo;francisco.pardillo.ext@juntadeandalucia.es;TEC;SAE
+Eduardo;Pérez Ortiz;eduardo.perez.ortiz.ext@juntadeandalucia.es;TEC;SAE
+MIEMBRO DE;GRUPO SISER TIC SAE;siser.tic.sae@juntadeandalucia.es;TEC;SAE
+MIEMBRO DE;GRUPO COORDINACION TIC SAE;coordinacion.tic.sae@juntadeandalucia.es;TEC;SAE
+José;Garrido Carrillo;jgarrido@ephag.es;DIN;ASAG
+Francisco;Román Rodríguez;francisco.roman.sspa@juntadeandalucia.es;TEC;ASAG
+Azahara;Torres Medina;Azahara.torres.sspa@juntadeandalucia.es;TEC;ASAG
+Juan Ignacio;Román Sánchez;jignacio.roman.sspa@juntadeandalucia.es;DIN;ASBG
+Ignacio;Hidalgo Elvira;ignacio.hidalgo.sspa@juntadeandalucia.es;TEC;ASBG
+Juan Carlos;Liñán Reyes;carlos.linan.sspa@juntadeandalucia.es;TEC;ASBG
+Sonia;Martínez Castro;sonia.martinez.castro.sspa@juntadeandalucia.es;TEC;ASBG
+José Antonio;Gómez Álvarez;josea.gomez.sspa@juntadeandalucia.es;TEC;ASBG
+Eduardo;Venegas Bellido;eduardo.venegas.bellido@juntadeandalucia.es;REP;ASSDA
+Alberto;Rodríguez Vela;alberto.rodriguez.vela@juntadeandalucia.es;DIN;ASSDA
+Raúl;García León;raul.garcia.leon@juntadeandalucia.es;DIN;ASSDA
+Álvaro;Perera Domínguez ;alvaro.perera@juntadeandalucia.es;TEC;ASSDA
+Cristóbal;Román Piña;croman@epes.es;REP;EPES
+Juan;Gayubo Autillo;gayubo@epes.es;DIN;EPES
+David;Mateos Rueda;dmateos@epes.es;TEC;EPES
+José Andrés;Espinosa Delgado;jaespinosa@epes.es;TEC;EPES
+Jorge;Jurado Cordón;jjurado@epes.es;TEC;EPES
+Javier;Tomás García;jtomas@epes.es;TEC;EPES
+Andrés;Anerios Llanos;andres.aneiros.ext@juntadeandalucia.es;TEC;EPES
+Francisco Antonio;Muro Abad;franciscoa.muro.ext@juntadeandalucia.es;TEC;EPES
+Joaquín;Lago Pérez;jlagop@indra.es;TEC;EPES
+Jesús;Antona Archilla;jesus.antona.ext@juntadeandalucia.es;TEC;EPES
+Eduardo;Priego Jiménez;eduardo.priego.ext@juntadeandalucia.es;TEC;EPES
+Rafael;Martín Mateos;rmartin@epes.es;TEC;EPES
+Yoshita;Catarí de Valenzuela;yoshita.catari.ext@juntadeandalucia.es;TEC;EPES
+Sergio;Sánchez Trujillo;sergio.sanchez.trujillo.ext@juntadeandalucia.es;TEC;EPES
+Vanesa;Martín Novella;vanesa.martin.ext@juntadeandalucia.es;TEC;EPES
+María del Pilar;Castro Alvarez;mpilar.castro.ext@juntadeandalucia.es;TEC;EPES
+Fermín;Mayor García;fermin.mayor@ephpo.es;DIN;EPHPO
+Sergio;Álvarez Rubio;sergio.alvarez@ephpo.es;TEC;EPHPO
+José;Fernández Blanquez;jose.fernandez@ephpo.es;TEC;EPHPO
+Esteban;Toro Quijano;esteban.toro@juntadeandalucia.es;DIN;FPS-FPS
+Javier;Ferrero Álvarez-Rementeria ;javier.ferrero@juntadeandalucia.es;DIN;FPS-ACSA
+Pedro Ángel;Alcántara Capiscol;pedroa.alcantara@juntadeandalucia.es;REP;SAS
+María;Vázquez del Río;maria.vazquez.sspa@juntadeandalucia.es;DIN;SAS
+Fátima;Iskander Pizán;fatima.iskander.exts@juntadeandalucia.es;TEC;SAS
+Ana Susana;Díaz Moya;anas.diaz.exts@juntadeandalucia.es;TEC;SAS
+Gracia María;Nogales Pérez ;graciam.nogales.exts@juntadeandalucia.es;TEC;SAS
+Alfredo;Peña Palma;alfredo.pena.exts@juntadeandalucia.es;TEC;SAS
+Rafael;Gómez Casado;rafael.gomez.casado.exts@juntadeandalucia.es;TEC;SAS
+Juan Carlos;Ramos Márquez ;juanc.ramos.exts@juntadeandalucia.es;TEC;SAS
+Daniel;Duarte Hernández  ;daniel.duarte.exts@juntadeandalucia.es;TEC;SAS
+Reyes;Zamorano Rodríguez;reyes.zamorano.exts@juntadeandalucia.es;TEC;SAS
+Diego;Pineda Pérez;diego.pineda.exts@juntadeandalucia.es;TEC;SAS
+Manuel David;Díaz Cano;manueld.diaz.exts@juntadeandalucia.es;TEC;SAS
+Pablo;Florencio Jiménez;pablo.florencio.exts@juntadeandalucia.es;TEC;SAS
+Salvador;López de Sagredo de la Iglesia;salvador.lopezsagredo.exts@juntadeandalucia.es;TEC;SAS
+Juan;Camacho Mateo;juan.camacho.exts@juntadeandalucia.es;TEC;SAS
+Raquel;Casaus Álvarez;raquel.casaus@accenture.com;TEC;SAS
+María del Mar;Fernández López;mariam.fernandez.exts@juntadeandalucia.es;TEC;SAS
+Jorge;García Naz;jorge.garcia.naz@avanade.com;TEC;SAS
+Juan Manuel;Menacho Diz ;juan.m.menachodiz@avanade.com;TEC;SAS
+Patricia;Andrés Díaz;patricia.andres.diaz@avanade.com;TEC;SAS
+Pablo;Zapata Ferrusola;pzapata@indra.es;TEC;SAS
+Juan José;Cubillas Mercado ;jjcubillas@indra.es;TEC;SAS
+Francisco Javier;González Rivera ;fjgrivera@indra.es;TEC;SAS
+Miguel;García Márquez;miguel.garcia.exts@juntadeandalucia.es;TEC;SAS
+Enrique;Velasco Martín;enrique.velasco.exts@juntadeandalucia.es;TEC;SAS
+Inmaculada;Segovia Martín;inmaculada.segovia.exts@juntadeandalucia.es;TEC;SAS
+Andrés;Leal Pérez;andres.leal.exts@juntadeandalucia.es;TEC;SAS
+Simón;Murillo Pérez;simon.murillo.exts@juntadeandalucia.es;TEC;SAS
+Jesús;León Santiago ;jesus.leon.exts@juntadeandalucia.es;TEC;SAS
+Francisco;Carbonell Acera;franciscom.carbonell.sspa@juntadeandalucia.es;DIN;SAS
+Francisco Javier;Delgado Leal;franciscoj.delgado.leal.sspa@juntadeandalucia.es;TEC;SAS
+Alberto;Ramiro;alberto.ramiro.sspa@juntadeandalucia.es;TEC;SAS
+Francisco Javier;Caro Belleirín ;franciscoj.caro.exts@juntadeandalucia.es ;TEC;SAS
+Antonio Jesús;Córdoba Rojas;antonioj.cordoba.exts@juntadeandalucia.es;TEC;SAS
+Juan Emilio;García Lluch ;emilio.garcia.sspa@juntadeandalucia.es;TEC;SAS
+David;González Moreno;david.gonzalez.moreno.exts@juntadeandalucia.es;TEC;SAS
+David;Giraldez Sánchez;david.giraldez.exts@juntadeandalucia.es;TEC;SAS
+Fernando;García;fernando.garcia.sspa@juntadeandalucia.es;TEC;SAS
+Jose Alberto;García Gutierrez ;josea.garcia.exts@juntadeandalucia.es;TEC;SAS
+Álvaro;Pérez Rodríguez;alvaro.perez.sspa@juntadeandalucia.es;TEC;SAS
+Guillermo;Sevilla Nacete;guillermo.sevilla.exts@juntadeandalucia.es;TEC;SAS
+Jose Carlos;Trigueros;josec.trigueros.exts@juntadeandalucia.es;TEC;SAS
+María José;Giménez;mariaj.gimenez.exts@juntadeandalucia.es;TEC;SAS
+Antonio Cristobal;Delgado Matas;antonioc.delgado.sspa@juntadeandalucia.es;TEC;SAS
+Luis Santiago;Sánchez Fernández;luissantiago.sanchez.sspa@juntadeandalucia.es;TEC;SAS
+Ignacio;Rojas Izquierdo;ignacio.rojas.exts@juntadeandalucia.es;TEC;SAS
+Nicolas;Barajas Garcia;nicolas.baraja.exts@juntadeandalucia.es;TEC;SAS
+Francisco J.;Moreno García;francisco.moreno.exts@juntadeandalucia.es;TEC;SAS
+Carmen;Mena Gallardo;carmen.mena.sspa@juntadeandalucia.es;TEC;SAS
+Jose Angel;Torres;josea.torres.exts@juntadeandalucia.es;TEC;SAS
+Isidro;Lopez Vilches;isidro.lopez.sspa@juntadeandalucia.es;TEC;SAS
+Juan F. ;Rodriguez Diaz;jffrancisco.rodriguez.exts@juntadeandalucia.es;TEC;SAS
+Rafael;González Martínez;rafael.gonzalez.martinez@juntadeandalucia.es;REP;AAC
+Juan Rafael;Maroto Escobar;jrafael.maroto@juntadeandalucia.es;TEC;AAC
+Antonia;Muñoz de Luna Herrera;antonia.m.herrera@juntadeandalucia.es;TEC;AAC
+Manuel;Gutiérrez Molina;manuel.g.molina@juntadeandalucia.es;TEC;AAC
+Benito Abad;Bellido Alcón;benito.bellido@juntadeandalucia.es;REP;AAE
+José Alfonso;Falcón Martín;jalfonso.falcon@juntadeandalucia.es;DIN;AAE
+Damián;García González;damian.garcia@juntadeandalucia.es;REP;AAIICC
+Sebastián;Serrano Rico;sebastian.serrano@juntadeandalucia.es;DIN;AAIICC
+José;González Fernández;jose.g.fernandez@juntadeandalucia.es;TEC;AAIICC
+Ramón;Román Castro;ramon.roman.c@juntadeandalucia.es;TEC;AAIICC
+Isabel;Oliet Pala;isabel.oliet.pala@juntadeandalucia.es;REP;ADCA
+Jorge;Pérez Andersen;jperez@andaluciaemprende.es;REP;AEFPA
+Enrique;Benavent Olmo;ebenavent@andaluciaemprende.es;TEC;AEFPA
+Guillermo;Rosado Cueto;guillermo.rosado@juntadeandalucia.es;REP;AGAPA
+Mª Carmen;Zurera Valle;mcarmen.zurera@juntadeandalucia.es;TEC;AGAPA
+Mª Carmen;Jurado González ;mariac.jurado.gonzalez@juntadeandalucia.es;TEC;AGAPA
+Mª Carmen;Robles Agudo;mcarmen.robles.agudo@juntadeandalucia.es;TEC;AGAPA
+Juan Francisco;Sánchez García;jsanchez@agenciaidea.es;REP;AIDEA
+María;Alonso Araujo;malonso@agenciaidea.es;DIN;AIDEA
+Joaquín;Berrocoso Domínguez ;jberrocoso@agenciaidea.es;DIN;AIDEA
+Jose Antonio;Fernández Adarve;jafernandez@agenciamedioambienteyagua.es;REP;AMAYA
+Juan Antonio;Martínez Guirado ;jamartinez@agenciamedioambienteyagua.es;DIN;AMAYA
+César;Sánchez de Alcázar Cruz ;csanchezdealcazar@agenciamedioambienteyagua.es;TEC;AMAYA
+Enrique;Martín Minchero;emartin@agenciamedioambienteyagua.es;TEC;AMAYA
+Carlos;Álvarez Gala;carlos.alvarez@aopandalucia.es;REP;AOPJA
+Vicente;Rivero Redondo;vicente.rivero@aopandalucia.es;TEC;AOPJA
+Juan de Dios;Galán Herrero;jgalan@eppa.es;REP;APPA
+Manuel;Moreno Lavado;mmoreno@eppa.es;TEC;APPA
+Edgardo;Aguirre;eaguirre@eppa.es;TEC;APPA
+Pedro;Jiménez Romero;pedro.jimenez.romero@juntadeandalucia.es;REP;AVRA
+Fernando;Pujol Conejo;fernando.pujol@juntadeandalucia.es;DIN;AVRA
+Marta;Gamoneda Moreno;marta.gamoneda@juntadeandalucia.es;TEC;AVRA
+Antonio;Alcocer Tirado;antonio.alcocer.tirado.ext@juntadeandalucia.es;TEC;AVRA
+José;Fernández García;jose.fernandez.garcia@juntadeandalucia.es;REP;CAA
+Javier;Blanco Rodríguez;fjavier.blanco@juntadeandalucia.es;DIN;CAA
+Luis;Arranz Hernán;luis.arranz@juntadeandalucia.es;REP;CAAC
+Antonio Luis;Sánchez Martos;antoniol.sanchez@juntadeandalucia.es;DIN;CAAC
+Pedro A.;Jiménez Barrionuevo;pedroa.jimenez@juntadeandalucia.es;REP;CCA
+Juan Antonio;Ortega Ramírez;ortega@cica.es;REP;CICA
+Jose Carlos;Alarcón Arévalo;jcalarcon@cica.es;DIN;CICA
+Ana Belén;Girón González ;abgiron@cica.es;TEC;CICA
+Pablo;Vázquez Martínez;pablo.vazquez@cica.es;TEC;CICA
+Ignacio;Bocanegra;ignacio.bocanegra@cica.es;TEC;CICA
+Pablo;Guzmán Álvarez;pguzman@andalucia.org;REP;EPTDA-TUR
+Moisés;Rubiño García;mrubino@andalucia.org;TEC;EPTDA-TUR
+Dolores (Lola);Gómez Ruiz;dolores.gomez.ruiz@juntadeandalucia.es;REP;EPTDA-DEP
+Ignacio;Alonso Abad;ignacio.alonso@juntadeandalucia.es;DIN;EPTDA-DEP
+Bernardo;Mestre Arispon;bernardo.mestre@juntadeandalucia.es;TEC;EPTDA-DEP
+Francisco Javier;Perez Rey;fran.perez@juntadeandalucia.es;TEC;EPTDA-DEP
+Félix;Gamero García;fgg@extenda.es;DIN;EXTENDA
+José Rafael;García Díaz;jgd@extenda.es;TEC;EXTENDA
+José Manuel;Marchena Escobar;jme.ext@extenda.es;TEC;EXTENDA
+Alberto;Pool Melchor;alp.ext@extenda.es;TEC;EXTENDA
+Marco;García Romero;marco.garcia@juntadeandalucia.es;REP;IAAP
+Fernando Félix ;Gutiérrez;fernandof.gutierrez@juntadeandalucia.es;DIN;IAAP
+Virgilio;Rey Lorenzana;virgilio.rey.ext@juntadeandalucia.es;TEC;IAAP
+Francisco A.;de Alba Quiñones;francisco.alba.ext@juntadeandalucia.es;TEC;IAAP
+Javier;Velázquez Rubio;javier.velazquez.ext@juntadeandalucia.es;TEC;IAAP
+Fernando;González González;fernando.gonzalez.gonzalez@juntadeandalucia.es;REP;IAJ
+Alberto;Zamora Cueto;alberto.zamora.ext@juntadeandalucia.es;TEC;IAJ
+Cristóbal;Contreras Mireime;cristobal.contreras.m.ext@juntadeandalucia.es;TEC;IAJ
+José Manuel;Parrado;josem.parrado.ext@juntadeandalucia.es;TEC;IAJ
+Juan Antonio;Moreno Álvarez;juan.moreno.alvarez@juntadeandalucia.es;REP;IAM
+Antonio;Rendón Ruiz;antonio.rendon.ext@juntadeandalucia.es;DIN;IAM
+Luis;Rodríguez García;luis.rodriguez.garcia.ext@juntadeandalucia.es ;TEC;IAM
+José Luis;Zafra Ojuel;joseluis.zafra@juntadeandalucia.es;REP;IAPH
+José Antonio;Prada Baena ;josea.prada@juntadeandalucia.es;TEC;IAPH
+Antonio;Molina González;antonio.molina.gonzalez@juntadeandalucia.es;REP;IECA
+José Ángel;Gutiérrez Morales;joseangel.gutierrez@juntadeandalucia.es;DIN;IECA
+Manuel;Costoyas Presa;manuel.costoyas.ext@juntadeandalucia.es;TEC;IECA
+Augusto;García Baena;augusto.garcia@juntadeandalucia.es;TEC;IECA
+Enrique;Lago García;enrique.lago@juntadeandalucia.es;TEC;IECA
+Abel;Martín Ruiz;abel.martin.ruiz.ext@juntadeandalucia.es;TEC;IECA
+José Aurelio;Pérez Piñas;josea.perez.pinas@juntadeandalucia.es;TEC;IECA
+Francisco;Fuentes Aceituno;francisco.fuentes@juntadeandalucia.es;REP;IFAPA
+Javier;Díaz Calero;javier.diazcalero@juntadeandalucia.es;DIN;IFAPA
+Lorenzo;Ortiz  ;lorenzo.ortiz.ext@juntadeandalucia.es;TEC;IFAPA
+Jonathan;Guerrero  ;jonathan.guerrero.ext@juntadeandalucia.es;TEC;IFAPA
+Lucía Mª;Pérez Aguilera;luciam.perez@juntadeandalucia.es;REP;PAG
+Mª Carolina;Jiménez Egea;mcarolina.jimenez@juntadeandalucia.es;DIN;PAG
+Francisco;Arraez Sánchez;arraez@juntadeandalucia.es;TEC;PAG
+Pedro;Montero Carvajal;pmontero@rtva.es;REP;RTVA
+Luis;Romero Mige;lromero@rtva.es;TEC;RTVA
+José Manuel;López del Toro;jmlopezt@rtva.es;TEC;RTVA
+Alejandro;Rodríguez Sánchez;arodriguez@rtva.es;TEC;RTVA
+Juan Jesús;Velasco Rivera;juanj.velasco@juntadeandalucia.es;REP;SANDETEL
+Carlos;Corredera Carmona;carlos.corredera@juntadeandalucia.es;DIN;SANDETEL
+Antonio;Viana ;antonio.viana@juntadeandalucia.es;TEC;SANDETEL
+Alfredo;Sarmiento;alfredo.sarmiento@juntadeandalucia.es;TEC;SANDETEL
+Rafael;Romero Sánchez;rafael.romero.sanchez@juntadeandalucia.es;TEC;SANDETEL
+Oliver;López Yela ;oliver.lopez@juntadeandalucia.es;TEC;SANDETEL
+Federico;Coria Lebrero;federico.coria@juntadeandalucia.es;TEC;SANDETEL
+Nicolás;Hermoso Ruiz ;nicolas.hermoso@juntadeandalucia.es;TEC;SANDETEL
+Juan Alfonso;Martinez Ochoa;jamochoa@indra.es;TEC;SANDETEL
+Rafael Alberto;Hernández Ramos ;ahernandezram@eservicios.indra.es;TEC;SANDETEL
+Jose Antonio; Garcia Garcia ;joseantonio.garcia@juntadeandalucia.es;TEC;SANDETEL
+Luis Manuel; Gavira Cortés;lgcortes@veiasa.es;REP;VEIASA
+Sergio;Oterino Cubero;soterino@veiasa.es;TEC;VEIASA
+David;Pelayo Cruz;dpelayo@veiasa.es;TEC;VEIASA
+María Dolores;Paredes Garrido;mdolores.paredes.ext@juntadeandalucia.es;TEC;VEIASA
+Jose Manuel;Pérez Butelo;josemanuel.perez.butelo.ext@juntadeandalucia.es;TEC;VEIASA

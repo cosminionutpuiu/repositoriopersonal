@@ -1,0 +1,1110 @@
+X-Mozilla-Status: 0011
+X-Mozilla-Status2: 00000000
+X-Mozilla-Keys:                                                                                 
+Return-path: <l-gest.sco-owner@juntadeandalucia.es>
+Envelope-to: lorenzo.v.pairet.ext@juntadeandalucia.es
+Delivery-date: Wed, 09 Apr 2014 09:26:24 +0200
+Received: from [10.240.225.252] (helo=mail.juntadeandalucia.es)
+	by ccobuz20 with esmtp (Exim 4.71)
+	(envelope-from <l-gest.sco-owner@juntadeandalucia.es>)
+	id 1WXmtl-00042k-4t; Wed, 09 Apr 2014 09:26:24 +0200
+Received: from [10.240.225.251] (helo=10.240.225.35)
+	by mail.juntadeandalucia.es with esmtps (TLSv1:AES256-SHA:256)
+	(Exim 4.71)
+	(envelope-from <l-gest.sco-owner@juntadeandalucia.es>)
+	id 1WXmti-0002yW-Nq; Wed, 09 Apr 2014 09:26:16 +0200
+Received: from sympa by 10.240.225.35 with local (Exim 4.71)
+	(envelope-from <l-gest.sco-owner@juntadeandalucia.es>)
+	id 1WXmth-0000JE-TN; Wed, 09 Apr 2014 09:26:14 +0200
+Received: from [10.240.225.252] (helo=mail.juntadeandalucia.es)
+	by 10.240.225.34 with esmtp (Exim 4.71)
+	(envelope-from <josemaria.gomez@oracle.com>)
+	id 1WXmtd-0007lb-UZ
+	for l-gest.sco@juntadeandalucia.es; Wed, 09 Apr 2014 09:26:10 +0200
+Received: from aserp1040.oracle.com ([141.146.126.69])
+	by mail.juntadeandalucia.es with esmtps (TLSv1:AES256-SHA:256)
+	(Exim 4.71)
+	(envelope-from <josemaria.gomez@oracle.com>)
+	id 1WXmtV-0005ri-UK; Wed, 09 Apr 2014 09:26:04 +0200
+Received: from acsinet21.oracle.com (acsinet21.oracle.com [141.146.126.237])
+	by aserp1040.oracle.com (Sentrion-MTA-4.3.2/Sentrion-MTA-4.3.2) with ESMTP id s397PwEb008880
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=OK);
+	Wed, 9 Apr 2014 07:25:59 GMT
+Received: from userz7021.oracle.com (userz7021.oracle.com [156.151.31.85])
+	by acsinet21.oracle.com (8.14.4+Sun/8.14.4) with ESMTP id s397PvF6014567
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=FAIL);
+	Wed, 9 Apr 2014 07:25:57 GMT
+Received: from abhmp0006.oracle.com (abhmp0006.oracle.com [141.146.116.12])
+	by userz7021.oracle.com (8.14.4+Sun/8.14.4) with ESMTP id s397Pu1A015255;
+	Wed, 9 Apr 2014 07:25:56 GMT
+MIME-Version: 1.0
+Message-ID: <e7650894-92cb-4ff0-a1e9-76529c3ef3a8@default>
+Date: Wed, 9 Apr 2014 00:25:54 -0700 (PDT)
+Sender: =?iso-8859-1?B?Sm9z6SBNYXLtYSBH821leg==?= <josemaria.gomez@oracle.com>
+To: =?iso-8859-1?B?TGF1cmEgTWFydO1uZXogQXRpZW56YQ==?=
+ <laura.martinez.atienza@juntadeandalucia.es>
+Cc: l-gest.sco@juntadeandalucia.es
+References: <e2fef0c2-fff9-4bd0-bf3e-e5e63b6801d3@default>
+ <7ba18afb-0a0a-49bc-b146-d85b250f8775@default>
+ <5344E962.7000308@juntadeandalucia.es>
+ <df943eae-e99f-44e6-8a3b-5be4a21875c1@default>
+ <5344F562.5080408@juntadeandalucia.es>
+In-Reply-To: <5344F562.5080408@juntadeandalucia.es>
+X-Priority: 3
+X-Mailer: Oracle Beehive Extensions for Outlook 2.0.1.8  (707110) [OL
+ 12.0.6680.5000 (x86)]
+Content-Type: multipart/mixed;
+ boundary="__1397028356085103635abhmp0006.oracle.com"
+X-Source-IP: acsinet21.oracle.com [141.146.126.237]
+X-Spam-Score: 1.0 (+)
+X-Spam-Score-Int: 10
+From: José María Gómez <josemaria.gomez@oracle.com>
+X-Loop: l-gest.sco@juntadeandalucia.es
+X-Sequence: 1306
+Errors-to: l-gest.sco-owner@juntadeandalucia.es
+Precedence: list
+Precedence: bulk
+X-no-archive: yes
+List-Id: <l-gest.sco.juntadeandalucia.es>
+List-Help: <mailto:sympaadmin@juntadeandalucia.es?subject=help>
+List-Subscribe: <mailto:sympaadmin@juntadeandalucia.es?subject=subscribe%20l-gest.sco>
+List-Unsubscribe: <mailto:sympaadmin@juntadeandalucia.es?subject=unsubscribe%20l-gest.sco>
+List-Post: <mailto:l-gest.sco@juntadeandalucia.es>
+List-Owner: <mailto:l-gest.sco-request@juntadeandalucia.es>
+List-Archive: <http://juntadeandalucia.es.pro.sympa.juntadeandalucia.es/sympa/arc/l-gest.sco>
+X-Spam-Score: -5.0 (-----)
+X-Spam-Status: No, score=-5.0 required=4.1 tests=BAYES_00,HTML_MESSAGE,RCVD_IN_DNSWL_MED,SPF_PASS autolearn=ham
+ X-Spam-Report: 
+ * -4.0 RCVD_IN_DNSWL_MED RBL: Sender listed at http://www.dnswl.org/,
+ *      medium trust
+ *      [141.146.126.69 listed in list.dnswl.org]
+ * -0.0 SPF_PASS SPF: sender matches SPF record
+ * -1.0 BAYES_00 BODY: Bayesian spam probability is 0 to 1%
+ *      [score: 0.0000]
+ *  0.0 HTML_MESSAGE BODY: HTML included in message
+Subject: RE: [l-gest.sco] RE: Solicitud de nuevo usuario en el LDAP de JdA
+
+--__1397028356085103635abhmp0006.oracle.com
+Content-Type: multipart/alternative;
+ boundary="__1397028356086103636abhmp0006.oracle.com"
+
+--__1397028356086103636abhmp0006.oracle.com
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+Porque en su momento me comentasteis que no se pod=EDan pedir m=E1s VPNs y =
+entonces las comparten.=20
+
+=A0
+
+Si es posible, que cada uno tenga su VPN, mejor.
+
+=A0
+
+Un saludo
+
+=A0
+
+HYPERLINK "http://www.oracle.com/" \nOracle
+Jos=E9 Mar=EDa G=F3mez | Technical Account Manager=20
+Mobile: +34 661 406 732=20
+Oracle Ib=E9rica, Advanced Customer Support Services=20
+
+C/Albert Einstein s/n, Edificio INSUR, planta 1=AA, m=F3dulo 8
+
+41092, Sevilla - Spain
+
+HYPERLINK "http://www.oracle.com/corporate/community/index.html" \nGreen
+
+Oracle is committed to developing practices and products that help protect =
+the environment=20
+
+=A0
+
+=A0
+
+From: Laura Mart=EDnez Atienza [mailto:laura.martinez.atienza@juntadeandalu=
+cia.es]=20
+Sent: mi=E9rcoles, 09 de abril de 2014 9:23
+To: Jos=E9 Mar=EDa G=F3mez
+Cc: l-gest.sco@juntadeandalucia.es
+Subject: Re: [l-gest.sco] RE: Solicitud de nuevo usuario en el LDAP de JdA
+
+=A0
+
+Te refieres a que todos los siguientes son Advanced Services Engineer. EC v=
+erdad?=20
+
+Nombre=20
+
+Rol=20
+
+Tel=E9fono=20
+
+M=F3vil=20
+
+Correo Electr=F3nico ORACLE
+
+Usuario LDAP JdA
+
+VPN
+
+Lucian Anchidin=20
+
+Advanced Services Engineer. EC=20
+
+=09=09HYPERLINK "mailto:lucian.anchidin@oracle.com"lucian.anchidin@oracle.c=
+om
+
+=09NO
+
+Silviu poenaru=20
+
+Advanced Services Manager. EC=20
+
+=09=09HYPERLINK "mailto:silviu.poenaru@oracle.com"silviu.poenaru@oracle.com
+
+silviu.poenaru.ext
+
+SI
+
+George Bliderisanu=20
+
+Advanced Services Manager. EC=20
+
+=09=09HYPERLINK "mailto:george.bliderisanu@oracle.com"george.bliderisanu@or=
+acle.com
+
+george.bliderisau.ext
+
+SI
+
+Maria Soledad Segade Vazquez
+
+Advanced Services Manager. EC=20
+
+=09=09HYPERLINK "mailto:marisol.segade@oracle.com"marisol.segade@oracle.com
+
+marias.segade.ext
+
+SI
+
+Miguel Angel de Paz Gonzalez=20
+
+Advanced Services Engineer. EC=20
+
+=09661 432 514
+
+HYPERLINK "mailto:miguelangel.depaz@oracle.com"miguelangel.depaz@oracle.com
+
+mangel.paz.ext
+
+NO
+
+Cristina Craciun=20
+
+Advanced Services Manager. EC=20
+
+=09=09HYPERLINK "mailto:cristina.craciun@oracle.com"cristina.craciun@oracle=
+.com
+
+cristina.craciun.ext
+
+NO
+
+Teresa Mill=E1n Fernandez
+
+Advanced Services Manager. EC=20
+
+916312065
+
+=09HYPERLINK "mailto:teresa.millan@oracle.com"teresa.millan@oracle.com
+
+En curso la solicitud
+
+NO
+
+
+
+Lo que no entiendo es que alguno no tenga usuario LDAP (Lucian Anchidin) y =
+algunos tengan VPN y otros no, si realizan las mismas funciones.
+
+
+
+-------- Mensaje original --------
+Asunto: Re: [l-gest.sco] RE: Solicitud de nuevo usuario en el LDAP de JdA
+De: Jos=E9 Mar=EDa G=F3mez HYPERLINK "mailto:josemaria.gomez@oracle.com"<jo=
+semaria.gomez@oracle.com>
+Para: Laura Mart=EDnez Atienza HYPERLINK "mailto:laura.martinez.atienza@jun=
+tadeandalucia.es"<laura.martinez.atienza@juntadeandalucia.es>
+CC: HYPERLINK "mailto:l-gest.sco@juntadeandalucia.es"l-gest.sco@juntadeanda=
+lucia.es
+Fecha: 09/04/14 09:14
+
+Buenos d=EDas:
+
+=A0
+
+=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0 Son ingenieros de soporte avanza=
+do, igual que los que tenemos en la oficina de Sevilla, s=F3lo que pertenec=
+en al departamento EC ( Expertise center), m=E1s focalizado en realizar tar=
+eas m=E1s concretas, como las revisiones de rendimiento, configuraci=F3n, t=
+opSQL, etc. =A0
+
+=A0
+
+=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0 As=ED que usan NAOS, como cualqu=
+ier otro ingeniero.=20
+
+=A0
+
+=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0 He estado revisando el Excel y d=
+onde pone "Advanced Services Manager. EC" deber=EDa poner "Advanced Service=
+s Engineer. EC", son todos ingenieros.
+
+=A0
+
+=A0
+
+Un saludo
+
+=A0
+
+HYPERLINK "http://www.oracle.com/" \nOracle
+Jos=E9 Mar=EDa G=F3mez | Technical Account Manager=20
+Mobile: +34 661 406 732=20
+Oracle Ib=E9rica, Advanced Customer Support Services=20
+
+C/Albert Einstein s/n, Edificio INSUR, planta 1=AA, m=F3dulo 8
+
+41092, Sevilla - Spain
+
+HYPERLINK "http://www.oracle.com/corporate/community/index.html" \nGreen
+
+Oracle is committed to developing practices and products that help protect =
+the environment=20
+
+=A0
+
+=A0
+
+From: Laura Mart=EDnez Atienza [mailto:laura.martinez.atienza@juntadeandalu=
+cia.es]=20
+Sent: mi=E9rcoles, 09 de abril de 2014 8:32
+To: Jos=E9 Mar=EDa G=F3mez; HYPERLINK "mailto:l-gest.sco@juntadeandalucia.e=
+s"l-gest.sco@juntadeandalucia.es
+Subject: Re: [l-gest.sco] RE: Solicitud de nuevo usuario en el LDAP de JdA
+
+=A0
+
+ok. Una pregunta, esta persona indicabas que debe aparecer en la Gu=EDa de =
+Contactos y Escaladas como Advanced Services Manager. EC=20
+=BFPodr=EDas explicarme las funciones que realizan dentro del Servicio Corp=
+orativo Oracle de la JdA los roles que aparecen como Advanced Services Engi=
+neer. EC y Advanced Services Manager. EC y para qu=E9 utilizan el usuario L=
+DAP?
+
+Gracias.
+
+-------- Mensaje original --------
+Asunto: [l-gest.sco] RE: Solicitud de nuevo usuario en el LDAP de JdA
+De: Jos=E9 Mar=EDa G=F3mez HYPERLINK "mailto:josemaria.gomez@oracle.com"<jo=
+semaria.gomez@oracle.com>
+Para: HYPERLINK "mailto:l-gest.sco@juntadeandalucia.es"l-gest.sco@juntadean=
+dalucia.es
+CC: Maria Soledad Segade Vazquez HYPERLINK "mailto:marisol.segade@oracle.co=
+m"<marisol.segade@oracle.com>, Teresa Millan Fernandez HYPERLINK "mailto:te=
+resa.millan@oracle.com"<teresa.millan@oracle.com>
+Fecha: 08/04/14 18:31
+
+Buenas tardes:
+
+=A0
+
+=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0 Os recuerdo la petici=F3n de alt=
+a en LDAP de este usuario. Gracias
+
+=A0
+
+Un saludo
+
+=A0
+
+HYPERLINK "http://www.oracle.com/" \nOracle
+Jos=E9 Mar=EDa G=F3mez | Technical Account Manager=20
+Mobile: +34 661 406 732=20
+Oracle Ib=E9rica, Advanced Customer Support Services=20
+
+C/Albert Einstein s/n, Edificio INSUR, planta 1=AA, m=F3dulo 8
+
+41092, Sevilla - Spain
+
+HYPERLINK "http://www.oracle.com/corporate/community/index.html" \nGreen
+
+Oracle is committed to developing practices and products that help protect =
+the environment=20
+
+=A0
+
+=A0
+
+From: Jos=E9 Mar=EDa G=F3mez=20
+Sent: jueves, 27 de marzo de 2014 18:10
+To: HYPERLINK "mailto:l-gest.sco@juntadeandalucia.es"l-gest.sco@juntadeanda=
+lucia.es
+Cc: Maria Soledad Segade Vazquez; Teresa Millan Fernandez
+Subject: Solicitud de nuevo usuario en el LDAP de JdA=20
+
+=A0
+
+Necesitamos que se d=E9 de alta en el LDAP de JdA a:
+
+=A0
+
+Teresa Mill=E1n Fernandez
+
+DNI: 33299121C
+
+HYPERLINK "mailto:teresa.millan@oracle.com"teresa.millan@oracle.com
+
+916312065
+
+=A0
+
+Cuando tengamos el usuario solicitaremos el acceso a NAOS a trav=E9s de CEI=
+S.
+
+=A0
+
+Muchas gracias.
+
+=A0
+
+Un saludo
+
+=A0
+
+HYPERLINK "http://www.oracle.com/" \nOracle
+Jos=E9 Mar=EDa G=F3mez | Technical Account Manager=20
+Mobile: +34 661 406 732=20
+Oracle Ib=E9rica, Advanced Customer Support Services=20
+
+C/Albert Einstein s/n, Edificio INSUR, planta 1=AA, m=F3dulo 8
+
+41092, Sevilla - Spain
+
+HYPERLINK "http://www.oracle.com/corporate/community/index.html" \nGreen
+
+Oracle is committed to developing practices and products that help protect =
+the environment=20
+
+=A0
+
+=A0
+
+
+
+
+
+
+--=20
+=A0
+Laura Mart=EDnez Atienza
+=C1rea de Desarrollo de SSII / Unidad de Proyectos de SSII Horizontales
+Dpto. Sistemas de Informaci=F3n
+Sociedad Andaluza para el Desarrollo de las Telecomunicaciones, S.A.
+Avda. de la Arboleda s/n
+41940 - Tomares, (Sevilla)
+Tfn: 671596722/696722 Fax: 954460308
+e-mail: HYPERLINK "mailto:laura.martinez.atienza@juntadeandalucia.es"laura.=
+martinez.atienza@juntadeandalucia.es
+=A0
+=A0
+Este correo electr=F3nico y, en su caso, cualquier fichero anexo al mismo, =
+contiene informaci=F3n de car=E1cter confidencial exclusivamente dirigida a=
+ su destinatario o destinatarios. Queda prohibida su divulgaci=F3n, copia o=
+ distribuci=F3n a terceros sin la previa autorizaci=F3n escrita de "Socieda=
+d Andaluza para el Desarrollo de la Sociedad de la Informaci=F3n, S.A.U.". =
+Si no es Ud. el destinatario del mensaje le ruego lo destruya sin hacer cop=
+ia digital o f=EDsica, comunicando a Sociedad Andaluza para el Desarrollo d=
+e la Sociedad de la Informaci=F3n S.A.U. v=EDa e-mail o fax la recepci=F3n =
+del presente mensaje. Toda declaraci=F3n de voluntad contenida deber=E1 ser=
+ tenida por no producida. Gracias
+_____________________________________________________________________
+=A0
+The information in this e-mail and in any attachments is confidential and s=
+olely for the attention and use of the named addressee(s). You are hereby n=
+otified that any dissemination, distribution or copy of this communication =
+is prohibited without the prior written consent of "Sociedad Andaluza para =
+el Desarrollo de la Sociedad de la Informaci=F3n, S.A.U.". If you are not t=
+he formal receiver of this message please destroy it without making any dig=
+ital or physical copy and inform "Sociedad Andaluza para el Desarrollo de l=
+a Sociedad de la Informaci=F3n S.A.U.", by e-mail or fax, of the reception =
+of the present message. Any whatsoever involuntary declaration contained he=
+rewith must be taken as having no legal effect. Thank you.
+=A0
+
+
+
+
+
+--=20
+=A0
+Laura Mart=EDnez Atienza
+=C1rea de Desarrollo de SSII / Unidad de Proyectos de SSII Horizontales
+Dpto. Sistemas de Informaci=F3n
+Sociedad Andaluza para el Desarrollo de las Telecomunicaciones, S.A.
+Avda. de la Arboleda s/n
+41940 - Tomares, (Sevilla)
+Tfn: 671596722/696722 Fax: 954460308
+e-mail: HYPERLINK "mailto:laura.martinez.atienza@juntadeandalucia.es"laura.=
+martinez.atienza@juntadeandalucia.es
+=A0
+=A0
+Este correo electr=F3nico y, en su caso, cualquier fichero anexo al mismo, =
+contiene informaci=F3n de car=E1cter confidencial exclusivamente dirigida a=
+ su destinatario o destinatarios. Queda prohibida su divulgaci=F3n, copia o=
+ distribuci=F3n a terceros sin la previa autorizaci=F3n escrita de "Socieda=
+d Andaluza para el Desarrollo de la Sociedad de la Informaci=F3n, S.A.U.". =
+Si no es Ud. el destinatario del mensaje le ruego lo destruya sin hacer cop=
+ia digital o f=EDsica, comunicando a Sociedad Andaluza para el Desarrollo d=
+e la Sociedad de la Informaci=F3n S.A.U. v=EDa e-mail o fax la recepci=F3n =
+del presente mensaje. Toda declaraci=F3n de voluntad contenida deber=E1 ser=
+ tenida por no producida. Gracias
+_____________________________________________________________________
+=A0
+The information in this e-mail and in any attachments is confidential and s=
+olely for the attention and use of the named addressee(s). You are hereby n=
+otified that any dissemination, distribution or copy of this communication =
+is prohibited without the prior written consent of "Sociedad Andaluza para =
+el Desarrollo de la Sociedad de la Informaci=F3n, S.A.U.". If you are not t=
+he formal receiver of this message please destroy it without making any dig=
+ital or physical copy and inform "Sociedad Andaluza para el Desarrollo de l=
+a Sociedad de la Informaci=F3n S.A.U.", by e-mail or fax, of the reception =
+of the present message. Any whatsoever involuntary declaration contained he=
+rewith must be taken as having no legal effect. Thank you.
+=A0
+--__1397028356086103636abhmp0006.oracle.com
+Content-Type: multipart/related;
+ boundary="__1397028356086103637abhmp0006.oracle.com"
+
+--__1397028356086103637abhmp0006.oracle.com
+Content-Type: text/html; charset=iso-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40"><head><meta http-equiv=3DContent-Type content=
+=3D"text/html; charset=3Diso-8859-1"><meta name=3DGenerator content=3D"Micr=
+osoft Word 12 (filtered medium)"><!--[if !mso]><style>v\:* {behavior:url(#d=
+efault#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+=09{font-family:"Cambria Math";
+=09panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+=09{font-family:Calibri;
+=09panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+=09{font-family:Tahoma;
+=09panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+=09{font-family:Verdana;
+=09panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+=09{font-family:Consolas;
+=09panose-1:2 11 6 9 2 2 4 3 2 4;}
+@font-face
+=09{font-family:"Times New Roman \, serif ";}
+@font-face
+=09{font-family:"Liberation Sans";
+=09panose-1:0 0 0 0 0 0 0 0 0 0;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+=09{margin:0cm;
+=09margin-bottom:.0001pt;
+=09font-size:11.0pt;
+=09font-family:"Calibri","sans-serif";
+=09color:black;}
+a:link, span.MsoHyperlink
+=09{mso-style-priority:99;
+=09color:blue;
+=09text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+=09{mso-style-priority:99;
+=09color:purple;
+=09text-decoration:underline;}
+p
+=09{mso-style-priority:99;
+=09mso-margin-top-alt:auto;
+=09margin-right:0cm;
+=09mso-margin-bottom-alt:auto;
+=09margin-left:0cm;
+=09font-size:10.0pt;
+=09font-family:"Liberation Sans","serif";
+=09color:black;}
+pre
+=09{mso-style-priority:99;
+=09mso-style-link:"HTML Preformatted Char";
+=09margin:0cm;
+=09margin-bottom:.0001pt;
+=09font-size:10.0pt;
+=09font-family:"Courier New";
+=09color:black;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+=09{mso-style-priority:99;
+=09mso-style-link:"Balloon Text Char";
+=09margin:0cm;
+=09margin-bottom:.0001pt;
+=09font-size:8.0pt;
+=09font-family:"Tahoma","sans-serif";
+=09color:black;}
+span.HTMLPreformattedChar
+=09{mso-style-name:"HTML Preformatted Char";
+=09mso-style-priority:99;
+=09mso-style-link:"HTML Preformatted";
+=09font-family:Consolas;
+=09color:black;}
+span.BalloonTextChar
+=09{mso-style-name:"Balloon Text Char";
+=09mso-style-priority:99;
+=09mso-style-link:"Balloon Text";
+=09font-family:"Tahoma","sans-serif";}
+span.EmailStyle22
+=09{mso-style-type:personal;
+=09font-family:"Calibri","sans-serif";
+=09color:windowtext;}
+span.EmailStyle23
+=09{mso-style-type:personal;
+=09font-family:"Calibri","sans-serif";
+=09color:#1F497D;}
+span.EmailStyle24
+=09{mso-style-type:personal;
+=09font-family:"Calibri","sans-serif";
+=09color:#1F497D;}
+span.EmailStyle25
+=09{mso-style-type:personal-reply;
+=09font-family:"Calibri","sans-serif";
+=09color:#1F497D;}
+.MsoChpDefault
+=09{mso-style-type:export-only;
+=09font-size:10.0pt;}
+@page WordSection1
+=09{size:612.0pt 792.0pt;
+=09margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+=09{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"2050" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]--></head><body bgcolor=3Dwhite lang=3DEN-US=
+ link=3Dblue vlink=3Dpurple><div class=3DWordSection1><p class=3DMsoNormal>=
+<span lang=3DES-TRAD style=3D'color:#1F497D'>Porque en su momento me coment=
+asteis que no se pod=EDan pedir m=E1s VPNs y entonces las comparten. <o:p><=
+/o:p></span></p><p class=3DMsoNormal><span lang=3DES-TRAD style=3D'color:#1=
+F497D'><o:p>&nbsp;</o:p></span></p><p class=3DMsoNormal><span lang=3DES-TRA=
+D style=3D'color:#1F497D'>Si es posible, que cada uno tenga su VPN, mejor.<=
+o:p></o:p></span></p><p class=3DMsoNormal><span lang=3DES-TRAD style=3D'col=
+or:#1F497D'><o:p>&nbsp;</o:p></span></p><div><p class=3DMsoNormal><span sty=
+le=3D'font-size:10.0pt;font-family:"Arial","sans-serif";color:#1F497D'>Un s=
+aludo<o:p></o:p></span></p><p class=3DMsoNormal><span style=3D'color:#1F497=
+D'><o:p>&nbsp;</o:p></span></p><p class=3DMsoNormal><a href=3D"http://www.o=
+racle.com/" target=3D"_blank"><span style=3D'text-decoration:none'><img bor=
+der=3D0 width=3D114 height=3D26 id=3D"_x0000_i1032" src=3D"cid:image001.gif=
+@01CF53D5.A2CE1CF0" alt=3DOracle></span></a><span style=3D'color:#1F497D'><=
+br></span><span style=3D'font-size:10.0pt;font-family:"Verdana","sans-serif=
+";color:#666666'>Jos=E9 Mar=EDa G=F3mez | Technical Account Manager </span>=
+<span style=3D'color:#1F497D'><br></span><span style=3D'font-size:10.0pt;fo=
+nt-family:"Verdana","sans-serif";color:#666666'>Mobile: +34 661 406 732 <br=
+></span><span style=3D'font-size:10.0pt;font-family:"Verdana","sans-serif";=
+color:red'>Oracle Ib=E9rica</span><span style=3D'font-size:10.0pt;font-fami=
+ly:"Verdana","sans-serif";color:#666666'>,</span><span style=3D'font-size:1=
+0.0pt;font-family:"Verdana","sans-serif";color:red'> </span><span style=3D'=
+font-size:10.0pt;font-family:"Verdana","sans-serif";color:#666666'>Advanced=
+ Customer Support Services</span><span style=3D'font-size:10.0pt;font-famil=
+y:"Verdana","sans-serif";color:#595959'> <o:p></o:p></span></p><p class=3DM=
+soNormal><span lang=3DES style=3D'font-size:10.0pt;font-family:"Verdana","s=
+ans-serif";color:#595959'>C/Albert Einstein s/n, Edificio INSUR, planta </s=
+pan><span lang=3DES style=3D'font-size:10.0pt;font-family:"Verdana","sans-s=
+erif";color:#666666'>1=AA, m=F3dulo 8<o:p></o:p></span></p><p class=3DMsoNo=
+rmal><span style=3D'font-size:10.0pt;font-family:"Verdana","sans-serif";col=
+or:#595959'>41092, Sevilla - Spain</span><span lang=3DES style=3D'color:#1F=
+497D'><o:p></o:p></span></p></div><table class=3DMsoNormalTable border=3D0 =
+cellspacing=3D3 cellpadding=3D0 width=3D696 style=3D'width:417.75pt'><tr><t=
+d width=3D60 style=3D'width:36.0pt;padding:.75pt .75pt .75pt .75pt'><p clas=
+s=3DMsoNormal><a href=3D"http://www.oracle.com/corporate/community/index.ht=
+ml" target=3D"_blank"><span style=3D'text-decoration:none'><img border=3D0 =
+width=3D44 height=3D28 id=3D"_x0000_i1031" src=3D"cid:image002.gif@01CF53D5=
+.A2CE1CF0" alt=3DGreen></span></a><span style=3D'font-size:12.0pt;color:#1F=
+497D'><o:p></o:p></span></p></td><td width=3D627 style=3D'width:376.35pt;pa=
+dding:.75pt .75pt .75pt .75pt'><p class=3DMsoNormal><span style=3D'font-siz=
+e:7.5pt;font-family:"Verdana","sans-serif";color:#4B7D42'>Oracle is committ=
+ed to developing practices and products that help protect the environment</=
+span><span style=3D'color:#1F497D'> </span><span style=3D'font-size:12.0pt;=
+color:#1F497D'><o:p></o:p></span></p></td></tr></table><p class=3DMsoNormal=
+><span style=3D'color:#1F497D'><o:p>&nbsp;</o:p></span></p><p class=3DMsoNo=
+rmal><span style=3D'color:#1F497D'><o:p>&nbsp;</o:p></span></p><div><div st=
+yle=3D'border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0cm 0cm 0cm=
+'><p class=3DMsoNormal><b><span style=3D'font-size:10.0pt;font-family:"Taho=
+ma","sans-serif";color:windowtext'>From:</span></b><span style=3D'font-size=
+:10.0pt;font-family:"Tahoma","sans-serif";color:windowtext'> Laura Mart=EDn=
+ez Atienza [mailto:laura.martinez.atienza@juntadeandalucia.es] <br><b>Sent:=
+</b> mi=E9rcoles, 09 de abril de 2014 9:23<br><b>To:</b> Jos=E9 Mar=EDa G=
+=F3mez<br><b>Cc:</b> l-gest.sco@juntadeandalucia.es<br><b>Subject:</b> Re: =
+[l-gest.sco] RE: Solicitud de nuevo usuario en el LDAP de JdA<o:p></o:p></s=
+pan></p></div></div><p class=3DMsoNormal><o:p>&nbsp;</o:p></p><p class=3DMs=
+oNormal style=3D'margin-bottom:12.0pt'><span style=3D'font-size:10.0pt'>Te =
+refieres a que todos los siguientes son </span><span lang=3DES-TRAD style=
+=3D'font-size:10.0pt;color:#1F497D'>Advanced Services Engineer. EC </span><=
+span style=3D'font-size:10.0pt'>verdad? </span><o:p></o:p></p><table class=
+=3DMsoNormalTable border=3D0 cellspacing=3D0 cellpadding=3D0><tr style=3D'h=
+eight:10.2pt'><td width=3D243 style=3D'width:145.8pt;padding:.75pt .75pt .7=
+5pt .75pt;height:10.2pt'><p class=3DMsoNormal style=3D'mso-line-height-alt:=
+10.2pt'><b>Nombre </b><span style=3D'font-size:12.0pt'><o:p></o:p></span></=
+p></td><td width=3D332 style=3D'width:199.2pt;padding:.75pt .75pt .75pt .75=
+pt;height:10.2pt'><p class=3DMsoNormal style=3D'mso-line-height-alt:10.2pt'=
+><b>Rol </b><span style=3D'font-size:12.0pt'><o:p></o:p></span></p></td><td=
+ width=3D90 style=3D'width:54.0pt;padding:.75pt .75pt .75pt .75pt;height:10=
+.2pt'><p class=3DMsoNormal align=3Dcenter style=3D'text-align:center;mso-li=
+ne-height-alt:10.2pt'><b>Tel=E9fono </b><span style=3D'font-size:12.0pt'><o=
+:p></o:p></span></p></td><td width=3D97 style=3D'width:58.2pt;padding:.75pt=
+ .75pt .75pt .75pt;height:10.2pt'><p class=3DMsoNormal align=3Dcenter style=
+=3D'text-align:center;mso-line-height-alt:10.2pt'><b>M=F3vil </b><span styl=
+e=3D'font-size:12.0pt'><o:p></o:p></span></p></td><td width=3D225 style=3D'=
+width:135.0pt;padding:.75pt .75pt .75pt .75pt;height:10.2pt'><p class=3DMso=
+Normal style=3D'mso-line-height-alt:10.2pt'><b>Correo Electr=F3nico ORACLE<=
+/b><span style=3D'font-size:12.0pt'><o:p></o:p></span></p></td><td width=3D=
+173 style=3D'width:103.8pt;padding:.75pt .75pt .75pt .75pt;height:10.2pt'><=
+p class=3DMsoNormal style=3D'mso-line-height-alt:10.2pt'><b>Usuario LDAP Jd=
+A</b><span style=3D'font-size:12.0pt'><o:p></o:p></span></p></td><td width=
+=3D72 style=3D'width:43.2pt;padding:.75pt .75pt .75pt .75pt;height:10.2pt'>=
+<p class=3DMsoNormal align=3Dcenter style=3D'text-align:center;mso-line-hei=
+ght-alt:10.2pt'><b>VPN</b><span style=3D'font-size:12.0pt'><o:p></o:p></spa=
+n></p></td></tr><tr style=3D'height:10.2pt'><td style=3D'padding:.75pt .75p=
+t .75pt .75pt;height:10.2pt'><p class=3DMsoNormal style=3D'mso-line-height-=
+alt:10.2pt'>Lucian Anchidin <span style=3D'font-size:12.0pt'><o:p></o:p></s=
+pan></p></td><td style=3D'padding:.75pt .75pt .75pt .75pt;height:10.2pt'><p=
+ class=3DMsoNormal style=3D'mso-line-height-alt:10.2pt'>Advanced Services E=
+ngineer. EC <span style=3D'font-size:12.0pt'><o:p></o:p></span></p></td><td=
+ style=3D'padding:.75pt .75pt .75pt .75pt;height:10.2pt'></td><td style=3D'=
+padding:.75pt .75pt .75pt .75pt;height:10.2pt'></td><td style=3D'padding:.7=
+5pt .75pt .75pt .75pt;height:10.2pt'><p class=3DMsoNormal style=3D'mso-line=
+-height-alt:10.2pt'><a href=3D"mailto:lucian.anchidin@oracle.com">lucian.an=
+chidin@oracle.com</a><span style=3D'font-size:12.0pt'><o:p></o:p></span></p=
+></td><td style=3D'padding:.75pt .75pt .75pt .75pt;height:10.2pt'></td><td =
+style=3D'padding:.75pt .75pt .75pt .75pt;height:10.2pt'><p class=3DMsoNorma=
+l align=3Dcenter style=3D'text-align:center;mso-line-height-alt:10.2pt'>NO<=
+span style=3D'font-size:12.0pt'><o:p></o:p></span></p></td></tr><tr style=
+=3D'height:10.2pt'><td style=3D'padding:.75pt .75pt .75pt .75pt;height:10.2=
+pt'><p class=3DMsoNormal style=3D'mso-line-height-alt:10.2pt'>Silviu poenar=
+u <span style=3D'font-size:12.0pt'><o:p></o:p></span></p></td><td style=3D'=
+padding:.75pt .75pt .75pt .75pt;height:10.2pt'><p class=3DMsoNormal style=
+=3D'mso-line-height-alt:10.2pt'>Advanced Services Manager. EC <span style=
+=3D'font-size:12.0pt'><o:p></o:p></span></p></td><td style=3D'padding:.75pt=
+ .75pt .75pt .75pt;height:10.2pt'></td><td style=3D'padding:.75pt .75pt .75=
+pt .75pt;height:10.2pt'></td><td style=3D'padding:.75pt .75pt .75pt .75pt;h=
+eight:10.2pt'><p class=3DMsoNormal style=3D'mso-line-height-alt:10.2pt'><a =
+href=3D"mailto:silviu.poenaru@oracle.com">silviu.poenaru@oracle.com</a><spa=
+n style=3D'font-size:12.0pt'><o:p></o:p></span></p></td><td style=3D'paddin=
+g:.75pt .75pt .75pt .75pt;height:10.2pt'><p class=3DMsoNormal style=3D'mso-=
+line-height-alt:10.2pt'>silviu.poenaru.ext<span style=3D'font-size:12.0pt'>=
+<o:p></o:p></span></p></td><td style=3D'padding:.75pt .75pt .75pt .75pt;hei=
+ght:10.2pt'><p class=3DMsoNormal align=3Dcenter style=3D'text-align:center;=
+mso-line-height-alt:10.2pt'>SI<span style=3D'font-size:12.0pt'><o:p></o:p><=
+/span></p></td></tr><tr style=3D'height:10.2pt'><td style=3D'padding:.75pt =
+.75pt .75pt .75pt;height:10.2pt'><p class=3DMsoNormal style=3D'mso-line-hei=
+ght-alt:10.2pt'>George Bliderisanu <span style=3D'font-size:12.0pt'><o:p></=
+o:p></span></p></td><td style=3D'padding:.75pt .75pt .75pt .75pt;height:10.=
+2pt'><p class=3DMsoNormal style=3D'mso-line-height-alt:10.2pt'>Advanced Ser=
+vices Manager. EC <span style=3D'font-size:12.0pt'><o:p></o:p></span></p></=
+td><td style=3D'padding:.75pt .75pt .75pt .75pt;height:10.2pt'></td><td sty=
+le=3D'padding:.75pt .75pt .75pt .75pt;height:10.2pt'></td><td style=3D'padd=
+ing:.75pt .75pt .75pt .75pt;height:10.2pt'><p class=3DMsoNormal style=3D'ms=
+o-line-height-alt:10.2pt'><a href=3D"mailto:george.bliderisanu@oracle.com">=
+george.bliderisanu@oracle.com</a><span style=3D'font-size:12.0pt'><o:p></o:=
+p></span></p></td><td style=3D'padding:.75pt .75pt .75pt .75pt;height:10.2p=
+t'><p class=3DMsoNormal style=3D'mso-line-height-alt:10.2pt'>george.blideri=
+sau.ext<span style=3D'font-size:12.0pt'><o:p></o:p></span></p></td><td styl=
+e=3D'padding:.75pt .75pt .75pt .75pt;height:10.2pt'><p class=3DMsoNormal al=
+ign=3Dcenter style=3D'text-align:center;mso-line-height-alt:10.2pt'>SI<span=
+ style=3D'font-size:12.0pt'><o:p></o:p></span></p></td></tr><tr style=3D'he=
+ight:10.2pt'><td style=3D'padding:.75pt .75pt .75pt .75pt;height:10.2pt'><p=
+ class=3DMsoNormal style=3D'mso-line-height-alt:10.2pt'>Maria Soledad Segad=
+e Vazquez<span style=3D'font-size:12.0pt'><o:p></o:p></span></p></td><td st=
+yle=3D'padding:.75pt .75pt .75pt .75pt;height:10.2pt'><p class=3DMsoNormal =
+style=3D'mso-line-height-alt:10.2pt'>Advanced Services Manager. EC <span st=
+yle=3D'font-size:12.0pt'><o:p></o:p></span></p></td><td style=3D'padding:.7=
+5pt .75pt .75pt .75pt;height:10.2pt'></td><td style=3D'padding:.75pt .75pt =
+.75pt .75pt;height:10.2pt'></td><td style=3D'padding:.75pt .75pt .75pt .75p=
+t;height:10.2pt'><p class=3DMsoNormal style=3D'mso-line-height-alt:10.2pt'>=
+<a href=3D"mailto:marisol.segade@oracle.com">marisol.segade@oracle.com</a><=
+span style=3D'font-size:12.0pt'><o:p></o:p></span></p></td><td style=3D'pad=
+ding:.75pt .75pt .75pt .75pt;height:10.2pt'><p class=3DMsoNormal style=3D'm=
+so-line-height-alt:10.2pt'>marias.segade.ext<span style=3D'font-size:12.0pt=
+'><o:p></o:p></span></p></td><td style=3D'padding:.75pt .75pt .75pt .75pt;h=
+eight:10.2pt'><p class=3DMsoNormal align=3Dcenter style=3D'text-align:cente=
+r;mso-line-height-alt:10.2pt'>SI<span style=3D'font-size:12.0pt'><o:p></o:p=
+></span></p></td></tr><tr style=3D'height:10.2pt'><td style=3D'padding:.75p=
+t .75pt .75pt .75pt;height:10.2pt'><p class=3DMsoNormal style=3D'mso-line-h=
+eight-alt:10.2pt'>Miguel Angel de Paz Gonzalez <span style=3D'font-size:12.=
+0pt'><o:p></o:p></span></p></td><td style=3D'padding:.75pt .75pt .75pt .75p=
+t;height:10.2pt'><p class=3DMsoNormal style=3D'mso-line-height-alt:10.2pt'>=
+Advanced Services Engineer. EC <span style=3D'font-size:12.0pt'><o:p></o:p>=
+</span></p></td><td style=3D'padding:.75pt .75pt .75pt .75pt;height:10.2pt'=
+></td><td style=3D'padding:.75pt .75pt .75pt .75pt;height:10.2pt'><p class=
+=3DMsoNormal align=3Dcenter style=3D'text-align:center;mso-line-height-alt:=
+10.2pt'>661 432 514<span style=3D'font-size:12.0pt'><o:p></o:p></span></p><=
+/td><td style=3D'padding:.75pt .75pt .75pt .75pt;height:10.2pt'><p class=3D=
+MsoNormal style=3D'mso-line-height-alt:10.2pt'><a href=3D"mailto:miguelange=
+l.depaz@oracle.com">miguelangel.depaz@oracle.com</a><span style=3D'font-siz=
+e:12.0pt'><o:p></o:p></span></p></td><td style=3D'padding:.75pt .75pt .75pt=
+ .75pt;height:10.2pt'><p class=3DMsoNormal style=3D'mso-line-height-alt:10.=
+2pt'>mangel.paz.ext<span style=3D'font-size:12.0pt'><o:p></o:p></span></p><=
+/td><td style=3D'padding:.75pt .75pt .75pt .75pt;height:10.2pt'><p class=3D=
+MsoNormal align=3Dcenter style=3D'text-align:center;mso-line-height-alt:10.=
+2pt'>NO<span style=3D'font-size:12.0pt'><o:p></o:p></span></p></td></tr><tr=
+ style=3D'height:10.2pt'><td style=3D'padding:.75pt .75pt .75pt .75pt;heigh=
+t:10.2pt'><p class=3DMsoNormal style=3D'mso-line-height-alt:10.2pt'>Cristin=
+a Craciun <span style=3D'font-size:12.0pt'><o:p></o:p></span></p></td><td s=
+tyle=3D'padding:.75pt .75pt .75pt .75pt;height:10.2pt'><p class=3DMsoNormal=
+ style=3D'mso-line-height-alt:10.2pt'>Advanced Services Manager. EC <span s=
+tyle=3D'font-size:12.0pt'><o:p></o:p></span></p></td><td style=3D'padding:.=
+75pt .75pt .75pt .75pt;height:10.2pt'></td><td style=3D'padding:.75pt .75pt=
+ .75pt .75pt;height:10.2pt'></td><td style=3D'padding:.75pt .75pt .75pt .75=
+pt;height:10.2pt'><p class=3DMsoNormal style=3D'mso-line-height-alt:10.2pt'=
+><a href=3D"mailto:cristina.craciun@oracle.com">cristina.craciun@oracle.com=
+</a><span style=3D'font-size:12.0pt'><o:p></o:p></span></p></td><td style=
+=3D'padding:.75pt .75pt .75pt .75pt;height:10.2pt'><p class=3DMsoNormal sty=
+le=3D'mso-line-height-alt:10.2pt'>cristina.craciun.ext<span style=3D'font-s=
+ize:12.0pt'><o:p></o:p></span></p></td><td style=3D'padding:.75pt .75pt .75=
+pt .75pt;height:10.2pt'><p class=3DMsoNormal align=3Dcenter style=3D'text-a=
+lign:center;mso-line-height-alt:10.2pt'>NO<span style=3D'font-size:12.0pt'>=
+<o:p></o:p></span></p></td></tr><tr style=3D'height:10.2pt'><td style=3D'pa=
+dding:.75pt .75pt .75pt .75pt;height:10.2pt'><p class=3DMsoNormal style=3D'=
+mso-line-height-alt:10.2pt'>Teresa Mill=E1n Fernandez<span style=3D'font-si=
+ze:12.0pt'><o:p></o:p></span></p></td><td style=3D'padding:.75pt .75pt .75p=
+t .75pt;height:10.2pt'><p class=3DMsoNormal style=3D'mso-line-height-alt:10=
+.2pt'>Advanced Services Manager. EC <span style=3D'font-size:12.0pt'><o:p><=
+/o:p></span></p></td><td style=3D'padding:.75pt .75pt .75pt .75pt;height:10=
+.2pt'><p class=3DMsoNormal align=3Dcenter style=3D'text-align:center;mso-li=
+ne-height-alt:10.2pt'>916312065<span style=3D'font-size:12.0pt'><o:p></o:p>=
+</span></p></td><td style=3D'padding:.75pt .75pt .75pt .75pt;height:10.2pt'=
+></td><td style=3D'padding:.75pt .75pt .75pt .75pt;height:10.2pt'><p class=
+=3DMsoNormal style=3D'mso-line-height-alt:10.2pt'><a href=3D"mailto:teresa.=
+millan@oracle.com">teresa.millan@oracle.com</a><span style=3D'font-size:12.=
+0pt'><o:p></o:p></span></p></td><td style=3D'padding:.75pt .75pt .75pt .75p=
+t;height:10.2pt'><p class=3DMsoNormal style=3D'mso-line-height-alt:10.2pt'>=
+<span style=3D'color:red'>En curso la solicitud</span><span style=3D'font-s=
+ize:12.0pt'><o:p></o:p></span></p></td><td style=3D'padding:.75pt .75pt .75=
+pt .75pt;height:10.2pt'><p class=3DMsoNormal align=3Dcenter style=3D'text-a=
+lign:center;mso-line-height-alt:10.2pt'>NO<span style=3D'font-size:12.0pt'>=
+<o:p></o:p></span></p></td></tr></table><p class=3DMsoNormal style=3D'margi=
+n-bottom:12.0pt'><br><br><span lang=3DES-TRAD style=3D'font-size:10.0pt'>Lo=
+ que no entiendo es que alguno no tenga usuario LDAP (Lucian Anchidin) y al=
+gunos tengan VPN y otros no, si realizan las mismas funciones.<br><br></spa=
+n><o:p></o:p></p><div><p class=3DMsoNormal><span style=3D'font-size:10.0pt;=
+font-family:"Liberation Sans","serif"'>-------- Mensaje original --------<b=
+r>Asunto: Re: [l-gest.sco] RE: Solicitud de nuevo usuario en el LDAP de JdA=
+<br>De: Jos=E9 Mar=EDa G=F3mez <a href=3D"mailto:josemaria.gomez@oracle.com=
+">&lt;josemaria.gomez@oracle.com&gt;</a><br>Para: Laura Mart=EDnez Atienza =
+<a href=3D"mailto:laura.martinez.atienza@juntadeandalucia.es">&lt;laura.mar=
+tinez.atienza@juntadeandalucia.es&gt;</a><br>CC: <a href=3D"mailto:l-gest.s=
+co@juntadeandalucia.es">l-gest.sco@juntadeandalucia.es</a><br>Fecha: 09/04/=
+14 09:14<o:p></o:p></span></p></div><blockquote style=3D'margin-top:5.0pt;m=
+argin-bottom:5.0pt'><p class=3DMsoNormal><span style=3D'color:#1F497D'>Buen=
+os d=EDas:</span><o:p></o:p></p><p class=3DMsoNormal><span style=3D'color:#=
+1F497D'>&nbsp;</span><o:p></o:p></p><p class=3DMsoNormal><span style=3D'col=
+or:#1F497D'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp; </span><span lang=3DES-TRAD style=3D'color:#1F497D'>S=
+on ingenieros de soporte avanzado, igual que los que tenemos en la oficina =
+de Sevilla, s=F3lo que pertenecen al departamento EC ( Expertise center), m=
+=E1s focalizado en realizar tareas m=E1s concretas, como las revisiones de =
+rendimiento, configuraci=F3n, topSQL, etc. &nbsp;</span><o:p></o:p></p><p c=
+lass=3DMsoNormal><span lang=3DES-TRAD style=3D'color:#1F497D'>&nbsp;</span>=
+<o:p></o:p></p><p class=3DMsoNormal><span lang=3DES-TRAD style=3D'color:#1F=
+497D'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp; As=ED que usan NAOS, como cualquier otro ingeniero. </span>=
+<o:p></o:p></p><p class=3DMsoNormal><span lang=3DES-TRAD style=3D'color:#1F=
+497D'>&nbsp;</span><o:p></o:p></p><p class=3DMsoNormal><span lang=3DES-TRAD=
+ style=3D'color:#1F497D'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; He estado revisando el Excel y donde pon=
+e &#8220;Advanced Services Manager. EC&#8221; deber=EDa poner &#8220;Advanc=
+ed Services Engineer. EC&#8221;, son todos ingenieros.</span><o:p></o:p></p=
+><p class=3DMsoNormal><span lang=3DES-TRAD style=3D'color:#1F497D'>&nbsp;</=
+span><o:p></o:p></p><p class=3DMsoNormal><span lang=3DES-TRAD style=3D'colo=
+r:#1F497D'>&nbsp;</span><o:p></o:p></p><div><p class=3DMsoNormal><span lang=
+=3DES-TRAD style=3D'font-size:10.0pt;font-family:"Arial","sans-serif";color=
+:#1F497D'>Un saludo</span><o:p></o:p></p><p class=3DMsoNormal><span lang=3D=
+ES-TRAD style=3D'color:#1F497D'>&nbsp;</span><o:p></o:p></p><p class=3DMsoN=
+ormal><a href=3D"http://www.oracle.com/" target=3D"_blank"><span style=3D't=
+ext-decoration:none'><img border=3D0 width=3D114 height=3D26 id=3D"_x0000_i=
+1025" src=3D"cid:image001.gif@01CF53D5.A2CE1CF0" alt=3DOracle></span></a><s=
+pan style=3D'color:#1F497D'><br></span><span style=3D'font-size:10.0pt;font=
+-family:"Verdana","sans-serif";color:#666666'>Jos=E9 Mar=EDa G=F3mez | Tech=
+nical Account Manager </span><span style=3D'color:#1F497D'><br></span><span=
+ style=3D'font-size:10.0pt;font-family:"Verdana","sans-serif";color:#666666=
+'>Mobile: +34 661 406 732 <br></span><span style=3D'font-size:10.0pt;font-f=
+amily:"Verdana","sans-serif";color:red'>Oracle Ib=E9rica</span><span style=
+=3D'font-size:10.0pt;font-family:"Verdana","sans-serif";color:#666666'>,</s=
+pan><span style=3D'font-size:10.0pt;font-family:"Verdana","sans-serif";colo=
+r:red'> </span><span style=3D'font-size:10.0pt;font-family:"Verdana","sans-=
+serif";color:#666666'>Advanced Customer Support Services</span><span style=
+=3D'font-size:10.0pt;font-family:"Verdana","sans-serif";color:#595959'> </s=
+pan><o:p></o:p></p><p class=3DMsoNormal><span lang=3DES style=3D'font-size:=
+10.0pt;font-family:"Verdana","sans-serif";color:#595959'>C/Albert Einstein =
+s/n, Edificio INSUR, planta </span><span lang=3DES style=3D'font-size:10.0p=
+t;font-family:"Verdana","sans-serif";color:#666666'>1=AA, m=F3dulo 8</span>=
+<o:p></o:p></p><p class=3DMsoNormal><span style=3D'font-size:10.0pt;font-fa=
+mily:"Verdana","sans-serif";color:#595959'>41092, Sevilla - Spain</span><o:=
+p></o:p></p></div><table class=3DMsoNormalTable border=3D0 cellspacing=3D3 =
+cellpadding=3D0 width=3D696 style=3D'width:417.75pt'><tr><td width=3D60 sty=
+le=3D'width:36.0pt;padding:.75pt .75pt .75pt .75pt'><p class=3DMsoNormal><a=
+ href=3D"http://www.oracle.com/corporate/community/index.html" target=3D"_b=
+lank"><span style=3D'text-decoration:none'><img border=3D0 width=3D44 heigh=
+t=3D28 id=3D"_x0000_i1026" src=3D"cid:image002.gif@01CF53D5.A2CE1CF0" alt=
+=3DGreen></span></a><o:p></o:p></p></td><td width=3D627 style=3D'width:376.=
+35pt;padding:.75pt .75pt .75pt .75pt'><p class=3DMsoNormal><span style=3D'f=
+ont-size:7.5pt;font-family:"Verdana","sans-serif";color:#4B7D42'>Oracle is =
+committed to developing practices and products that help protect the enviro=
+nment</span><span style=3D'color:#1F497D'> </span><o:p></o:p></p></td></tr>=
+</table><p class=3DMsoNormal><span style=3D'color:#1F497D'>&nbsp;</span><o:=
+p></o:p></p><p class=3DMsoNormal><span style=3D'color:#1F497D'>&nbsp;</span=
+><o:p></o:p></p><div><div style=3D'border:none;border-top:solid #B5C4DF 1.0=
+pt;padding:3.0pt 0cm 0cm 0cm'><p class=3DMsoNormal><b><span style=3D'font-s=
+ize:10.0pt;font-family:"Tahoma","sans-serif";color:windowtext'>From:</span>=
+</b><span style=3D'font-size:10.0pt;font-family:"Tahoma","sans-serif";color=
+:windowtext'> Laura Mart=EDnez Atienza [<a href=3D"mailto:laura.martinez.at=
+ienza@juntadeandalucia.es">mailto:laura.martinez.atienza@juntadeandalucia.e=
+s</a>] <br><b>Sent:</b> mi=E9rcoles, 09 de abril de 2014 8:32<br><b>To:</b>=
+ Jos=E9 Mar=EDa G=F3mez; <a href=3D"mailto:l-gest.sco@juntadeandalucia.es">=
+l-gest.sco@juntadeandalucia.es</a><br><b>Subject:</b> Re: [l-gest.sco] RE: =
+Solicitud de nuevo usuario en el LDAP de JdA</span><o:p></o:p></p></div></d=
+iv><p class=3DMsoNormal>&nbsp;<o:p></o:p></p><p class=3DMsoNormal style=3D'=
+margin-bottom:12.0pt'><span style=3D'font-size:10.0pt'>ok. Una pregunta, es=
+ta persona indicabas que debe aparecer en la Gu=EDa de Contactos y Escalada=
+s como Advanced Services Manager. EC </span><br><span style=3D'font-size:10=
+.0pt'>=BFPodr=EDas explicarme las funciones que realizan dentro del Servici=
+o Corporativo Oracle de la JdA los roles que aparecen como Advanced Service=
+s Engineer. EC y Advanced Services Manager. EC y para qu=E9 utilizan el usu=
+ario LDAP?<br><br>Gracias.</span><o:p></o:p></p><div><p class=3DMsoNormal>-=
+------- Mensaje original --------<br>Asunto: [l-gest.sco] RE: Solicitud de =
+nuevo usuario en el LDAP de JdA<br>De: Jos=E9 Mar=EDa G=F3mez <a href=3D"ma=
+ilto:josemaria.gomez@oracle.com">&lt;josemaria.gomez@oracle.com&gt;</a><br>=
+Para: <a href=3D"mailto:l-gest.sco@juntadeandalucia.es">l-gest.sco@juntadea=
+ndalucia.es</a><br>CC: Maria Soledad Segade Vazquez <a href=3D"mailto:maris=
+ol.segade@oracle.com">&lt;marisol.segade@oracle.com&gt;</a>, Teresa Millan =
+Fernandez <a href=3D"mailto:teresa.millan@oracle.com">&lt;teresa.millan@ora=
+cle.com&gt;</a><br>Fecha: 08/04/14 18:31<o:p></o:p></p></div><blockquote st=
+yle=3D'margin-top:5.0pt;margin-bottom:5.0pt'><p class=3DMsoNormal><span sty=
+le=3D'color:#1F497D'>Buenas tardes:</span><o:p></o:p></p><p class=3DMsoNorm=
+al><span style=3D'color:#1F497D'>&nbsp;</span><o:p></o:p></p><p class=3DMso=
+Normal><span style=3D'color:#1F497D'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span lang=3DES-TRAD =
+style=3D'color:#1F497D'>Os recuerdo la petici=F3n de alta en LDAP de este u=
+suario. Gracias</span><o:p></o:p></p><p class=3DMsoNormal><span lang=3DES-T=
+RAD style=3D'color:#1F497D'>&nbsp;</span><o:p></o:p></p><div><p class=3DMso=
+Normal><span style=3D'font-size:10.0pt;font-family:"Arial","sans-serif";col=
+or:#1F497D'>Un saludo</span><o:p></o:p></p><p class=3DMsoNormal><span style=
+=3D'color:#1F497D'>&nbsp;</span><o:p></o:p></p><p class=3DMsoNormal><a href=
+=3D"http://www.oracle.com/" target=3D"_blank"><span style=3D'text-decoratio=
+n:none'><img border=3D0 width=3D114 height=3D26 id=3D"_x0000_i1027" src=3D"=
+cid:image001.gif@01CF53D5.A2CE1CF0" alt=3DOracle></span></a><span style=3D'=
+color:#1F497D'><br></span><span style=3D'font-size:10.0pt;font-family:"Verd=
+ana","sans-serif";color:#666666'>Jos=E9 Mar=EDa G=F3mez | Technical Account=
+ Manager </span><span style=3D'color:#1F497D'><br></span><span style=3D'fon=
+t-size:10.0pt;font-family:"Verdana","sans-serif";color:#666666'>Mobile: +34=
+ 661 406 732 <br></span><span style=3D'font-size:10.0pt;font-family:"Verdan=
+a","sans-serif";color:red'>Oracle Ib=E9rica</span><span style=3D'font-size:=
+10.0pt;font-family:"Verdana","sans-serif";color:#666666'>,</span><span styl=
+e=3D'font-size:10.0pt;font-family:"Verdana","sans-serif";color:red'> </span=
+><span style=3D'font-size:10.0pt;font-family:"Verdana","sans-serif";color:#=
+666666'>Advanced Customer Support Services</span><span style=3D'font-size:1=
+0.0pt;font-family:"Verdana","sans-serif";color:#595959'> </span><o:p></o:p>=
+</p><p class=3DMsoNormal><span lang=3DES style=3D'font-size:10.0pt;font-fam=
+ily:"Verdana","sans-serif";color:#595959'>C/Albert Einstein s/n, Edificio I=
+NSUR, planta </span><span lang=3DES style=3D'font-size:10.0pt;font-family:"=
+Verdana","sans-serif";color:#666666'>1=AA, m=F3dulo 8</span><o:p></o:p></p>=
+<p class=3DMsoNormal><span style=3D'font-size:10.0pt;font-family:"Verdana",=
+"sans-serif";color:#595959'>41092, Sevilla - Spain</span><o:p></o:p></p></d=
+iv><table class=3DMsoNormalTable border=3D0 cellspacing=3D3 cellpadding=3D0=
+ width=3D696 style=3D'width:417.75pt'><tr><td width=3D60 style=3D'width:36.=
+0pt;padding:.75pt .75pt .75pt .75pt'><p class=3DMsoNormal><a href=3D"http:/=
+/www.oracle.com/corporate/community/index.html" target=3D"_blank"><span sty=
+le=3D'text-decoration:none'><img border=3D0 width=3D44 height=3D28 id=3D"_x=
+0000_i1028" src=3D"cid:image002.gif@01CF53D5.A2CE1CF0" alt=3DGreen></span><=
+/a><o:p></o:p></p></td><td width=3D627 style=3D'width:376.35pt;padding:.75p=
+t .75pt .75pt .75pt'><p class=3DMsoNormal><span style=3D'font-size:7.5pt;fo=
+nt-family:"Verdana","sans-serif";color:#4B7D42'>Oracle is committed to deve=
+loping practices and products that help protect the environment</span><span=
+ style=3D'color:#1F497D'> </span><o:p></o:p></p></td></tr></table><p class=
+=3DMsoNormal><span style=3D'color:#1F497D'>&nbsp;</span><o:p></o:p></p><p c=
+lass=3DMsoNormal><span style=3D'color:#1F497D'>&nbsp;</span><o:p></o:p></p>=
+<div><div style=3D'border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt=
+ 0cm 0cm 0cm'><p class=3DMsoNormal><b><span style=3D'font-size:10.0pt;font-=
+family:"Tahoma","sans-serif"'>From:</span></b><span style=3D'font-size:10.0=
+pt;font-family:"Tahoma","sans-serif"'> Jos=E9 Mar=EDa G=F3mez <br><b>Sent:<=
+/b> jueves, 27 de marzo de 2014 18:10<br><b>To:</b> <a href=3D"mailto:l-ges=
+t.sco@juntadeandalucia.es">l-gest.sco@juntadeandalucia.es</a><br><b>Cc:</b>=
+ Maria Soledad Segade Vazquez; Teresa Millan Fernandez<br><b>Subject:</b> S=
+olicitud de nuevo usuario en el LDAP de JdA </span><o:p></o:p></p></div></d=
+iv><p class=3DMsoNormal>&nbsp;<o:p></o:p></p><p class=3DMsoNormal><span lan=
+g=3DES-TRAD>Necesitamos que se d=E9 de alta en el LDAP de JdA a:</span><o:p=
+></o:p></p><p class=3DMsoNormal><span lang=3DES-TRAD>&nbsp;</span><o:p></o:=
+p></p><p class=3DMsoNormal><span lang=3DES-TRAD>Teresa Mill=E1n Fernandez</=
+span><o:p></o:p></p><p class=3DMsoNormal><span lang=3DES-TRAD>DNI: 33299121=
+C</span><o:p></o:p></p><p class=3DMsoNormal><span lang=3DES-TRAD><a href=3D=
+"mailto:teresa.millan@oracle.com">teresa.millan@oracle.com</a></span><o:p><=
+/o:p></p><p class=3DMsoNormal><span lang=3DES-TRAD>916312065</span><o:p></o=
+:p></p><p class=3DMsoNormal><span lang=3DES-TRAD>&nbsp;</span><o:p></o:p></=
+p><p class=3DMsoNormal><span lang=3DES-TRAD>Cuando tengamos el usuario soli=
+citaremos el acceso a NAOS a trav=E9s de CEIS.</span><o:p></o:p></p><p clas=
+s=3DMsoNormal><span lang=3DES-TRAD>&nbsp;</span><o:p></o:p></p><p class=3DM=
+soNormal><span lang=3DES-TRAD>Muchas gracias.</span><o:p></o:p></p><p class=
+=3DMsoNormal><span lang=3DES-TRAD>&nbsp;</span><o:p></o:p></p><p class=3DMs=
+oNormal><span style=3D'font-size:10.0pt;font-family:"Arial","sans-serif";co=
+lor:#1F497D'>Un saludo</span><o:p></o:p></p><p class=3DMsoNormal><span styl=
+e=3D'color:#1F497D'>&nbsp;</span><o:p></o:p></p><p class=3DMsoNormal><a hre=
+f=3D"http://www.oracle.com/" target=3D"_blank"><span style=3D'text-decorati=
+on:none'><img border=3D0 width=3D114 height=3D26 id=3D"Picture_x0020_1" src=
+=3D"cid:image001.gif@01CF53D5.A2CE1CF0" alt=3DOracle></span></a><span style=
+=3D'color:#1F497D'><br></span><span style=3D'font-size:10.0pt;font-family:"=
+Verdana","sans-serif";color:#666666'>Jos=E9 Mar=EDa G=F3mez | Technical Acc=
+ount Manager </span><span style=3D'color:#1F497D'><br></span><span style=3D=
+'font-size:10.0pt;font-family:"Verdana","sans-serif";color:#666666'>Mobile:=
+ +34 661 406 732 <br></span><span style=3D'font-size:10.0pt;font-family:"Ve=
+rdana","sans-serif";color:red'>Oracle Ib=E9rica</span><span style=3D'font-s=
+ize:10.0pt;font-family:"Verdana","sans-serif";color:#666666'>,</span><span =
+style=3D'font-size:10.0pt;font-family:"Verdana","sans-serif";color:red'> </=
+span><span style=3D'font-size:10.0pt;font-family:"Verdana","sans-serif";col=
+or:#666666'>Advanced Customer Support Services</span><span style=3D'font-si=
+ze:10.0pt;font-family:"Verdana","sans-serif";color:#595959'> </span><o:p></=
+o:p></p><p class=3DMsoNormal><span lang=3DES style=3D'font-size:10.0pt;font=
+-family:"Verdana","sans-serif";color:#595959'>C/Albert Einstein s/n, Edific=
+io INSUR, planta </span><span lang=3DES style=3D'font-size:10.0pt;font-fami=
+ly:"Verdana","sans-serif";color:#666666'>1=AA, m=F3dulo 8</span><o:p></o:p>=
+</p><p class=3DMsoNormal><span style=3D'font-size:10.0pt;font-family:"Verda=
+na","sans-serif";color:#595959'>41092, Sevilla - Spain</span><o:p></o:p></p=
+><table class=3DMsoNormalTable border=3D0 cellspacing=3D3 cellpadding=3D0 w=
+idth=3D696 style=3D'width:417.75pt'><tr><td width=3D60 style=3D'width:36.0p=
+t;padding:.75pt .75pt .75pt .75pt'><p class=3DMsoNormal><a href=3D"http://w=
+ww.oracle.com/corporate/community/index.html" target=3D"_blank"><span style=
+=3D'text-decoration:none'><img border=3D0 width=3D44 height=3D28 id=3D"Pict=
+ure_x0020_9" src=3D"cid:image002.gif@01CF53D5.A2CE1CF0" alt=3DGreen></span>=
+</a><o:p></o:p></p></td><td width=3D627 style=3D'width:376.35pt;padding:.75=
+pt .75pt .75pt .75pt'><p class=3DMsoNormal><span style=3D'font-size:7.5pt;f=
+ont-family:"Verdana","sans-serif";color:#4B7D42'>Oracle is committed to dev=
+eloping practices and products that help protect the environment</span><spa=
+n style=3D'color:#1F497D'> </span><o:p></o:p></p></td></tr></table><p class=
+=3DMsoNormal>&nbsp;<o:p></o:p></p><p class=3DMsoNormal>&nbsp;<o:p></o:p></p=
+></blockquote><p class=3DMsoNormal><span style=3D'font-size:12.0pt;font-fam=
+ily:"Times New Roman \, serif "'><br><br><br></span><o:p></o:p></p><pre>-- =
+<o:p></o:p></pre><pre>&nbsp;<o:p></o:p></pre><pre>Laura Mart=EDnez Atienza<=
+o:p></o:p></pre><pre>=C1rea de Desarrollo de SSII / Unidad de Proyectos de =
+SSII Horizontales<o:p></o:p></pre><pre>Dpto. Sistemas de Informaci=F3n<o:p>=
+</o:p></pre><pre>Sociedad Andaluza para el Desarrollo de las Telecomunicaci=
+ones, S.A.<o:p></o:p></pre><pre>Avda. de la Arboleda s/n<o:p></o:p></pre><p=
+re>41940 - Tomares, (Sevilla)<o:p></o:p></pre><pre>Tfn: 671596722/696722 Fa=
+x: 954460308<o:p></o:p></pre><pre>e-mail: <a href=3D"mailto:laura.martinez.=
+atienza@juntadeandalucia.es">laura.martinez.atienza@juntadeandalucia.es</a>=
+<o:p></o:p></pre><pre>&nbsp;<o:p></o:p></pre><pre>&nbsp;<o:p></o:p></pre><p=
+re>Este correo electr=F3nico y, en su caso, cualquier fichero anexo al mism=
+o, contiene informaci=F3n de car=E1cter confidencial exclusivamente dirigid=
+a a su destinatario o destinatarios. Queda prohibida su divulgaci=F3n, copi=
+a o distribuci=F3n a terceros sin la previa autorizaci=F3n escrita de &#822=
+0;Sociedad Andaluza para el Desarrollo de la Sociedad de la Informaci=F3n, =
+S.A.U.&#8221;. Si no es Ud. el destinatario del mensaje le ruego lo destruy=
+a sin hacer copia digital o f=EDsica, comunicando a Sociedad Andaluza para =
+el Desarrollo de la Sociedad de la Informaci=F3n S.A.U. v=EDa e-mail o fax =
+la recepci=F3n del presente mensaje. Toda declaraci=F3n de voluntad conteni=
+da deber=E1 ser tenida por no producida. Gracias<o:p></o:p></pre><pre>_____=
+________________________________________________________________<o:p></o:p>=
+</pre><pre>&nbsp;<o:p></o:p></pre><pre>The information in this e-mail and i=
+n any attachments is confidential and solely for the attention and use of t=
+he named addressee(s). You are hereby notified that any dissemination, dist=
+ribution or copy of this communication is prohibited without the prior writ=
+ten consent of &#8220;Sociedad Andaluza para el Desarrollo de la Sociedad d=
+e la Informaci=F3n, S.A.U.&#8221;. If you are not the formal receiver of th=
+is message please destroy it without making any digital or physical copy an=
+d inform &quot;Sociedad Andaluza para el Desarrollo de la Sociedad de la In=
+formaci=F3n S.A.U.&#8221;, by e-mail or fax, of the reception of the presen=
+t message. Any whatsoever involuntary declaration contained herewith must b=
+e taken as having no legal effect. Thank you.<o:p></o:p></pre><pre>&nbsp;<o=
+:p></o:p></pre></blockquote><p class=3DMsoNormal><span style=3D'font-size:1=
+2.0pt;font-family:"Times New Roman","serif"'><br><br><o:p></o:p></span></p>=
+<pre>-- <o:p></o:p></pre><pre><o:p>&nbsp;</o:p></pre><pre>Laura Mart=EDnez =
+Atienza<o:p></o:p></pre><pre>=C1rea de Desarrollo de SSII / Unidad de Proye=
+ctos de SSII Horizontales<o:p></o:p></pre><pre>Dpto. Sistemas de Informaci=
+=F3n<o:p></o:p></pre><pre>Sociedad Andaluza para el Desarrollo de las Telec=
+omunicaciones, S.A.<o:p></o:p></pre><pre>Avda. de la Arboleda s/n<o:p></o:p=
+></pre><pre>41940 - Tomares, (Sevilla)<o:p></o:p></pre><pre>Tfn: 671596722/=
+696722 Fax: 954460308<o:p></o:p></pre><pre>e-mail: <a href=3D"mailto:laura.=
+martinez.atienza@juntadeandalucia.es">laura.martinez.atienza@juntadeandaluc=
+ia.es</a><o:p></o:p></pre><pre><o:p>&nbsp;</o:p></pre><pre><o:p>&nbsp;</o:p=
+></pre><pre>Este correo electr=F3nico y, en su caso, cualquier fichero anex=
+o al mismo, contiene informaci=F3n de car=E1cter confidencial exclusivament=
+e dirigida a su destinatario o destinatarios. Queda prohibida su divulgaci=
+=F3n, copia o distribuci=F3n a terceros sin la previa autorizaci=F3n escrit=
+a de &#8220;Sociedad Andaluza para el Desarrollo de la Sociedad de la Infor=
+maci=F3n, S.A.U.&#8221;. Si no es Ud. el destinatario del mensaje le ruego =
+lo destruya sin hacer copia digital o f=EDsica, comunicando a Sociedad Anda=
+luza para el Desarrollo de la Sociedad de la Informaci=F3n S.A.U. v=EDa e-m=
+ail o fax la recepci=F3n del presente mensaje. Toda declaraci=F3n de volunt=
+ad contenida deber=E1 ser tenida por no producida. Gracias<o:p></o:p></pre>=
+<pre>_____________________________________________________________________<=
+o:p></o:p></pre><pre><o:p>&nbsp;</o:p></pre><pre>The information in this e-=
+mail and in any attachments is confidential and solely for the attention an=
+d use of the named addressee(s). You are hereby notified that any dissemina=
+tion, distribution or copy of this communication is prohibited without the =
+prior written consent of &#8220;Sociedad Andaluza para el Desarrollo de la =
+Sociedad de la Informaci=F3n, S.A.U.&#8221;. If you are not the formal rece=
+iver of this message please destroy it without making any digital or physic=
+al copy and inform &quot;Sociedad Andaluza para el Desarrollo de la Socieda=
+d de la Informaci=F3n S.A.U.&#8221;, by e-mail or fax, of the reception of =
+the present message. Any whatsoever involuntary declaration contained herew=
+ith must be taken as having no legal effect. Thank you.<o:p></o:p></pre><pr=
+e><o:p>&nbsp;</o:p></pre></div></body></html>
+--__1397028356086103637abhmp0006.oracle.com
+Content-Type: image/gif; name="image001.gif"
+Content-Transfer-Encoding: base64
+Content-Disposition: inline; filename="image001.gif"
+Content-ID: <image001.gif@01CF53D5.A2CE1CF0>
+
+R0lGODlhcgAaAMQAAP8QEP/w8P/Q0P/g4P8wMP9gYP8gIP+goP9QUP+QkP+wsP9wcP+AgP9AQP/A
+wP8AAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAA
+AAAALAAAAAByABoAAAX/ICSOZGmeaKqubOu+cCzPdC0GCqPvvBKUDp5wp1gFdIPVIDfcOQa6A8yR
+aO4gweQoUHh4v2Bw4SdihM9egyBF8ALIpkEXDR44vA2XwkD/IgYGAAZbbX1nBGRmhl8AWiUJYicC
+AIsPDFh4LXOGjQ4NAAhrEIUPBQcOqKmoB5sEZV4JqqoHhQVxlGAOJQG4AAunsqg/dw95KwdfBgzB
+qKIEBMaQDwCiKpOwEIq6KANuJg14igZwEHPULMTGKbxetjF8D1ItxK7aKl8lCl8DAfALW1+2rUi3
+QtqgGN2mwYCXzYvAON624LoEQZ9DEfRcEFSBIE2DjyBDfnyIqRgMcA8a/z5AZQWXOxEdHxwUgfIg
+sX/zMqlAWclVCQFefLpAqdJBAFJn3owgtpJEQkslEWjUmYLnomokcDlS4s0eFzQNqvXDEyzmAwFP
+yaXYmGJBuxlzELWIacueiE0AFGyF4HbaNTquUEpFRxUFUC9YXQzARYAkEJSNipKQ9kDu0i9SKKNZ
+9iXswMIoYgI4oJYFskpgzkkmcdrviELqmPVt1HpRAaaLqCE1lBgjvEpqRtgl8Tevygd7TcCuiKvP
+m8OVEkAIYLYPThSsRIpEQJr1x94QBIT09FH6QJC6AiRAoB1kEb7tRb4MvyB+AwSlbejfz7+///8A
+BijggAQWaOCBCCao4A+CDDbo4IMQRijhhBQKGAIAOw==
+--__1397028356086103637abhmp0006.oracle.com
+Content-Type: image/gif; name="image002.gif"
+Content-Transfer-Encoding: base64
+Content-Disposition: inline; filename="image002.gif"
+Content-ID: <image002.gif@01CF53D5.A2CE1CF0>
+
+R0lGODlhLAAcAMQAAP///0x9RHmec9Pf0aa+oleFULHGrmKNW+nv6I+uivT39N7n3W6VZ7zPuZu2
+lsjXxYSmfwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAA
+AAAALAAAAAAsABwAQAXhICCOZGmeaDoaReC+sKAMR7GopIA6boIvLgPAVSAgALxjSYdrOp/Q6NPg
+YqIEPkTBV2taTwgGbEw+PAZo3FfKbqMQQfeJ8DoY0Hg0wxhAKBgHCl5XLgMqDwFCAAIFPIYDgidr
+OUQGkSh0cQMJAQyXOXKhoqOkpaanI2aoIwMErq+uCY0BMlANKpxkYwQGBH82TpMicD0pAgQACToD
+AchqhAG3KQ4HIlQNnErG0IYqB9EAiEQvwEsozC43hy0CAeXMwsLDLS8MAvf497ruCZ+gOA0gfNt3
+AIK0J/JWKVzIsEQIADs=
+--__1397028356086103637abhmp0006.oracle.com--
+
+--__1397028356086103636abhmp0006.oracle.com--
+
+--__1397028356085103635abhmp0006.oracle.com--
+
+

@@ -1,0 +1,806 @@
+'TB_CMDB_ATR_LICENCIAS_TMP.SQL' 
+------------------------------- 
+tb_cmdb_atr_licencias_tmp.sql   
+
+
+Error que empieza en la línea 4 del comando:
+DROP TABLE CMDB_ATR_LICENCIAS_TMP  CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table CMDB_ATR_LICENCIAS_TMP creado.
+'TB_CMDB_CATEGORY_TMP.SQL' 
+-------------------------- 
+tb_cmdb_category_tmp.sql   
+
+
+Error que empieza en la línea 4 del comando:
+DROP TABLE CMDB_CATEGORY_TMP CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table CMDB_CATEGORY_TMP creado.
+'TB_CMDB_CI_TMP.SQL' 
+-------------------- 
+tb_cmdb_ci_tmp.sql   
+
+
+Error que empieza en la línea 4 del comando:
+DROP TABLE CMDB_CI_TMP CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table CMDB_CI_TMP creado.
+index IDX_CI_NU_FKNAMECI creado.
+'TB_CMDB_DEFATTRIBUTE_TMP.SQL' 
+------------------------------ 
+tb_cmdb_defattribute_tmp.sql   
+
+
+Error que empieza en la línea 4 del comando:
+DROP TABLE CMDB_DEFATTRIBUTE_TMP CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table CMDB_DEFATTRIBUTE_TMP creado.
+index IDX_DEFATT_NU_FKDEFATTRIBUTE creado.
+'TB_CMDB_DEFATTRIBUTENAMECI_TMP.SQL' 
+------------------------------------ 
+tb_cmdb_defattributenameci_tmp.sql   
+
+
+Error que empieza en la línea 4 del comando:
+DROP TABLE CMDB_DEFATTRIBUTENAMECI_TMP CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table CMDB_DEFATTRIBUTENAMECI_TMP creado.
+index IDX_DEFATTNAMECI_NU_FKDEFATT creado.
+index IDX_DEFATTNAMECI_NU_FKNAMECI creado.
+'TB_CMDB_FACTORES_TMP.SQL' 
+-------------------------- 
+tb_cmdb_factores_tmp.sql   
+
+
+Error que empieza en la línea 1 del comando:
+DROP TABLE CMDB_FACTORES_TMP  CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table CMDB_FACTORES_TMP creado.
+index IDX_CMDB_FACTORES_TMP creado.
+'TB_CMDB_NAMECI_TMP.SQL' 
+------------------------ 
+tb_cmdb_nameci_tmp.sql   
+
+
+Error que empieza en la línea 4 del comando:
+DROP TABLE CMDB_NAMECI_TMP CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table CMDB_NAMECI_TMP creado.
+index IDX_NAMECI_NU_FKCATEGORY creado.
+index IDX_NAMECI_NU_FKNATURE creado.
+index IDX_NAMECI_NU_FKSCOPE creado.
+index IDX_NAMECI_NU_FKSUBCATEGORY creado.
+'TB_CMDB_NATURENAMECI_TMP.SQL' 
+------------------------------ 
+tb_cmdb_naturenameci_tmp.sql   
+
+
+Error que empieza en la línea 4 del comando:
+DROP TABLE CMDB_NATURENAMECI_TMP CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table CMDB_NATURENAMECI_TMP creado.
+'TB_CMDB_RELATION_TMP.SQL' 
+-------------------------- 
+tb_cmdb_relation_tmp.sql   
+
+
+Error que empieza en la línea 4 del comando:
+DROP TABLE CMDB_RELATION_TMP CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table CMDB_RELATION_TMP creado.
+'TB_CMDB_RELATIONINSTANCE_TMP.SQL' 
+---------------------------------- 
+tb_cmdb_relationinstance_tmp.sql   
+
+
+Error que empieza en la línea 4 del comando:
+DROP TABLE CMDB_RELATIONINSTANCE_TMP CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table CMDB_RELATIONINSTANCE_TMP creado.
+index IDX_RELINSTANCE_NU_FKCIEND creado.
+index IDX_RELINSTANCE_NU_FKCIORIGIN creado.
+index IDX_RELINSTANCE_NU_FKRELATION creado.
+'TB_CMDB_SCOPENAMECI_TMP.SQL' 
+----------------------------- 
+tb_cmdb_scopenameci_tmp.sql   
+
+
+Error que empieza en la línea 4 del comando:
+DROP TABLE CMDB_SCOPENAMECI_TMP CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table CMDB_SCOPENAMECI_TMP creado.
+'TB_CMDB_SUBCATEGORY_TMP.SQL' 
+----------------------------- 
+tb_cmdb_subcategory_tmp.sql   
+
+
+Error que empieza en la línea 4 del comando:
+DROP TABLE CMDB_SUBCATEGORY_TMP CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table CMDB_SUBCATEGORY_TMP creado.
+'TB_CMDB_VALUE_TMP.SQL' 
+----------------------- 
+tb_cmdb_value_tmp.sql   
+
+
+Error que empieza en la línea 4 del comando:
+DROP TABLE CMDB_VALUE_TMP CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table CMDB_VALUE_TMP creado.
+index IDX_VALUE_NU_FKCI creado.
+index IDX_VALUE_NU_FKDEFATTNAMECI creado.
+index IDX_VALUE_NU_FKMULTIDEFVALUE creado.
+'TB_CMDB_FACTORES_TMP_INSERT.SQL' 
+--------------------------------- 
+tb_cmdb_factores_tmp_insert.sql   
+
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+'TB_D_UNIDAD_ORG.SQL' 
+--------------------- 
+tb_d_unidad_org.sql   
+
+table D_UNIDAD_ORG creado.
+index IDX_D_UNIDAD_ORG_C_UNI_ORG creado.
+TRIGGER D_UNIDAD_ORG_X_UNI_ORG_TRG compilado
+Errors: check compiler log
+trigger D_UNIDAD_ORG_X_UNI_ORG_TRG alterado.
+TRIGGER TRG_BIU_D_UNIDAD_ORG compilado
+trigger TRG_BIU_D_UNIDAD_ORG alterado.
+'TB_DWH_CARGAS.SQL' 
+------------------- 
+tb_dwh_cargas.sql   
+
+
+Error que empieza en la línea 4 del comando:
+DROP TABLE DWH_CARGAS CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table DWH_CARGAS creado.
+index DWH_IND_CARGA_FECHA_MIN creado.
+'TB_DWH_ERRORES_CARGA.SQL' 
+-------------------------- 
+tb_dwh_errores_carga.sql   
+
+
+Error que empieza en la línea 4 del comando:
+DROP TABLE DWH_ERRORES_CARGA CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table DWH_ERRORES_CARGA creado.
+'TB_DWH_PROCESOS_CARGA.SQL' 
+--------------------------- 
+tb_dwh_procesos_carga.sql   
+
+
+Error que empieza en la línea 2 del comando:
+DROP TABLE DWH_PROCESOS_CARGA CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table DWH_PROCESOS_CARGA creado.
+unique index DWH_UK_NEM_PROCESO creado.
+'TB_SDK_ACTIVITY_TMP.SQL' 
+------------------------- 
+tb_sdk_activity_tmp.sql   
+
+
+Error que empieza en la línea 1 del comando:
+DROP TABLE SDK_ACTIVITY_TMP  CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table SDK_ACTIVITY_TMP creado.
+index IDX_ACTIVITY_CREATORUSER creado.
+index IDX_ACTIVITY_ERASERUSER creado.
+index IDX_ACTIVITY_ITPROCESS creado.
+'TB_SDK_ACTUATIONRULE_TMP.SQL' 
+------------------------------ 
+tb_sdk_actuationrule_tmp.sql   
+
+
+Error que empieza en la línea 3 del comando:
+DROP TABLE SDK_ACTUATIONRULE_TMP CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table SDK_ACTUATIONRULE_TMP creado.
+index IDX_ACTRULE_ACTIVITY creado.
+index IDX_ACTRULE_CREATORUSER creado.
+index IDX_ACTRULE_ERASERUSER creado.
+index IDX_ACTRULE_GROUP creado.
+index IDX_ACTRULE_ITSERVICE creado.
+index IDX_ACTRULE_OPERATION creado.
+index IDX_ACTRULE_PRIORITYCODE creado.
+index IDX_ACTRULE_PROCEDURE creado.
+index IDX_ACTRULE_RULEEXT creado.
+'TB_SDK_CENTRE_TMP.SQL' 
+----------------------- 
+tb_sdk_centre_tmp.sql   
+
+
+Error que empieza en la línea 1 del comando:
+DROP TABLE SDK_CENTRE_TMP CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table SDK_CENTRE_TMP creado.
+index IDX_CENTRE_NU_FKORGANIZATI creado.
+'TB_SDK_FILTERS_TMP.SQL' 
+------------------------ 
+tb_sdk_filters_tmp.sql   
+
+
+Error que empieza en la línea 3 del comando:
+DROP TABLE SDK_FILTERS_TMP CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table SDK_FILTERS_TMP creado.
+index IDX_FILTERS_NU_FKGROUP creado.
+index IDX_FILTERS_NU_FKPHASESERVI creado.
+'TB_SDK_GENERALSTATE_TMP.SQL' 
+----------------------------- 
+tb_sdk_generalstate_tmp.sql   
+
+
+Error que empieza en la línea 1 del comando:
+DROP TABLE SDK_GENERALSTATE_TMP CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table SDK_GENERALSTATE_TMP creado.
+'TB_SDK_GROUP_TMP.SQL' 
+---------------------- 
+tb_sdk_group_tmp.sql   
+
+
+Error que empieza en la línea 1 del comando:
+DROP TABLE SDK_GROUP_TMP  CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table SDK_GROUP_TMP creado.
+index IDX_GROUP_NU_FKGRTYPE creado.
+'TB_SDK_GROUPSERVICEPROCESS_TMP.SQL' 
+------------------------------------ 
+tb_sdk_groupserviceprocess_tmp.sql   
+
+
+Error que empieza en la línea 1 del comando:
+DROP TABLE SDK_GROUPSERVICEPROCESS_TMP CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table SDK_GROUPSERVICEPROCESS_TMP creado.
+index IDX_GROUPSERVI_NU_FKGROUP creado.
+index IDX_GROUPSERVI_NU_FKSERVICE creado.
+'TB_SDK_GROUPTYPE_TMP.SQL' 
+-------------------------- 
+tb_sdk_grouptype_tmp.sql   
+
+
+Error que empieza en la línea 1 del comando:
+DROP TABLE SDK_GROUPTYPE_TMP  CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table SDK_GROUPTYPE_TMP creado.
+'TB_SDK_IMPACT_TMP.SQL' 
+----------------------- 
+tb_sdk_impact_tmp.sql   
+
+
+Error que empieza en la línea 3 del comando:
+DROP TABLE SDK_IMPACT_TMP CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table SDK_IMPACT_TMP creado.
+'TB_SDK_IMPACTURGENCYMATRIX_TMP.SQL' 
+------------------------------------ 
+tb_sdk_impacturgencymatrix_tmp.sql   
+
+
+Error que empieza en la línea 3 del comando:
+DROP TABLE SDK_IMPACTURGENCYMATRIX_TMP CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table SDK_IMPACTURGENCYMATRIX_TMP creado.
+index IDX_IMPACTURGE_NU_FKIMPACT creado.
+index IDX_IMPACTURGE_NU_FKPRIORITYCO creado.
+index IDX_IMPACTURGE_NU_FKURGENCY creado.
+'TB_SDK_INC_SVF_VAL_TMP.SQL' 
+---------------------------- 
+tb_sdk_inc_svf_val_tmp.sql   
+
+
+Error que empieza en la línea 1 del comando:
+DROP TABLE SDK_INC_SVF_VAL_TMP CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table SDK_INC_SVF_VAL_TMP creado.
+index IDX_INC_SVF_VAL_NU_FKSEFIELD creado.
+index IDX_INC_SVF_VAL_NU_FKINCIDENT creado.
+'TB_SDK_INCIDENT_CI_TMP.SQL' 
+---------------------------- 
+tb_sdk_incident_ci_tmp.sql   
+
+
+Error que empieza en la línea 3 del comando:
+DROP TABLE SDK_INCIDENT_CI_TMP CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table SDK_INCIDENT_CI_TMP creado.
+index IDX_INCIDENT_C_NU_FKCI creado.
+index IDX_INCIDENT_C_NU_FKINCIDENT creado.
+'TB_SDK_INCIDENT_TMP.SQL' 
+------------------------- 
+tb_sdk_incident_tmp.sql   
+
+
+Error que empieza en la línea 3 del comando:
+DROP TABLE SDK_INCIDENT_TMP CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table SDK_INCIDENT_TMP creado.
+'TB_SDK_INDICATOR_DEFS_TMP.SQL' 
+------------------------------- 
+tb_sdk_indicator_defs_tmp.sql   
+
+
+Error que empieza en la línea 3 del comando:
+DROP TABLE SDK_INDICATOR_DEFS_TMP CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table SDK_INDICATOR_DEFS_TMP creado.
+index IDX_NU_FKEVALUATIONTYPE creado.
+index IDX_NU_FKINDICATORSCOPE creado.
+index IDX_NU_FKMEASUREMENTUNIT creado.
+'TB_SDK_INDICATOR_INCIDENT_TMP.SQL' 
+----------------------------------- 
+tb_sdk_indicator_incident_tmp.sql   
+
+
+Error que empieza en la línea 3 del comando:
+DROP TABLE SDK_INDICATOR_INCIDENT_TMP CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table SDK_INDICATOR_INCIDENT_TMP creado.
+index IDX_INDINC_NU_FKCALENDARDEF creado.
+index IDX_INDINC_NU_FKINCIDENT creado.
+index IDX_INDINC_NU_FKINDICATORDEFS creado.
+index IDX_NU_FKEVALUATIONSTATE creado.
+index IDX_NU_FKINDVALIDSTATE creado.
+'TB_SDK_ITPROCESS_TMP.SQL' 
+-------------------------- 
+tb_sdk_itprocess_tmp.sql   
+
+
+Error que empieza en la línea 1 del comando:
+DROP TABLE SDK_ITPROCESS_TMP CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table SDK_ITPROCESS_TMP creado.
+'TB_SDK_ITSERVICE_RESP_TMP.SQL' 
+------------------------------- 
+tb_sdk_itservice_resp_tmp.sql   
+
+
+Error que empieza en la línea 3 del comando:
+DROP TABLE SDK_ITSERVICE_RESP_TMP CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table SDK_ITSERVICE_RESP_TMP creado.
+'TB_SDK_ITSERVICE_TMP.SQL' 
+-------------------------- 
+tb_sdk_itservice_tmp.sql   
+
+
+Error que empieza en la línea 1 del comando:
+DROP TABLE SDK_ITSERVICE_TMP CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table SDK_ITSERVICE_TMP creado.
+'TB_SDK_OPERATION_TMP.SQL' 
+-------------------------- 
+tb_sdk_operation_tmp.sql   
+
+
+Error que empieza en la línea 1 del comando:
+DROP TABLE SDK_OPERATION_TMP CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table SDK_OPERATION_TMP creado.
+index IDX_OPERATION_CI creado.
+index IDX_OPERATION_ITPROCESS creado.
+'TB_SDK_ORGANIZATION_TMP.SQL' 
+----------------------------- 
+tb_sdk_organization_tmp.sql   
+
+
+Error que empieza en la línea 1 del comando:
+DROP TABLE SDK_ORGANIZATION_TMP CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table SDK_ORGANIZATION_TMP creado.
+'TB_SDK_PHASESERVICE_TMP.SQL' 
+----------------------------- 
+tb_sdk_phaseservice_tmp.sql   
+
+
+Error que empieza en la línea 1 del comando:
+DROP TABLE SDK_PHASESERVICE_TMP CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table SDK_PHASESERVICE_TMP creado.
+'TB_SDK_PRIORITYCODE_TMP.SQL' 
+----------------------------- 
+tb_sdk_prioritycode_tmp.sql   
+
+
+Error que empieza en la línea 3 del comando:
+DROP TABLE SDK_PRIORITYCODE_TMP CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table SDK_PRIORITYCODE_TMP creado.
+'TB_SDK_QUARTERS_TMP.SQL' 
+------------------------- 
+tb_sdk_quarters_tmp.sql   
+
+
+Error que empieza en la línea 1 del comando:
+DROP TABLE SDK_QUARTERS_TMP CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table SDK_QUARTERS_TMP creado.
+index IDX_QUARTERS_NU_FKCENTRE creado.
+'TB_SDK_SERVICE_TMP.SQL' 
+------------------------ 
+tb_sdk_service_tmp.sql   
+
+
+Error que empieza en la línea 1 del comando:
+DROP TABLE SDK_SERVICE_TMP CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table SDK_SERVICE_TMP creado.
+index IDX_SERVICE_NU_FKDEFSURVEY creado.
+index IDX_SERVICE_NU_FKITPROCESS creado.
+index IDX_SERVICE_NU_FKNODE creado.
+index IDX_SERVICE_NU_FKSATISFACTI creado.
+'TB_SDK_SERVICEFIELD_TMP.SQL' 
+----------------------------- 
+tb_sdk_servicefield_tmp.sql   
+
+
+Error que empieza en la línea 1 del comando:
+DROP TABLE SDK_SERVICEFIELD_TMP CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table SDK_SERVICEFIELD_TMP creado.
+index IDX_SERVICEFIELD_NU_FKSERVER creado.
+'TB_SDK_SERVICEVERSION_TMP.SQL' 
+------------------------------- 
+tb_sdk_serviceversion_tmp.sql   
+
+
+Error que empieza en la línea 3 del comando:
+DROP TABLE SDK_SERVICEVERSION_TMP CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table SDK_SERVICEVERSION_TMP creado.
+index IDX_SERVICEVER_NU_FKSERVICE creado.
+'TB_SDK_URGENCY_TMP.SQL' 
+------------------------ 
+tb_sdk_urgency_tmp.sql   
+
+
+Error que empieza en la línea 3 del comando:
+DROP TABLE SDK_URGENCY_TMP CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table SDK_URGENCY_TMP creado.
+'TB_SDK_USER_TMP.SQL' 
+--------------------- 
+tb_sdk_user_tmp.sql   
+
+
+Error que empieza en la línea 1 del comando:
+DROP TABLE SDK_USER_TMP  CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table SDK_USER_TMP creado.
+'TB_SDK_USERGROUP_TMP.SQL' 
+-------------------------- 
+tb_sdk_usergroup_tmp.sql   
+
+
+Error que empieza en la línea 1 del comando:
+DROP TABLE SDK_USERGROUP_TMP  CASCADE CONSTRAINTS
+Informe de error:
+Error SQL: ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+table SDK_USERGROUP_TMP creado.
+index IDX_USERGR_NU_FKGROUP creado.
+index IDX_USERGR_NU_FKUSER creado.
+'TB_D_UNIDAD_ORG_INSERT_TMP.SQL' 
+-------------------------------- 
+tb_d_unidad_org_insert_tmp.sql   
+
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.
+1 filas insertadas.

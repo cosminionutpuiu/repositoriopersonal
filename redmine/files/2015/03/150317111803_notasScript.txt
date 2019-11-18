@@ -1,0 +1,20 @@
+Estos scripts tienen distintas ventajas, entre las que destacan que todo se puede enviar en un único fichero, y que pregunta por consola solo aquellos valores de variables que no tiene definidas en el entorno.
+Se intentan que tengan todos una misma estructura que paso a describir someramente:
+- LINEAS=81    -> indica el número de línea a partir del cual irán adjuntos los ficheros necesarios. Es importante tener presente que si se modifica el script hay que ver si ha crecido o decrecido el número de líneas y actualizar este parámetro.
+- declares  -> declaración de las variables, ficheros y parches que se van a usar
+-preparación del entorno temporal a usar
+- Bucle que lee del entorno o pide por consola los valores necesarios
+- Copias de seguridad y operaciones previas
+- Descomprimir el tgz anexo al script con los ficheros necesarios y luego los war necesarios (que necesiten modificaciones)
+- Bucle de sustitución con los valores (a través de patch) que se han de modificar los ficheros de arriba- - .
+- Recreación de los nuevos war
+- Copia al Path de despliegue.
+
+Notas:
+    - En cualquier momento que se requiera se puede parar, iniciar o reiniciar un servicio, o cualquier otro comando que se requiera.
+    - En caso de ser necesarios script de actualización de BBDDs, pueden entregarse a parte, o integrarse dentro del propio script, considerando que solo deben ejecutarse en uno de los nodos.
+    -  Por comodidad recomendamos mantener siempre una copia editable del  script sin adjuntos (nosotros la identificamos con  ".bk.sh")
+
+El que lleva todo está en:
+https://consigna.juntadeandalucia.es/175b68b78409971b810d2d5999bad6bb
+

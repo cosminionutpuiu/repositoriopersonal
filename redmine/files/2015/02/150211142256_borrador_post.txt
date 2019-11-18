@@ -1,0 +1,42 @@
+
+Nuevo expediente en marcha (GUIAv2)
+
+----------------------------------------------------------
+
+Comenzado el nuevo expediente para retomar y evolucionar la actual infraestructura de Gestión de Identidades de la Junta de Andalucía.
+
+----------------------------------------------------------
+
+Como adelantamos en el post de junio, tenemos ya en marcha el nuevo expediente para retomar y evolucionar la actual infraestructura de Gestión de Identidades de la Junta de Andalucía. La empresa adjudicataria ha sido PricewaterhouseCoopers, que cuenta con una extensa experiencia en materia de gestión de identidades.
+
+La prioridad de este expediente, y por tanto lo primero que se va a hacer, es gestionar las identidades y autorizaciones del sistema GIRO que, como sabéis, sustituye al antiguo sistema Jupiter y cuyas autorizaciones utilizaban también otros sistemas horizontales (Sur, Datamart-Sur...). Luego lo siguiente que abordaremos será la gestión de usuarios y autorizaciones de otros sistemas de la DGPD de CHAP.
+
+Y con esa experiencia y trabajo realizado, empezaremos a abordar los trabajos de integración con otros sistemas. En este punto el know-how estará bastante avanzado, sabremos lo que se puede tardar en integrar un nuevo sistema, problemas conocidos, tecnologías integradas, buenas prácticas, etc. que hará que se puedan abordar las nuevas integraciones ágilmente.
+
+En resumen, estos son los objetivos del expediente:
+
+* Cubrir las necesidades de gestión de las autorizaciones de acceso a los sistemas de información, evolucionando el actual sistema de autorizaciones (especialmente su usabilidad), integrando los sistemas de información con conectores a medida, alimentando el directorio de identidades (lo que llamamos el poblado del directorio) y manteniendo la información de las identidades actualizada (lo llamamos implantación del ciclo de vida de las identidades).
+
+* Actualizar los componentes software que forman parte del proyecto. El producto de base, Oracle Identity Manager, se va a actualizar a la última versión, la 11g usada actualmente por grandes compañías, como Telefónica o Mapfre.
+
+El expediente cuenta también con los servicios de mantenimiento, soporte, formación e implantación por parte del adjudicatario.
+
+En cuanto a las fases, la planificación se ha estructurado en los siguientes bloques:
+
+*1. Despliegue de OIM 11g, integración de GIRO y evolución de la gestión de autorizaciones
+*2. Integración de otros sistemas de la CHAP
+*3. Actualización de los componentes (migración de los datos del directorio de GUIAv1)
+
+A modo informativo, estos son los productos de Oracle Identity & Access Management incluídos en nuestra solución de gestión de identidades:
+
+* Oracle Identity Management (OIM)
+** Oracle SOA Suite (workflows)
+** Oracle WebLogic Server (servidor de aplicaciones)
+** Oracle Business Intelligence Publisher (reporting)
+* Oracle Repository Creation Utility (gestión de las BD de Oracle Fusion Middleware)
+
+>> TODO: recapitulando el post (resumen, qué esperamos a corto plazo, buenos deseos...)
+
+>> TODO: solicitar feedback (comentar, opinar, propuestas, email/canal de contacto...)
+
+

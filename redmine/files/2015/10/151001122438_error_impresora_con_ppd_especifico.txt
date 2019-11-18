@@ -1,0 +1,128 @@
+  * script[install_printer] action run[2015-10-01T09:28:36+02:00] INFO: Processing script[install_printer] action run (/var/cache/chef/cookbooks/gecos_ws_mgmt/providers/printers.rb line 60)
+
+================================================================================
+Error executing action `run` on resource 'script[install_printer]'
+================================================================================
+
+
+Mixlib::ShellOut::ShellCommandFailed
+------------------------------------
+Expected process to exit with [0], but received '1'
+---- Begin output of "python"  "/tmp/chef-script20151001-9020-1rmz9lp" ----
+STDOUT: 
+STDERR: Traceback (most recent call last):
+  File "/tmp/chef-script20151001-9020-1rmz9lp", line 5, in <module>
+    drivers = connection.getPPDs(ppd_make_and_model='Konica minolta bizhub C250')
+cups.IPPError: (1030, u'client-error-not-found')
+---- End output of "python"  "/tmp/chef-script20151001-9020-1rmz9lp" ----
+Ran "python"  "/tmp/chef-script20151001-9020-1rmz9lp" returned 1
+
+
+Cookbook Trace:
+---------------
+/var/cache/chef/cookbooks/gecos_ws_mgmt/providers/printers.rb:90:in `block (2 levels) in class_from_file'
+/var/cache/chef/cookbooks/gecos_ws_mgmt/providers/printers.rb:29:in `each'
+/var/cache/chef/cookbooks/gecos_ws_mgmt/providers/printers.rb:29:in `block in class_from_file'
+
+
+Resource Declaration:
+---------------------
+# In /var/cache/chef/cookbooks/gecos_ws_mgmt/providers/printers.rb
+
+ 60:         script "install_printer" do
+ 61:           interpreter "python"
+ 62:           action :nothing
+ 63:           user "root"
+ 64:           code <<-EOH
+ 65: import cups
+ 66: import cupshelpers
+ 67: connection=cups.Connection()
+ 68: if '#{name}' not in connection.getPrinters().keys():
+ 69:     drivers = connection.getPPDs(ppd_make_and_model='#{make} #{model}')
+ 70:     ppd = '#{ppd}'
+ 71:     if ppd != '':
+ 72:         for key in drivers.keys():
+ 73:             if key.startswith('lsb/usr') and key.endswith('#{model}/'+ppd):
+ 74:                 ppd = key
+ 75: 
+ 76:     if ppd == '':
+ 77:         ppd = drivers.keys()[0]
+ 78: 
+ 79:     connection.addPrinter('#{name}',ppdname=ppd, device='#{uri}')
+ 80:     printer = cupshelpers.Printer('#{name}',connection)
+ 81:     printer.setOperationPolicy('#{oppolicy}')
+ 82:     connection.enablePrinter('#{name}')
+ 83:     connection.acceptJobs('#{name}')
+ 84: else:
+ 85:     print "Printer #{name} already exists"
+ 86:     print "Change operation policy"
+ 87:     printer = cupshelpers.Printer('#{name}',connection)
+ 88:     printer.setOperationPolicy('#{oppolicy}')
+ 89:     EOH
+ 90:         end.run_action(:run)
+ 91: 
+ 92:       end
+ 93:     end
+
+
+
+Compiled Resource:
+------------------
+# Declared in /var/cache/chef/cookbooks/gecos_ws_mgmt/providers/printers.rb:60:in `block (2 levels) in class_from_file'
+
+script("install_printer") do
+  action [:nothing]
+  updated true
+  retries 0
+  retry_delay 2
+  command "\"python\"  \"/tmp/chef-script20151001-9020-1rmz9lp\""
+  backup 5
+  returns 0
+  user "root"
+  code "import cups\nimport cupshelpers\nconnection=cups.Connection()\nif 'KONIKA_pasillo_prisma' not in connection.getPrinters().keys():\n    drivers = connection.getPPDs(ppd_make_and_model='Konica minolta bizhub C250')\n    ppd = ''\n    if ppd != '':\n        for key in drivers.keys():\n            if key.startswith('lsb/usr') and key.endswith('bizhub C250/'+ppd):\n                ppd = key\n\n    if ppd == '':\n        ppd = drivers.keys()[0]\n\n    connection.addPrinter('KONIKA_pasillo_prisma',ppdname=ppd, device='socket://10.226.140.240:9100')\n    printer = cupshelpers.Printer('KONIKA_pasillo_prisma',connection)\n    printer.setOperationPolicy('default')\n    connection.enablePrinter('KONIKA_pasillo_prisma')\n    connection.acceptJobs('KONIKA_pasillo_prisma')\nelse:\n    print \"Printer KONIKA_pasillo_prisma already exists\"\n    print \"Change operation policy\"\n    printer = cupshelpers.Printer('KONIKA_pasillo_prisma',connection)\n    printer.setOperationPolicy('default')\n"
+  interpreter "python"
+  cookbook_name "gecos_ws_mgmt"
+end
+
+
+
+[2015-10-01T09:28:41+02:00] ERROR: script[install_printer] (/var/cache/chef/cookbooks/gecos_ws_mgmt/providers/printers.rb line 60) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0], but received '1'
+---- Begin output of "python"  "/tmp/chef-script20151001-9020-1rmz9lp" ----
+STDOUT: 
+STDERR: Traceback (most recent call last):
+  File "/tmp/chef-script20151001-9020-1rmz9lp", line 5, in <module>
+    drivers = connection.getPPDs(ppd_make_and_model='Konica minolta bizhub C250')
+cups.IPPError: (1030, u'client-error-not-found')
+---- End output of "python"  "/tmp/chef-script20151001-9020-1rmz9lp" ----
+Ran "python"  "/tmp/chef-script20151001-9020-1rmz9lp" returned 1
+  * gecos_ws_mgmt_jobids[printers_res] action reset[2015-10-01T09:28:41+02:00] INFO: Processing gecos_ws_mgmt_jobids[printers_res] action reset (/var/cache/chef/cookbooks/gecos_ws_mgmt/providers/printers.rb line 114)
+ (up to date)
+ (up to date)
+  * service[cups] action nothing[2015-10-01T09:28:41+02:00] INFO: Processing service[cups] action nothing (/var/cache/chef/cookbooks/gecos_ws_mgmt/providers/printers.rb line 18)
+ (skipped due to action :nothing)
+  * package[python-cups] action nothing[2015-10-01T09:28:41+02:00] INFO: Processing package[python-cups] action nothing (/var/cache/chef/cookbooks/gecos_ws_mgmt/providers/printers.rb line 23)
+ (skipped due to action :nothing)
+  * package[cups-driver-gutenprint] action nothing[2015-10-01T09:28:41+02:00] INFO: Processing package[cups-driver-gutenprint] action nothing (/var/cache/chef/cookbooks/gecos_ws_mgmt/providers/printers.rb line 23)
+ (skipped due to action :nothing)
+  * package[foomatic-db] action nothing[2015-10-01T09:28:41+02:00] INFO: Processing package[foomatic-db] action nothing (/var/cache/chef/cookbooks/gecos_ws_mgmt/providers/printers.rb line 23)
+ (skipped due to action :nothing)
+  * package[foomatic-db-engine] action nothing[2015-10-01T09:28:41+02:00] INFO: Processing package[foomatic-db-engine] action nothing (/var/cache/chef/cookbooks/gecos_ws_mgmt/providers/printers.rb line 23)
+ (skipped due to action :nothing)
+  * package[foomatic-db-gutenprint] action nothing[2015-10-01T09:28:41+02:00] INFO: Processing package[foomatic-db-gutenprint] action nothing (/var/cache/chef/cookbooks/gecos_ws_mgmt/providers/printers.rb line 23)
+ (skipped due to action :nothing)
+  * package[smbclient] action nothing[2015-10-01T09:28:41+02:00] INFO: Processing package[smbclient] action nothing (/var/cache/chef/cookbooks/gecos_ws_mgmt/providers/printers.rb line 23)
+ (skipped due to action :nothing)
+  * script[install_printer] action nothing[2015-10-01T09:28:41+02:00] INFO: Processing script[install_printer] action nothing (/var/cache/chef/cookbooks/gecos_ws_mgmt/providers/printers.rb line 60)
+ (skipped due to action :nothing)
+  * script[install_printer] action nothing[2015-10-01T09:28:41+02:00] INFO: Processing script[install_printer] action nothing (/var/cache/chef/cookbooks/gecos_ws_mgmt/providers/printers.rb line 60)
+ (skipped due to action :nothing)
+[2015-10-01T09:28:41+02:00] INFO: Chef Run complete in 16.904063152 seconds
+
+Running handlers:
+[2015-10-01T09:28:41+02:00] INFO: Running report handlers
+[2015-10-01T09:28:41+02:00] INFO: {"uri_gcc"=>"http://10.240.203.129", "gcc_username"=>"juanconde", "gcc_nodename"=>"f759b0ca7326eade7fc165c8789b85ef"}
+  - GECOSReports::StatusHandler
+Running handlers complete
+
+[2015-10-01T09:28:42+02:00] INFO: Report handlers complete
+Chef Client finished, 17/254 resources updated in 18.168176622 seconds

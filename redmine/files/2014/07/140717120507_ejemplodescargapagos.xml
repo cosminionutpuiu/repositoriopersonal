@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data-set xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<record>
+		<Ejercicio>2014</Ejercicio>
+		<EntidadCP>JDEA</EntidadCP>
+		<Tesoreria>TESO100000</Tesoreria>
+		<DenominacionTesoreria>Tesorería General Junta de Andalucía</DenominacionTesoreria>
+		<CodigoExpediente>EXP-01</CodigoExpediente>
+		<ClaseExpediente>CONT</ClaseExpediente>
+		<EjercicioExpediente>2014</EjercicioExpediente>
+		<NumeroExpediente>01200000135</NumeroExpediente>
+		<FamiliaExpediente>CONTAB</FamiliaExpediente>
+		<Procedimiento>PREMIOS</Procedimiento>
+		<OrgGest>8076</OrgGest>
+		<Circuito>CONT O</Circuito>
+		<Modelo>ADO</Modelo>
+		<SociedadDocumento>1000</SociedadDocumento>
+		<DenominacionSociedad>Junta de Andalucía</DenominacionSociedad>
+		<Ejerciciodocumento>2014</Ejerciciodocumento>
+		<Numerodocumento>0190002392</Numerodocumento>
+		<Clasededocumento>O2</Clasededocumento>
+		<DenominacionCabeceraDocumento>Pago premio</DenominacionCabeceraDocumento>
+		<DenominacionPosicionDocumento>Pago premio a:0000001450</DenominacionPosicionDocumento>
+		<Codigoacreedor>0000001450</Codigoacreedor>
+		<DenominacionAcreedor>Nombre Acreedor</DenominacionAcreedor>
+		<ClaseIC>0003</ClaseIC>
+		<FechaDocumento>2014-05-15</FechaDocumento>
+		<Fechacontabilizacion>2014-05-15</Fechacontabilizacion>
+		<FechaVencimiento>2014-05-15</FechaVencimiento>
+		<CentroGestor>1100010000</CentroGestor>
+		<Posicionpresupuestaria>G/11F/12000/00</Posicionpresupuestaria>
+		<Fondo>01</Fondo>
+		<Importe>56979.01</Importe>
+		<IBANAcreedor>ES3520480334313404234684</IBANAcreedor>
+	</record>
+	<record>
+		<Ejercicio>2014</Ejercicio>
+		<EntidadCP>JDEA</EntidadCP>
+		<Tesoreria>TESO100000</Tesoreria>
+		<DenominacionTesoreria>Tesorería General Junta de Andalucía</DenominacionTesoreria>
+		<CodigoExpediente>EXP-02</CodigoExpediente>
+		<ClaseExpediente>CONT</ClaseExpediente>
+		<EjercicioExpediente>2014</EjercicioExpediente>
+		<NumeroExpediente>01200000111</NumeroExpediente>
+		<FamiliaExpediente>CONTAB</FamiliaExpediente>
+		<Procedimiento>PREMIOS</Procedimiento>
+		<OrgGest>8076</OrgGest>
+		<Circuito>CONT O</Circuito>
+		<Modelo>ADO</Modelo>
+		<SociedadDocumento>1000</SociedadDocumento>
+		<DenominacionSociedad>Junta de Andalucía</DenominacionSociedad>
+		<Ejerciciodocumento>2014</Ejerciciodocumento>
+		<Numerodocumento>0190002393</Numerodocumento>
+		<Clasededocumento>O2</Clasededocumento>
+		<DenominacionCabeceraDocumento>Pago premio</DenominacionCabeceraDocumento>
+		<DenominacionPosicionDocumento>Pago premio a:0000001480</DenominacionPosicionDocumento>
+		<Codigoacreedor>0000001480</Codigoacreedor>
+		<DenominacionAcreedor>Nombre Acreedor</DenominacionAcreedor>
+		<ClaseIC>0003</ClaseIC>
+		<FechaDocumento>2014-05-15</FechaDocumento>
+		<Fechacontabilizacion>2014-05-15</Fechacontabilizacion>
+		<FechaVencimiento>2014-05-15</FechaVencimiento>
+		<CentroGestor>1100010000</CentroGestor>
+		<Posicionpresupuestaria>G/11F/12000/00</Posicionpresupuestaria>
+		<Fondo>01</Fondo>
+		<Importe>6107</Importe>
+		<IBANAcreedor>ES2200043051066540047403</IBANAcreedor>
+	</record>
+	<record>
+		<Ejercicio>2014</Ejercicio>
+		<EntidadCP>JDEA</EntidadCP>
+		<Tesoreria>TESO100000</Tesoreria>
+		<DenominacionTesoreria>Tesorería General Junta de Andalucía</DenominacionTesoreria>
+		<CodigoExpediente>EXP-03</CodigoExpediente>
+		<ClaseExpediente>CONT</ClaseExpediente>
+		<EjercicioExpediente>2014</EjercicioExpediente>
+		<NumeroExpediente>0120000201</NumeroExpediente>
+		<FamiliaExpediente>CONTAB</FamiliaExpediente>
+		<Procedimiento>PREMIOS</Procedimiento>
+		<OrgGest>8076</OrgGest>
+		<Circuito>CONT O</Circuito>
+		<Modelo>ADO</Modelo>
+		<SociedadDocumento>1000</SociedadDocumento>
+		<DenominacionSociedad>Junta de Andalucía</DenominacionSociedad>
+		<Ejerciciodocumento>2014</Ejerciciodocumento>
+		<Numerodocumento>0190002394</Numerodocumento>
+		<Clasededocumento>O2</Clasededocumento>
+		<DenominacionCabeceraDocumento>Pago premio</DenominacionCabeceraDocumento>
+		<DenominacionPosicionDocumento>Pago premio a:0000002000</DenominacionPosicionDocumento>
+		<Codigoacreedor>0000002000</Codigoacreedor>
+		<DenominacionAcreedor>Nombre Acreedor</DenominacionAcreedor>
+		<ClaseIC>0001</ClaseIC>
+		<FechaDocumento>2014-05-15</FechaDocumento>
+		<Fechacontabilizacion>2014-05-15</Fechacontabilizacion>
+		<FechaVencimiento>2014-05-15</FechaVencimiento>
+		<CentroGestor>1100010000</CentroGestor>
+		<Posicionpresupuestaria>G/11F/12000/00</Posicionpresupuestaria>
+		<Fondo>01</Fondo>
+		<Importe>374</Importe>
+		<IBANAcreedor>ES7820389800234505677935</IBANAcreedor>
+	</record>
+	<record>
+		<Ejercicio>2014</Ejercicio>
+		<EntidadCP>JDEA</EntidadCP>
+		<Tesoreria>TESO100000</Tesoreria>
+		<DenominacionTesoreria>Tesorería General Junta de Andalucía</DenominacionTesoreria>
+		<CodigoExpediente>EXP-04</CodigoExpediente>
+		<ClaseExpediente>CONT</ClaseExpediente>
+		<EjercicioExpediente>2014</EjercicioExpediente>
+		<NumeroExpediente>0120000245</NumeroExpediente>
+		<FamiliaExpediente>CONTAB</FamiliaExpediente>
+		<Procedimiento>PREMIOS</Procedimiento>
+		<OrgGest>8076</OrgGest>
+		<Circuito>CONT O</Circuito>
+		<Modelo>ADO</Modelo>
+		<SociedadDocumento>1000</SociedadDocumento>
+		<DenominacionSociedad>Junta de Andalucía</DenominacionSociedad>
+		<Ejerciciodocumento>2014</Ejerciciodocumento>
+		<Numerodocumento>0190002395</Numerodocumento>
+		<Clasededocumento>O2</Clasededocumento>
+		<DenominacionCabeceraDocumento>Pago premio</DenominacionCabeceraDocumento>
+		<DenominacionPosicionDocumento>Pago premio a:0000002000</DenominacionPosicionDocumento>
+		<Codigoacreedor>0000002000</Codigoacreedor>
+		<DenominacionAcreedor>Nombre Acreedor</DenominacionAcreedor>
+		<ClaseIC>0001</ClaseIC>
+		<FechaDocumento>2014-05-15</FechaDocumento>
+		<Fechacontabilizacion>2014-05-15</Fechacontabilizacion>
+		<FechaVencimiento>2014-05-15</FechaVencimiento>
+		<CentroGestor>1100010000</CentroGestor>
+		<Posicionpresupuestaria>G/11F/12000/00</Posicionpresupuestaria>
+		<Fondo>01</Fondo>
+		<Importe>3898</Importe>
+		<IBANAcreedor>ES7820389800234505677935</IBANAcreedor>
+	</record>
+	<record>
+		<Ejercicio>2014</Ejercicio>
+		<EntidadCP>JDEA</EntidadCP>
+		<Tesoreria>TESO100000</Tesoreria>
+		<DenominacionTesoreria>Tesorería General Junta de Andalucía</DenominacionTesoreria>
+		<CodigoExpediente>EXP-05</CodigoExpediente>
+		<ClaseExpediente>CONT</ClaseExpediente>
+		<EjercicioExpediente>2014</EjercicioExpediente>
+		<NumeroExpediente>0120000345</NumeroExpediente>
+		<FamiliaExpediente>CONTAB</FamiliaExpediente>
+		<Procedimiento>PREMIOS</Procedimiento>
+		<OrgGest>0762</OrgGest>
+		<Circuito>CONT O</Circuito>
+		<Modelo>ADO</Modelo>
+		<SociedadDocumento>1000</SociedadDocumento>
+		<DenominacionSociedad>Junta de Andalucía</DenominacionSociedad>
+		<Ejerciciodocumento>2014</Ejerciciodocumento>
+		<Numerodocumento>0190002411</Numerodocumento>
+		<Clasededocumento>O2</Clasededocumento>
+		<DenominacionCabeceraDocumento>Pago premio</DenominacionCabeceraDocumento>
+		<DenominacionPosicionDocumento>Pago premio a:0000001608</DenominacionPosicionDocumento>
+		<CodExtDocu>SISTEMA2014076200001</CodExtDocu>
+		<Codigoacreedor>0000001608</Codigoacreedor>
+		<DenominacionAcreedor>Nombre Acreedor</DenominacionAcreedor>
+		<ClaseIC>0003</ClaseIC>
+		<FechaDocumento>2014-05-15</FechaDocumento>
+		<Fechacontabilizacion>2014-05-15</Fechacontabilizacion>
+		<FechaVencimiento>2014-05-15</FechaVencimiento>
+		<Fechaprevisiondepago>2014-06-06</Fechaprevisiondepago>
+		<Fechapago>2014-06-06</Fechapago>
+		<CentroGestor>1131010000</CentroGestor>
+		<Posicionpresupuestaria>G/54F/12001/00</Posicionpresupuestaria>
+		<Fondo>01</Fondo>
+		<Importe>30646</Importe>
+		<Prevision>201400000031</Prevision>
+		<EstadoPrevision>09</EstadoPrevision>
+		<IBANPago>ES1821031722880133623148</IBANPago>
+		<IBANAcreedor>ES4800491506752910385748</IBANAcreedor>
+	</record>
+	<record>
+		<Ejercicio>2014</Ejercicio>
+		<EntidadCP>JDEA</EntidadCP>
+		<Tesoreria>TESO100000</Tesoreria>
+		<DenominacionTesoreria>Tesorería General Junta de Andalucía</DenominacionTesoreria>
+		<CodigoExpediente>EXP-06</CodigoExpediente>
+		<ClaseExpediente>CONT</ClaseExpediente>
+		<EjercicioExpediente>2014</EjercicioExpediente>
+		<NumeroExpediente>0120000333</NumeroExpediente>
+		<FamiliaExpediente>CONTAB</FamiliaExpediente>
+		<Procedimiento>PREMIOS</Procedimiento>
+		<OrgGest>8009</OrgGest>
+		<Circuito>CONT O</Circuito>
+		<Modelo>ADO</Modelo>
+		<SociedadDocumento>1000</SociedadDocumento>
+		<DenominacionSociedad>Junta de Andalucía</DenominacionSociedad>
+		<Ejerciciodocumento>2014</Ejerciciodocumento>
+		<Numerodocumento>0190002433</Numerodocumento>
+		<Clasededocumento>O2</Clasededocumento>
+		<DenominacionCabeceraDocumento>Pago premio</DenominacionCabeceraDocumento>
+		<DenominacionPosicionDocumento>Pago premio a:0000002120</DenominacionPosicionDocumento>
+		<Codigoacreedor>0000002120</Codigoacreedor>
+		<DenominacionAcreedor>Nombre Acreedor</DenominacionAcreedor>
+		<ClaseIC>0001</ClaseIC>
+		<FechaDocumento>2014-05-15</FechaDocumento>
+		<Fechacontabilizacion>2014-05-15</Fechacontabilizacion>
+		<FechaVencimiento>2014-05-15</FechaVencimiento>
+		<Fechaprevisiondepago>2014-05-20</Fechaprevisiondepago>
+		<Fechapago>2014-05-21</Fechapago>
+		<CentroGestor>1139010000</CentroGestor>
+		<Posicionpresupuestaria>G/32L/34200/00</Posicionpresupuestaria>
+		<Fondo>01</Fondo>
+		<Importe>147</Importe>
+		<Prevision>201400000013</Prevision>
+		<EstadoPrevision>22</EstadoPrevision>
+		<IBANPago>ES1821031722880133623148</IBANPago>
+		<IBANAcreedor>ES3521053031211294563309</IBANAcreedor>
+	</record>
+	<record>
+		<Ejercicio>2014</Ejercicio>
+		<EntidadCP>JDEA</EntidadCP>
+		<Tesoreria>TESO100000</Tesoreria>
+		<DenominacionTesoreria>Tesorería General Junta de Andalucía</DenominacionTesoreria>
+		<CodigoExpediente>EXP-07</CodigoExpediente>
+		<ClaseExpediente>CONT</ClaseExpediente>
+		<EjercicioExpediente>2014</EjercicioExpediente>
+		<NumeroExpediente>0120000280</NumeroExpediente>
+		<FamiliaExpediente>CONTAB</FamiliaExpediente>
+		<Procedimiento>PREMIOS</Procedimiento>
+		<OrgGest>8009</OrgGest>
+		<Circuito>CONT O</Circuito>
+		<Modelo>ADO</Modelo>
+		<SociedadDocumento>1000</SociedadDocumento>
+		<DenominacionSociedad>Junta de Andalucía</DenominacionSociedad>
+		<Ejerciciodocumento>2014</Ejerciciodocumento>
+		<Numerodocumento>0190002458</Numerodocumento>
+		<Clasededocumento>O2</Clasededocumento>
+		<DenominacionCabeceraDocumento>Pago premio</DenominacionCabeceraDocumento>
+		<DenominacionPosicionDocumento>Pago premio a:0000002120</DenominacionPosicionDocumento>
+		<Codigoacreedor>0000002120</Codigoacreedor>
+		<DenominacionAcreedor>Nombre Acreedor</DenominacionAcreedor>
+		<ClaseIC>0001</ClaseIC>
+		<FechaDocumento>2014-05-15</FechaDocumento>
+		<Fechacontabilizacion>2014-05-15</Fechacontabilizacion>
+		<FechaVencimiento>2014-05-15</FechaVencimiento>
+		<Fechaprevisiondepago>2014-05-22</Fechaprevisiondepago>
+		<Fechapago>2014-05-23</Fechapago>
+		<CentroGestor>1139010000</CentroGestor>
+		<Posicionpresupuestaria>G/32L/34200/00</Posicionpresupuestaria>
+		<Fondo>01</Fondo>
+		<Importe>147</Importe>
+		<Prevision>201400000020</Prevision>
+		<EstadoPrevision>13</EstadoPrevision>
+		<IBANPago>ES1821031722880133623148</IBANPago>
+		<IBANAcreedor>ES3521053031211294563309</IBANAcreedor>
+	</record>
+	<record>
+		<Ejercicio>2014</Ejercicio>
+		<EntidadCP>JDEA</EntidadCP>
+		<Tesoreria>TESO100000</Tesoreria>
+		<DenominacionTesoreria>Tesorería General Junta de Andalucía</DenominacionTesoreria>
+		<CodigoExpediente>EXP-08</CodigoExpediente>
+		<ClaseExpediente>CONT</ClaseExpediente>
+		<EjercicioExpediente>2014</EjercicioExpediente>
+		<NumeroExpediente>0120000034</NumeroExpediente>
+		<FamiliaExpediente>CONTAB</FamiliaExpediente>
+		<Procedimiento>SUBV</Procedimiento>
+		<OrgGest>0452</OrgGest>
+		<Circuito>CONT O</Circuito>
+		<Modelo>O</Modelo>
+		<SociedadDocumento>1000</SociedadDocumento>
+		<DenominacionSociedad>Junta de Andalucía</DenominacionSociedad>
+		<Ejerciciodocumento>2014</Ejerciciodocumento>
+		<Numerodocumento>0190002787</Numerodocumento>
+		<Clasededocumento>OF</Clasededocumento>
+		<DenominacionCabeceraDocumento>Subvención</DenominacionCabeceraDocumento>
+		<DenominacionPosicionDocumento>Pago subvención a:0000001213</DenominacionPosicionDocumento>
+		<Codigoacreedor>0000001213</Codigoacreedor>
+		<DenominacionAcreedor>Nombre Acreedor</DenominacionAcreedor>
+		<ClaseIC>0003</ClaseIC>
+		<FechaDocumento>2014-05-21</FechaDocumento>
+		<Fechacontabilizacion>2014-05-21</Fechacontabilizacion>
+		<FechaVencimiento>2014-05-21</FechaVencimiento>
+		<Fechaprevisiondepago>2014-06-24</Fechaprevisiondepago>
+		<Fechapago>2014-06-26</Fechapago>
+		<Fechamaterializacion>2014-07-01</Fechamaterializacion>
+		<CentroGestor>1200010000</CentroGestor>
+		<Posicionpresupuestaria>G/31P/22602/00</Posicionpresupuestaria>
+		<Fondo>01</Fondo>
+		<Importe>12100</Importe>
+		<Prevision>201400000041</Prevision>
+		<EstadoPrevision>26</EstadoPrevision>
+		<IBANPago>ES1821031722880133623148</IBANPago>
+		<IBANAcreedor>ES4801825529630101500375</IBANAcreedor>
+	</record>
+	<record>
+		<Ejercicio>2014</Ejercicio>
+		<EntidadCP>JDEA</EntidadCP>
+		<Tesoreria>TESO100000</Tesoreria>
+		<DenominacionTesoreria>Tesorería General Junta de Andalucía</DenominacionTesoreria>
+		<CodigoExpediente>EXP-09</CodigoExpediente>
+		<ClaseExpediente>CONT</ClaseExpediente>
+		<EjercicioExpediente>2014</EjercicioExpediente>
+		<NumeroExpediente>0120000041</NumeroExpediente>
+		<FamiliaExpediente>CONTAB</FamiliaExpediente>
+		<Procedimiento>SUBV</Procedimiento>
+		<OrgGest>0452</OrgGest>
+		<Circuito>CONT O</Circuito>
+		<Modelo>O</Modelo>
+		<SociedadDocumento>1000</SociedadDocumento>
+		<DenominacionSociedad>Junta de Andalucía</DenominacionSociedad>
+		<Ejerciciodocumento>2014</Ejerciciodocumento>
+		<Numerodocumento>0190002790</Numerodocumento>
+		<Clasededocumento>OF</Clasededocumento>
+		<DenominacionCabeceraDocumento>Subvención</DenominacionCabeceraDocumento>
+		<DenominacionPosicionDocumento>Pago subvención a:0000001608</DenominacionPosicionDocumento>
+		<Codigoacreedor>0000001608</Codigoacreedor>
+		<DenominacionAcreedor>Nombre Acreedor</DenominacionAcreedor>
+		<ClaseIC>0003</ClaseIC>
+		<FechaDocumento>2014-05-21</FechaDocumento>
+		<Fechacontabilizacion>2014-05-21</Fechacontabilizacion>
+		<FechaVencimiento>2014-05-21</FechaVencimiento>
+		<Fechaprevisiondepago>2014-06-24</Fechaprevisiondepago>
+		<Fechapago>2014-06-26</Fechapago>
+		<Fechamaterializacion>2014-07-01</Fechamaterializacion>
+		<CentroGestor>1200010000</CentroGestor>
+		<Posicionpresupuestaria>G/31B/22706/00</Posicionpresupuestaria>
+		<Fondo>01</Fondo>
+		<Importe>6000</Importe>
+		<Prevision>201400000041</Prevision>
+		<EstadoPrevision>26</EstadoPrevision>
+		<IBANPago>ES1821031722880133623148</IBANPago>
+		<IBANAcreedor>ES4800491506752910385748</IBANAcreedor>
+	</record>
+	<record>
+		<Ejercicio>2014</Ejercicio>
+		<EntidadCP>JDEA</EntidadCP>
+		<Tesoreria>TESO100000</Tesoreria>
+		<DenominacionTesoreria>Tesorería General Junta de Andalucía</DenominacionTesoreria>
+		<CodigoExpediente>EXP-10</CodigoExpediente>
+		<ClaseExpediente>CONT</ClaseExpediente>
+		<EjercicioExpediente>2014</EjercicioExpediente>
+		<NumeroExpediente>0120000082</NumeroExpediente>
+		<FamiliaExpediente>CONTAB</FamiliaExpediente>
+		<Procedimiento>PREMIOS</Procedimiento>
+		<OrgGest>8076</OrgGest>
+		<Circuito>CONT O</Circuito>
+		<Modelo>ADO</Modelo>
+		<SociedadDocumento>1000</SociedadDocumento>
+		<DenominacionSociedad>Junta de Andalucía</DenominacionSociedad>
+		<Ejerciciodocumento>2014</Ejerciciodocumento>
+		<Numerodocumento>0190002816</Numerodocumento>
+		<Clasededocumento>O2</Clasededocumento>
+		<DenominacionCabeceraDocumento>Pago premio</DenominacionCabeceraDocumento>
+		<DenominacionPosicionDocumento>Pago premio a:0000001765</DenominacionPosicionDocumento>
+		<Codigoacreedor>0000001765</Codigoacreedor>
+		<DenominacionAcreedor>Nombre Acreedor</DenominacionAcreedor>
+		<ClaseIC>0001</ClaseIC>
+		<FechaDocumento>2014-05-28</FechaDocumento>
+		<Fechacontabilizacion>2014-05-28</Fechacontabilizacion>
+		<FechaVencimiento>2014-05-28</FechaVencimiento>
+		<Fechapago>2014-06-26</Fechapago>
+		<CentroGestor>1100180000</CentroGestor>
+		<Posicionpresupuestaria>G/72C/78700/98</Posicionpresupuestaria>
+		<Fondo>S0546</Fondo>
+		<Proyecto>2009000745</Proyecto>
+		<Importe>101</Importe>
+		<IBANAcreedor>ES6900304297900000456271</IBANAcreedor>
+	</record>
+	<record>
+		<Ejercicio>2014</Ejercicio>
+		<EntidadCP>JDEA</EntidadCP>
+		<Tesoreria>TESO100000</Tesoreria>
+		<DenominacionTesoreria>Tesorería General Junta de Andalucía</DenominacionTesoreria>
+		<CodigoExpediente>EXP-11</CodigoExpediente>
+		<ClaseExpediente>CONT</ClaseExpediente>
+		<EjercicioExpediente>2014</EjercicioExpediente>
+		<NumeroExpediente>0120000112</NumeroExpediente>
+		<FamiliaExpediente>CONTAB</FamiliaExpediente>
+		<Procedimiento>PREMIOS</Procedimiento>
+		<OrgGest>8076</OrgGest>
+		<Circuito>CONT O</Circuito>
+		<Modelo>ADO</Modelo>
+		<SociedadDocumento>1000</SociedadDocumento>
+		<DenominacionSociedad>Junta de Andalucía</DenominacionSociedad>
+		<Ejerciciodocumento>2014</Ejerciciodocumento>
+		<Numerodocumento>0190002829</Numerodocumento>
+		<Clasededocumento>O2</Clasededocumento>
+		<DenominacionCabeceraDocumento>Pago premio</DenominacionCabeceraDocumento>
+		<DenominacionPosicionDocumento>Pago premio a:0000001785</DenominacionPosicionDocumento>
+		<Codigoacreedor>0000001785</Codigoacreedor>
+		<DenominacionAcreedor>Nombre Acreedor</DenominacionAcreedor>
+		<ClaseIC>0001</ClaseIC>
+		<FechaDocumento>2014-06-10</FechaDocumento>
+		<Fechacontabilizacion>2014-06-10</Fechacontabilizacion>
+		<FechaVencimiento>2014-06-10</FechaVencimiento>
+		<Fechaprevisiondepago>2014-06-10</Fechaprevisiondepago>
+		<Fechapago>2014-06-10</Fechapago>
+		<Fechamaterializacion>2014-06-10</Fechamaterializacion>
+		<CentroGestor>1100010000</CentroGestor>
+		<Posicionpresupuestaria>G/11F/12003/00</Posicionpresupuestaria>
+		<Fondo>01</Fondo>
+		<Importe>1500</Importe>
+		<Prevision>201400000036</Prevision>
+		<EstadoPrevision>26</EstadoPrevision>
+		<IBANPago>ES1821031722880133623148</IBANPago>
+		<IBANAcreedor>ES6420480103103445600754</IBANAcreedor>
+	</record>
+	<record>
+		<Ejercicio>2014</Ejercicio>
+		<EntidadCP>JDEA</EntidadCP>
+		<Tesoreria>TESO100000</Tesoreria>
+		<DenominacionTesoreria>Tesorería General Junta de Andalucía</DenominacionTesoreria>
+		<CodigoExpediente>EXP-12</CodigoExpediente>
+		<ClaseExpediente>CONT</ClaseExpediente>
+		<EjercicioExpediente>2014</EjercicioExpediente>
+		<NumeroExpediente>0120000113</NumeroExpediente>
+		<FamiliaExpediente>CONTAB</FamiliaExpediente>
+		<Procedimiento>PREMIOS</Procedimiento>
+		<OrgGest>8076</OrgGest>
+		<Circuito>CONT O</Circuito>
+		<Modelo>ADO</Modelo>
+		<SociedadDocumento>1000</SociedadDocumento>
+		<DenominacionSociedad>Junta de Andalucía</DenominacionSociedad>
+		<Ejerciciodocumento>2014</Ejerciciodocumento>
+		<Numerodocumento>0190002830</Numerodocumento>
+		<Clasededocumento>O2</Clasededocumento>
+		<DenominacionCabeceraDocumento>Pago premio</DenominacionCabeceraDocumento>
+		<DenominacionPosicionDocumento>Pago premio a:0000001785</DenominacionPosicionDocumento>
+		<Codigoacreedor>0000001785</Codigoacreedor>
+		<DenominacionAcreedor>Nombre Acreedor</DenominacionAcreedor>
+		<ClaseIC>0001</ClaseIC>
+		<FechaDocumento>2014-06-10</FechaDocumento>
+		<Fechacontabilizacion>2014-06-10</Fechacontabilizacion>
+		<FechaVencimiento>2014-06-10</FechaVencimiento>
+		<Fechaprevisiondepago>2014-06-10</Fechaprevisiondepago>
+		<Fechapago>2014-06-10</Fechapago>
+		<Fechamaterializacion>2014-06-10</Fechamaterializacion>
+		<CentroGestor>1100010000</CentroGestor>
+		<Posicionpresupuestaria>G/11F/12003/00</Posicionpresupuestaria>
+		<Fondo>01</Fondo>
+		<Importe>2000</Importe>
+		<Prevision>201400000036</Prevision>
+		<EstadoPrevision>26</EstadoPrevision>
+		<IBANPago>ES1821031722880133623148</IBANPago>
+		<IBANAcreedor>ES6420480103103445600754</IBANAcreedor>
+	</record>
+	<record>
+		<Ejercicio>2014</Ejercicio>
+		<EntidadCP>JDEA</EntidadCP>
+		<Tesoreria>TESO100000</Tesoreria>
+		<DenominacionTesoreria>Tesorería General Junta de Andalucía</DenominacionTesoreria>
+		<CodigoExpediente>EXP-13</CodigoExpediente>
+		<ClaseExpediente>CONT</ClaseExpediente>
+		<EjercicioExpediente>2014</EjercicioExpediente>
+		<NumeroExpediente>0120000115</NumeroExpediente>
+		<FamiliaExpediente>CONTAB</FamiliaExpediente>
+		<Procedimiento>PREMIOS</Procedimiento>
+		<OrgGest>8076</OrgGest>
+		<Circuito>CONT O</Circuito>
+		<Modelo>ADO</Modelo>
+		<SociedadDocumento>1000</SociedadDocumento>
+		<DenominacionSociedad>Junta de Andalucía</DenominacionSociedad>
+		<Ejerciciodocumento>2014</Ejerciciodocumento>
+		<Numerodocumento>0190002831</Numerodocumento>
+		<Clasededocumento>O2</Clasededocumento>
+		<DenominacionCabeceraDocumento>Pago premio</DenominacionCabeceraDocumento>
+		<DenominacionPosicionDocumento>Pago premio a:0000001785</DenominacionPosicionDocumento>
+		<Codigoacreedor>0000001785</Codigoacreedor>
+		<DenominacionAcreedor>Nombre Acreedor</DenominacionAcreedor>
+		<ClaseIC>0001</ClaseIC>
+		<FechaDocumento>2014-06-10</FechaDocumento>
+		<Fechacontabilizacion>2014-06-10</Fechacontabilizacion>
+		<FechaVencimiento>2014-06-10</FechaVencimiento>
+		<Fechaprevisiondepago>2014-06-10</Fechaprevisiondepago>
+		<Fechapago>2014-06-10</Fechapago>
+		<Fechamaterializacion>2014-06-10</Fechamaterializacion>
+		<CentroGestor>1100010000</CentroGestor>
+		<Posicionpresupuestaria>G/11F/12003/00</Posicionpresupuestaria>
+		<Fondo>01</Fondo>
+		<Importe>1500</Importe>
+		<Prevision>201400000038</Prevision>
+		<EstadoPrevision>26</EstadoPrevision>
+		<IBANPago>ES1821031722880133623148</IBANPago>
+		<IBANAcreedor>ES6420480103103445600754</IBANAcreedor>
+	</record>
+	<record>
+		<Ejercicio>2014</Ejercicio>
+		<EntidadCP>JDEA</EntidadCP>
+		<Tesoreria>TESO100000</Tesoreria>
+		<DenominacionTesoreria>Tesorería General Junta de Andalucía</DenominacionTesoreria>
+		<CodigoExpediente>EXP-14</CodigoExpediente>
+		<ClaseExpediente>CONT</ClaseExpediente>
+		<EjercicioExpediente>2014</EjercicioExpediente>
+		<NumeroExpediente>0120000153</NumeroExpediente>
+		<FamiliaExpediente>CONTAB</FamiliaExpediente>
+		<Procedimiento>OBRAS</Procedimiento>
+		<OrgGest>8076</OrgGest>
+		<Circuito>CONT O</Circuito>
+		<Modelo>ADO</Modelo>
+		<SociedadDocumento>1000</SociedadDocumento>
+		<DenominacionSociedad>Junta de Andalucía</DenominacionSociedad>
+		<Ejerciciodocumento>2014</Ejerciciodocumento>
+		<Numerodocumento>0190002836</Numerodocumento>
+		<Clasededocumento>O2</Clasededocumento>
+		<DenominacionCabeceraDocumento>Contrato</DenominacionCabeceraDocumento>
+		<DenominacionPosicionDocumento>Pago contrato a:0000001626</DenominacionPosicionDocumento>
+		<Codigoacreedor>0000001626</Codigoacreedor>
+		<DenominacionAcreedor>Nombre Acreedor</DenominacionAcreedor>
+		<ClaseIC>0003</ClaseIC>
+		<FechaDocumento>2014-06-26</FechaDocumento>
+		<Fechacontabilizacion>2014-06-26</Fechacontabilizacion>
+		<FechaVencimiento>2014-06-26</FechaVencimiento>
+		<Fechapago>2014-06-26</Fechapago>
+		<CentroGestor>1100170000</CentroGestor>
+		<Posicionpresupuestaria>G/61K/60900/98</Posicionpresupuestaria>
+		<Fondo>AM30078510</Fondo>
+		<Proyecto>2006001419</Proyecto>
+		<Importe>1000</Importe>
+		<IBANAcreedor>ES6900304297906978456271</IBANAcreedor>
+	</record>
+	<record>
+		<Ejercicio>2014</Ejercicio>
+		<EntidadCP>JDEA</EntidadCP>
+		<Tesoreria>TESO100000</Tesoreria>
+		<DenominacionTesoreria>Tesorería General Junta de Andalucía</DenominacionTesoreria>
+		<CodigoExpediente>EXP-15</CodigoExpediente>
+		<ClaseExpediente>CONT</ClaseExpediente>
+		<EjercicioExpediente>2014</EjercicioExpediente>
+		<NumeroExpediente>0120000275</NumeroExpediente>
+		<FamiliaExpediente>CONTAB</FamiliaExpediente>
+		<Procedimiento>PREMIOS</Procedimiento>
+		<OrgGest>8076</OrgGest>
+		<Circuito>CONT O</Circuito>
+		<Modelo>ADO</Modelo>
+		<SociedadDocumento>1000</SociedadDocumento>
+		<DenominacionSociedad>Junta de Andalucía</DenominacionSociedad>
+		<Ejerciciodocumento>2014</Ejerciciodocumento>
+		<Numerodocumento>0190002857</Numerodocumento>
+		<Clasededocumento>O2</Clasededocumento>
+		<DenominacionCabeceraDocumento>Pago premio</DenominacionCabeceraDocumento>
+		<DenominacionPosicionDocumento>Pago premio a:0000001213</DenominacionPosicionDocumento>
+		<Codigoacreedor>0000001213</Codigoacreedor>
+		<DenominacionAcreedor>Nombre Acreedor</DenominacionAcreedor>
+		<ClaseIC>0003</ClaseIC>
+		<FechaDocumento>2014-07-02</FechaDocumento>
+		<Fechacontabilizacion>2014-07-02</Fechacontabilizacion>
+		<FechaVencimiento>2014-07-02</FechaVencimiento>
+		<Fechapago>2014-07-02</Fechapago>
+		<CentroGestor>1100170000</CentroGestor>
+		<Posicionpresupuestaria>G/61K/60900/98</Posicionpresupuestaria>
+		<Fondo>AM30078510</Fondo>
+		<Proyecto>2006001419</Proyecto>
+		<Importe>100</Importe>
+		<IBANAcreedor>ES4801825529630101500375</IBANAcreedor>
+	</record>
+	<record>
+		<Ejercicio>2014</Ejercicio>
+		<EntidadCP>JDEA</EntidadCP>
+		<Tesoreria>TESO100000</Tesoreria>
+		<DenominacionTesoreria>Tesorería General Junta de Andalucía</DenominacionTesoreria>
+		<CodigoExpediente>EXP-16</CodigoExpediente>
+		<ClaseExpediente>CONT</ClaseExpediente>
+		<EjercicioExpediente>2014</EjercicioExpediente>
+		<NumeroExpediente>0120000165</NumeroExpediente>
+		<FamiliaExpediente>CONTAB</FamiliaExpediente>
+		<Procedimiento>PREMIOS</Procedimiento>
+		<OrgGest>8076</OrgGest>
+		<Circuito>CONT O</Circuito>
+		<Modelo>ADO</Modelo>
+		<SociedadDocumento>1000</SociedadDocumento>
+		<DenominacionSociedad>Junta de Andalucía</DenominacionSociedad>
+		<Ejerciciodocumento>2014</Ejerciciodocumento>
+		<Numerodocumento>0190002858</Numerodocumento>
+		<Clasededocumento>O2</Clasededocumento>
+		<DenominacionCabeceraDocumento>Pago premio</DenominacionCabeceraDocumento>
+		<DenominacionPosicionDocumento>Pago premio a:0000001213</DenominacionPosicionDocumento>
+		<Codigoacreedor>0000001213</Codigoacreedor>
+		<DenominacionAcreedor>Nombre Acreedor</DenominacionAcreedor>
+		<ClaseIC>0003</ClaseIC>
+		<FechaDocumento>2014-07-02</FechaDocumento>
+		<Fechacontabilizacion>2014-07-02</Fechacontabilizacion>
+		<FechaVencimiento>2014-07-02</FechaVencimiento>
+		<Fechapago>2014-07-02</Fechapago>
+		<CentroGestor>1100170000</CentroGestor>
+		<Posicionpresupuestaria>G/61K/60900/98</Posicionpresupuestaria>
+		<Fondo>AM30078510</Fondo>
+		<Proyecto>2006001419</Proyecto>
+		<Importe>100</Importe>
+		<IBANAcreedor>ES4801825529630101500375</IBANAcreedor>
+	</record>
+	<record>
+		<Ejercicio>2014</Ejercicio>
+		<EntidadCP>JDEA</EntidadCP>
+		<Tesoreria>TESO100000</Tesoreria>
+		<DenominacionTesoreria>Tesorería General Junta de Andalucía</DenominacionTesoreria>
+		<CodigoExpediente>EXP-17</CodigoExpediente>
+		<ClaseExpediente>CONT</ClaseExpediente>
+		<EjercicioExpediente>2014</EjercicioExpediente>
+		<NumeroExpediente>0120000132</NumeroExpediente>
+		<FamiliaExpediente>CONTAB</FamiliaExpediente>
+		<Procedimiento>PREMIOS</Procedimiento>
+		<OrgGest>8076</OrgGest>
+		<Circuito>CONT O</Circuito>
+		<Modelo>ADO</Modelo>
+		<SociedadDocumento>1000</SociedadDocumento>
+		<DenominacionSociedad>Junta de Andalucía</DenominacionSociedad>
+		<Ejerciciodocumento>2014</Ejerciciodocumento>
+		<Numerodocumento>0190002859</Numerodocumento>
+		<Clasededocumento>O2</Clasededocumento>
+		<DenominacionCabeceraDocumento>Pago premio</DenominacionCabeceraDocumento>
+		<DenominacionPosicionDocumento>Pago premio a:0000001213</DenominacionPosicionDocumento>
+		<Codigoacreedor>0000001213</Codigoacreedor>
+		<DenominacionAcreedor>Nombre Acreedor</DenominacionAcreedor>
+		<ClaseIC>0003</ClaseIC>
+		<FechaDocumento>2014-07-02</FechaDocumento>
+		<Fechacontabilizacion>2014-07-02</Fechacontabilizacion>
+		<FechaVencimiento>2014-07-02</FechaVencimiento>
+		<Fechapago>2014-07-02</Fechapago>
+		<CentroGestor>1100170000</CentroGestor>
+		<Posicionpresupuestaria>G/61K/60900/98</Posicionpresupuestaria>
+		<Fondo>AM30078510</Fondo>
+		<Proyecto>2006001419</Proyecto>
+		<Importe>100</Importe>
+		<IBANAcreedor>ES4801825529630101500375</IBANAcreedor>
+	</record>
+	<record>
+		<Ejercicio>2014</Ejercicio>
+		<EntidadCP>JDEA</EntidadCP>
+		<Tesoreria>TESO100000</Tesoreria>
+		<DenominacionTesoreria>Tesorería General Junta de Andalucía</DenominacionTesoreria>
+		<CodigoExpediente>EXP-18</CodigoExpediente>
+		<ClaseExpediente>CONTE</ClaseExpediente>
+		<EjercicioExpediente>2014</EjercicioExpediente>
+		<NumeroExpediente>0120000114</NumeroExpediente>
+		<FamiliaExpediente>CONTAB</FamiliaExpediente>
+		<Procedimiento>EXTRAPRE</Procedimiento>
+		<OrgGest>0183</OrgGest>
+		<Circuito>PAGO</Circuito>
+		<Modelo>OEP</Modelo>
+		<SociedadDocumento>1000</SociedadDocumento>
+		<DenominacionSociedad>Junta de Andalucía</DenominacionSociedad>
+		<Ejerciciodocumento>2014</Ejerciciodocumento>
+		<Numerodocumento>0310000010</Numerodocumento>
+		<Clasededocumento>E4</Clasededocumento>
+		<DenominacionCabeceraDocumento>Pago premio</DenominacionCabeceraDocumento>
+		<DenominacionPosicionDocumento>Pago premio a:0000001788</DenominacionPosicionDocumento>
+		<CodExtDocu>SUR20140183000000001</CodExtDocu>
+		<Codigoacreedor>0000001788</Codigoacreedor>
+		<DenominacionAcreedor>Nombre Acreedor</DenominacionAcreedor>
+		<ClaseIC>0001</ClaseIC>
+		<ReceptorAlternativo>0000001213</ReceptorAlternativo>
+		<DenominacionReceptor>Nombre Acreedor</DenominacionReceptor>
+		<FechaDocumento>2014-06-10</FechaDocumento>
+		<Fechacontabilizacion>2014-06-10</Fechacontabilizacion>
+		<FechaVencimiento>2014-06-10</FechaVencimiento>
+		<CtaExtra>0055400006</CtaExtra>
+		<Asignacion>201400000000000185</Asignacion>
+		<Importe>1500</Importe>
+		<Descuento>500</Descuento>
+		<IBANAcreedor>ES0514650100941704567136</IBANAcreedor>
+	</record>
+	<record>
+		<Ejercicio>2014</Ejercicio>
+		<EntidadCP>JDEA</EntidadCP>
+		<Tesoreria>TESO100000</Tesoreria>
+		<DenominacionTesoreria>Tesorería General Junta de Andalucía</DenominacionTesoreria>
+		<CodigoExpediente>EXP-19</CodigoExpediente>
+		<ClaseExpediente>CONT</ClaseExpediente>
+		<EjercicioExpediente>2014</EjercicioExpediente>
+		<NumeroExpediente>0120000208</NumeroExpediente>
+		<FamiliaExpediente>CONTAB</FamiliaExpediente>
+		<Procedimiento>SUBV</Procedimiento>
+		<OrgGest>0002</OrgGest>
+		<Circuito>CONT OR</Circuito>
+		<Modelo>O</Modelo>
+		<ClaseExpedienteReferencia>CONT</ClaseExpedienteReferencia>
+		<EjercicioExpedienteReferencia>2014</EjercicioExpedienteReferencia>
+		<NumeroExpedienteReferencia>120000192</NumeroExpedienteReferencia>
+		<SociedadDocumento>1000</SociedadDocumento>
+		<DenominacionSociedad>Junta de Andalucía</DenominacionSociedad>
+		<Ejerciciodocumento>2014</Ejerciciodocumento>
+		<Numerodocumento>0190002882</Numerodocumento>
+		<Clasededocumento>OS</Clasededocumento>
+		<DenominacionCabeceraDocumento>Pago premio</DenominacionCabeceraDocumento>
+		<DenominacionPosicionDocumento>Pago premio a:0140000172</DenominacionPosicionDocumento>
+		<Codigoacreedor>0140000172</Codigoacreedor>
+		<DenominacionAcreedor>Nombre Acreedor</DenominacionAcreedor>
+		<ClaseIC>0017</ClaseIC>
+		<FechaDocumento>2014-07-10</FechaDocumento>
+		<Fechacontabilizacion>2014-07-10</Fechacontabilizacion>
+		<FechaVencimiento>2014-07-10</FechaVencimiento>
+		<CentroGestor>0100010000</CentroGestor>
+		<Posicionpresupuestaria>G/11A/46001/00</Posicionpresupuestaria>
+		<Fondo>01</Fondo>
+		<Importe>5</Importe>
+		<IBANAcreedor>ES5921002299356700133532</IBANAcreedor>
+	</record>
+</data-set>

@@ -1,0 +1,2 @@
+Tipo,Tarea Padre,Estado,Prioridad,Asunto,Autor,Asignado a,Actualizado,Fecha inicio,Fecha fin,Tiempo estiamdo,% Realizado,Creado,Privada,Categoria,Version,Descripcion,Proyecto
+Tarea,"",Nueva,Normal,"Importado desde CSV","Redmine Admin","Redmine Admin","2015-10-01 08:25","2015-10-01","",50,25,"2015-10-01 08:25",0,"","","Importado desde CSV","proyecto-pruebas"

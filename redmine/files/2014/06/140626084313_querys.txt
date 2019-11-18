@@ -1,0 +1,91 @@
+- Gráfico de barras para el gasto por tipo de hardware  
+
+  SELECT tipohardware,    SUM(precio_unidad * numero_unidades) costetTotal,
+    SUM(numero_unidades) numeroElmentos,
+    row_number() OVER (ORDER BY tipohardware) id
+  FROM
+    ( SELECT DISTINCT exped.cod_expediente,      orginf.codinfocor organismo,      cat.año año,
+      tipoHard.denominacion tipohardware,      cat.n_precio_prod precio_unidad,
+      cat.n_unidades_prod numero_unidades
+    FROM metacrija.inv_hardware hardw,
+      metacrija.inv_tipo_hardware tipoHard,
+      metacrija.inv_expediente_compra exped,
+      metacrija.inv_modelo modelo,
+      metacrija.inv_organismo org,
+      metacrija.inv_organismo_infocor orgInf,
+      ic_cat_productos cat,
+      metacrija.inv_bien_cbh_x_modelo bienmod,
+      metacrija.inv_bien_cbh bien
+    WHERE hardw.idexpediente      = exped.idexpediente
+    AND exped.cod_expediente      = cat.t_num_exp
+    AND modelo.idmodelo           = hardw.idmodelo
+    AND modelo.idtipo_hard        = tipohard.id
+    AND bienmod.idmodelo          = modelo.idmodelo
+    AND bien.idbien               = bienmod.idbien
+    AND exped.idorganismo         = org.idorganismo
+    AND org.cod_organismo         = orginf.codinfocor
+    AND cat.c_idprod_catalogo     = bien.cod_cbh
+    AND exped.bool_es_de_catalogo = '1'
+    AND exped.bool_es_de_infocor  = '1'
+    )
+  GROUP BY tipohardware
+  ORDER BY numeroElmentos DESC;
+
+
+
+
+- Gráfico de barras apiladas de gasto anual por proveedor 
+
+SELECT DISTINCT exped.cod_expediente,      prov.denominacion proveedor,      orginf.codinfocor codinfocor,
+      to_Number(cat.año) año,      (cat.n_precio_prod*cat.n_unidades_prod) importe,
+      tipoHard.denominacion tipohardware,      cat.n_precio_prod precio,      cat.n_unidades_prod unidades
+    FROM metacrija.inv_hardware hardw,
+      metacrija.inv_tipo_hardware tipoHard,
+      metacrija.inv_expediente_compra exped,
+      metacrija.inv_modelo modelo,
+      metacrija.inv_organismo org,
+      metacrija.inv_organismo_infocor orgInf,
+      ic_cat_productos cat,
+      metacrija.inv_proveedor prov
+    WHERE hardw.idexpediente      = exped.idexpediente
+    AND modelo.idmodelo           = hardw.idmodelo
+    AND modelo.idtipo_hard        = tipohard.id
+    AND exped.idorganismo         = org.idorganismo
+    AND org.cod_organismo         = orginf.codinfocor
+    AND exped.bool_es_de_catalogo = '1'
+    AND exped.bool_es_de_infocor  = '1'
+    AND exped.cod_expediente      = cat.t_num_exp
+    AND prov.idproveedor          = exped.idproveedor
+    )
+  GROUP BY proveedor,    año
+  ORDER BY proveedor,    año;
+
+
+
+
+- Gráfico de evolución temporal del número de elementos e importe por U.O. y Año
+
+SELECT codinfocor,    año,    SUM(unidades_prod) numero_unidades,    SUM(importe) importeAnual,
+    row_number() OVER (ORDER BY año) id
+  FROM
+    ( SELECT DISTINCT orginf.codinfocor codinfocor,      cat.t_num_exp,      cat.c_idprod_catalogo,
+      cat.n_unidades_prod unidades_prod,      cat.año año,
+      (cat.n_precio_prod * cat.n_unidades_prod) importe
+    FROM metacrija.inv_hardware hardw,
+      metacrija.inv_tipo_hardware tipoHard,
+      metacrija.inv_expediente_compra exped,
+      metacrija.inv_modelo modelo,
+      metacrija.inv_organismo org,
+      metacrija.inv_organismo_infocor orgInf,
+      ic_cat_productos cat
+    WHERE hardw.idexpediente      = exped.idexpediente
+    AND modelo.idmodelo           = hardw.idmodelo
+    AND modelo.idtipo_hard        = tipohard.id
+    AND exped.idorganismo         = org.idorganismo
+    AND org.cod_organismo         = orginf.codinfocor
+    AND exped.bool_es_de_catalogo = '1'
+    AND exped.bool_es_de_infocor  = '1'
+    AND exped.cod_expediente      = cat.t_num_exp
+    )
+  GROUP BY codinfocor,    año
+  ORDER BY codinfocor,    año; 

@@ -1,0 +1,218 @@
+2015-02-23 10:23:46 GMT +1:00 - # Funambol Outlook Sync Client v. 8.0.5 - LOG file
+
+10:23:46 GMT +1:00 [DEBUG] - Starting the Sync process...
+10:23:46 GMT +1:00 [DEBUG] - Set a lower priority to the process
+10:23:46 GMT +1:00 [DEBUG] - Set listeners
+10:23:46 GMT +1:00 [DEBUG] - Creating SyncSources...
+10:23:46 GMT +1:00 [DEBUG] - Creating the sync-mutex ("fol-SyncInProgress-1424683426")
+10:23:46 GMT +1:00 [DEBUG] - Start SyncClient::Sync() with 1 sources
+10:23:46 GMT +1:00 [INFO] - 
+ ************************** BEGIN of Synchronization session **************************
+10:23:46 GMT +1:00 [DEBUG] - Synchronization URL: https://10.240.240.52:8080/syncml/maria.villar.ext
+10:23:46 GMT +1:00 [INFO] - Preparing synchronization of appointment...
+10:23:46 GMT +1:00 [DEBUG] - Checking devinfo...
+10:23:46 GMT +1:00 [DEBUG] - devinfo hash: CqS6Ws6StGoOOAfl+Pdk5g==
+10:23:46 GMT +1:00 [DEBUG] - devinfo changed, retransmit
+10:23:46 GMT +1:00 [DEBUG] - Server capabilities are invalid (Server URL changed)
+10:23:46 GMT +1:00 [DEBUG] - Initialization message:
+10:23:46 GMT +1:00 [DEBUG] - User Agent = Funambol Outlook Sync Client v. 8.0.5
+10:23:46 GMT +1:00 [DEBUG] - Initialization sent.
+10:23:46 GMT +1:00 [DEBUG] - <?xml version="1.0" encoding="UTF-8"?>
+<SyncML>
+<SyncHdr><VerDTD>1.2</VerDTD>
+<VerProto>SyncML/1.2</VerProto>
+<SessionID>1424683426</SessionID>
+<MsgID>1</MsgID>
+<Target><LocURI>https://10.240.240.52:8080/syncml/maria.villar.ext</LocURI>
+</Target>
+<Source><LocURI>fol-SVZJTExBUkNQVzc6aXZpbGxhcmM=</LocURI>
+</Source>
+<Cred><Meta><Format xmlns="syncml:metinf">b64</Format>
+<Type xmlns="syncml:metinf">syncml:auth-basic</Type>
+</Meta>
+<Data>bWFyaWEudmlsbGFyLmV4dDpNYXZpY28wMQ==</Data>
+</Cred>
+<Meta><MaxMsgSize xmlns="syncml:metinf">250000</MaxMsgSize>
+</Meta>
+</SyncHdr>
+<SyncBody><Alert><CmdID>1</CmdID>
+<Data>200</Data>
+<Item><Target><LocURI>citas-vCal</LocURI>
+</Target>
+<Source><LocURI>appointment</LocURI>
+</Source>
+<Meta><Anchor xmlns="syncml:metinf"><Last>1424426823</Last>
+<Next>1424683426</Next>
+</Anchor>
+</Meta>
+</Item>
+</Alert>
+<Get><CmdID>2</CmdID>
+<Meta><Type xmlns="syncml:metinf">application/vnd.syncml-devinf+xml</Type>
+</Meta>
+<Item><Target><LocURI>./devinf12</LocURI>
+</Target>
+</Item>
+</Get>
+<Put><CmdID>3</CmdID>
+<Meta><Type xmlns="syncml:metinf">application/vnd.syncml-devinf+xml</Type>
+</Meta>
+<Item><Source><LocURI>./devinf12</LocURI>
+</Source>
+<Data><DevInf xmlns="syncml:devinf"><VerDTD>1.2</VerDTD>
+<Man>Funambol</Man>
+<Mod>Funambol Outlook Sync Client</Mod>
+<SwV>8.0.5</SwV>
+<DevID>fol-SVZJTExBUkNQVzc6aXZpbGxhcmM=</DevID>
+<DevTyp>workstation</DevTyp>
+<UTC/><SupportLargeObjs/><SupportNumberOfChanges/><DataStore><SourceRef>appointment</SourceRef>
+<Rx-Pref><CTType>text/x-vcalendar</CTType>
+<VerCT>1.0</VerCT>
+</Rx-Pref>
+<Rx><CTType>text/x-s4j-sife</CTType>
+<VerCT>1.0</VerCT>
+</Rx>
+<Rx><CTType>text/x-vcalendar</CTType>
+<VerCT>1.0</VerCT>
+</Rx>
+<Tx-Pref><CTType>text/x-vcalendar</CTType>
+<VerCT>1.0</VerCT>
+</Tx-Pref>
+<Tx><CTType>text/x-s4j-sife</CTType>
+<VerCT>1.0</VerCT>
+</Tx>
+<Tx><CTType>text/x-vcalendar</CTType>
+<VerCT>1.0</VerCT>
+</Tx>
+<SyncCap><SyncType>2</SyncType>
+<SyncType>1</SyncType>
+<SyncType>5</SyncType>
+<SyncType>3</SyncType>
+<SyncType>6</SyncType>
+<SyncType>4</SyncType>
+</SyncCap>
+</DataStore>
+<DataStore><SourceRef>contact</SourceRef>
+<Rx-Pref><CTType>text/x-vcard</CTType>
+<VerCT>2.1</VerCT>
+</Rx-Pref>
+<Rx><CTType>text/x-s4j-sifc</CTType>
+<VerCT>1.0</VerCT>
+</Rx>
+<Rx><CTType>text/x-vcard</CTType>
+<VerCT>2.1</VerCT>
+</Rx>
+<Tx-Pref><CTType>text/x-vcard</CTType>
+<VerCT>2.1</VerCT>
+</Tx-Pref>
+<Tx><CTType>text/x-s4j-sifc</CTType>
+<VerCT>1.0</VerCT>
+</Tx>
+<Tx><CTType>text/x-vcard</CTType>
+<VerCT>2.1</VerCT>
+</Tx>
+<SyncCap><SyncType>2</SyncType>
+<SyncType>1</SyncType>
+<SyncType>5</SyncType>
+<SyncType>3</SyncType>
+<SyncType>6</SyncType>
+<SyncType>4</SyncType>
+</SyncCap>
+</DataStore>
+<DataStore><SourceRef>note</SourceRef>
+<Rx-Pref><CTType>text/x-s4j-sifn</CTType>
+<VerCT>1.1</VerCT>
+</Rx-Pref>
+<Rx><CTType>text/x-s4j-sifn</CTType>
+<VerCT>1.0</VerCT>
+</Rx>
+<Rx><CTType>text/x-vnote</CTType>
+<VerCT>1.1</VerCT>
+</Rx>
+<Tx-Pref><CTType>text/x-s4j-sifn</CTType>
+<VerCT>1.1</VerCT>
+</Tx-Pref>
+<Tx><CTType>text/x-s4j-sifn</CTType>
+<VerCT>1.0</VerCT>
+</Tx>
+<Tx><CTType>text/x-vnote</CTType>
+<VerCT>1.1</VerCT>
+</Tx>
+<SyncCap><SyncType>2</SyncType>
+<SyncType>1</SyncType>
+<SyncType>5</SyncType>
+<SyncType>3</SyncType>
+<SyncType>6</SyncType>
+<SyncType>4</SyncType>
+</SyncCap>
+</DataStore>
+<DataStore><SourceRef>task</SourceRef>
+<Rx-Pref><CTType>text/x-s4j-sift</CTType>
+<VerCT>1.1</VerCT>
+</Rx-Pref>
+<Rx><CTType>text/x-s4j-sift</CTType>
+<VerCT>1.0</VerCT>
+</Rx>
+<Rx><CTType>text/x-vcalendar</CTType>
+<VerCT>1.0</VerCT>
+</Rx>
+<Tx-Pref><CTType>text/x-s4j-sift</CTType>
+<VerCT>1.1</VerCT>
+</Tx-Pref>
+<Tx><CTType>text/x-s4j-sift</CTType>
+<VerCT>1.0</VerCT>
+</Tx>
+<Tx><CTType>text/x-vcalendar</CTType>
+<VerCT>1.0</VerCT>
+</Tx>
+<SyncCap><SyncType>2</SyncType>
+<SyncType>1</SyncType>
+<SyncType>5</SyncType>
+<SyncType>3</SyncType>
+<SyncType>6</SyncType>
+<SyncType>4</SyncType>
+</SyncCap>
+</DataStore>
+</DevInf>
+</Data>
+</Item>
+</Put>
+<Final/></SyncBody>
+</SyncML>
+10:23:46 GMT +1:00 [DEBUG] - Connecting to 10.240.240.52:8080
+10:23:46 GMT +1:00 [DEBUG] - Requesting resource /syncml/maria.villar.ext
+10:23:46 GMT +1:00 [DEBUG] - Sending data of size 3895...
+10:24:46 GMT +1:00 [INFO] - HttpSendRequest error 12157: Error en el soporte del canal seguro
+10:24:46 GMT +1:00 [INFO] - Network error writing data from client: retry 1 time...
+10:24:46 GMT +1:00 [DEBUG] - Sending data of size 3895...
+10:25:46 GMT +1:00 [INFO] - HttpSendRequest error 12157: Error en el soporte del canal seguro
+10:25:46 GMT +1:00 [INFO] - Network error writing data from client: retry 2 time...
+10:25:46 GMT +1:00 [DEBUG] - Sending data of size 3895...
+10:26:46 GMT +1:00 [INFO] - HttpSendRequest error 12157: Error en el soporte del canal seguro
+10:26:46 GMT +1:00 [INFO] - Network error writing data from client: retry 3 time...
+10:26:46 GMT +1:00 [ERROR] - HTTP request error: 3 attempts failed.
+10:26:46 GMT +1:00 [DEBUG] - Error occurred in sync: code 3 = HTTP request error: 3 attempts failed.
+10:26:46 GMT +1:00 [ERROR] - Error in preparing sync: HTTP request error: 3 attempts failed.
+10:26:46 GMT +1:00 [INFO] - 
+============================================================
+================   SYNCHRONIZATION REPORT   ================
+============================================================
+
+SYNCHRONIZATION COMPLETED WITH ERRORS
+-------------------------------------
+Last error message = "HTTP request error: 3 attempts failed."
+Last error code    = 2001
+
+Calendar:
+---------
+    Not synced.
+
+
+10:26:46 GMT +1:00 [DEBUG] - Saving configuration to winRegistry
+10:26:46 GMT +1:00 [DEBUG] - Writing configuration settings to the management tree
+10:26:47 GMT +1:00 [DEBUG] - Releasing sync-mutex...
+10:26:47 GMT +1:00 [DEBUG] - Sync-mutex released - closing handle.
+10:26:47 GMT +1:00 [DEBUG] - Delete SyncSources...
+10:26:47 GMT +1:00 [INFO] - Syncronization process completed with errors (code = 2001).
+10:26:50 GMT +1:00 [DEBUG] - Current Timezone = (UTC+01:00) Bruselas, Copenhague, Madrid, París
+10:26:50 GMT +1:00 [DEBUG] - Reading configuration settings from the management tree

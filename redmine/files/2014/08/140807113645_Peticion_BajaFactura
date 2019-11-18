@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:giro="http://juntadeandalucia.es/GIRO">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <giro:MT_RF_BajaFactura_Request>
+         <CABECERA>
+            <!--Optional:-->
+            <IDINT/>
+            <SISTEMA_ORIGEN>ERISG3</SISTEMA_ORIGEN>
+            <USUARIO>ZPI_ERISG3</USUARIO>
+         </CABECERA>
+         <!--Optional:-->
+         <Lista>
+            <!--1 or more repetitions:-->
+            <item>
+               <IDINT/>
+               <USUARIO>ZPI_ERISG3</USUARIO>
+               <NUMERO_FACTURA>AA150</NUMERO_FACTURA>
+               <ACREEDOR>
+                  <!--Optional:-->
+                  <INTERLOCUTOR_COMERCIAL/>
+                  <!--Optional:-->
+                  <NIF_CIF>A04010344</NIF_CIF>
+                  <!--Optional:-->
+                  <NOMBRE/>
+                  <!--Optional:-->
+                  <IDENTIFICADOR/>
+                  <!--Optional:-->
+                  <CLASE_IDENTIFICADOR/>
+               </ACREEDOR>
+               <EJERCICIO>2014</EJERCICIO>
+               <SOCIEDAD>1000</SOCIEDAD>
+               <JUSTIFICACION>documentación insuficiente</JUSTIFICACION>
+            </item>
+         </Lista>
+      </giro:MT_RF_BajaFactura_Request>
+   </soapenv:Body>
+</soapenv:Envelope>

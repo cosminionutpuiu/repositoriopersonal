@@ -1,0 +1,7 @@
+
+ Datos para conectar con el entorno de Preproducción de GUIA para pruebas de CMTIC:
+-----------------------------------------------------------------------------------------
+host= directoriovirtual.pre.i-administracion.junta-andalucia.es
+puerto= 389 (o bien con SSL por el puerto 636, que es lo único permitido en el entorno de Producción)
+userDn= cn=cs_cmtic_001,o=servicios,o=identidades,o=comun,dc=juntadeandalucia,dc=es
+password= CMtic2014

@@ -1,0 +1,495 @@
+﻿<html>
+	<script type="text/javascript" src="./javascriptVisor/Mapea/Mapea.js"></script>
+	<script type="text/javascript">OpenLayers.Lang.setCode('es');</script>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+	<title>Andalucía Transversal - Visor</title>
+    <style type="text/css">
+      /* OVERRIDE MAPEA:*/
+      .mapea-contexts-wrapper {top:auto !important; right:auto !important; bottom:5px !important; left:5px !important; }
+      
+      /* ESTILOS PROPIOS*/  
+      
+      /* SIGC: Elminado 'margin:0px' de la siguiente linea */  
+	  html, body, form { padding:0px; width:100%; height:100%;}
+      .OverlayMapa {position:absolute; width:100%; height:100%; top:0px; left:0px; z-index:999;}
+
+      .map, .zona_mapa {height: 100%; width: 100%;}
+      #dialog {display:none;}
+      .ui-dialog {max-height:80%; max-width:80%;}
+      #info {position:absolute; z-index:999; bottom:10px; left:230px; display:block; width:280px; height:80px; padding:10px 10px 10px 10px; overflow:hidden;  text-align:center; text-decoration:none; color:#ffffff; background-color:red;}
+      .BotonCapa {-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;}
+      
+      .BotonCapa_Emergencias {position:absolute; z-index:999; bottom:10px; left:10px; display:block; width:100px; height:100px; line-height:100px; text-align:center; text-decoration:none; color:#ffffff; background-color:grey;}
+      .BotonCapa_Emergencias input {display:none;}
+      .BotonCapa_Emergencias input[type=checkbox] + label {display:block;width:100%; height:100%; cursor:pointer; }
+      .BotonCapa_Emergencias input[type=checkbox]:checked + label { background-color:Green;}
+ 
+      
+      .ContenedorBotones {position:absolute; z-index:999; top:0px; right:0px; display:block;width:400px; height:100%; }
+      .ContenedorBotones,
+      .GrupoBotones_1,
+      .GrupoBotones_2,
+      .GrupoBotones_3,
+      .GrupoBotones_4  {-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;  pointer-events:none; /**/ }
+
+      .GrupoBotones_1,
+      .GrupoBotones_2,
+      .GrupoBotones_3,
+      .GrupoBotones_4  {  position:absolute;  top:95px; bottom:0px; /**/  width:90px;  /* height:100%;  */ overflow:hidden;  /* border:1px solid blue;*/ }
+
+      .GrupoBotones_1 {left:0px;}
+      .GrupoBotones_2 {left:95px;}
+      .GrupoBotones_3 {left:190px;}
+      .GrupoBotones_4 {left:285px;}
+      
+
+      .BotonCapa_1_0,
+      .BotonCapa_2_0,
+      .BotonCapa_3_0,
+      .BotonCapa_4_0 {float:left;margin-right:5px;}
+
+/*
+      .ContenedorBotones {}
+      .GrupoBotones_1 {border:1px solid blue; margin:0px 0px 0px 0px; padding: 0px 0px 0px 0px;}
+*/
+      .btn { cursor:pointer; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;}   
+      .btn { /* pointer-events:none; */pointer-events:all;  display:block; width:90px; height:90px; line-height:90px; text-align:center; text-decoration:none; color:#ffffff; background: transparent none no-repeat top left;}
+      .btn input {display:none;}
+      .btn input[type=checkbox] + label {display:block;width:84px; height:84px; margin:2px 0px 0px 4px; cursor:pointer; background: transparent none no-repeat top left; }
+           
+           
+            
+      .BotonCapa_1_0 {background-image: url(http://www.tomascalvo.com:8080/mapeajs/img/90/i1_00.png);}      
+      .BotonCapa_1_1 {background-image: url(http://www.tomascalvo.com:8080/mapeajs/img/90/i1_01.png);}
+      .BotonCapa_1_2 {background-image: url(http://www.tomascalvo.com:8080/mapeajs/img/90/i1_02.png);}
+      .BotonCapa_1_3 {background-image: url(http://www.tomascalvo.com:8080/mapeajs/img/90/i1_03.png);}
+      .BotonCapa_1_4 {background-image: url(http://www.tomascalvo.com:8080/mapeajs/img/90/i1_04.png);}
+      .BotonCapa_1_5 {background-image: url(http://www.tomascalvo.com:8080/mapeajs/img/90/i1_05.png);}
+      .BotonCapa_1_6 {background-image: url(http://www.tomascalvo.com:8080/mapeajs/img/90/i1_06.png);}
+      .BotonCapa_1_7 {background-image: url(http://www.tomascalvo.com:8080/mapeajs/img/90/i1_07.png);}
+      .BotonCapa_1_8 {background-image: url(http://www.tomascalvo.com:8080/mapeajs/img/90/i1_08.png);}
+      .BotonCapa_1_9 {background-image: url(http://www.tomascalvo.com:8080/mapeajs/img/90/i1_09.png);}
+      .BotonCapa_1_10 {background-image: url(http://www.tomascalvo.com:8080/mapeajs/img/90/i1_10.png);}
+      .BotonCapa_1_11 {background-image: url(http://www.tomascalvo.com:8080/mapeajs/img/90/i1_11.png);}
+      .BotonCapa_2_0 {background-image: url(http://www.tomascalvo.com:8080/mapeajs/img/90/i2_00.png);} 
+      .BotonCapa_2_1 {background-image: url(http://www.tomascalvo.com:8080/mapeajs/img/90/i2_01.png);}
+      .BotonCapa_2_2 {background-image: url(http://www.tomascalvo.com:8080/mapeajs/img/90/i2_02.png);}
+      .BotonCapa_3_0 {background-image: url(http://www.tomascalvo.com:8080/mapeajs/img/90/i3_00.png);}
+      .BotonCapa_3_1 {background-image: url(http://www.tomascalvo.com:8080/mapeajs/img/90/i3_01.png);}
+      .BotonCapa_3_2 {background-image: url(http://www.tomascalvo.com:8080/mapeajs/img/90/i3_02.png);}
+      .BotonCapa_3_3 {background-image: url(http://www.tomascalvo.com:8080/mapeajs/img/90/i3_03.png);}
+      .BotonCapa_3_4 {background-image: url(http://www.tomascalvo.com:8080/mapeajs/img/90/i3_04.png);}
+      .BotonCapa_4_0 {background-image: url(http://www.tomascalvo.com:8080/mapeajs/img/90/i4_00.png);}
+      .BotonCapa_4_1 {background-image: url(http://www.tomascalvo.com:8080/mapeajs/img/90/i4_01.png);}
+      .BotonCapa_4_2 {background-image: url(http://www.tomascalvo.com:8080/mapeajs/img/90/i4_02.png);}
+      .BotonCapa_4_3 {background-image: url(http://www.tomascalvo.com:8080/mapeajs/img/90/i4_03.png);}
+      .BotonCapa_4_4 {background-image: url(http://www.tomascalvo.com:8080/mapeajs/img/90/i4_04.png);}
+            
+      
+      .BotonCapa_1_1 input[type=checkbox]:checked + label,
+      .BotonCapa_1_2 input[type=checkbox]:checked + label,
+      .BotonCapa_1_3 input[type=checkbox]:checked + label,
+      .BotonCapa_1_4 input[type=checkbox]:checked + label,
+      .BotonCapa_1_5 input[type=checkbox]:checked + label,
+      .BotonCapa_1_6 input[type=checkbox]:checked + label,
+      .BotonCapa_1_7 input[type=checkbox]:checked + label,
+      .BotonCapa_1_8 input[type=checkbox]:checked + label,
+      .BotonCapa_1_9 input[type=checkbox]:checked + label,
+      .BotonCapa_1_10 input[type=checkbox]:checked + label,
+      .BotonCapa_1_11 input[type=checkbox]:checked + label,
+      .BotonCapa_2_1 input[type=checkbox]:checked + label,
+      .BotonCapa_2_2 input[type=checkbox]:checked + label,
+      .BotonCapa_3_1 input[type=checkbox]:checked + label,
+      .BotonCapa_3_2 input[type=checkbox]:checked + label,
+      .BotonCapa_3_3 input[type=checkbox]:checked + label,
+      .BotonCapa_3_4 input[type=checkbox]:checked + label,
+      .BotonCapa_4_1 input[type=checkbox]:checked + label,
+      .BotonCapa_4_2 input[type=checkbox]:checked + label,
+      .BotonCapa_4_3 input[type=checkbox]:checked + label,
+      .BotonCapa_4_4 input[type=checkbox]:checked + label {background-image:url(http://www.tomascalvo.com:8080/mapeajs/img/90/Seleccionado.png);}
+      
+      
+      
+    </style>
+</head>
+
+<body>
+
+    <!--
+    <div id="dialog" title="Información detallada">
+        <div class="Content">
+        </div>        
+    </div>
+    -->
+    
+    <div class="ContenedorBotones">
+        <div class="btn BotonCapa_1_0" title="Grupo de Capas 1">
+        </div>         
+        <div class="GrupoBotones_1">       
+            <div class="btn BotonCapa_1_1">
+                <input id="chkCapa_1_1" type="checkbox" checked />
+                <label for="chkCapa_1_1" title="Vuelo americano del  56"></label>        
+            </div>
+            <div class="btn BotonCapa_1_2">
+                <input id="chkCapa_1_2" type="checkbox" checked />
+                <label for="chkCapa_1_2" title="Ortofoto Blanco y Negro de 2001"></label>        
+            </div>
+            <div class="btn BotonCapa_1_3">
+                <input id="chkCapa_1_3" type="checkbox" checked />
+                <label for="chkCapa_1_3" title="Ortografía Color de 2010-2011"></label>        
+            </div>
+            <div class="btn BotonCapa_1_4">
+                <input id="chkCapa_1_4" type="checkbox" checked />
+                <label for="chkCapa_1_4" title="Límites administrativos"></label>        
+            </div>       
+            <div class="btn BotonCapa_1_5">
+                <input id="chkCapa_1_5" type="checkbox" checked />
+                <label for="chkCapa_1_5" title="Fondo Orográfico SIOSE"></label>        
+            </div>  
+            <!--  
+            <div class="btn BotonCapa_1_6">
+                <input id="chkCapa_1_6" type="checkbox" checked />
+                <label for="chkCapa_1_6"></label>        
+            </div>    
+            <div class="btn BotonCapa_1_7">
+                <input id="chkCapa_1_7" type="checkbox" checked />
+                <label for="chkCapa_1_7"></label>        
+            </div>    
+            -->
+            <div class="btn BotonCapa_1_8">
+                <input id="chkCapa_1_8" type="checkbox" checked />
+                <label for="chkCapa_1_8" title="Población"></label>        
+            </div>    
+            <div class="btn BotonCapa_1_9">
+                <input id="chkCapa_1_9" type="checkbox" checked />
+                <label for="chkCapa_1_9" title="Unidades fisionómicas de paisaje en 2009"></label>        
+            </div>    
+            <div class="btn BotonCapa_1_10">
+                <input id="chkCapa_1_10" type="checkbox" checked />
+                <label for="chkCapa_1_10" title="Mapa de Suelos en 2005"></label>        
+            </div>    
+            <div class="btn BotonCapa_1_11">
+                <input id="chkCapa_1_11" type="checkbox" checked />
+                <label for="chkCapa_1_11" title="Unidades Geoestructurales"></label>        
+            </div>                                                                                             
+        </div>
+        
+        <div class="btn BotonCapa_2_0"  title="Grupo de Capas 2">
+        </div>         
+        <div class="GrupoBotones_2">       
+            <div class="btn BotonCapa_2_1">
+                <input id="chkCapa_2_1" type="checkbox" checked />
+                <label for="chkCapa_2_1" title="Sistema de Ciudades del POTA"></label>        
+            </div>
+            <div class="btn BotonCapa_2_2">
+                <input id="chkCapa_2_2" type="checkbox" checked />
+                <label for="chkCapa_2_2" title="Patrimonio Territorial del POTA"></label>        
+            </div>
+        </div>    
+        
+        
+        <div class="btn BotonCapa_3_0"  title="Grupo de Capas 3">
+        </div>         
+        <div class="GrupoBotones_3">       
+            <div class="btn BotonCapa_3_1">
+                <input id="chkCapa_3_1" type="checkbox" checked />
+                <label for="chkCapa_3_1" title="Delimitación de las Áreas Metropolitanas Andaluzas"></label>        
+            </div>
+            <div class="btn BotonCapa_3_2">
+                <input id="chkCapa_3_2" type="checkbox" checked />
+                <label for="chkCapa_3_2" title="Ocupación del suelo de las Áreas Metropolitanas Andaluzas"></label>        
+            </div>
+           <div class="btn BotonCapa_3_3">
+                <input id="chkCapa_3_3" type="checkbox" checked />
+                <label for="chkCapa_3_3" title="{Re} Programa"></label>        
+            </div>
+           <div class="btn BotonCapa_3_4">
+                <input id="chkCapa_3_4" type="checkbox" checked />
+                <label for="chkCapa_3_4" title="Espacios en Espera"></label>        
+            </div>                        
+        </div>    
+        
+ 
+         <div class="btn BotonCapa_4_0"  title="Grupo de Capas 4"> 
+        </div>         
+        <div class="GrupoBotones_4">       
+            <div class="btn BotonCapa_4_1">
+                <input id="chkCapa_4_1" type="checkbox" checked />
+                <label for="chkCapa_4_1" title="La Ciudad Amable"></label>        
+            </div>
+            <div class="btn BotonCapa_4_2">
+                <input id="chkCapa_4_2" type="checkbox" checked />
+                <label for="chkCapa_4_2" title="Emergentes"></label>        
+            </div>
+           <div class="btn BotonCapa_4_3">
+                <input id="chkCapa_4_3" type="checkbox" checked />
+                <label for="chkCapa_4_3" title="Emergencias"></label>        
+            </div>
+           <div class="btn BotonCapa_4_4">
+                <input id="chkCapa_4_4" type="checkbox" checked />
+                <label for="chkCapa_4_4" title="PREP"></label>        
+            </div>                        
+        </div>    
+        
+    </div>
+  
+
+
+
+    <div id="zona_mapa"></div>
+</body>
+
+<script type="text/javascript">
+
+// Extendemos el array añadiéndole el método "contains", que verifica si el objeto indicado está contenido en el array
+Array.prototype.contains = function(obj) {
+    var i = this.length;
+    while (i--) {
+        if (this[i] === obj) {
+            return true;
+        }
+    }
+    return false;
+}
+
+
+
+
+// Listado de capas en el webservice de Cortijos, Haciendas y Lagares
+var Capas_WMSCortijos = ['SectoresAndalucia','Cortijos_Haciendas_Lagares'
+,'SectoresAlmeria','Cortijos_Haciendas_Lagares_Almeria'
+,'SectoresCadiz','Cortijos_Haciendas_Lagares_Cadiz'
+,'SectoresCordoba','Cortijos_Haciendas_Lagares_Cordoba'
+,'SectoresGranada','Cortijos_Haciendas_Lagares_Granada'
+,'SectoresHuelva','Cortijos_Haciendas_Lagares_Huelva'
+,'SectoresJaen','Cortijos_Haciendas_Lagares_Jaen'
+,'SectoresMalaga','Cortijos_Haciendas_Lagares_Malaga'
+,'SectoresSevilla','Cortijos_Haciendas_Lagares_Sevilla'];
+
+var Capas_WMS1956 = ['ortofoto_1956' , 'fechas_vuelo' , 'distribucion_hojas_10000'];
+
+// var Capas_WMSLimitesAdministrativos = ['limite_administrativo','provincias','terminos_municipales' ,'barrios_urbanos' ,'codigos_postales' ,'secciones_censales' ,'entidades_locales','partidos_judiciales' ,'utedlte','demarcaciones_escolares' ,'demarcaciones_sanitarias' ,'demarcaciones_deportivas','demarcaciones_servicios_sociales' ,'demarcaciones_agrarias' ,'grupos_desarrollo_rural' ,'pot_andalucia' ,'limites_marinos'];
+var Capas_WMSLimitesAdministrativos = ['provincias','terminos_municipales' ];
+var Capas_WMS_SIOSE = ['sombras_siose_continuo'];
+
+//var Capas_WMSPoblacion = ['nc_pob11_pt' ,'pb_cm11_pt' ,'pb_cm50_08_pt' ,'pb_cm50_pt' ,'pb_cncm_07_pt' ,'pb_dcm11_pt' ,'pb_dsc08' ,'pb_ext_cm08_pt' ,'pb_idpj_cm08_pt' ,'pb_idpj_cm86_pt' ,'pb_ienv_mun08_pt' ,'pb_ienv_sc08_pol' ,'pb_iext_cm07_pt' ,'pb_iext_cm90_pt' ,'pb_nfm_cm07' ,'pb_nfm_cm75' ,'pb_pex_mun08_pt' ,'pb_pex_mun98_pt' ,'pb_pex_sc08_pol' ,'pb_sc91_08_pol' ,'pb_tbm_cm07_pt' ,'pb_tbn_cm07' ,'pb_tbn_cm75_pt' ,'pb_tsm_cm07_pt'];
+var Capas_WMSPoblacion = ['pb_tsm_cm07_pt', 'pb_dcm11_pt' ,'pb_cm50_08_pt' ,'pb_cm11_pt','nc_pob11_pt'];
+var Capas_WMSPaisaje = ['unid_fisio_paisaj_09', 'un_fis_pais_09_raster' ];	
+var Capas_WMSUsos = ['resto_usos' ,'pastizales' ,'matorrales_halofiticos' ,'matorral_serial' ,'matorral_noble' ,'bosques_ribera' ,'frondosas_coniferas' ,'eucaliptales' ,'pinsapares' ,'pinares_mediterraneos' ,'frondosas' ,'quercus' ,'lim_admin' ];	                      
+
+	
+// NOTA: Si no cargamos los wmcfiles, nos salen todos coordinados, aunque con las ortofotos se nos centra el zoom diferente que sin ellas	
+//      wmcfile:['http://www.callejerodeandalucia.es/wmc/context_cdau_callejero.xml*Callejero','http://www.callejerodeandalucia.es/wmc/context_cdau_satelite.xml*Satélite'],
+var sigcMap = new Mapea.SigcMapea({
+div: 'zona_mapa',
+projection: 'EPSG:25830*m',
+wmcfile:['http://www.callejerodeandalucia.es/wmc/context_cdau_callejero.xml*Callejero','http://www.callejerodeandalucia.es/wmc/context_cdau_satelite.xml*Satélite'],
+layers:[
+        'KML*TomKmlTest*http://localhost:8080/mapeajs_cfv/kml/doc_tomascalvo.kml*true'   
+        
+        // 1.1 Ortofoto:   FALLA: Se nos centra en argelia y muestra los recuadros de las ortofotos, pero no las fotos (en mapea REST sin cartografía de fondo si las muestra)
+        //,'WMS_FULL*http://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_Ortofoto_Andalucia_1956?LAYERS=ortofoto_1956&format=image/jpeg&transparent=false&*true'
+        // 
+        //,'WMS_FULL*http://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_Ortofoto_Andalucia_1956?*true'
+
+
+          
+        // 1.4: Límites Administrativos
+        // http://mapea-sigc.juntadeandalucia.es/mapea3//?wmcfile=http://mapea-sigc.juntadeandalucia.es/Componente/mapConfig/contextCallejero.xml*Callejero&layers=WMS*provincias*http://www.ideandalucia.es/wms/dea100_divisiones_administrativas?*provincias*true&controls=panzoombar,layerswitcher,mouse,navtoolbar&maxextent=90789.760200141,4002481.3860951,627710.23979986,4257518.6139049
+        // http://mapea-sigc.juntadeandalucia.es/mapea3//?wmcfile=http://mapea-sigc.juntadeandalucia.es/Componente/mapConfig/contextCallejero.xml*Callejero&layers=WMS*terminos_municipales*http://www.ideandalucia.es/wms/dea100_divisiones_administrativas?*terminos_municipales*true&controls=panzoombar,layerswitcher,mouse,navtoolbar&maxextent=90789.760200141,4002481.3860951,627710.23979986,4257518.6139049
+        , 'WMS*provincias*http://www.ideandalucia.es/wms/dea100_divisiones_administrativas?*provincias*true'
+    /*     , 'WMS*terminos_municipales*http://www.ideandalucia.es/wms/dea100_divisiones_administrativas?*terminos_municipales*true'
+        // 1.5: orográfico SIOSE  Fondo Orográfico SIOSE
+        //http://mapea-sigc.juntadeandalucia.es/mapea3//?wmcfile=http://mapea-sigc.juntadeandalucia.es/Componente/mapConfig/contextCallejero.xml*Callejero&layers=WMS*sombras_siose_continuo*http://www.ideandalucia.es/wms/sombras_siose?*sombras_siose_continuo*true&controls=panzoombar,layerswitcher,mouse,navtoolbar&maxextent=90789.760200141,4002481.3860951,627710.23979986,4257518.6139049
+        ,'WMS_FULL*http://www.ideandalucia.es/wms/sombras_siose?*true'        
+        // (1.6 y 1.7 no existen)
+        // 1.8: Población        
+        //,'WMS_FULL*http://www.juntadeandalucia.es/institutodeestadisticaycartografia/geoserver-ieca/pob/ows?*true'
+        //, 'WMS*Saldo migratorio por municipios en Andalucía Año 2007*http://www.juntadeandalucia.es/institutodeestadisticaycartografia/geoserver-ieca/pob/ows?*pb_tsm_cm07_pt*true'
+        //, 'WMS*Densidad de población en Andalucía Año 2011*http://www.juntadeandalucia.es/institutodeestadisticaycartografia/geoserver-ieca/pob/ows?*pb_dcm11_pt*false'
+        //, 'WMS*Crecimiento de la población por municipios en Andalucía período 1950-2008*http://www.juntadeandalucia.es/institutodeestadisticaycartografia/geoserver-ieca/pob/ows?*pb_cm50_08_pt*false'
+        //, 'WMS*La población por municipios en Andalucía Año 2011*http://www.juntadeandalucia.es/institutodeestadisticaycartografia/geoserver-ieca/pob/ows?*pb_cm11_pt*false'
+        //, 'WMS*La población por núcleos en Andalucía Año 2011*http://www.juntadeandalucia.es/institutodeestadisticaycartografia/geoserver-ieca/pob/ows?*nc_pob11_pt*false'        
+        , 'WMS*pb_tsm_cm07_pt*http://www.juntadeandalucia.es/institutodeestadisticaycartografia/geoserver-ieca/pob/ows?*pb_tsm_cm07_pt*true'
+        , 'WMS*pb_dcm11_pt*http://www.juntadeandalucia.es/institutodeestadisticaycartografia/geoserver-ieca/pob/ows?*pb_dcm11_pt*true'
+        , 'WMS*pb_cm50_08_pt*http://www.juntadeandalucia.es/institutodeestadisticaycartografia/geoserver-ieca/pob/ows?*pb_cm50_08_pt*true'
+        , 'WMS*pb_cm11_pt*http://www.juntadeandalucia.es/institutodeestadisticaycartografia/geoserver-ieca/pob/ows?*pb_cm11_pt*true'
+        , 'WMS*nc_pob11_pt*http://www.juntadeandalucia.es/institutodeestadisticaycartografia/geoserver-ieca/pob/ows?*nc_pob11_pt*true'
+        // 1.9: Paisaje
+        ,'WMS_FULL*http://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_unidades_fisionomicas_paisaje_2009?*true'
+        // 1.10: Usos
+        ,'WMS_FULL*http://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_Vegetacion_Natural_Andalucia?*true'
+
+        // 1.11: Geológico: FALLA!!!!
+        //,'WMS_FULL*http://www.juntadeandalucia.es/innovacioncienciayempresa/servicios_sigma/wmsmap/400000?*true'
+ 
+        */
+        
+        //
+                
+]
+});
+sigcMap.addControls(['panzoombar','navtoolbar','measurebar']);
+sigcMap.setCenter(204711,4048342);
+sigcMap.setZoom(0);
+sigcMap.addGetfeatureinfo('gml');
+// sigcMap.addGetfeatureinfo('kml');
+
+var OLmap = sigcMap.getOlmap();
+
+/* SIGC: Se llama a la función que establece el maxextent adecuado para las capas cacheadas */
+var maxExtentEnvolved = new OpenLayers.Bounds(96388.1179, 3959795.9442, 621889.937, 4299792.107);
+setMaxExtent();
+sigcMap.addEventHandler("addlayer", setLayerMaxExtent);
+
+function setMaxExtent(){
+    for (i=0;i<OLmap.getNumLayers();i++){
+    var layer = OLmap.layers[i];
+     layer.maxExtent = maxExtentEnvolved;
+     layer.redraw();
+    }
+
+}
+
+function setLayerMaxExtent(e){
+   e.layer.maxExtent = maxExtentEnvolved; 
+   e.layer.redraw();
+}
+/* fin SIGC */
+
+//InfoCapas();
+
+
+
+	
+function zoomMas(){
+    //var Capa_1 = sigMap.getLayer(1);
+    alert ("Capa_1:" + Capa_1);
+    // sigcMap.setZoom(OLmap.getZoom()+1);
+    // sigcMap.
+	//OLmap.zoomIn();
+}
+
+
+
+// Establecemos el estado inicial de los selectores de capa
+$(function(){
+    $(".GrupoBotones_1, .GrupoBotones_2, .GrupoBotones_3, .GrupoBotones_4").hide();
+})
+
+
+$(".BotonCapa_1_0").click( function () {
+    $(".GrupoBotones_1").toggle();
+});
+
+$(".BotonCapa_2_0").click( function () {
+    $(".GrupoBotones_2").toggle();
+});
+
+$(".BotonCapa_3_0").click( function () {
+    $(".GrupoBotones_3").toggle();
+});
+
+$(".BotonCapa_4_0").click( function () {
+    $(".GrupoBotones_4").toggle();
+});
+
+
+
+
+$("#chkCapa_1_1").change( function(){
+    // EstableceVisibilidadCapa('TomKmlTest', $(this).is(':checked'));
+    EstableceVisibilidadCapas_Conjunto(Capas_WMS1956, $(this).is(':checked'));      
+});
+
+$("#chkCapa_1_2").change( function(){
+    // EstableceVisibilidadCapa('Grandes Usos 07', $(this).is(':checked'));
+    //InfoCapas();
+    //EstableceVisibilidadCapa('Mapea.Control.UniqueSelectFeature_94_container', $(this).is(':checked'));
+    EstableceVisibilidadCapas_Conjunto(Capas_WMSCortijos, $(this).is(':checked'));
+    
+});
+
+
+$("#chkCapa_1_4").change( function(){
+    EstableceVisibilidadCapas_Conjunto(Capas_WMSLimitesAdministrativos, $(this).is(':checked'));    
+});
+
+$("#chkCapa_1_5").change( function(){
+    EstableceVisibilidadCapas_Conjunto(Capas_WMS_SIOSE, $(this).is(':checked'));    
+});
+
+$("#chkCapa_1_8").change( function(){
+    EstableceVisibilidadCapas_Conjunto(Capas_WMSPoblacion, $(this).is(':checked'));    
+});
+
+$("#chkCapa_1_9").change( function(){
+    EstableceVisibilidadCapas_Conjunto(Capas_WMSPaisaje, $(this).is(':checked'));    
+});
+
+$("#chkCapa_1_10").change( function(){
+    EstableceVisibilidadCapas_Conjunto(Capas_WMSUsos, $(this).is(':checked'));    
+});
+
+
+
+function EstableceVisibilidadCapa(NombreCapa, visible) {
+    // var visible = false;    
+    // if( $(this).is(':checked') ) { visible = true; } 
+    var map = OLmap;
+    for(var i=0;i<map.layers.length;i++)
+    {    
+        // if (map.layers[i].name == 'TomKmlTest') { 
+        if (map.layers[i].name == NombreCapa) {                
+            var layer = map.layers[i];
+            layer.setVisibility(visible);             
+            layer.redraw();                       
+        }   
+    }
+}
+
+
+
+ 
+ function EstableceVisibilidadCapas_Conjunto(NombreArrayCapas, visible) {
+    // var visible = false;    
+    // if( $(this).is(':checked') ) { visible = true; } 
+    var map = OLmap;
+    for(var i=0;i<map.layers.length;i++)
+    {    
+        // if (map.layers[i].name == 'TomKmlTest') { 
+        //if (map.layers[i].name == NombreCapa) { 
+        // if ($.inArray(map.layers[i].name, NombreArrayCapas)) {
+        //if (NombreArrayCapas.contains(map.layers[i].id)) {      
+        if (NombreArrayCapas.contains(map.layers[i].name)) {           
+            //alert(map.layers[i].name);
+            var layer = map.layers[i];
+            layer.setVisibility(visible);             
+            layer.redraw();                       
+        }   
+    }
+}
+
+
+function InfoCapas() {
+    // var visible = false;    
+    // if( $(this).is(':checked') ) { visible = true; } 
+    var map = OLmap;
+    var s = "";
+    for(var i=0;i<map.layers.length;i++)
+    {            
+            // if (map.layers[i].name == 'TomKmlTest') {                
+            // var layer = map.layers[i];   
+            var Proyeccion = map.layers[i].projection;
+            s = s + map.layers[i].name + "     > " + Proyeccion +  " \r\n"; 
+            // s = s + map.layers[i].name +  " \r\n";                                   
+             //s = s + map.layers[i].id +  " \r\n";  
+    }
+    // alert(s);
+    console.log(s);
+}
+
+   
+</script>
+</html>

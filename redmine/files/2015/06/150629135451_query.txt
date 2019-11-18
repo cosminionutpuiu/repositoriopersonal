@@ -1,0 +1,4 @@
+use EVENT_KS;
+create index payload_message_direction_idx on CAPTURAR_MENSAJE(payload_message_direction);
+create index payload_service_name_idx on CAPTURAR_MENSAJE(payload_service_name);
+select payload_message_id, meta_remote_address, payload_service_name from CAPTURAR_MENSAJE where payload_message_direction='IN' and payload_service_name='INT_PRV_RepositorioFactura';

@@ -1,0 +1,105 @@
+ Post en blog del grupo "Gestión de Identidades"
+-------------------------------------------------
+ Deben aparecer:
+    * Objetivos del proyecto
+    * Fases del proyecto
+    * Componentes software
+    * Tecnologías
+-------------------------------------------------
+
+NOTA: En las notificaciones de la Red Profesionales sobre los nuevos post aparecen el Título y la Entradilla del post. Ejemplo:
+
+ - ASUNTO: 
+Una nueva entrada de blog
+
+ - TEXTO: 
+		
+ANTONIO BLANCO MORALES hizo un nuevo post en el blog.
+
+Web Single Sign-on							> Título
+Presentación de SSOWeb: El Web Single Sign-on del proyecto GUIA		> Entradilla/Resumen
+
+--------------------------------------------------------------------------------------
+ (TITULO)
+--------------------------------------------------------------------------------------
+Nuevo expediente en marcha
+
+--------------------------------------------------------------------------------------
+ (ENTRADILLA) > resumen del post
+--------------------------------------------------------------------------------------
+Ya hemos comenzado el nuevo expediente para retomar y evolucionar la actual infraestructura de Gestión de Identidades de la Junta de Andalucía.
+
+--------------------------------------------------------------------------------------
+ (INTRODUCCIÓN) > nuevo expediente en marcha, origen, prioridades
+--------------------------------------------------------------------------------------
+Como adelantamos en el post de junio, tenemos ya en marcha el nuevo expediente para retomar y evolucionar la actual infraestructura de Gestión de Identidades de la Junta de Andalucía. 
+
+Vamos a empezar por gestionar las identidades y autorizaciones del sistema GIRO que, como sabéis, sustituye al antiguo sistema Jupiter, cuyas autorizaciones utilizan otros sistemas horizontales (Sur...). Esta necesidad de gestión de usuarios y autorizaciones de GIRO es en realidad lo que ha impulsado este nuevo expediente. Luego lo siguiente que abordaremos será la gestión de usuarios y autorizaciones de otros sistemas de la DGPD de CHAP. 
+
+Y con esta experiencia y trabajo realizado, empezaremos a abordar los trabajos de integración con otros sistemas de otros organismos. En este punto el know-how debe estar bastante avanzado, sabremos lo que se puede tardar en integrar un nuevo sistema, problemas conocidos, buenas prácticas, tecnologías integradas, etc. que hará que se puedan ir integrando más rápido nuevos sistemas.
+
+--------------------------------------------------------------------------------------
+ (OBJETIVOS) > qué se quiere hacer
+--------------------------------------------------------------------------------------
+
+En cuanto a los objetivos del expediente, se pretende llevar a cabo estos trabajos:
+
+- Cubrir las necesidades de gestión de autorizaciones de acceso a los sistemas de información. Para ello habrá que evolucionar el sistema de autorizaciones (la usabilidad especialmente), integrar los sistemas de información mediante conectores a medida, alimentar el repositorio de identidades (lo que llamamos poblado del directorio) y mantener la información de las identidades actualizada (implantación del ciclo de vida).
+
+- Actualizar los componentes software que forman la base del proyecto.
+
+- Evolucionar y mejorar los desarrollos del proyecto para cubrir los requisitos que se han ido identificando desde su entrada en producción (los usuarios finales son la mejor fuente de mejoras), además de los que surjan durante la duración del contrato. >> Esto está incluído al actualizar los componentes.
+
+--------------------------------------------------------------------------------------
+ (FASES) > fases del proyecto (describir a grandes rasgos)
+--------------------------------------------------------------------------------------
+ 1- Integración GIRO y evolutivos
+ 2- Integración otros sistemas CHAP (Jupiter, Sur, Datamart-Sur y AD)
+ 3- Actualización componentes GUIA
+
+1-Despliegue, integración GIRO y evolutivos prioritarios:
+ Fase I:   Diseño de la solución
+ Fase II:  Instalación de la plataforma
+ Fase III: Integración de la fuente autoritativa (Sirhus)
+ Fase IV:  Integración con GIRO
+ Fase V:   Evolutivos de prioridad alta del sistema de autorizaciones y accesos
+
+3-Migración:
+ Fase I:   Análisis y Diseño
+ Fase II:  Instalación de OUD
+ Fase III: Sincronización de datos en OID con OUD, mediante DIP
+ Fase IV:  Integración de OUD con OIM
+ Fase V:   Actualización de OVD
+ Fase VI:  Traspaso de funcionalidades de Gestión Operativa a OIM
+ Fase VII: Apagado y decomisado de OID
+
+2-Integración con otros sistemas:
+ Fase I:   Análisis y Diseño.
+ Fase II:  Integración de sistemas.
+ Fase III: Implementación de los automatismos del ciclo de vida del usuario.
+
+--------------------------------------------------------------------------------------
+ (COMPONENTES y TECNOLOGÍA) > componentes software y tencología
+--------------------------------------------------------------------------------------
+Los componentes software que forman parte del nuevo sistema de gestión de identidades son:
+ * Oracle Identity Manager 11g, que incluye:
+ ** Oracle SOA Suite
+ ** Oracle BI Publisher
+ ** Oracle WebLogic Server
+ ** Oracle BI Publisher
+ * Oracle Fusion Middleware Repository Creation Utility
+
+Oracle Fusion Middleware (familia) > Identity Management Solutions > Oracle Identity & Access Management > OIM
+
+--------------------------------------------------------------------------------------
+ (RESUMEN y DESEOS) > Resumen y qué esperamos tener a corto y a medio plazo
+--------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------
+ (FEEDBACK) > animar a comentar y participar 
+--------------------------------------------------------------------------------------
+
+
+
+

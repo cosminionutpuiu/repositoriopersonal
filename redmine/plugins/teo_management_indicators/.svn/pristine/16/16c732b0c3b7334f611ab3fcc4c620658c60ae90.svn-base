@@ -1,0 +1,438 @@
+<% content_for :header_tags do %>
+    <%= javascript_include_tag 'highcharts.js', :plugin => 'teo_management_indicators' %>
+    <%= javascript_include_tag 'highcharts-more.js', :plugin => 'teo_management_indicators' %>
+    <%= javascript_include_tag 'modules/exporting.js', :plugin => 'teo_management_indicators' %>
+
+    <style>
+		table {
+		    border-collapse: collapse;
+		}
+
+		table, td, th {
+		    border: 1px solid black;
+		}
+	</style>
+
+<script type="text/javascript">
+	idOt= <%=$CONST_OT.id%>;
+	identProj= '<%=$CONST_ID_PROJ%>';
+	esSisinf= <%=$COSNT_IS_SISINF%>;
+	idCustField= <%=$ID_CONST_CUSTFIELD%>;
+</script>
+
+<% end %>
+
+<h2><%= l(:main_title_management_indicators) %></h2>
+
+<% if (@chart_view.acsG1 == nil || @chart_view.acsG1.empty?) && (@chart_view.mapaG2 == nil || @chart_view.mapaG2.empty?) %>
+	<%= l(:lbl_no_information) %>
+<% end %>
+
+<% if @chart_view.acsG1 != nil && !@chart_view.acsG1.empty? %>
+	<fieldset style="border:1px solid #628DB6;">
+		<div style="margin:0 0 0 5%">
+			<div style="float: left">
+				<div>
+					<%= high_chart("div_stackG1a", @chart_view.stackG1a) do |gg1| %>
+						<% if @settings.actLinkg2 != nil && @settings.actLinkg2 == "true"%>			
+							<%=raw "options.plotOptions.series.point.events.click = function(options) {
+								valorEstado = options.currentTarget.series.name;
+								campoCustField = '&cf_'+idCustField+'='+document.getElementById(valorEstado+'idsAC').value;
+								idEstado = document.getElementById(valorEstado+'idsACid').value;								
+								window.open('/projects/sistemas-de-informacion/issues?set_filter=1&tracker_id='+idOt+'&status_id='+idEstado+campoCustField);
+							}"%>
+						<%end%>
+					<%end%>
+				</div>
+				<div>
+					<%= high_chart("div_stackG1b", @chart_view.stackG1b) %>
+				</div>
+			</div>
+
+			<div style="float: left">
+				<div style="margin:10% 0 0 20%">
+					<table style="white-space: nowrap;">
+						<tr style="background-color: lightgrey;color: #3E5B76;font-weight: bold;">
+							<td style="text-align:left;"><%= l(:field_status) %></td>
+							<td style="text-align:center;"><%= l(:field_cost) %></td>
+							<td style="text-align:center;">%</td>
+							<td style="text-align:center;">% <%= l(:field_accumulate) %></td>
+						</tr>
+						<% if @chart_view.mapaTablaG1 != nil && !@chart_view.mapaTablaG1.empty? %>
+							<% @chart_view.mapaTablaG1.each do |key, value| %>
+								<tr>
+									<td style="text-align:right;"><%= value[0] %> €</td>
+									<td style="text-align:right;"><%= value[1] %> €</td>
+									<td style="text-align:right;"><%= value[2] %> %</td>
+									<td style="text-align:right;"><% if value[0].to_s != 'Disponible' %><%= value[3] %> %<% end %></td>
+								</tr>
+							<% end %>
+						<% end %>						
+						<tr>
+							<td style="text-align:left;font-weight:bold;"><%= l(:field_budget) %></td>
+							<td style="text-align:right;font-weight:bold;"><%= @chart_view.importeAcumuladoG1 %> €</td>
+							<td style="text-align:right;font-weight:bold;"><%= @chart_view.porcentajeAcumuladoG1 %> %</td>
+							<td></td>
+						</tr>
+					</table>
+
+					<br>
+
+					<table style="white-space: nowrap;">
+						<tr>
+							<td style="text-align:left;"><%= l(:field_start_date) %></td>
+							<% if @chart_view.fechaInicio == nil || @chart_view.fechaInicio == '' %>
+								<td></td>
+							<% else %>
+								<td style="text-align:right;"><%= (@chart_view.fechaInicio.to_date).strftime("%d/%m/%y") %></td>
+							<% end %>
+						</tr>
+						<tr>
+							<td style="text-align:left;"><%= l(:field_due_date) %></td>
+							<% if @chart_view.fechaFin == nil || @chart_view.fechaFin == '' %>
+								<td></td>
+							<% else %>
+								<td style="text-align:right;"><%= (@chart_view.fechaFin.to_date).strftime("%d/%m/%y") %></td>
+							<% end %>
+						</tr>
+						<tr>
+							<td style="text-align:left;"><%= l(:field_period) %> (<%= l(:field_days) %>)</td>
+							<td style="text-align:right;"><%= @chart_view.diasTotales %></td>
+						</tr>
+						<tr>
+							<td style="text-align:left;"><%= l(:field_today) %></td>
+							<% if @chart_view.fechaHoy == nil || @chart_view.fechaHoy == '' %>
+								<td></td>
+							<% else %>
+								<td style="text-align:right;"><%= (@chart_view.fechaHoy.to_date).strftime("%d/%m/%y") %></td>
+							<% end %>
+						</tr>
+						<tr>
+							<td style="text-align:left;"><%= l(:field_time_passed) %> (<%= l(:field_days) %>)</td>
+							<td style="text-align:right;"><%= @chart_view.diasTranscurridos %></td>
+						</tr>
+						<tr>
+							<td style="text-align:left;"><%= l(:field_time_passed) %> (%)</td>
+							<td style="text-align:right;"><%= @chart_view.porcentajeDiasTranscurridos %> %</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<%if @chart_view.mapaG1LinksProy != nil && !@chart_view.mapaG1LinksProy.empty?  %>
+				<% @chart_view.mapaG1LinksProy.to_a.reverse.to_h.each do |key, value| %>
+					<input type="hidden" id="<%= key.split($SPLIT_CHAR)[0]+'idsAC'%>" value="<%= value %>">
+					<input type="hidden" id="<%= key.split($SPLIT_CHAR)[0]+'idsACid'%>" value="<%= key.split($SPLIT_CHAR)[1] %>">
+				<% end %>
+			<% end %>
+		</div>
+	</fieldset>
+<% end %>
+
+<br><br>
+
+<% if @chart_view.mapaG2 != nil && !@chart_view.mapaG2.empty? %>
+	<fieldset style="border:1px solid #628DB6;">
+		<div>
+			<div style="float: left">				 
+				<%= high_chart("div_chartG2", @chart_view.chartG2) do |gg2| %>
+					<% if @settings.actLinkg2 != nil && @settings.actLinkg2 == "true"%>			
+						<%=raw "options.plotOptions.series.point.events.click = function(options) {
+							valorOption = options.currentTarget.series.name;
+							anioFecha = options.currentTarget.category;
+
+							valorCampos = document.getElementById(valorOption+anioFecha).value;
+							arrayCampos = valorCampos.split('##_#');
+
+							proyecto = arrayCampos[0];
+							estados = arrayCampos[1];
+							tipo = arrayCampos[2];
+							fechaInicio = arrayCampos[3];
+							fechaFin = arrayCampos[4];
+							campoCustField = '';
+							tareaPadre= '';
+							arrayfechaInicCampo = fechaInicio.split('**_*');
+							fechaCampoInicioTitulo = arrayfechaInicCampo[0];
+							fechaCampoInicioValor = arrayfechaInicCampo[1];
+
+							if (fechaCampoInicioValor.indexOf('-1') >= 0) {
+								opcionFecha = '&'+fechaCampoInicioTitulo+'=!*';
+							} else {
+								opcionFecha = '&'+fechaCampoInicioTitulo+'=><'+fechaCampoInicioValor+'%7C'+fechaFin;
+							}
+							
+							valorIdsContr = arrayCampos[5];
+							campoCustField = '&cf_'+idCustField+'='+valorIdsContr;
+
+							if (!esSisinf) {								
+								valorIdAc = arrayCampos[6];
+
+								if (valorIdAc != null && valorIdAc != '') {
+									tareaPadre = '&parent_id=' + valorIdAc;
+								} else {
+									tareaPadre = '&parent_id=!*';
+								}
+								
+							} else {
+								if (valorOption.indexOf('Sin') >= 0) {
+									campoCustField = '&cf_'+idCustField+'=!*';
+								} else {
+									campoCustField = '&cf_'+idCustField+'='+valorIdsContr;
+								}
+							}
+							window.open('/projects/'+proyecto+'/issues?set_filter=1&tracker_id='+tipo+'&status_id='+estados+opcionFecha+campoCustField+tareaPadre);
+						}"%>
+					<%end%>
+				<%end%>									
+			</div>
+			<%if @chart_view.mostrarCuadro && @chart_view.fieldsLinks == nil%>
+				<div style="float: left;">
+					<div style="margin:10% 0 0 15%">
+						<table style="white-space: nowrap;">
+							<tr style="background-color: lightgrey;color: #3E5B76;font-weight: bold;">
+								<td style="text-align:center;"><%= l(:field_year) %></td>
+								<td style="text-align:center;"><%= l(:field_executed_cost) %></td>
+							</tr>							
+							<% if @chart_view.mapaG2 != nil && !@chart_view.mapaG2.empty?  %>
+								<% @chart_view.mapaG2.to_a.reverse.to_h.each do |key, value| %>
+									<tr>
+										<td style="text-align:right;"><%= key %></td>
+										<td style="text-align:right;"><%= value %> €</td>
+									</tr>
+								<% end %>														
+							<% end %>							
+						</table>
+					</div>
+				</div>
+			<% end %>
+			<%if @chart_view.fieldsLinks != nil && !@chart_view.fieldsLinks.empty?  %>
+				<% @chart_view.fieldsLinks.each do |key, value| %>
+					<input type="hidden" id="<%= key %>" value="<%= value %>">
+				<% end %>														
+			<% end %>
+		</div>
+	</fieldset>
+<% end %>
+
+<br><br>
+
+<% if @chart_view.mapaG3 != nil && !@chart_view.mapaG3.empty? %>
+	<fieldset style="border:1px solid #628DB6;">
+		<div>
+			<div style="float: left">
+				<%= high_chart("div_chartG3", @chart_view.chartG3) do |gg3|%>
+					<% if @settings.actLinkg2 != nil && @settings.actLinkg2 == "true"%>				
+						<%=raw "options.plotOptions.series.point.events.click = function(options) {
+							valorOption = options.currentTarget.name;
+							valorCampos = document.getElementById(valorOption+'idSec').value;
+							arrayCampos = valorCampos.split('##_#');
+
+							proyecto = arrayCampos[0];
+							estados = arrayCampos[1];
+							tipo = arrayCampos[2];
+							campoCustField = '';
+							tareaPadre= '';
+							
+							valorIdsContr = arrayCampos[3];
+							campoCustField = '&cf_'+idCustField+'='+valorIdsContr;
+						
+							valorIdAc = arrayCampos[4];
+							if (valorIdAc != null && valorIdAc != '') {
+								tareaPadre = '&parent_id=' + valorIdAc;
+							} else {
+								tareaPadre = '&parent_id=!*';
+							}
+
+							window.open('/projects/'+proyecto+'/issues?set_filter=1&tracker_id='+tipo+'&status_id='+estados+campoCustField+tareaPadre);
+						}"%>
+					<%end%>	
+				<%end%>
+			</div>
+			<div style="float: left;">
+				<div style="margin:10% 0 0 5%">
+					<table style="white-space: nowrap;">
+						<tr style="background-color: lightgrey;color: #3E5B76;font-weight: bold;">
+							<td style="text-align:center;"><%= l(:field_Actuacion) %></td>
+							<td style="text-align:center;"><%= l(:field_cost) %></td>
+						</tr>
+						<% @chart_view.mapaG3.to_a.reverse.to_h.each do |key, value| %>
+							<tr>
+								<td style="text-align:right;"><%= key.split($SPLIT_CHAR)[0] %></td>
+								<td style="text-align:right;"><%= value %> €</td>
+							</tr>
+						<% end %>
+						<%if @chart_view.fieldsSectores != nil && !@chart_view.fieldsSectores.empty?  %>
+							<% @chart_view.fieldsSectores.each do |key, value| %>
+								<input type="hidden" id="<%= key+'idSec' %>" value="<%= value %>">
+							<% end %>														
+						<% end %>
+					</table>
+				</div>
+			</div>
+		</div>
+	</fieldset>
+<% end %>
+
+<br><br>
+
+<% if @chart_view.mapaG4 != nil && !@chart_view.mapaG4.empty? %>
+	<fieldset style="border:1px solid #628DB6;">
+		<div>
+			<div style="float: left">				 
+				<%= high_chart("div_chartG4", @chart_view.chartG4) do |gg4| %>
+					<% if @settings.actLinkg2 != nil && @settings.actLinkg2 == "true"%>
+						<%=raw "options.plotOptions.series.point.events.click = function(options) {
+							columna = options.currentTarget.category;
+							posCampoCF = options.currentTarget.x;
+							signoCF = '><';
+
+							if (posCampoCF == 0) {
+								signoCF = '<%3D';
+							} else if (posCampoCF == 5) {
+								signoCF = '>%3D';
+							}
+
+							valorCampos = document.getElementById(columna).value;
+							arrayCampos = valorCampos.split('##_#');
+
+							proyecto = arrayCampos[0];
+							//estados = arrayCampos[1];
+							tipo = arrayCampos[1];							
+							campoCF_desvio= '&cf_'+arrayCampos[2]+'='+signoCF;
+							desvio = arrayCampos[3];
+							valorIdsContr = arrayCampos[4];
+							campoCF_contrato = '&cf_'+idCustField+'='+valorIdsContr;
+							
+							//urlInfoMostrar = '/projects/'+proyecto+'/issues?set_filter=1&tracker_id='+tipo+'&status_id='+estados+campoCF_desvio+desvio+campoCF_contrato;
+
+							urlInfoMostrar = '/projects/'+proyecto+'/issues?set_filter=1&tracker_id='+tipo+'&status_id=*'+campoCF_desvio+desvio+campoCF_contrato;
+							
+							urlColumnasTabla = '&c[]=tracker&c[]=status&c[]=priority&c[]=subject&c[]=assigned_to&c[]=updated_on&c[]=cf_'+arrayCampos[2];
+
+							window.open(urlInfoMostrar+urlColumnasTabla);
+						}"%>
+					<%end%>
+				<%end%>									
+			</div>	
+			<%if @chart_view.mostrarCuadro%>
+				<div style="float: left;">
+					<div style="margin:10% 0 0 15%">
+						<table style="white-space: nowrap;">
+							<tr style="background-color: lightgrey;color: #3E5B76;font-weight: bold;">
+								<td style="text-align:center;"><%= l(:field_desvio_name) %></td>
+								<td style="text-align:center;"><%= l(:field_desvio_total) %></td>
+							</tr>
+							<% @chart_view.mapaG4.each do |key, value| %>
+								<tr>
+									<td style="text-align:right;"><%= key %></td>
+									<td style="text-align:right;"><%= value %></td>
+								</tr>
+							<% end %>						
+						</table>
+						<br/>
+						<br/>
+						<table style="white-space: nowrap;">
+							<tr style="background-color: lightgrey;color: #3E5B76;font-weight: bold;text-align:center;">
+								<td colspan="2" style="text-align:center;"><%= l(:field_desvio_resumen_desvios) %></td>
+							</tr>
+							<% @chart_view.mapaG4_resumen.each do |key, value| %>
+								<tr>
+									<td style="text-align:right;"><%= key %></td>
+									<td style="text-align:right;"><%= value %></td>
+								</tr>
+							<% end %>						
+						</table>
+					</div>
+				</div>
+			<% end %>
+			<%if @chart_view.fieldsLinksg4 != nil && !@chart_view.fieldsLinksg4.empty?  %>
+				<% @chart_view.fieldsLinksg4.each do |key, value| %>
+					<input type="hidden" id="<%= key %>" value="<%= value %>">
+				<% end %>														
+			<% end %>
+		</div>
+	</fieldset>
+<% end %>
+
+<br><br>
+
+<% if @chart_view.mapaG5_resumen != nil && !@chart_view.mapaG5_resumen.empty? %>
+	<fieldset style="border:1px solid #628DB6;">
+		<div>
+			<div style="float: left">				 
+				<%= high_chart("div_chartG5", @chart_view.chartG5) do |gg5| %>
+					<% if @settings.actLinkg2 != nil && @settings.actLinkg2 == "true"%>		
+						<%=raw "options.plotOptions.series.point.events.click = function(options) {
+							columna = options.currentTarget.category;
+							posCampoCF = options.currentTarget.x;
+							signoCF = '><';
+
+							if (posCampoCF == 0) {
+								signoCF = '<%3D';
+							} else if (posCampoCF == 5) {
+								signoCF = '>%3D';
+							}
+
+							valorCampos = document.getElementById(columna).value;
+							arrayCampos = valorCampos.split('##_#');
+
+							proyecto = arrayCampos[0];
+							tipo = arrayCampos[1];
+							campoCF_desvio = '&cf_'+arrayCampos[2]+'='+signoCF;
+							desvio = arrayCampos[3];
+							valorIdsContr = arrayCampos[4];
+							campoCF_contrato = '&cf_'+idCustField+'='+valorIdsContr;
+							
+							urlInfoMostrar = '/projects/'+proyecto+'/issues?set_filter=1&tracker_id='+tipo+'&status_id=*'+campoCF_desvio+desvio+campoCF_contrato;
+							
+							urlColumnasTabla = '&c[]=tracker&c[]=status&c[]=priority&c[]=subject&c[]=assigned_to&c[]=updated_on&c[]=cf_'+arrayCampos[2];
+
+							window.open(urlInfoMostrar+urlColumnasTabla);
+						}"%>
+					<%end%>
+				<%end%>									
+			</div>	
+			<%if @chart_view.mostrarCuadro%>
+				<div style="float: left;">
+					<div style="margin:10% 0 0 15%">
+						<table style="white-space: nowrap;">
+							<tr style="background-color: lightgrey;color: #3E5B76;font-weight: bold;">
+								<td style="text-align:center;"><%= l(:field_desvio_name) %></td>
+								<td style="text-align:center;"><%= l(:field_desvio_total) %></td>
+							</tr>
+							<% @chart_view.mapaG5.each do |key, value| %>
+								<tr>
+									<td style="text-align:right;"><%= key %></td>
+									<td style="text-align:right;"><%= value %></td>
+								</tr>
+							<% end %>						
+						</table>
+						<br/>
+						<br/>
+						<table style="white-space: nowrap;">
+							<tr style="background-color: lightgrey;color: #3E5B76;font-weight: bold;text-align:center;">
+								<td colspan="2" style="text-align:center;"><%= l(:field_desvio_resumen_desvios) %></td>
+							</tr>
+							<% @chart_view.mapaG5_resumen.each do |key, value| %>
+								<tr>
+									<td style="text-align:right;"><%= key %></td>
+									<td style="text-align:right;"><%= value %></td>
+								</tr>
+							<% end %>						
+						</table>
+					</div>
+				</div>
+			<% end %>
+			<%if @chart_view.fieldsLinksg5 != nil && !@chart_view.fieldsLinksg5.empty?  %>
+				<% @chart_view.fieldsLinksg5.each do |key, value| %>
+					<input type="hidden" id="<%= key %>" value="<%= value %>">
+				<% end %>														
+			<% end %>		
+		</div>
+	</fieldset>
+<% end %>
+
+</br>
+</br>
+<%if !@chart_view.mostrarActualizar.nil? && @chart_view.mostrarActualizar%>
+	<%= link_to "ACTUALIZAR PETICIONES DEL PROYECTO", indicadores_actualizar_path(@project), method: :get %>
+<%end%>

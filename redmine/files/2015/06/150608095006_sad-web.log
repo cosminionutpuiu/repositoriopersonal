@@ -1,0 +1,326 @@
+08/jun/2015-10:05:29 INFO  [org.springframework.web.context.ContextLoader]  Root WebApplicationContext: initialization started
+08/jun/2015-10:05:29 INFO  [ework.web.context.support.XmlWebApplicationContext]  Refreshing org.springframework.web.context.support.XmlWebApplicationContext@1d902d3: display name [Root WebApplicationContext]; startup date [Mon Jun 08 10:05:29 CEST 2015]; root of context hierarchy
+08/jun/2015-10:05:29 INFO  [ramework.beans.factory.xml.XmlBeanDefinitionReader]  Loading XML bean definitions from file [/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp43700sad-web-exp.war/WEB-INF/classes/context/sad-context-mvc.xml]
+08/jun/2015-10:05:30 INFO  [ramework.beans.factory.xml.XmlBeanDefinitionReader]  Loading XML bean definitions from file [/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp43700sad-web-exp.war/WEB-INF/classes/context/sad-context-properties.xml]
+08/jun/2015-10:05:30 INFO  [ramework.beans.factory.xml.XmlBeanDefinitionReader]  Loading XML bean definitions from file [/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp43700sad-web-exp.war/WEB-INF/classes/context/sad-context-security.xml]
+08/jun/2015-10:05:30 INFO  [ramework.beans.factory.xml.XmlBeanDefinitionReader]  Loading XML bean definitions from URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp43700sad-web-exp.war/WEB-INF/lib/sad-comm-external-subs-client-2.12.0.jar!/context/sad-context-external-sub-client.xml]
+08/jun/2015-10:05:30 INFO  [ramework.beans.factory.xml.XmlBeanDefinitionReader]  Loading XML bean definitions from URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp43700sad-web-exp.war/WEB-INF/lib/sad-guia-client-2.12.0.jar!/context/sad-context-guia-client.xml]
+08/jun/2015-10:05:31 INFO  [ramework.beans.factory.xml.XmlBeanDefinitionReader]  Loading XML bean definitions from URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp43700sad-web-exp.war/WEB-INF/lib/sad-neg-2.12.0.jar!/context/sad-context-csa-client.xml]
+08/jun/2015-10:05:31 INFO  [ramework.beans.factory.xml.XmlBeanDefinitionReader]  Loading XML bean definitions from URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp43700sad-web-exp.war/WEB-INF/lib/sad-neg-2.12.0.jar!/context/sad-context-service.xml]
+08/jun/2015-10:05:31 INFO  [k.beans.factory.support.DefaultListableBeanFactory]  Overriding bean definition for bean 'guiaWSClient': replacing [Generic bean: class [es.juntadeandalucia.cice.agata.sad.integration.guia.GUIAWSClient]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp43700sad-web-exp.war/WEB-INF/lib/sad-guia-client-2.12.0.jar!/context/sad-context-guia-client.xml]] with [Generic bean: class [es.juntadeandalucia.cice.agata.sad.integration.guia.GUIAWSClient]; scope=singleton; abstract=false; lazyInit=false; autowireMode=1; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp43700sad-web-exp.war/WEB-INF/lib/sad-neg-2.12.0.jar!/context/sad-context-service.xml]]
+08/jun/2015-10:05:31 INFO  [ramework.beans.factory.xml.XmlBeanDefinitionReader]  Loading XML bean definitions from URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp43700sad-web-exp.war/WEB-INF/lib/sad-neg-admin-2.12.0.jar!/context/sad-context-service-admin.xml]
+08/jun/2015-10:05:31 INFO  [k.beans.factory.support.DefaultListableBeanFactory]  Overriding bean definition for bean 'txManager': replacing [Generic bean: class [org.springframework.orm.hibernate3.HibernateTransactionManager]; scope=singleton; abstract=false; lazyInit=false; autowireMode=1; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp43700sad-web-exp.war/WEB-INF/lib/sad-neg-2.12.0.jar!/context/sad-context-service.xml]] with [Generic bean: class [org.springframework.orm.hibernate3.HibernateTransactionManager]; scope=singleton; abstract=false; lazyInit=false; autowireMode=1; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp43700sad-web-exp.war/WEB-INF/lib/sad-neg-admin-2.12.0.jar!/context/sad-context-service-admin.xml]]
+08/jun/2015-10:05:31 INFO  [k.beans.factory.support.DefaultListableBeanFactory]  Overriding bean definition for bean 'perfilService': replacing [Generic bean: class [es.juntadeandalucia.cice.agata.sad.neg.impl.GenericServiceImpl]; scope=singleton; abstract=false; lazyInit=false; autowireMode=1; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp43700sad-web-exp.war/WEB-INF/lib/sad-neg-2.12.0.jar!/context/sad-context-service.xml]] with [Generic bean: class [es.juntadeandalucia.cice.agata.sad.neg.impl.GenericServiceImpl]; scope=singleton; abstract=false; lazyInit=false; autowireMode=1; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp43700sad-web-exp.war/WEB-INF/lib/sad-neg-admin-2.12.0.jar!/context/sad-context-service-admin.xml]]
+08/jun/2015-10:05:31 INFO  [ramework.beans.factory.xml.XmlBeanDefinitionReader]  Loading XML bean definitions from URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp43700sad-web-exp.war/WEB-INF/lib/sad-neg-admin-2.12.0.jar!/context/sad-context-ws-client.xml]
+08/jun/2015-10:05:31 INFO  [ramework.beans.factory.xml.XmlBeanDefinitionReader]  Loading XML bean definitions from URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp43700sad-web-exp.war/WEB-INF/lib/sad-neg-2.12.0.jar!/context/sad-context-csa-client.xml]
+08/jun/2015-10:05:31 INFO  [k.beans.factory.support.DefaultListableBeanFactory]  Overriding bean definition for bean 'csaUserWSClient': replacing [Generic bean: class [es.juntadeandalucia.cice.agata.sad.integration.csa.CSAAdminUserWSClient]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp43700sad-web-exp.war/WEB-INF/lib/sad-neg-2.12.0.jar!/context/sad-context-csa-client.xml]] with [Generic bean: class [es.juntadeandalucia.cice.agata.sad.integration.csa.CSAAdminUserWSClient]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp43700sad-web-exp.war/WEB-INF/lib/sad-neg-2.12.0.jar!/context/sad-context-csa-client.xml]]
+08/jun/2015-10:05:31 INFO  [ramework.beans.factory.xml.XmlBeanDefinitionReader]  Loading XML bean definitions from URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp43700sad-web-exp.war/WEB-INF/lib/sad-notification-2.12.0.jar!/context/sad-context-notification.xml]
+08/jun/2015-10:05:31 INFO  [k.beans.factory.support.DefaultListableBeanFactory]  Overriding bean definition for bean 'logAspect': replacing [Generic bean: class [es.juntadeandalucia.cice.agata.sad.util.logging.LogAspect]; scope=singleton; abstract=false; lazyInit=false; autowireMode=1; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp43700sad-web-exp.war/WEB-INF/lib/sad-neg-2.12.0.jar!/context/sad-context-service.xml]] with [Generic bean: class [es.juntadeandalucia.cice.agata.sad.util.logging.LogAspect]; scope=singleton; abstract=false; lazyInit=false; autowireMode=1; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp43700sad-web-exp.war/WEB-INF/lib/sad-notification-2.12.0.jar!/context/sad-context-notification.xml]]
+08/jun/2015-10:05:31 INFO  [ramework.beans.factory.xml.XmlBeanDefinitionReader]  Loading XML bean definitions from URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp43700sad-web-exp.war/WEB-INF/lib/sad-per-2.12.0.jar!/context/sad-context-datasource.xml]
+08/jun/2015-10:05:31 INFO  [ramework.beans.factory.xml.XmlBeanDefinitionReader]  Loading XML bean definitions from URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp43700sad-web-exp.war/WEB-INF/lib/sad-per-2.12.0.jar!/context/sad-context-dao.xml]
+08/jun/2015-10:05:31 INFO  [ramework.beans.factory.xml.XmlBeanDefinitionReader]  Loading XML bean definitions from URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp43700sad-web-exp.war/WEB-INF/lib/sad-security-2.12.0.jar!/context/sad-context-security.xml]
+08/jun/2015-10:05:31 INFO  [ramework.beans.factory.xml.XmlBeanDefinitionReader]  Loading XML bean definitions from URL [jar:file:/opt/jboss-4.2.3.GA/server/default/tmp/deploy/tmp43700sad-web-exp.war/WEB-INF/lib/sad-security-2.12.0.jar!/context/sad-context-authorization.xml]
+08/jun/2015-10:05:32 INFO  [ework.web.context.support.XmlWebApplicationContext]  Bean factory for application context [org.springframework.web.context.support.XmlWebApplicationContext@1d902d3]: org.springframework.beans.factory.support.DefaultListableBeanFactory@621f0c
+08/jun/2015-10:05:33 INFO  [ework.web.context.support.XmlWebApplicationContext]  Bean '(inner bean)' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+08/jun/2015-10:05:33 INFO  [ework.web.context.support.XmlWebApplicationContext]  Bean '_delegatingMethodDefinitionSource' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+08/jun/2015-10:05:33 INFO  [ework.web.context.support.XmlWebApplicationContext]  Bean '_methodDefinitionSourceAdvisor' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+08/jun/2015-10:05:33 INFO  [ework.web.context.support.XmlWebApplicationContext]  Bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+08/jun/2015-10:05:33 INFO  [ework.web.context.support.XmlWebApplicationContext]  Bean 'org.springframework.transaction.config.internalTransactionAdvisor' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+08/jun/2015-10:05:34 INFO  [k.beans.factory.support.DefaultListableBeanFactory]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@621f0c: defining beans [trashControllerWrapper,blockedMassiveDeletionsControllerWrapper,LDAPContactControllerWrapper,syncRegistroControllerWrapper,contactControllerWrapper,printControllerWrapper,jsonPController,taskControllerWrapper,pollControllerWrapper,eventControllerWrapper,groupDirectoryControllerWrapper,preferenceControllerWrapper,blockedSyncControllerWrapper,syncErrorControllerWrapper,voteControllerWrapper,searchControllerWrapper,categoryTreeControllerWrapper,reminderControllerWrapper,switchUserControllerWrapper,syncHistorialControllerWrapper,attendeeControllerWrapper,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,log4j-ndc-filter,webLogAspect,es.juntadeandalucia.cice.agata.sad.util.jndi.SadPropertyPlaceHolderConfigurer#0,_authenticationManager,_filterChainProxy,_httpSessionContextIntegrationFilter,_filterChainProxyPostProcessor,_filterChainList,_securityContextHolderAwareRequestFilter,_accessManager,_portMapper,_exceptionTranslationFilter,_filterSecurityInterceptor,_sessionFixationProtectionFilter,_logoutFilter,_formLoginFilter,_formLoginEntryPoint,_entryPointInjectionBeanPostProcessor,_userServiceInjectionPostProcessor,checkAccessAspect,sadAuthoritiesPopulator,switchUserProcessingFilter,sadStsClient,samlFilter,csrfFilter,externalSubsWSClient,guiaWSClient,csaUserWSClient,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txManager,sadConfigService,usuarioService,entidadGUIAService,informacionIntervinienteService,agendaService,directoryService,directoryOrganizationService,binService,recordatorioService,recursoService,grupoService,zonaHorariaService,preferenciaService,permisoFBService,accionesInvitacionesService,subscripcionInternaService,subscripcionExternaService,preferenciasSADService,citaService,calendarioService,libretaService,registroService,contactoService,categoriaService,rolService,perfilService,estadoService,syncErrorService,historicoSLSService,registroSincronizacionService,lineaRegistroSincronizacionService,aclService,csaUserQueryService,elementoPIMService,tareaService,contenedorPIMService,hibIntervinienteService,emailIntervinienteService,sadGUIAGroupService,dispositivoBloqueadoService,bloqueoSLSService,bloqueoMDSService,permGestionInvitacionesService,permGestionCategoriasService,accesoFallidoService,accesoUsuarioService,historicoAccesosService,historicoPIMService,historicoSyncErrorService,propuestaService,sondeoService,votoService,comentarioService,logAspect,funambolDeviceService,funambolUserService,funambolPrincipalService,adminUsuarioService,clasificacionService,adminGroupService,adminContenedorPIMService,csaUserService,entidadService,historicoUsuariosService,consumoCuotaUsuariosService,wsClient,mailConfiguration,emailService,emailSender,notificationService,velocityEngine,c3P0NativeJdbcExtractor,oracleLobHandler,dataSource,sessionFactory,dirContextValidator,contextSource,contextSourceTarget,ldapTemplate,usuarioDao,grupoDao,clasificacionDao,informacionIntervinienteDao,entidadGUIADao,agendaDao,zonaHorariaDao,preferenciaDao,permisoFBDao,subscripcionInternaDao,subscripcionExternaDao,preferenciasSADDao,recordatorioDao,citaDao,tareaDao,calendarioDao,categoriaDao,contactoDao,libretaDao,registroDao,recursoDao,rolDao,perfilDao,estadoDao,syncErrorDao,historicoSLSDao,registroSincronizacionDao,lineaRegistroSincronizacionDao,hibIntervinienteDao,emailIntervinienteDao,DirectoryUserEntryContextMapper,DirectoryOrganizationEntryContextMapper,ldapDao,organizationLdapDao,contenedorPIMDao,elementoPIMDao,aceDao,aclDao,dispositivoBloqueadoDao,bloqueoSLSDao,bloqueoMDSDao,entidadDao,permGestionInvitacionesDao,permGestionCategoriasDao,accesoFallidoDao,historicoUsuariosDao,accesoUsuarioDao,consumoCuotaUsuariosDao,historicoAccesosDao,historicoPIMDao,historicoSyncErrorDao,accionesInvitacionesDao,propuestaDao,sondeoDao,comentarioDao,votoDao,ldapContextSource,userDetailsContextMapper,targetUserDetailsService,ldapAuthProvider,userDetailsService,loggerListener,roleVoter,businessAccessDecisionManager,_delegatingMethodDefinitionSource,_methodSecurityInterceptor,_methodSecurityInterceptorPostProcessor,_methodDefinitionSourceAdvisor]; root of factory hierarchy
+08/jun/2015-10:05:35 INFO  [com.mchange.v2.log.MLog]  MLog clients using log4j logging.
+08/jun/2015-10:05:35 INFO  [com.mchange.v2.c3p0.C3P0Registry]  Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+08/jun/2015-10:05:35 WARN  [nge.v2.c3p0.management.ActiveManagementCoordinator]  A C3P0Registry mbean is already registered. This probably means that an application using c3p0 was undeployed, but not all PooledDataSources were closed prior to undeployment. This may lead to resource leaks over time. Please take care to close all PooledDataSources.
+08/jun/2015-10:05:36 INFO  [org.hibernate.cfg.annotations.Version]  Hibernate Annotations 3.3.1.GA
+08/jun/2015-10:05:36 INFO  [org.hibernate.cfg.Environment]  Hibernate 3.2.6
+08/jun/2015-10:05:36 INFO  [org.hibernate.cfg.Environment]  hibernate.properties not found
+08/jun/2015-10:05:36 INFO  [org.hibernate.cfg.Environment]  Bytecode provider name : javassist
+08/jun/2015-10:05:36 INFO  [org.hibernate.cfg.Environment]  using JDK 1.4 java.sql.Timestamp handling
+08/jun/2015-10:05:36 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.acl.Ace
+08/jun/2015-10:05:36 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.acl.Ace on table ACL_ENTRY
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.acl.Acl
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.acl.Acl on table ACL
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Perfil
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.Perfil on table PERFIL
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Rol
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.Rol on table ROL
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Propietario
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.Propietario on table PROPIETARIO
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.EntidadGUIA
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.EntidadGUIA on table ENTIDAD_GUIA
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Agenda
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.Agenda on table AGENDA
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Usuario
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.Usuario on table USUARIO
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Grupo
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.Grupo on table GRUPO
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.ZonaHoraria
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding type definition: timezone
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.ZonaHoraria on table ZONA_HORARIA
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Preferencia
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.Preferencia on table PREFERENCIA
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.PreferenciasSAD
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.PreferenciasSAD on table PREFERENCIAS_SAD
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Subscripcion
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.Subscripcion on table SUBSCRIPCION
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.SubscripcionInterna
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.SubscripcionInterna on table SUBSCRIPCION_INTERNA
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.SubscripcionExterna
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding type definition: cypher
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.SubscripcionExterna on table SUBSCRIPCION_EXTERNA
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.ContenedorPIM
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.ContenedorPIM on table CONTENEDOR
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.ElementoPIM
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding type definition: long_timestamp
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.ElementoPIM on table ELEMENTO_PIM
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Categoria
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.Categoria on table CATEGORIA
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Calendario
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Inbox
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Outbox
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.ElementoICal
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding type definition: long_timestamp
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.ElementoICal on table ELEMENTO_ICAL
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Cita
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.Cita on table CITA
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Contacto
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.Contacto on table CONTACTO
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.PermisoFB
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.PermisoFB on table PERMISO_FB
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Libreta
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Recordatorio
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.Recordatorio on table RECORDATORIO
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Recurso
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.Recurso on table RECURSO
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Registro
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Tarea
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.Tarea on table TAREA
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Estado
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding type definition: long_timestamp
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.Estado on table ESTADO
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.InformacionInterviniente
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.InformacionInterviniente on table INFO_INTERV
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.EmailInterviniente
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.EmailInterviniente on table EMAIL_INTERV
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.HibInterviniente
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.HibInterviniente on table HIB_INTERV
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.SyncError
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding type definition: long_timestamp
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.SyncError on table SYNC_ERROR
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.HistoricoSLS
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding type definition: long_timestamp
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.HistoricoSLS on table HISTORICOS_SLS
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.DispositivoBloqueado
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.DispositivoBloqueado on table DISPOSITIVO_BLOQUEADO
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.BloqueoSLS
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding type definition: long_timestamp
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.BloqueoSLS on table BLOQUEO_SLS
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.BloqueoMDS
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding type definition: long_timestamp
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.BloqueoMDS on table BLOQUEO_MDS
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.view.ElementoContenedorCategoria
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.view.ElementoContenedorCategoria on table ELEMENTO_CONTENEDOR_CATEGORIA
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Clasificacion
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.Clasificacion on table CLASIFICACION
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.LobWrapper
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.LobWrapper on table LOB_WRAPPER
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Entidad
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.Entidad on table ENTIDAD
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.RegistroSincronizacion
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding type definition: long_timestamp
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.RegistroSincronizacion on table REGISTRO_SINCRO
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.LineaRegistroSincronizacion
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding type definition: long_timestamp
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.LineaRegistroSincronizacion on table LIN_REGISTRO_SINCRO
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.PermGestionInvitaciones
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.PermGestionInvitaciones on table PERM_GESTION_INVITACIONES
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.HistoricoUsuariosPresentes
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding type definition: long_timestamp
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.HistoricoUsuariosPresentes on table HISTORICO_USUARIOS_PRESENTES
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.stats.AccesoUsuario
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding type definition: long_timestamp
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.stats.AccesoUsuario on table ACCESO_USUARIO
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.stats.ConsumoCuotaUsuarios
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding type definition: long_timestamp
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.stats.ConsumoCuotaUsuarios on table CONSUMO_CUOTA_USUARIOS
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.stats.HistoricoAccesos
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding type definition: long_timestamp
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.stats.HistoricoAccesos on table HISTORICO_ACCESOS
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.stats.HistoricoPIM
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding type definition: long_timestamp
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.stats.HistoricoPIM on table HISTORICO_PIM
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.stats.HistoricoSyncError
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding type definition: long_timestamp
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.stats.HistoricoSyncError on table HISTORICO_SYNC_ERROR
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.AccionesInvitaciones
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.AccionesInvitaciones on table ACCIONES_INVITACIONES
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Sondeo
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.Sondeo on table SONDEO
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Propuesta
+08/jun/2015-10:05:37 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.Propuesta on table PROPUESTA
+08/jun/2015-10:05:38 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Voto
+08/jun/2015-10:05:38 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.Voto on table VOTO
+08/jun/2015-10:05:38 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.Comentario
+08/jun/2015-10:05:38 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.Comentario on table COMENTARIO
+08/jun/2015-10:05:38 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.ConjuntoSondeos
+08/jun/2015-10:05:38 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.SondeoInterviniente
+08/jun/2015-10:05:38 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.SondeoInterviniente on table SONDEO_INTERVINIENTE
+08/jun/2015-10:05:38 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.PermGestionCategorias
+08/jun/2015-10:05:38 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.PermGestionCategorias on table PERM_GESTION_CATEGORIAS
+08/jun/2015-10:05:38 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding entity from annotated class: es.juntadeandalucia.cice.agata.sad.domain.security.AccesoFallido
+08/jun/2015-10:05:38 INFO  [org.hibernate.cfg.AnnotationBinder]  Binding type definition: long_timestamp
+08/jun/2015-10:05:38 INFO  [org.hibernate.cfg.annotations.EntityBinder]  Bind entity es.juntadeandalucia.cice.agata.sad.domain.security.AccesoFallido on table ACCESO_FALLIDO
+08/jun/2015-10:05:38 INFO  [org.hibernate.cfg.annotations.CollectionBinder]  Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.ElementoICal.sobreescrituras -> ELEMENTO_ICAL
+08/jun/2015-10:05:38 INFO  [org.hibernate.cfg.annotations.CollectionBinder]  Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.ElementoICal.intervinientes -> INFO_INTERV
+08/jun/2015-10:05:38 INFO  [org.hibernate.cfg.annotations.CollectionBinder]  Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Categoria.subscripciones -> SUBSCRIPCION_INTERNA
+08/jun/2015-10:05:38 INFO  [org.hibernate.cfg.annotations.CollectionBinder]  Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.ContenedorPIM.subscripciones -> SUBSCRIPCION_INTERNA
+08/jun/2015-10:05:38 INFO  [org.hibernate.cfg.annotations.CollectionBinder]  Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Preferencia.subscripciones -> SUBSCRIPCION
+08/jun/2015-10:05:38 INFO  [org.hibernate.cfg.annotations.CollectionBinder]  Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.acl.Acl.aces -> ACL_ENTRY
+08/jun/2015-10:05:38 INFO  [org.hibernate.cfg.annotations.CollectionBinder]  Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Propietario.permInvitacionesGestor -> PERM_GESTION_INVITACIONES
+08/jun/2015-10:05:38 INFO  [org.hibernate.cfg.annotations.CollectionBinder]  Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Propietario.permInvitacionesPropietario -> PERM_GESTION_INVITACIONES
+08/jun/2015-10:05:38 INFO  [org.hibernate.cfg.annotations.CollectionBinder]  Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.EntidadGUIA.aces -> ACL_ENTRY
+08/jun/2015-10:05:38 INFO  [org.hibernate.cfg.annotations.CollectionBinder]  Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Agenda.contenedores -> CONTENEDOR
+08/jun/2015-10:05:38 INFO  [org.hibernate.cfg.annotations.CollectionBinder]  Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Usuario.permisosBenefactor -> PERMISO_FB
+08/jun/2015-10:05:38 INFO  [org.hibernate.cfg.annotations.CollectionBinder]  Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Usuario.permisosBeneficiario -> PERMISO_FB
+08/jun/2015-10:05:38 INFO  [org.hibernate.cfg.annotations.CollectionBinder]  Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Grupo.usuarios -> USUARIO
+08/jun/2015-10:05:38 INFO  [org.hibernate.cfg.annotations.CollectionBinder]  Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.ContenedorPIM.categorias -> CATEGORIA
+08/jun/2015-10:05:38 INFO  [org.hibernate.cfg.annotations.CollectionBinder]  Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.ContenedorPIM.elementos -> ELEMENTO_PIM
+08/jun/2015-10:05:38 INFO  [org.hibernate.cfg.annotations.CollectionBinder]  Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.ContenedorPIM.registrosSincronizacion -> REGISTRO_SINCRO
+08/jun/2015-10:05:38 INFO  [org.hibernate.cfg.annotations.CollectionBinder]  Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.ElementoPIM.estados -> ESTADO
+08/jun/2015-10:05:38 INFO  [org.hibernate.cfg.annotations.CollectionBinder]  Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.ElementoPIM.historicosSLS -> HISTORICOS_SLS
+08/jun/2015-10:05:38 INFO  [org.hibernate.cfg.annotations.CollectionBinder]  Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.ElementoPIM.syncErrors -> SYNC_ERROR
+08/jun/2015-10:05:38 INFO  [org.hibernate.cfg.annotations.CollectionBinder]  Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Calendario.preferencias -> PREFERENCIA
+08/jun/2015-10:05:38 INFO  [org.hibernate.cfg.annotations.CollectionBinder]  Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.ElementoICal.recordatorios -> RECORDATORIO
+08/jun/2015-10:05:38 INFO  [org.hibernate.cfg.annotations.CollectionBinder]  Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Clasificacion.usuarios -> USUARIO
+08/jun/2015-10:05:38 INFO  [org.hibernate.cfg.annotations.CollectionBinder]  Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Entidad.usuarios -> USUARIO
+08/jun/2015-10:05:38 INFO  [org.hibernate.cfg.annotations.CollectionBinder]  Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Sondeo.comentarios -> COMENTARIO
+08/jun/2015-10:05:38 INFO  [org.hibernate.cfg.annotations.CollectionBinder]  Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Sondeo.intervinientes -> SONDEO_INTERVINIENTE
+08/jun/2015-10:05:38 INFO  [org.hibernate.cfg.annotations.CollectionBinder]  Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Sondeo.propuestas -> PROPUESTA
+08/jun/2015-10:05:38 INFO  [org.hibernate.cfg.annotations.CollectionBinder]  Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.Propuesta.votos -> VOTO
+08/jun/2015-10:05:38 INFO  [org.hibernate.cfg.annotations.CollectionBinder]  Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.SondeoInterviniente.comentarios -> COMENTARIO
+08/jun/2015-10:05:38 INFO  [org.hibernate.cfg.annotations.CollectionBinder]  Mapping collection: es.juntadeandalucia.cice.agata.sad.domain.SondeoInterviniente.votos -> VOTO
+08/jun/2015-10:05:38 INFO  [org.hibernate.validator.Version]  Hibernate Validator 3.0.0.GA
+08/jun/2015-10:05:38 INFO  [hibernate3.annotation.AnnotationSessionFactoryBean]  Building new Hibernate SessionFactory
+08/jun/2015-10:05:38 INFO  [org.hibernate.connection.ConnectionProviderFactory]  Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+08/jun/2015-10:05:38 INFO  [.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 30000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kflt991mbntxi14080wl|17accc9, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kflt991mbntxi14080wl|17accc9, idleConnectionTestPeriod -> 100, initialPoolSize -> 5, jdbcUrl -> jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=10.240.202.30)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=DESICOP)))), maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 300, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 35, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 6, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> SELECT 1 FROM DUAL, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+08/jun/2015-10:05:39 INFO  [org.hibernate.cfg.SettingsFactory]  RDBMS: Oracle, version: Oracle Database 10g Enterprise Edition Release 10.2.0.4.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+08/jun/2015-10:05:39 INFO  [org.hibernate.cfg.SettingsFactory]  JDBC driver: Oracle JDBC driver, version: 10.2.0.4.0
+08/jun/2015-10:05:39 INFO  [org.hibernate.dialect.Dialect]  Using dialect: org.hibernate.dialect.Oracle10gDialect
+08/jun/2015-10:05:39 INFO  [rg.hibernate.transaction.TransactionFactoryFactory]  Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+08/jun/2015-10:05:39 INFO  [ernate.transaction.TransactionManagerLookupFactory]  No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+08/jun/2015-10:05:39 INFO  [org.hibernate.cfg.SettingsFactory]  Automatic flush during beforeCompletion(): disabled
+08/jun/2015-10:05:39 INFO  [org.hibernate.cfg.SettingsFactory]  Automatic session close at end of transaction: disabled
+08/jun/2015-10:05:39 INFO  [org.hibernate.cfg.SettingsFactory]  Scrollable result sets: enabled
+08/jun/2015-10:05:39 INFO  [org.hibernate.cfg.SettingsFactory]  JDBC3 getGeneratedKeys(): disabled
+08/jun/2015-10:05:39 INFO  [org.hibernate.cfg.SettingsFactory]  Connection release mode: auto
+08/jun/2015-10:05:39 INFO  [org.hibernate.cfg.SettingsFactory]  Maximum outer join fetch depth: 1
+08/jun/2015-10:05:39 INFO  [org.hibernate.cfg.SettingsFactory]  Default batch fetch size: 1
+08/jun/2015-10:05:39 INFO  [org.hibernate.cfg.SettingsFactory]  Generate SQL with comments: disabled
+08/jun/2015-10:05:39 INFO  [org.hibernate.cfg.SettingsFactory]  Order SQL updates by primary key: enabled
+08/jun/2015-10:05:39 INFO  [org.hibernate.cfg.SettingsFactory]  Order SQL inserts for batching: disabled
+08/jun/2015-10:05:39 INFO  [org.hibernate.cfg.SettingsFactory]  Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+08/jun/2015-10:05:39 INFO  [org.hibernate.hql.ast.ASTQueryTranslatorFactory]  Using ASTQueryTranslatorFactory
+08/jun/2015-10:05:39 INFO  [org.hibernate.cfg.SettingsFactory]  Query language substitutions: {}
+08/jun/2015-10:05:39 INFO  [org.hibernate.cfg.SettingsFactory]  JPA-QL strict compliance: disabled
+08/jun/2015-10:05:39 INFO  [org.hibernate.cfg.SettingsFactory]  Second-level cache: enabled
+08/jun/2015-10:05:39 INFO  [org.hibernate.cfg.SettingsFactory]  Query cache: disabled
+08/jun/2015-10:05:39 INFO  [org.hibernate.cfg.SettingsFactory]  Cache provider: org.hibernate.cache.NoCacheProvider
+08/jun/2015-10:05:39 INFO  [org.hibernate.cfg.SettingsFactory]  Optimize cache for minimal puts: disabled
+08/jun/2015-10:05:39 INFO  [org.hibernate.cfg.SettingsFactory]  Structured second-level cache entries: disabled
+08/jun/2015-10:05:39 INFO  [org.hibernate.cfg.SettingsFactory]  Statistics: disabled
+08/jun/2015-10:05:39 INFO  [org.hibernate.cfg.SettingsFactory]  Deleted entity synthetic identifier rollback: disabled
+08/jun/2015-10:05:39 INFO  [org.hibernate.cfg.SettingsFactory]  Default entity-mode: pojo
+08/jun/2015-10:05:39 INFO  [org.hibernate.cfg.SettingsFactory]  Named query checking : enabled
+08/jun/2015-10:05:39 INFO  [org.hibernate.impl.SessionFactoryImpl]  building session factory
+08/jun/2015-10:05:41 INFO  [org.hibernate.impl.SessionFactoryObjectFactory]  Not binding factory to JNDI, no JNDI name configured
+08/jun/2015-10:05:42 INFO  [ork.security.intercept.AbstractSecurityInterceptor]  Validated configuration attributes
+08/jun/2015-10:05:43 INFO  [org.apache.velocity.app.VelocityEngine]  LogSystem has been deprecated. Please use a LogChute implementation.
+08/jun/2015-10:05:44 WARN  [lucia.cice.agata.sad.neg.impl.SADConfigServiceImpl]  Error at initialization of properties in init. Using JNDI/default properties.
+08/jun/2015-10:05:48 INFO  [curity.config.EntryPointInjectionBeanPostProcessor]  Selecting AuthenticationEntryPoint for use in ExceptionTranslationFilter
+08/jun/2015-10:05:49 INFO  [curity.config.EntryPointInjectionBeanPostProcessor]  Using main configured AuthenticationEntryPoint.
+08/jun/2015-10:05:49 INFO  [curity.config.EntryPointInjectionBeanPostProcessor]  Using bean 'org.springframework.security.ui.webapp.AuthenticationProcessingFilterEntryPoint@2436ac' as the entry point.
+08/jun/2015-10:05:49 INFO  [ork.security.intercept.AbstractSecurityInterceptor]  Validated configuration attributes
+08/jun/2015-10:05:49 INFO  [work.security.config.FilterChainProxyPostProcessor]  Checking sorted filter chain: [org.springframework.security.context.HttpSessionContextIntegrationFilter[ order=200; ], org.springframework.security.ui.logout.LogoutFilter[ order=300; ], OrderedFilterDecorator[ delegate=es.juntadeandalucia.cice.agata.sad.security.filter.SamlFilter[ order=699; ]; order=699], org.springframework.security.ui.webapp.AuthenticationProcessingFilter[ order=700; ], OrderedFilterDecorator[ delegate=es.juntadeandalucia.cice.agata.sad.security.filter.CsrfTokenFilter@1c2c45; order=701], org.springframework.security.wrapper.SecurityContextHolderAwareRequestFilter[ order=1100; ], org.springframework.security.ui.ExceptionTranslationFilter[ order=1400; ], org.springframework.security.ui.SessionFixationProtectionFilter[ order=1600; ], org.springframework.security.intercept.web.FilterSecurityInterceptor@19e922d, OrderedFilterDecorator[ delegate=es.juntadeandalucia.cice.agata.sad.security.filter.SadSwitchUserProcessingFilter[ order=1800; ]; order=1800]]
+08/jun/2015-10:05:49 INFO  [work.security.config.FilterChainProxyPostProcessor]  Filter chain...
+08/jun/2015-10:05:49 INFO  [work.security.config.FilterChainProxyPostProcessor]  [0] - org.springframework.security.context.HttpSessionContextIntegrationFilter[ order=200; ]
+08/jun/2015-10:05:49 INFO  [work.security.config.FilterChainProxyPostProcessor]  [1] - org.springframework.security.ui.logout.LogoutFilter[ order=300; ]
+08/jun/2015-10:05:49 INFO  [work.security.config.FilterChainProxyPostProcessor]  [2] - es.juntadeandalucia.cice.agata.sad.security.filter.SamlFilter[ order=699; ]
+08/jun/2015-10:05:49 INFO  [work.security.config.FilterChainProxyPostProcessor]  [3] - org.springframework.security.ui.webapp.AuthenticationProcessingFilter[ order=700; ]
+08/jun/2015-10:05:49 INFO  [work.security.config.FilterChainProxyPostProcessor]  [4] - es.juntadeandalucia.cice.agata.sad.security.filter.CsrfTokenFilter@1c2c45
+08/jun/2015-10:05:49 INFO  [work.security.config.FilterChainProxyPostProcessor]  [5] - org.springframework.security.wrapper.SecurityContextHolderAwareRequestFilter[ order=1100; ]
+08/jun/2015-10:05:49 INFO  [work.security.config.FilterChainProxyPostProcessor]  [6] - org.springframework.security.ui.ExceptionTranslationFilter[ order=1400; ]
+08/jun/2015-10:05:49 INFO  [work.security.config.FilterChainProxyPostProcessor]  [7] - org.springframework.security.ui.SessionFixationProtectionFilter[ order=1600; ]
+08/jun/2015-10:05:49 INFO  [work.security.config.FilterChainProxyPostProcessor]  [8] - org.springframework.security.intercept.web.FilterSecurityInterceptor@19e922d
+08/jun/2015-10:05:49 INFO  [work.security.config.FilterChainProxyPostProcessor]  [9] - es.juntadeandalucia.cice.agata.sad.security.filter.SadSwitchUserProcessingFilter[ order=1800; ]
+08/jun/2015-10:05:49 INFO  [work.security.config.FilterChainProxyPostProcessor]  Checking whether login URL '/login.jsp' is accessible with your configuration
+08/jun/2015-10:05:49 INFO  [work.security.config.FilterChainProxyPostProcessor]  FilterChainProxy: FilterChainProxy[ UrlMatcher = org.springframework.security.util.AntUrlPathMatcher[requiresLowerCase='true']; Filter Chains: {/loginsso=[], /saml2/jsp/fedletssoinit.jsp=[], /saml2/jsp/fedletsloinit=[], /saml2/jsp/fedletslosoap=[], /saml2/jsp/fedletlogout=[], /saml2/jsp/fedletslopost=[], /saml2/jsp/fedletsloredirect=[], /fedletapplication=[], /login.jsp*=[], /jsonp/**=[], /public/**=[], /vote.jsp*=[], /vote.do*=[], /**=[org.springframework.security.context.HttpSessionContextIntegrationFilter[ order=200; ], org.springframework.security.ui.logout.LogoutFilter[ order=300; ], es.juntadeandalucia.cice.agata.sad.security.filter.SamlFilter[ order=699; ], org.springframework.security.ui.webapp.AuthenticationProcessingFilter[ order=700; ], es.juntadeandalucia.cice.agata.sad.security.filter.CsrfTokenFilter@1c2c45, org.springframework.security.wrapper.SecurityContextHolderAwareRequestFilter[ order=1100; ], org.springframework.security.ui.ExceptionTranslationFilter[ order=1400; ], org.springframework.security.ui.SessionFixationProtectionFilter[ order=1600; ], org.springframework.security.intercept.web.FilterSecurityInterceptor@19e922d, es.juntadeandalucia.cice.agata.sad.security.filter.SadSwitchUserProcessingFilter[ order=1800; ]]}]
+08/jun/2015-10:05:50 INFO  [k.security.ldap.DefaultSpringSecurityContextSource]   URL 'ldap://ldap23.juntadeandalucia.es:389/o=juntadeandalucia,c=es', root DN is 'o=juntadeandalucia,c=es'
+08/jun/2015-10:05:50 INFO  [org.springframework.web.context.ContextLoader]  Root WebApplicationContext: initialization completed in 20963 ms
+08/jun/2015-10:05:50 INFO  [org.springframework.web.servlet.DispatcherServlet]  FrameworkServlet 'sad-web': initialization started
+08/jun/2015-10:05:50 INFO  [ework.web.context.support.XmlWebApplicationContext]  Refreshing org.springframework.web.context.support.XmlWebApplicationContext@11b16: display name [WebApplicationContext for namespace 'sad-web-servlet']; startup date [Mon Jun 08 10:05:50 CEST 2015]; parent: org.springframework.web.context.support.XmlWebApplicationContext@1d902d3
+08/jun/2015-10:05:50 INFO  [ramework.beans.factory.xml.XmlBeanDefinitionReader]  Loading XML bean definitions from ServletContext resource [/WEB-INF/sad-web-servlet.xml]
+08/jun/2015-10:05:50 WARN  [cice.agata.sad.util.listener.LogConfigurerListener]  New log directory: /opt/jboss/server/default/log
+08/jun/2015-10:05:50 WARN  [cice.agata.sad.util.listener.LogConfigurerListener]  Old log directory: 
+08/jun/2015-10:05:50 INFO  [ework.web.context.support.XmlWebApplicationContext]  Bean factory for application context [org.springframework.web.context.support.XmlWebApplicationContext@11b16]: org.springframework.beans.factory.support.DefaultListableBeanFactory@1fae7b1
+08/jun/2015-10:05:50 INFO  [k.beans.factory.support.DefaultListableBeanFactory]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1fae7b1: defining beans [exceptionResolver,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,trashControllerWrapper,blockedMassiveDeletionsControllerWrapper,LDAPContactControllerWrapper,syncRegistroControllerWrapper,contactControllerWrapper,printControllerWrapper,jsonPController,taskControllerWrapper,pollControllerWrapper,eventControllerWrapper,groupDirectoryControllerWrapper,preferenceControllerWrapper,blockedSyncControllerWrapper,syncErrorControllerWrapper,voteControllerWrapper,searchControllerWrapper,categoryTreeControllerWrapper,reminderControllerWrapper,switchUserControllerWrapper,syncHistorialControllerWrapper,attendeeControllerWrapper,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,jspViewResolver,messageSource,jsonView,org.springframework.aop.config.internalAutoProxyCreator,es.juntadeandalucia.cice.agata.sad.webapp.util.MultipartResolverDisablingAspect#0,multipartResolver]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@621f0c
+08/jun/2015-10:05:51 INFO  [org.springframework.web.servlet.DispatcherServlet]  FrameworkServlet 'sad-web': initialization completed in 1336 ms
+08/jun/2015-10:07:07 INFO  [ucia.cice.agata.sad.webapp.servlet.LoginSsoServlet]  [AE855C6775D011C4F87B3B4F278BFC87] POST uri=/sad-web/loginSSO?null Se va a redirigir al IDP
+08/jun/2015-10:07:08 INFO  [ucia.cice.agata.sad.webapp.servlet.LoginSsoServlet]  [AE855C6775D011C4F87B3B4F278BFC87] POST uri=/sad-web/loginSSO?null Url de petición para redirección es: saml2/jsp/fedletSSOInit.jsp?metaAlias=/sp&idpEntityID=https://10.240.202.74:8443/opensso&binding=urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST
+08/jun/2015-10:08:06 INFO  [alucia.cice.agata.sad.webapp.servlet.WebSsoServlet]  [AE855C6775D011C4F87B3B4F278BFC87] POST uri=/sad-web/fedletapplication?null Se va a procesar la respuesta del IDP
+08/jun/2015-10:08:06 INFO  [alucia.cice.agata.sad.webapp.servlet.WebSsoServlet]  [AE855C6775D011C4F87B3B4F278BFC87] POST uri=/sad-web/fedletapplication?null Se va a procesar el token enviado por el IDP
+08/jun/2015-10:08:06 ERROR [alucia.cice.agata.sad.webapp.servlet.WebSsoServlet]  [AE855C6775D011C4F87B3B4F278BFC87] POST uri=/sad-web/fedletapplication?null Hubo un problema al procesar la respuesta del IDP
+es.juntadeandalucia.cice.agata.sad.util.exception.AgataSADException: null La hora de "SubjectConfirmationData" no es válida.
+	at es.juntadeandalucia.cice.agata.sad.webapp.servlet.WebSsoServlet.processToken(WebSsoServlet.java:128)
+	at es.juntadeandalucia.cice.agata.sad.webapp.servlet.WebSsoServlet.doPost(WebSsoServlet.java:90)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.AbstractRequestLoggingFilter.doFilterInternal(AbstractRequestLoggingFilter.java:156)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:236)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:167)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.security.util.FilterChainProxy.doFilter(FilterChainProxy.java:169)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:236)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:167)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.orm.hibernate3.support.OpenSessionInViewFilter.doFilterInternal(OpenSessionInViewFilter.java:198)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at es.juntadeandalucia.cice.agata.sad.security.filter.NewSessionFilter.doFilter(NewSessionFilter.java:86)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at es.juntadeandalucia.cice.agata.sad.security.filter.UrlSessionFilter.doFilter(UrlSessionFilter.java:39)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.jboss.web.tomcat.filters.ReplyHeaderFilter.doFilter(ReplyHeaderFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:230)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:175)
+	at org.jboss.web.tomcat.security.SecurityAssociationValve.invoke(SecurityAssociationValve.java:182)
+	at org.jboss.web.tomcat.security.JaccContextValve.invoke(JaccContextValve.java:84)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.jboss.web.tomcat.service.jca.CachedConnectionValve.invoke(CachedConnectionValve.java:157)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:262)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:844)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:583)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:446)
+	at java.lang.Thread.run(Thread.java:595)
+Caused by: com.sun.identity.saml2.common.SAML2Exception: La hora de "SubjectConfirmationData" no es válida.
+	at com.sun.identity.saml2.common.SAML2Utils.isBearerSubjectConfirmation(SAML2Utils.java:768)
+	at com.sun.identity.saml2.common.SAML2Utils.verifyResponse(SAML2Utils.java:609)
+	at com.sun.identity.saml2.profile.SPACSUtils.processResponse(SPACSUtils.java:1057)
+	at com.sun.identity.saml2.profile.SPACSUtils.processResponseForFedlet(SPACSUtils.java:2100)
+	at es.juntadeandalucia.cice.agata.sad.webapp.servlet.WebSsoServlet.processToken(WebSsoServlet.java:114)
+	... 46 more

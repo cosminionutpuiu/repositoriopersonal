@@ -1,0 +1,437 @@
+Cliente JAVA FTPS
+
+En la presente entrada, veremos como interactuar con un servidor FTPS (FTP + SSL) utilizando el conjunto de librerias Apache Commons.
+
+Apache Commons es un proyecto de la fundación Apache con el objetivo de crear y mantener componentes JAVA reutilizables. Para este ejemplo en concreto, se ha utilizado los componentes del paquete commons.net (http://commons.apache.org/proper/commons-net/). Se ha utilizado la última versión disponible, la 3.3, que se puede descargar desde el siguiente enlace:
+
+http://apache.rediris.es//commons/net/binaries/commons-net-3.3-bin.tar.gz
+
+En la entrada se verá una interacción básica con el servidor, que cubre los siguientes casos de uso:
+
+* Logado en el servidor
+* Subida fichero al servidor
+* Descarga de fichero desde el servidor
+* Borrado de fichero en el servidor
+
+Para poder seguir esta entrada, es necesario disponer de los siguientes elementos:
+
+* Entorno integrado de desarrollo (IDE) + Máquina Virtual Java (1.6+). En las pruebas se ha utilizado como IDE Eclipse Luna Service Release 1 (4.4.1) y la versión de la máquina virtual utilizada ha sido la jdk1.6.0_41 en versión de 64 Bits.
+
+* Acceso al servidor. La IP del servidor de pruebas es: 10.226.132.227. Se tiene que tener visibilidad a los siguientes puertos:
+
+** Puerto 21 (Control FTP)
+** Puerto 20 (Datos FTP)
+** Control 990 (Control FTP SSL)
+** Datos 989   (Datos FTP SSL)
+
+* Cuenta de pruebas (usuario y contraseña) en dicho servidor. Consultar con los responsables del entorno para que suministren una.
+
+* Certificado del servidor. En esta misma entrada se detallará como obtenerlo y crear un almacén para ser utilizado en JAVA si no nos lo han suministrado previamente.
+
+* Librería commons-net-3.3.jar (se puede descargar del enlace anteriormente mencionado)
+
+* Código fuente adjunto a esta entrada con el ejemplo.
+
+* Conocimientos básicos de programación JAVA así como conocimientos para configurar de forma básica el IDE con el que se trabaje para poder añadir librerías externas al proyecto así como pasarle argumentos a la máquina virtual JAVA con la que se trabaje.
+
+
+
+
+_Obtención del certificado del servidor y creación del almacen JAVA_
+
+Si no nos han suministrado el certificado y es lo único que nos haría falta para empezar a probar, sería posible obtenerlo directamente desde el servidor. Para ello haremos uso de la herramienta openssl (en distribuciones Debian y mayoría de derivadas, instalar paquete openssl si no se tiene). En otros sistemas, consultar la WEB del proyecto (https://www.openssl.org/related/binaries.html )
+
+Una vez se tiene instalada la herramienta, se puede ejecutar el siguiente comando:
+
+$ openssl s_client -connect IP:PUERTO_SSL_CONTROL -showcerts
+
+para nuestro caso:
+
+$ openssl s_client -connect 10.226.132.227:990 -showcerts
+
+
+que debe producir una salida como la siguiente:
+
+CONNECTED(00000003)
+depth=0 CN = \C3\A2\C2\80\C2\98server_3\C3\A2\C2\80\C2\99
+verify error:num=20:unable to get local issuer certificate
+verify return:1
+depth=0 CN = \C3\A2\C2\80\C2\98server_3\C3\A2\C2\80\C2\99
+verify error:num=27:certificate not trusted
+verify return:1
+depth=0 CN = \C3\A2\C2\80\C2\98server_3\C3\A2\C2\80\C2\99
+verify error:num=21:unable to verify the first certificate
+verify return:1
+---
+Certificate chain
+ 0 s:/CN=\xE2\x80\x98server_3\xE2\x80\x99
+   i:/O=VNX Certificate Authority/CN=NASVG8_CICA
+-----BEGIN CERTIFICATE-----
+MIIErTCCA5WgAwIBAgIFFVFSgGEwDQYJKoZIhvcNAQEFBQAwOjEiMCAGA1UEChMZ
+Vk5YIENlcnRpZmljYXRlIEF1dGhvcml0eTEUMBIGA1UEAxQLTkFTVkc4X0NJQ0Ew
+HhcNMTQxMTIwMTExMjU1WhcNMTYxMTA5MTExMjU1WjAZMRcwFQYDVQQDFA7igJhz
+ZXJ2ZXJfM+KAmTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBAPSUwxgO
+m4jPPMZO/GM6TBOvqNt/p1yA47Zhxewa6jEvSByRkj7o4cF7XwKXCfrHHVfFWR9K
+HvRmtienmnYHywDs8YCEXZSFmtVS/L2lDtEgtQZDjrHug/pk+ip0pbrgqDXmwJhm
+6LgtPDtMDo4i15B4qw03XufabRcsMH9zAcT2/RPG1gztMwQPzNOzTb30Civb246u
+/OEn7LuZhC9Pnh1n7Qvrla0pfmhjkogg5KEkfLhGrGKYSeGd0WLiPgtlQOlXprI/
+4OlF23ku1l2A5G0XKIH5IcKXtfGNbrvMjlOBEFvydViV+OkXqUd86fgEMBJyP8WF
+KL5gvH2ScpfUGk8DOddfqfl8e6ulcWLaznIoLNBdy2A8JZp8oKIXI8ZPJncyldN0
+mjPd251yUqO1rv91t9MykOiz3QJD6IiFxLyNXeYSrrij936tY0x2591c3NJTW0LF
+G9hR01eRiBERwpTJTT3ctVrNXuRUq5NLJBXx9kPU9/aRraHC2ywtAqYMk7lnNDpI
+3EfkcFw0pNsojsdgu7FGmBDA/v2KHVPzLAUREij3wRwMGSBtEkWdOK6EJN1p+Rqn
+XvLYsp9hsq28frjq7ITDyz2afj1TyJ2IMmWjmfhpqQDAjBvcW8+6umL+U3pg/GPp
+lFgahjih9/A/05ayNIj5QosvSbqvg+HvI0SBAgMBAAGjgdowgdcwHQYDVR0OBBYE
+FMG6BYesrq6Q5TM6jQt9WojEh2O5MGYGA1UdIwRfMF2AFNpOgSCqRAogpA4B3hPf
+A6b3GevIoT6kPDA6MSIwIAYDVQQKExlWTlggQ2VydGlmaWNhdGUgQXV0aG9yaXR5
+MRQwEgYDVQQDFAtOQVNWRzhfQ0lDQYIFFVFSgFkwDAYDVR0TBAUwAwEB/zBABgNV
+HREEOTA3gilDZWxlcnJhIFRlbXBvcmFyeSBDZXJ0aWZpY2F0ZSAtIE5PVCBWQUxJ
+RIIBIIIHMS4yLjMuNDANBgkqhkiG9w0BAQUFAAOCAQEAL9jqfsqmwrIAtU+DRmAK
+dBpHQHPISRdHgPAkhcMJYcGqfiiPvDoP4nhC6aRe+53pf1DHaBz9639dZrRof6sg
+LLR3yAhS2DadKXgnbvI2foY062Wd1awDr0O74ZaqRYeC60SWTA3xJgozmudgdGMr
+IDtMpK/SRBOiCKZUwx5pglkOnuFWdqXDzaeFq7MdMt2TtmVCcRTfesWjgratv3k/
+rY/6v/8HoxUyX+vLCbuSMzrVwRRuwNlGtXYfy8/qXzdplP3yckwmJ0eFAwG50dLU
+fRXo1JCA/R8PgXxINn3gA451O70oszk31wIkZIOydQc5dOM+3R4FLBJc47uM/AE2
+QQ==
+-----END CERTIFICATE-----
+---
+Server certificate
+subject=/CN=\xE2\x80\x98server_3\xE2\x80\x99
+issuer=/O=VNX Certificate Authority/CN=NASVG8_CICA
+---
+No client certificate CA names sent
+---
+SSL handshake has read 2172 bytes and written 519 bytes
+---
+New, TLSv1/SSLv3, Cipher is DHE-RSA-AES256-SHA
+Server public key is 4096 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+SSL-Session:
+    Protocol  : SSLv3
+    Cipher    : DHE-RSA-AES256-SHA
+    Session-ID: 158AEC9C4F413E3BD5B1C57B99DB2143C559EEA9F0D900AC677F8C9833C2BDDE
+    Session-ID-ctx: 
+    Master-Key: E5F125F0473E1AFA78D2D7D6215F5A90BBE41A701DE4D28BA3D8AB19ABE117D849F11ECCA33A3771413DF4512208A235
+    Key-Arg   : None
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    Start Time: 1418911613
+    Timeout   : 300 (sec)
+    Verify return code: 21 (unable to verify the first certificate)
+---
+220 server_3 FTP server (EMC-SNAS: 7.1.72.102) ready.
+
+
+El certificado es lo que esta entre las lineas BEGIN CERTIFICATE y END CERTIFICATE (esas lineas incluidas), es decir:
+
+-----BEGIN CERTIFICATE-----
+MIIErTCCA5WgAwIBAgIFFVFSgGEwDQYJKoZIhvcNAQEFBQAwOjEiMCAGA1UEChMZ
+Vk5YIENlcnRpZmljYXRlIEF1dGhvcml0eTEUMBIGA1UEAxQLTkFTVkc4X0NJQ0Ew
+HhcNMTQxMTIwMTExMjU1WhcNMTYxMTA5MTExMjU1WjAZMRcwFQYDVQQDFA7igJhz
+ZXJ2ZXJfM+KAmTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBAPSUwxgO
+m4jPPMZO/GM6TBOvqNt/p1yA47Zhxewa6jEvSByRkj7o4cF7XwKXCfrHHVfFWR9K
+HvRmtienmnYHywDs8YCEXZSFmtVS/L2lDtEgtQZDjrHug/pk+ip0pbrgqDXmwJhm
+6LgtPDtMDo4i15B4qw03XufabRcsMH9zAcT2/RPG1gztMwQPzNOzTb30Civb246u
+/OEn7LuZhC9Pnh1n7Qvrla0pfmhjkogg5KEkfLhGrGKYSeGd0WLiPgtlQOlXprI/
+4OlF23ku1l2A5G0XKIH5IcKXtfGNbrvMjlOBEFvydViV+OkXqUd86fgEMBJyP8WF
+KL5gvH2ScpfUGk8DOddfqfl8e6ulcWLaznIoLNBdy2A8JZp8oKIXI8ZPJncyldN0
+mjPd251yUqO1rv91t9MykOiz3QJD6IiFxLyNXeYSrrij936tY0x2591c3NJTW0LF
+G9hR01eRiBERwpTJTT3ctVrNXuRUq5NLJBXx9kPU9/aRraHC2ywtAqYMk7lnNDpI
+3EfkcFw0pNsojsdgu7FGmBDA/v2KHVPzLAUREij3wRwMGSBtEkWdOK6EJN1p+Rqn
+XvLYsp9hsq28frjq7ITDyz2afj1TyJ2IMmWjmfhpqQDAjBvcW8+6umL+U3pg/GPp
+lFgahjih9/A/05ayNIj5QosvSbqvg+HvI0SBAgMBAAGjgdowgdcwHQYDVR0OBBYE
+FMG6BYesrq6Q5TM6jQt9WojEh2O5MGYGA1UdIwRfMF2AFNpOgSCqRAogpA4B3hPf
+A6b3GevIoT6kPDA6MSIwIAYDVQQKExlWTlggQ2VydGlmaWNhdGUgQXV0aG9yaXR5
+MRQwEgYDVQQDFAtOQVNWRzhfQ0lDQYIFFVFSgFkwDAYDVR0TBAUwAwEB/zBABgNV
+HREEOTA3gilDZWxlcnJhIFRlbXBvcmFyeSBDZXJ0aWZpY2F0ZSAtIE5PVCBWQUxJ
+RIIBIIIHMS4yLjMuNDANBgkqhkiG9w0BAQUFAAOCAQEAL9jqfsqmwrIAtU+DRmAK
+dBpHQHPISRdHgPAkhcMJYcGqfiiPvDoP4nhC6aRe+53pf1DHaBz9639dZrRof6sg
+LLR3yAhS2DadKXgnbvI2foY062Wd1awDr0O74ZaqRYeC60SWTA3xJgozmudgdGMr
+IDtMpK/SRBOiCKZUwx5pglkOnuFWdqXDzaeFq7MdMt2TtmVCcRTfesWjgratv3k/
+rY/6v/8HoxUyX+vLCbuSMzrVwRRuwNlGtXYfy8/qXzdplP3yckwmJ0eFAwG50dLU
+fRXo1JCA/R8PgXxINn3gA451O70oszk31wIkZIOydQc5dOM+3R4FLBJc47uM/AE2
+QQ==
+-----END CERTIFICATE-----
+
+
+
+copiaremos dicho contenido y lo pegaremos un un fichero de texto plano llamado ftps_server.cert y guardaremos. Con eso, ya se tendrá el certificado.
+
+Para la creación del almacén de certificado habra que utilizar la herramienta keytool, suministrada con la distribución de la máquina virtual java. El coproper/commons-net/apidocs/mando a ejecutar será el que mostraremos a continuación. Nos pedira una nueva contraseña (en caso de crear un almacen nuevo) o de introducir la contraseña del almacén al que intentemos importar el certificado:
+
+/opt/java6/bin/keytool -import -file ftps_server.crt  -keystore /tmp/ftps_trust_key.store -alias ftps
+Escriba la contraseña del almacén de claves:  
+Volver a escribir la contraseña nueva:
+
+
+
+Propietario: CN=âserver_3â
+Emisor: CN=NASVG8_CICA, O=VNX Certificate Authority
+Número de serie: 1551528061
+Válido desde: Thu Nov 20 12:12:55 CET 2014 hasta: Wed Nov 09 12:12:55 CET 2016
+Huellas digitales del certificado:
+	 MD5:  6E:80:2F:62:38:44:09:06:09:F1:07:C8:EC:75:4C:F4
+	 SHA1: 72:67:38:6F:8D:FE:4C:09:02:CE:AD:D7:D9:0C:51:9E:A9:36:B3:76
+	 Nombre del algoritmo de firma: SHA1withRSA
+	 Versión: 3
+
+Extensiones: 
+
+#1: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: C1 BA 05 87 AC AE AE 90   E5 33 3A 8D 0B 7D 5A 88  .........3:...Z.
+0010: C4 87 63 B9                                        ..c.
+]
+]
+
+#2: ObjectId: 2.5.29.17 Criticality=false
+SubjectAlternativeName [
+  DNSName: Celerra Temporary Certificate - NOT VALID
+  DNSName:  
+  DNSName: 1.2.3.4
+]
+
+#3: ObjectId: 2.5.29.19 Criticality=false
+BasicConstraints:[
+  CA:true
+  PathLen:2147483647
+]
+
+#4: ObjectId: 2.5.29.35 Criticality=false
+AuthorityKeyIdentifier [
+KeyIdentifier [
+0000: DA 4E 81 20 AA 44 0A 20   A4 0E 01 DE 13 DF 03 A6  .N. .D. ........
+0010: F7 19 EB C8                                        ....
+]
+
+[CN=NASVG8_CICA, O=VNX Certificate Authority]
+SerialNumber: [    15515280 59]
+]
+
+¿Confiar en este certificado? [no]:  si
+
+
+Una vez importado, tendremos un nuevo almacén en la ruta /tmp/ftps_trust_key.store que contendrá un certificado con alias ftps.
+
+
+
+
+_Configuración entorno de desarrollo_.
+
+Una vez tenemos todos los requisitos necesarios, pasaremos a crear un nuevo proyecto JAVA en el IDE que utilicemos (en nuestro caso Eclipse) importando el fichero suministrado FTPConnectAndLoginDemo.java. Adicionalmente, en las propiedades del proyecto, nos iremos a la sección "Java Build Path" y en la pestaña "Libraries" pulsaremos sobre "Add External JARs" para añadir la librería commons-net-3.3.jar. Por último, en la configuración de ejecución (en Eclipse, botón derecho sobre el proyecto -> Run As -> Run Configuration), pasar los siguientes parametros (pestaña Arguments) a la máquina virtual que vaya a ejecutar el ejemplo:
+
+-Djavax.net.debug=all [Depuración de la comunicación SSL]
+-Djavax.net.ssl.trustStore=[ruta al almacen]
+-Djavax.net.ssl.trustStorePassword=[contraseña del almacén]
+
+Con esto, ya se podría proceder a ejecutar el ejemplo (una vez parametrizado con los datos necesarios, que serán básicamente IP, PUERTO, USUARIO y CONTRASEÑA)
+
+
+_Implementación cliente JAVA FTPS_
+
+Ahora vamos a ver algunos detalles sobre la implementación del cliente utilizado la librería commons-net. Commo hemos comentado, el ejemplo ofrece funcionalidad muy básica. En la distribución de la librería se adjunta algunos ejemplos. Para el caso del FTP, se adjunta un cliente hecho en JAVA (/commons-net-3.3/examples/ftp/FTPClientExample.java) que puede ser consultado para ampliar lo descrito aqui.
+
+Inicialmente, hay una declaración de variables para poder parametrizar el programa que son lo suficientemente descriptivos como para no paranos en ellos:
+
+String server = "10.226.132.227";
+int port = 990;
+String user = "usuario";
+String pass = "password";
+String origen="/tmp/prueba.txt";
+String destino="/descargas/prueba.txt";
+
+
+A continuación, instanciaremos un objeto de la clase FTPSClient, que encapsula toda la funcionalidad de comunicación con el servidor FTPS. Notesé que se utiliza la clase FTPSClient y no FTPClient, ya que nos vamos a comunicar con un servicio FTP a través de un transporte SSL.
+
+FTPSClient ftpClient = new FTPSClient("TLS",true);
+
+El primer parametro que le pasamos, es el protocolo a utilizar para la negociación. Con el segundo indicamos si la comunicación va a ser implicita o explicita (true=implicita). Implicita significa que el cliente realiza una negociacion SSL antes de enviar cualquier comando FTP (normalmente se utiliza el puerto 990). Esta forma es antigua, pero ampliamante utilizada. En el modo explicito, el cliente se conecta al puerto 21 del servidor y comienza una sesión FTP sin cifrar de manera tradicional, pero pide que la seguridad TLS sea usada y realiza la negociación apropiada antes de enviar cualquier dato sensible. Este es el método preferido de acuerdo al RFC que define FTP sobre TLS.
+
+A continuación, invocaremos el método addProtocolCommandListener, para poder mostrar por consola, los mensajes que nos vaya enviando el servidor FTP.
+
+ftpClient.addProtocolCommandListener(new PrintCommandListener(new PrintWriter(System.out)));
+
+
+Con el método setTrustManager, se puede ignorar el almacen por defecto de la máquina virtual y establecer otro. En el ejemplo esta comentado, porque no es necesario utilizar, ya que utilizaremos el que le pasamos por defecto a la maquina virtual. 
+
+
+Con el método setEnabledProtocols, se indica el listado de protocolos que estaran disponibles para la comunicación.
+
+
+ftpClient.setEnabledProtocols(new String[] {"SSLv3"});
+
+
+Para conectarnos al servidor, utilizaremos el método connect:
+
+try {
+	ftpClient.connect(server, port);
+
+
+	ftpClient.setControlEncoding("UTF-8");
+
+	//Similar a ejecutar completePendingCommand
+	int replyCode = ftpClient.getReplyCode();
+	if (!FTPReply.isPositiveCompletion(replyCode)) {
+		System.out.println("ERROR. SERVER REPLY CODE: " + replyCode);
+		return;
+	}
+
+Como se observa, al método connect le pasamos como parametros las cadenas que representan el servidor y el puerto a utilizar. 
+
+Con setControlEncoding, indicaremos la codificación a utilizar para los comandos de control (los comandos que son enviados al servidor).
+
+getReplyCode devuelve un entero con el código de respuesta del servidor FTP. Se debe utilizar para verificar que se ha podido conectar correctamente al servidor, ya que el método connect no devuelve nada.
+
+
+El método isPositiveCompletion de la clase FTPReply devuelve un booleano con valor verdadero en caso de que la respuesta del servidor sea positiva, es decir, la petición se ha completado de manera satisfactoria y se podría iniciar una nueva. Una respuesta positiva es aquella cuyo código empieza por 2 y es de la forma 2XX.
+
+
+Con el método login, realizado la autenticación en el servidor. Este método devuelve un booleano, verdadero si ha conseguido autenticar correctamente, falso en caso contrario:
+
+boolean success = ftpClient.login(user, pass);
+
+Con el método execPBSZ, establecemos el valor para el comando FTP PBSZ, que establece el tamaño del buffer de proteccion. Para conexiones securizadas con TLS, no se admite que el valor sea mayor que 0. Si se establece cualquier otro valor, el comando PBSZ se ejecuta correctamente, pero su valor se establece a 0 igualmente.
+
+ftpClient.execPBSZ(0);
+
+Con el método execPROT, se indica el nivel de protección del canal de datos:
+
+ftpClient.execPROT("P"); //P=Private
+
+Con el método setFileType , se indica el tipo de fichero (BINARIO/ASCII)
+
+ftpClient.setFileType(FTP.ASCII_FILE_TYPE);
+
+
+Con enterLocalPassiveMode activamos el modo pasivo, recomendado si se hace NAT o se esta tras un cortafuegos.
+
+ftpClient.enterLocalPassiveMode();
+
+
+Con el método setControlKeepAliveTimeout, se establece un mecanismo automatizado para mandar una operacionn NOOP sobre el canal de control y que no se cierre la comunicación cuando se transfiere archivos de gran tamaño.
+
+ftpClient.setControlKeepAliveTimeout(300);
+
+
+
+El método subidaFichero(origen,destino,ftpClient) , es un método creado para ilustrar la subida de archivo. Admite como parametros dos cadenas de texto, para indicar el archivo de origen y el destino y un objeto FTPSCLient. Devuelve un booleano, verdadero si se ha sudbido correctamente, false en caso contrario, aunque no se utiliza el valor de retorno en el ejemplo, por simplificar. Veamos la subida en detalle:
+
+
+try {
+	fichero = new FileInputStream(origen);
+	ftpClient.storeFile(destino, fichero);
+	fichero.close();
+            
+	//Similar a ejecutar completePendingCommand
+	int replyCode = ftpClient.getReplyCode();
+	if (FTPReply.isPositiveCompletion(replyCode)) {
+		operacionOk=true;
+	}
+
+Instanciamos un objeto el tipo FileInputStream, para crear el flujo donde se leera el fichero de origen. EL fichero debe existir previamente en el sistema, de lo contrario saltará una excepción del tipo FileNotFoundException.
+
+Se realiza la llamada al método storeFile, que se le pasa como parametros la cadena con la ruta donde debe ser guardado en el servidor el fichero que se le pasa como segundo parametro.
+
+Con eso ya estaría realizada la transferencia del archivo al servidor, solo quedaría cerrar el flujo abierto y verificar que la comunicación se ha realizado correctamente. Existe un método de la clase FTPSClient (realmente heredado de FTPClient), completePendingCommand, que realizaría esta misma función con una sola invocación, aunque en ocasiones puede dar problemas, dependiendo de como se cierre el flujo, por lo que se opta por hacer esa misma verificación de la forma indicada.
+
+La descarga de documentos se realiza de forma analoga. Se ha creado el método bajadaFichero(origen, destino, ftpClient), que como vemos son los mismos parametros que el método utilizado para la subida, teniendo en cuenta en esta ocasión que origen hace referencia a la ruta del fichero en el servidor y destino, donde se va a guardar el fichero en local. 
+
+
+try {
+	fichero = new FileOutputStream(destino);
+	ftpClient.retrieveFile(origen, fichero);
+	fichero.close();
+	int replyCode = ftpClient.getReplyCode();
+	if (FTPReply.isPositiveCompletion(replyCode)) {
+		operacionOk=true;
+	}
+	
+
+En esta ocasión, nos creamos el flujo para escribir los datos que recibamos instanciando un objeto de la clase FileOutputStream y le indicamos la ruta donde queremos guardar en local.
+
+Con el método retrieveFile, indicamos el fichero que queremos descargar del servidor y el flujo local para persistirlo.
+
+Con eso, ya estaría el fichero descargado. Solo quedaría cerrar el flujo y verificar que todo se ha ejecutado correctamente, como en el caso anterior.
+
+
+El método borrarFichero(destino,ftpClient) es sensiblemente más simple que los dos anteriores. Simplemente se le pasa la ruta del fichero a borrar y el objeto ftpClient:
+
+
+try {
+	ftpClient.deleteFile(destino);
+	int replyCode = ftpClient.getReplyCode();
+	if (FTPReply.isPositiveCompletion(replyCode)) {
+		operacionOk=true;
+	}
+
+
+Con el método deleteFile, indicamos el fichero que queremos borrar del servidor FTP. Posteriormente, realizamos la tarea ya vista de verificación de que el comando se ha ejecutado correctamente.
+
+
+
+Para terminar la sesión, simplemente se invocará al método logout:
+
+ftpClient.logout();
+
+
+
+
+Como hemos visto, es bastante simple interactuar con un servicio FTPS utilizando la librería commons-net. El ejemplo ilustrado, es bastante simple aunque cubre las necesidades básicas. Se recomienda leer la documentación de la API para obtener más información y otros modos de uso. Se puede consultar en el enlace:
+
+http://commons.apache.org/proper/commons-net/apidocs/
+
+Tambien se puede consultar en local, ya que se distribuye con el empaquetado (commons-net-3.3/apidocs)
+
+Es también recomensable revisar los ejemplos que acompañan al paquete de la librería:
+
+commons-net-3.3/apidocs/FTPClientExample.java
+commons-net-3.3/apidocs/ServerToServerFTP.java
+commons-net-3.3/examples/ftp/TFTPExample.java
+
+
+
+Enlaces relacionados:
+
+Apache Commons: http://commons.apache.org/
+APIDoc commons-net: http://commons.apache.org/proper/commons-net/apidocs/
+Sobre FTP (Comandos, códigos de respuesta y RFCs relacionadas): http://www.networksorcery.com/enp/protocol/ftp.htm
+RFC 4217 - Securizando FTP con SSL: https://tools.ietf.org/html/rfc4217
+
+
+:wq
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
