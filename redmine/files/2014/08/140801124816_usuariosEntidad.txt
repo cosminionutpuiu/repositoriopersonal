@@ -1,8 +1,0 @@
--- Usuarios de una entidad
-SELECT eg.uid_entidad
-FROM usuario us
-JOIN entidad_guia eg
-ON us.id_usuario     = eg.id_entidad_guia
-WHERE us.id_entidad IN
-  (SELECT id_entidad FROM entidad WHERE acronimo LIKE 'pru'
-  );

@@ -1,8 +1,0 @@
-<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_64d51e70-ce58-0133-0b8e-02000af0f087" entityID="https://teo.pre.i-administracion.junta-andalucia.es">
-<md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" AuthnRequestsSigned="false" WantAssertionsSigned="true">
-<md:NameIDFormat>
-urn:oasis:names:tc:SAML:2.0:nameid-format:transient
-</md:NameIDFormat>
-<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://teo.pre.i-administracion.junta-andalucia.es/auth/saml/callback" isDefault="true" index="0"/>
-</md:SPSSODescriptor>
-</md:EntityDescriptor>
